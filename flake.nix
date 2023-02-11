@@ -17,7 +17,6 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
     flake-utils,
     neovim-src,
@@ -32,7 +31,7 @@
       apps = rec {
         neovim = {
           type = "app";
-          program = "${packages.default}/bin/nvim";
+          program = "${packages.default}" + /bin/nvim;
         };
         default = neovim;
       };
@@ -51,7 +50,6 @@
               getPlugins)
             ++ [pkgs.vimPlugins.nvim-treesitter.withAllGrammars];
           unwrappedTarget = neovim-src.packages.${system}.default;
-          lua = pkgs.writeText "init.lua" (builtins.readFile ./init.lua);
           extraPackages = with pkgs; [
             #rust
             rustfmt

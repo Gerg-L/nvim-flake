@@ -2,12 +2,10 @@
   wrapNeovimUnstable,
   neovimUtils,
   lib,
-  # sorry about using this but I want to only specify LSPs once
-  pkgs,
   writeText,
+  # sorry about using this but I want to only specify LSPs once
   plugins ? [],
   extraPackages ? [],
-  lua ? (writeText "init.lua" ""),
   neovim-unwrapped,
   unwrappedTarget ? neovim-unwrapped,
   extraLuaPackages ? (_: []),
@@ -16,10 +14,7 @@
   withRuby ? false,
   ...
 }: let
-  luaFile =
-    if builtins.typeOf lua == "path" || builtins.typeOf lua == "set"
-    then lua
-    else abort "Invalid type for \"lua\" argument: ${builtins.typeOf lua}. Expected \"set\" or \"path\". Ensure lua is a derivation or a path to one.";
+  luaFile = writeText "init.lua" (import ./lua);
 
   vimConfig = ''luafile ${luaFile}'';
 
