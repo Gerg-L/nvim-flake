@@ -6,6 +6,7 @@
   pkgs,
   writeText,
   plugins ? [],
+  extraPackages ? [],
   lua ? (writeText "init.lua" ""),
   neovim-unwrapped,
   unwrappedTarget ? neovim-unwrapped,
@@ -13,8 +14,6 @@
   extraPython3Packages ? (_: []),
   withPython3 ? true,
   withRuby ? false,
-  viAlias ? false,
-  vimAlias ? false,
   ...
 }: let
   luaFile =
@@ -24,17 +23,12 @@
 
   vimConfig = ''luafile ${luaFile}'';
 
-  binPath = lib.makeBinPath (with pkgs; [
-    #rust
-    rustfmt
-    #nix
-    deadnix
-    statix
-    alejandra
-  ]);
+  binPath = lib.makeBinPath extraPackages;
 
   neovimConfig = neovimUtils.makeNeovimConfig {
-    inherit plugins extraPython3Packages withPython3 withRuby viAlias vimAlias;
+    inherit plugins extraPython3Packages withPython3 withRuby;
+    viAlias = false;
+    vimAlias = false;
     customRC = vimConfig;
   };
 

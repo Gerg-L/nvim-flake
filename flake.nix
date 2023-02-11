@@ -52,6 +52,14 @@
             ++ [pkgs.vimPlugins.nvim-treesitter.withAllGrammars];
           unwrappedTarget = neovim-src.packages.${system}.default;
           lua = pkgs.writeText "init.lua" (builtins.readFile ./init.lua);
+          extraPackages = with pkgs; [
+            #rust
+            rustfmt
+            #nix
+            deadnix
+            statix
+            alejandra
+          ];
         };
         default = neovim;
       };
