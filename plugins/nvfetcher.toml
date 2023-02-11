@@ -1,0 +1,3 @@
+[moonfly]
+src.git = "https://github.com/bluz71/vim-moonfly-colors"
+fetch.github = "bluz71/vim-moonfly-colors"

@@ -1,0 +1,22 @@
+{
+    "moonfly": {
+        "cargoLocks": null,
+        "date": "2023-02-10",
+        "extract": null,
+        "name": "moonfly",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "bluz71",
+            "repo": "vim-moonfly-colors",
+            "rev": "84641d471fa8a4ac457a590ab28c419d55652c26",
+            "sha256": "sha256-ubJUyJjkfxaJb64jO03qf5WMgQpY6vFAOCx7QRXXf00=",
+            "type": "github"
+        },
+        "version": "84641d471fa8a4ac457a590ab28c419d55652c26"
+    }
+}
