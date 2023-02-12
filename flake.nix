@@ -1,6 +1,5 @@
 {
   description = "My forth version on turning my neovim configuration in to a flake";
-
   inputs = {
     nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-unstable";
@@ -31,7 +30,7 @@
       apps = rec {
         neovim = {
           type = "app";
-          program = "${packages.default}" + /bin/nvim;
+          program = "${packages.default}/bin/nvim";
         };
         default = neovim;
       };
@@ -57,6 +56,9 @@
             deadnix
             statix
             alejandra
+
+            ripgrep
+            fd
           ];
         };
         default = neovim;

@@ -92,3 +92,24 @@ fetch.git = "https://github.com/itchyny/lightline.vim"
 [plenary-nvim]
 src.git = "https://github.com/nvim-lua/plenary.nvim"
 fetch.git = "https://github.com/nvim-lua/plenary.nvim"
+[crates-nvim]
+src.git = "https://github.com/saecki/crates.nvim"
+fetch.git = "https://github.com/saecki/crates.nvim"
+[rust-tools-nvim]
+src.git = "https://github.com/simrat39/rust-tools.nvim"
+fetch.git = "https://github.com/simrat39/rust-tools.nvim"
+[lualine-nvim]
+src.git = "https://github.com/nvim-lualine/lualine.nvim"
+fetch.git = "https://github.com/nvim-lualine/lualine.nvim"
+[noice-nvim]
+src.git = "https://github.com/folke/noice.nvim"
+fetch.git = "https://github.com/folke/noice.nvim"
+[nui-nvim]
+src.git = "https://github.com/MunifTanjim/nui.nvim"
+fetch.git = "https://github.com/MunifTanjim/nui.nvim"
+[nvim-treesitter-context]
+src.git = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+fetch.git = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+[which-key]
+src.git = "https://github.com/folke/which-key.nvim"
+fetch.git = "https://github.com/folke/which-key.nvim"
