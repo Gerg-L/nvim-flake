@@ -9,7 +9,6 @@ vim.g.moonflyUndercurls = true
 vim.g.moonflyUnderlineMatchParen = true
 vim.g.moonflyVirtualTextColor = true
 vim.cmd.colorscheme "moonfly"
-
 -- SECTION: treesitter
 require("nvim-treesitter.configs").setup {
   ensure_installed = {},

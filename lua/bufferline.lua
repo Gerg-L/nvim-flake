@@ -1,9 +1,12 @@
+-- SECTION: nvimBufferline
+require("nvim-web-devicons")
 require("bufferline").setup{
   options = {
     numbers = "both",
     close_command = function(bufnum)
       require("bufdelete").bufdelete(bufnum, false)
-    end,
+    end
+    ,
     right_mouse_command = 'vertical sbuffer %d',
     indicator = {
       indicator_icon = '▎',
@@ -18,9 +21,9 @@ require("bufferline").setup{
     max_name_length = 18,
     max_prefix_length = 15,
     tab_size = 18,
-    show_buffer_icons = false,
-    show_buffer_close_icons = false,
-    show_close_icon = false,
+    show_buffer_icons = true,
+    show_buffer_close_icons = true,
+    show_close_icon = true,
     show_tab_indicators = true,
     persist_buffer_sort = true,
     enforce_regular_tabs = false,
@@ -45,3 +48,4 @@ require("bufferline").setup{
     end,
   }
 }
+
