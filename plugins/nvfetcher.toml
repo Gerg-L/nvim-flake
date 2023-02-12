@@ -2,18 +2,6 @@
 src.git = "https://github.com/bluz71/vim-moonfly-colors"
 fetch.git = "https://github.com/bluz71/vim-moonfly-colors"
 
-[rainbow]
-src.git = "https://github.com/luochen1990/rainbow"
-fetch.git = "https://github.com/luochen1990/rainbow"
-
-[nvim-ts-rainbow]
-src.git = "https://github.com/p00f/nvim-ts-rainbow"
-fetch.git = "https://github.com/p00f/nvim-ts-rainbow"
-
-[nvim-colorizer-lua]
-src.git = "https://github.com/nvchad/nvim-colorizer.lua"
-fetch.git = "https://github.com/nvchad/nvim-colorizer.lua"
-
 [nvim-tree-lua]
 src.git = "https://github.com/nvim-tree/nvim-tree.lua"
 fetch.git = "https://github.com/nvim-tree/nvim-tree.lua"
@@ -21,10 +9,6 @@ fetch.git = "https://github.com/nvim-tree/nvim-tree.lua"
 [nvim-web-devicons]
 src.git = "https://github.com/nvim-tree/nvim-web-devicons"
 fetch.git = "https://github.com/nvim-tree/nvim-web-devicons"
-
-[vim-smoothie]
-src.git = "https://github.com/psliwka/vim-smoothie"
-fetch.git = "https://github.com/psliwka/vim-smoothie"
 
 [nvim-cmp]
 src.git = "https://github.com/hrsh7th/nvim-cmp"
@@ -54,10 +38,6 @@ fetch.git = "https://github.com/ray-x/cmp-treesitter"
 src.git = "https://github.com/hrsh7th/cmp-vsnip"
 fetch.git = "https://github.com/hrsh7th/cmp-vsnip"
 
-[vim-vsnip]
-src.git = "https://github.com/hrsh7th/vim-vsnip"
-fetch.git = "https://github.com/hrsh7th/vim-vsnip"
-
 [lspkind-nvim]
 src.git = "https://github.com/onsails/lspkind.nvim"
 fetch.git = "https://github.com/onsails/lspkind.nvim"
@@ -66,7 +46,7 @@ fetch.git = "https://github.com/onsails/lspkind.nvim"
 src.git = "https://github.com/neovim/nvim-lspconfig"
 fetch.git = "https://github.com/neovim/nvim-lspconfig"
 
-[null-ls-nvim]
+[null-ls]
 src.git = "https://github.com/jose-elias-alvarez/null-ls.nvim"
 fetch.git = "https://github.com/jose-elias-alvarez/null-ls.nvim"
 
@@ -74,21 +54,13 @@ fetch.git = "https://github.com/jose-elias-alvarez/null-ls.nvim"
 src.git = "https://github.com/windwp/nvim-autopairs"
 fetch.git = "https://github.com/windwp/nvim-autopairs"
 
-[telescope-nvim]
+[telescope]
 src.git = "https://github.com/nvim-telescope/telescope.nvim"
 fetch.git = "https://github.com/nvim-telescope/telescope.nvim"
-
-[telescope-fzy-native-nvim]
-src.git = "https://github.com/nvim-telescope/telescope-fzy-native.nvim"
-fetch.git = "https://github.com/nvim-telescope/telescope-fzy-native.nvim"
 
 [gitsigns-nvim]
 src.git = "https://github.com/lewis6991/gitsigns.nvim"
 fetch.git = "https://github.com/lewis6991/gitsigns.nvim"
-
-[lightline-vim]
-src.git = "https://github.com/itchyny/lightline.vim"
-fetch.git = "https://github.com/itchyny/lightline.vim"
 
 [plenary-nvim]
 src.git = "https://github.com/nvim-lua/plenary.nvim"
@@ -98,11 +70,11 @@ fetch.git = "https://github.com/nvim-lua/plenary.nvim"
 src.git = "https://github.com/saecki/crates.nvim"
 fetch.git = "https://github.com/saecki/crates.nvim"
 
-[rust-tools-nvim]
+[rust-tools]
 src.git = "https://github.com/simrat39/rust-tools.nvim"
 fetch.git = "https://github.com/simrat39/rust-tools.nvim"
 
-[lualine-nvim]
+[lualine]
 src.git = "https://github.com/nvim-lualine/lualine.nvim"
 fetch.git = "https://github.com/nvim-lualine/lualine.nvim"
 
@@ -122,11 +94,7 @@ fetch.git = "https://github.com/nvim-treesitter/nvim-treesitter-context"
 src.git = "https://github.com/folke/which-key.nvim"
 fetch.git = "https://github.com/folke/which-key.nvim"
 
-[codewindow]
-src.git = "https://github.com/gorbit99/codewindow.nvim"
-fetch.git = "https://github.com/gorbit99/codewindow.nvim"
-
-[cinnamon]
+[cinnamon-nvim]
 src.git = "https://github.com/declancm/cinnamon.nvim"
 fetch.git = "https://github.com/declancm/cinnamon.nvim"
 

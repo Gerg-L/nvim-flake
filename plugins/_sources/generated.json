@@ -18,11 +18,11 @@
         },
         "version": "f79e9d186b42fba5f1b1362006e7c70240db97a4"
     },
-    "cinnamon": {
+    "cinnamon-nvim": {
         "cargoLocks": null,
         "date": "2022-12-04",
         "extract": null,
-        "name": "cinnamon",
+        "name": "cinnamon-nvim",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -151,25 +151,6 @@
         },
         "version": "989a8a73c44e926199bfd05fa7a516d51f2d2752"
     },
-    "codewindow": {
-        "cargoLocks": null,
-        "date": "2023-01-18",
-        "extract": null,
-        "name": "codewindow",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "94d84e1a15b94248f205b854e70cb95f0b615b38",
-            "sha256": "sha256-TBoMpFD5MQHZwv/6TxbMNrVp2m2ATw8hbD1mDzU4Nf8=",
-            "type": "git",
-            "url": "https://github.com/gorbit99/codewindow.nvim"
-        },
-        "version": "94d84e1a15b94248f205b854e70cb95f0b615b38"
-    },
     "crates-nvim": {
         "cargoLocks": null,
         "date": "2023-02-11",
@@ -227,25 +208,6 @@
         },
         "version": "8299fe7703dfff4b1752aeed271c3b95281a952d"
     },
-    "lightline-vim": {
-        "cargoLocks": null,
-        "date": "2022-10-05",
-        "extract": null,
-        "name": "lightline-vim",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "b1e91b41f5028d65fa3d31a425ff21591d5d957f",
-            "sha256": "sha256-NjNdaona4H4y+lBNDQ9Ygeytc/lvXy80QJw3MmWDYHU=",
-            "type": "git",
-            "url": "https://github.com/itchyny/lightline.vim"
-        },
-        "version": "b1e91b41f5028d65fa3d31a425ff21591d5d957f"
-    },
     "lspkind-nvim": {
         "cargoLocks": null,
         "date": "2022-09-22",
@@ -265,11 +227,11 @@
         },
         "version": "c68b3a003483cf382428a43035079f78474cd11e"
     },
-    "lualine-nvim": {
+    "lualine": {
         "cargoLocks": null,
         "date": "2023-01-11",
         "extract": null,
-        "name": "lualine-nvim",
+        "name": "lualine",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -341,11 +303,11 @@
         },
         "version": "d147222a1300901656f3ebd5b95f91732785a329"
     },
-    "null-ls-nvim": {
+    "null-ls": {
         "cargoLocks": null,
         "date": "2023-02-10",
         "extract": null,
-        "name": "null-ls-nvim",
+        "name": "null-ls",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -417,25 +379,6 @@
         },
         "version": "aae0c3e4e778ca4be6fabc52e388cbd5b844b7a5"
     },
-    "nvim-colorizer-lua": {
-        "cargoLocks": null,
-        "date": "2022-10-29",
-        "extract": null,
-        "name": "nvim-colorizer-lua",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "760e27df4dd966607e8fb7fd8b6b93e3c7d2e193",
-            "sha256": "sha256-toNEfgZn2RNwyjI5FOyRU9Bdu6jFDZbSb1SjiY9sHH8=",
-            "type": "git",
-            "url": "https://github.com/nvchad/nvim-colorizer.lua"
-        },
-        "version": "760e27df4dd966607e8fb7fd8b6b93e3c7d2e193"
-    },
     "nvim-lspconfig": {
         "cargoLocks": null,
         "date": "2023-02-12",
@@ -493,25 +436,6 @@
         },
         "version": "cacee4828152dd3a83736169ae61bbcd29a3d213"
     },
-    "nvim-ts-rainbow": {
-        "cargoLocks": null,
-        "date": "2023-01-02",
-        "extract": null,
-        "name": "nvim-ts-rainbow",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "ef95c15a935f97c65a80e48e12fe72d49aacf9b9",
-            "sha256": "sha256-4RQptdc3ktaj+Vw1Ykr6jD4q1JEsKNyBNUgUEdNDu1E=",
-            "type": "git",
-            "url": "https://github.com/p00f/nvim-ts-rainbow"
-        },
-        "version": "ef95c15a935f97c65a80e48e12fe72d49aacf9b9"
-    },
     "nvim-web-devicons": {
         "cargoLocks": null,
         "date": "2023-02-12",
@@ -550,30 +474,11 @@
         },
         "version": "9a0d3bf7b832818c042aaf30f692b081ddd58bd9"
     },
-    "rainbow": {
-        "cargoLocks": null,
-        "date": "2022-10-08",
-        "extract": null,
-        "name": "rainbow",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "61f719aebe0dc5c3048330c50db72cfee1afdd34",
-            "sha256": "sha256-mncobTxp68rZmgxZmllTd3oYc+cz/2e0pZksBPa03mA=",
-            "type": "git",
-            "url": "https://github.com/luochen1990/rainbow"
-        },
-        "version": "61f719aebe0dc5c3048330c50db72cfee1afdd34"
-    },
-    "rust-tools-nvim": {
+    "rust-tools": {
         "cargoLocks": null,
         "date": "2023-02-04",
         "extract": null,
-        "name": "rust-tools-nvim",
+        "name": "rust-tools",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -588,30 +493,11 @@
         },
         "version": "bd1aa99ffb911a1cf99b3fcf3b44c0391c57e3ef"
     },
-    "telescope-fzy-native-nvim": {
-        "cargoLocks": null,
-        "date": "2022-09-11",
-        "extract": null,
-        "name": "telescope-fzy-native-nvim",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "282f069504515eec762ab6d6c89903377252bf5b",
-            "sha256": "sha256-cOpNHCMzqvr6FlwtdeipfPWQ6Ob/wFdbL5EivFWWJ4U=",
-            "type": "git",
-            "url": "https://github.com/nvim-telescope/telescope-fzy-native.nvim"
-        },
-        "version": "282f069504515eec762ab6d6c89903377252bf5b"
-    },
-    "telescope-nvim": {
+    "telescope": {
         "cargoLocks": null,
         "date": "2023-01-31",
         "extract": null,
-        "name": "telescope-nvim",
+        "name": "telescope",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -625,44 +511,6 @@
             "url": "https://github.com/nvim-telescope/telescope.nvim"
         },
         "version": "203bf5609137600d73e8ed82703d6b0e320a5f36"
-    },
-    "vim-smoothie": {
-        "cargoLocks": null,
-        "date": "2022-06-10",
-        "extract": null,
-        "name": "vim-smoothie",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "df1e324e9f3395c630c1c523d0555a01d2eb1b7e",
-            "sha256": "sha256-5oB+h85q6s8fCrU4oatL4lyZwn7edzoTNGdyUhL7B7E=",
-            "type": "git",
-            "url": "https://github.com/psliwka/vim-smoothie"
-        },
-        "version": "df1e324e9f3395c630c1c523d0555a01d2eb1b7e"
-    },
-    "vim-vsnip": {
-        "cargoLocks": null,
-        "date": "2022-12-20",
-        "extract": null,
-        "name": "vim-vsnip",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "8dde8c0ef10bb1afdbb301e2bd7eb1c153dd558e",
-            "sha256": "sha256-vFYn5fAM7AAuvTI5behiYM08sV2qQyV7zZ++jgpZfSc=",
-            "type": "git",
-            "url": "https://github.com/hrsh7th/vim-vsnip"
-        },
-        "version": "8dde8c0ef10bb1afdbb301e2bd7eb1c153dd558e"
     },
     "which-key": {
         "cargoLocks": null,

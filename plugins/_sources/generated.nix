@@ -14,8 +14,8 @@
     };
     date = "2022-12-04";
   };
-  cinnamon = {
-    pname = "cinnamon";
+  cinnamon-nvim = {
+    pname = "cinnamon-nvim";
     version = "c406ffda3a0302f32c23b24ab756ea20467d6578";
     src = fetchgit {
       url = "https://github.com/declancm/cinnamon.nvim";
@@ -105,19 +105,6 @@
     };
     date = "2022-11-22";
   };
-  codewindow = {
-    pname = "codewindow";
-    version = "94d84e1a15b94248f205b854e70cb95f0b615b38";
-    src = fetchgit {
-      url = "https://github.com/gorbit99/codewindow.nvim";
-      rev = "94d84e1a15b94248f205b854e70cb95f0b615b38";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-TBoMpFD5MQHZwv/6TxbMNrVp2m2ATw8hbD1mDzU4Nf8=";
-    };
-    date = "2023-01-18";
-  };
   crates-nvim = {
     pname = "crates-nvim";
     version = "3fc7ddac13ddf65914a733ef074317c4c72ef05b";
@@ -157,19 +144,6 @@
     };
     date = "2023-01-26";
   };
-  lightline-vim = {
-    pname = "lightline-vim";
-    version = "b1e91b41f5028d65fa3d31a425ff21591d5d957f";
-    src = fetchgit {
-      url = "https://github.com/itchyny/lightline.vim";
-      rev = "b1e91b41f5028d65fa3d31a425ff21591d5d957f";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-NjNdaona4H4y+lBNDQ9Ygeytc/lvXy80QJw3MmWDYHU=";
-    };
-    date = "2022-10-05";
-  };
   lspkind-nvim = {
     pname = "lspkind-nvim";
     version = "c68b3a003483cf382428a43035079f78474cd11e";
@@ -183,8 +157,8 @@
     };
     date = "2022-09-22";
   };
-  lualine-nvim = {
-    pname = "lualine-nvim";
+  lualine = {
+    pname = "lualine";
     version = "0050b308552e45f7128f399886c86afefc3eb988";
     src = fetchgit {
       url = "https://github.com/nvim-lualine/lualine.nvim";
@@ -235,8 +209,8 @@
     };
     date = "2023-02-01";
   };
-  null-ls-nvim = {
-    pname = "null-ls-nvim";
+  null-ls = {
+    pname = "null-ls";
     version = "ab4e9261843236d773f49a23fcfb3d2167a3c500";
     src = fetchgit {
       url = "https://github.com/jose-elias-alvarez/null-ls.nvim";
@@ -287,19 +261,6 @@
     };
     date = "2023-02-11";
   };
-  nvim-colorizer-lua = {
-    pname = "nvim-colorizer-lua";
-    version = "760e27df4dd966607e8fb7fd8b6b93e3c7d2e193";
-    src = fetchgit {
-      url = "https://github.com/nvchad/nvim-colorizer.lua";
-      rev = "760e27df4dd966607e8fb7fd8b6b93e3c7d2e193";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-toNEfgZn2RNwyjI5FOyRU9Bdu6jFDZbSb1SjiY9sHH8=";
-    };
-    date = "2022-10-29";
-  };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
     version = "1712672e4da3003a0dd9f771d30389600b360f42";
@@ -339,19 +300,6 @@
     };
     date = "2023-01-06";
   };
-  nvim-ts-rainbow = {
-    pname = "nvim-ts-rainbow";
-    version = "ef95c15a935f97c65a80e48e12fe72d49aacf9b9";
-    src = fetchgit {
-      url = "https://github.com/p00f/nvim-ts-rainbow";
-      rev = "ef95c15a935f97c65a80e48e12fe72d49aacf9b9";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-4RQptdc3ktaj+Vw1Ykr6jD4q1JEsKNyBNUgUEdNDu1E=";
-    };
-    date = "2023-01-02";
-  };
   nvim-web-devicons = {
     pname = "nvim-web-devicons";
     version = "bd7a222287c5828cd0607cd0a5605e52f0460074";
@@ -378,21 +326,8 @@
     };
     date = "2023-01-30";
   };
-  rainbow = {
-    pname = "rainbow";
-    version = "61f719aebe0dc5c3048330c50db72cfee1afdd34";
-    src = fetchgit {
-      url = "https://github.com/luochen1990/rainbow";
-      rev = "61f719aebe0dc5c3048330c50db72cfee1afdd34";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-mncobTxp68rZmgxZmllTd3oYc+cz/2e0pZksBPa03mA=";
-    };
-    date = "2022-10-08";
-  };
-  rust-tools-nvim = {
-    pname = "rust-tools-nvim";
+  rust-tools = {
+    pname = "rust-tools";
     version = "bd1aa99ffb911a1cf99b3fcf3b44c0391c57e3ef";
     src = fetchgit {
       url = "https://github.com/simrat39/rust-tools.nvim";
@@ -404,21 +339,8 @@
     };
     date = "2023-02-04";
   };
-  telescope-fzy-native-nvim = {
-    pname = "telescope-fzy-native-nvim";
-    version = "282f069504515eec762ab6d6c89903377252bf5b";
-    src = fetchgit {
-      url = "https://github.com/nvim-telescope/telescope-fzy-native.nvim";
-      rev = "282f069504515eec762ab6d6c89903377252bf5b";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-cOpNHCMzqvr6FlwtdeipfPWQ6Ob/wFdbL5EivFWWJ4U=";
-    };
-    date = "2022-09-11";
-  };
-  telescope-nvim = {
-    pname = "telescope-nvim";
+  telescope = {
+    pname = "telescope";
     version = "203bf5609137600d73e8ed82703d6b0e320a5f36";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
@@ -429,32 +351,6 @@
       sha256 = "sha256-L4Kw94CUy6N7zcyy9INuR/O0fxQ7sp0IvGd/u7fHxMA=";
     };
     date = "2023-01-31";
-  };
-  vim-smoothie = {
-    pname = "vim-smoothie";
-    version = "df1e324e9f3395c630c1c523d0555a01d2eb1b7e";
-    src = fetchgit {
-      url = "https://github.com/psliwka/vim-smoothie";
-      rev = "df1e324e9f3395c630c1c523d0555a01d2eb1b7e";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-5oB+h85q6s8fCrU4oatL4lyZwn7edzoTNGdyUhL7B7E=";
-    };
-    date = "2022-06-10";
-  };
-  vim-vsnip = {
-    pname = "vim-vsnip";
-    version = "8dde8c0ef10bb1afdbb301e2bd7eb1c153dd558e";
-    src = fetchgit {
-      url = "https://github.com/hrsh7th/vim-vsnip";
-      rev = "8dde8c0ef10bb1afdbb301e2bd7eb1c153dd558e";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-vFYn5fAM7AAuvTI5behiYM08sV2qQyV7zZ++jgpZfSc=";
-    };
-    date = "2022-12-20";
   };
   which-key = {
     pname = "which-key";

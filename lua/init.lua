@@ -1,8 +1,6 @@
 -- stop hiding double quotes in json files
 vim.g.indentLine_setConceal = 0
 -- SECTION: theme
-vim.opt.background = "dark"
-vim.opt.termguicolors = true
 vim.g.moonflyCursorColor = true
 vim.g.moonflyNormalFloat = true
 vim.g.moonflyTerminalColors = true
@@ -11,9 +9,6 @@ vim.g.moonflyUndercurls = true
 vim.g.moonflyUnderlineMatchParen = true
 vim.g.moonflyVirtualTextColor = true
 vim.cmd.colorscheme "moonfly"
-
-
-require("nvim-web-devicons").setup()
 
 -- SECTION: treesitter
 require("nvim-treesitter.configs").setup {
@@ -45,10 +40,10 @@ require'treesitter-context'.setup {
   max_lines = 0
 }
 -- SECTION: show hex colors
-require('colorizer').setup()
+-- require('colorizer').setup()
 
 -- SECTION: whichkey
-local wk = require("which-key").setup {}
+require("which-key").setup {}
 
 
 -- SECTION: gitsigns
@@ -84,13 +79,6 @@ require('gitsigns').setup {
 -- SECTION: autopairs
 require("nvim-autopairs").setup()
 
--- SECTION: codewindow
-local codewindow = require('codewindow')
-codewindow.setup({
-  exclude_filetypes = { 'NvimTree', 'orgagenda'},
-}
-)
-codewindow.apply_default_keybinds()
 -- SECTION: cinnamon
 require('cinnamon').setup()
 local config = {
