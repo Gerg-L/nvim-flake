@@ -5,7 +5,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set cmdheight=0
+set cmdheight=1
 set updatetime=300
 set shortmess+=c
 set tm=1000
@@ -27,4 +27,5 @@ syntax on
 set nowrap
 set nohlsearch
 set incsearch
+set termguicolors
 set t_Co=256

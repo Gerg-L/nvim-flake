@@ -1,28 +1,18 @@
--- dark bakground
 -- stop hiding double quotes in json files
 vim.g.indentLine_setConceal = 0
--- plugin setups
--- SECTION: nvim-tree
--- file expolorer
-vim.g.loaded = 1
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-require("nvim-tree").setup {
-  open_on_setup = false,
-  sort_by = "case_sensitive",
-  view = {
-    adaptive_size = true,
-  },
-  actions = {
-    open_file = {
-      quit_on_open = true,
-    },
-  },
-}
-vim.keymap.set("n", "<leader>tt", "<cmd> NvimTreeToggle<CR>")
-vim.keymap.set("n", "<leader>tf", "<cmd> NvimTreeFocus<CR>")
-vim.keymap.set("n", "<leader>tg", "<cmd> NvimTreeFindFile<CR>")
-vim.keymap.set("n", "<leader>tr", "<cmd> NvimTreeRefresh<CR>")
+-- SECTION: theme
+vim.opt.background = "dark"
+vim.opt.termguicolors = true
+vim.g.moonflyCursorColor = true
+vim.g.moonflyNormalFloat = true
+vim.g.moonflyTerminalColors = true
+vim.g.moonflyTransparent = true
+vim.g.moonflyUndercurls = true
+vim.g.moonflyUnderlineMatchParen = true
+vim.g.moonflyVirtualTextColor = true
+vim.cmd.colorscheme "moonfly"
+
+
 require("nvim-web-devicons").setup()
 
 -- SECTION: treesitter
@@ -57,66 +47,64 @@ require'treesitter-context'.setup {
 -- SECTION: show hex colors
 require('colorizer').setup()
 
--- SECTION: telescope
-local telescope = require('telescope')
-telescope.setup {
-  defaults = {
-    vimgrep_arguments = {
-      "rg",
-      "--color=never",
-      "--no-heading",
-      "--with-filename",
-      "--line-number",
-      "--column",
-      "--smart-case"
-    },
-    pickers = {
-      find_command = {
-        "fd",
-      },
-    },
-  }
-}
-
-telescope.load_extension('noice')
-telescope.load_extension('fzy_native')
-vim.keymap.set("n", "<leader>fb", "<cmd> Telescope buffers<CR>")
-vim.keymap.set("n", "<leader>ff", "<cmd> Telescope find_files<CR>")
-vim.keymap.set("n", "<leader>fg", "<cmd> Telescope live_grep<CR>")
-vim.keymap.set("n", "<leader>fh", "<cmd> Telescope help_tags<CR>")
-vim.keymap.set("n", "<leader>flD", "<cmd> Telescope lsp_definitions<CR>")
-vim.keymap.set("n", "<leader>fld", "<cmd> Telescope diagnostics<CR>")
-vim.keymap.set("n", "<leader>fli", "<cmd> Telescope lsp_implementations<CR>")
-vim.keymap.set("n", "<leader>flr", "<cmd> Telescope lsp_references<CR>")
-vim.keymap.set("n", "<leader>fls", "<cmd> Telescope lsp_document_symbols<CR>")
-vim.keymap.set("n", "<leader>fls", "<cmd> Telescope lsp_workspace_symbols<CR>")
-vim.keymap.set("n", "<leader>flt", "<cmd> Telescope lsp_type_definitions<CR>")
-vim.keymap.set("n", "<leader>fs", "<cmd> Telescope treesitter<CR>")
-vim.keymap.set("n", "<leader>ft", "<cmd> Telescope<CR>")
-vim.keymap.set("n", "<leader>fvb", "<cmd> Telescope git_branches<CR>")
-vim.keymap.set("n", "<leader>fvc", "<cmd> Telescope git_bcommits<CR>")
-vim.keymap.set("n", "<laeader>fvw", "<cmd> Telescope git_commits<CR>")
-vim.keymap.set("n", "<leader>fvs", "<cmd> Telescope git_status<CR>")
-vim.keymap.set("n", "<leader>fvx", "<cmd> Telescope git_stash<CR>")
-
 -- SECTION: whichkey
 local wk = require("which-key").setup {}
 
+
+-- SECTION: gitsigns
+-- GitSigns setup
 require('gitsigns').setup {
-  current_line_blame = true,
+  keymaps = {
+    noremap = true,
+
+    ['n <leader>gn'] = { expr = true, "&diff ? \'\' : '<cmd>Gitsigns next_hunk<CR>'"},
+    ['n <leader>gp'] = { expr = true, "&diff ? \'\' : '<cmd>Gitsigns prev_hunk<CR>'"},
+
+    ['n <leader>gs'] = '<cmd>Gitsigns stage_hunk<CR>',
+    ['v <leader>gs'] = ':Gitsigns stage_hunk<CR>',
+    ['n <leader>gu'] = '<cmd>Gitsigns undo_stage_hunk<CR>',
+    ['n <leader>gr'] = '<cmd>Gitsigns reset_hunk<CR>',
+    ['v <leader>gr'] = ':Gitsigns reset_hunk<CR>',
+    ['n <leader>gR'] = '<cmd>Gitsigns reset_buffer<CR>',
+    ['n <leader>gp'] = '<cmd>Gitsigns preview_hunk<CR>',
+    ['n <leader>gb'] = '<cmd>lua require"gitsigns".blame_line{full=true}<CR>',
+    ['n <leader>gS'] = '<cmd>Gitsigns stage_buffer<CR>',
+    ['n <leader>gU'] = '<cmd>Gitsigns reset_buffer_index<CR>',
+    ['n <leader>gts'] = ':Gitsigns toggle_signs<CR>',
+    ['n <leader>gtn'] = ':Gitsigns toggle_numhl<CR>',
+    ['n <leader>gtl'] = ':Gitsigns toggle_linehl<CR>',
+    ['n <leader>gtw'] = ':Gitsigns toggle_word_diff<CR>',
+
+    -- Text objects
+    ['o ih'] = ':<C-U>Gitsigns select_hunk<CR>',
+    ['x ih'] = ':<C-U>Gitsigns select_hunk<CR>'
+  },
 }
+
+-- SECTION: autopairs
 require("nvim-autopairs").setup()
 
+-- SECTION: codewindow
+local codewindow = require('codewindow')
+codewindow.setup({
+  exclude_filetypes = { 'NvimTree', 'orgagenda'},
+}
+)
+codewindow.apply_default_keybinds()
+-- SECTION: cinnamon
+require('cinnamon').setup()
+local config = {
+  fps = 50,
+  name = 'slide',
+}
+-- SECTION: indent blankline
+require("indent_blankline").setup {
+  char = "│",
+  show_current_context = true,
+  show_end_of_line = true,
+}
 
 
--- SECTION: theme
-vim.opt.background = "dark"
-vim.opt.termguicolors = true
-vim.g.moonflyCursorColor = true
-vim.g.moonflyNormalFloat = true
-vim.g.moonflyTerminalColors = true
-vim.g.moonflyTransparent = true
-vim.g.moonflyUndercurls = true
-vim.g.moonflyUnderlineMatchParen = true
-vim.g.moonflyVirtualTextColor = true
-vim.cmd.colorscheme "moonfly"
+vim.g.cursorline_timeout = 0
+
+

@@ -3,7 +3,6 @@
   neovimUtils,
   lib,
   writeText,
-  # sorry about using this but I want to only specify LSPs once
   plugins ? [],
   extraPackages ? [],
   neovim-unwrapped,
@@ -11,7 +10,7 @@
   extraLuaPackages ? (_: []),
   extraPython3Packages ? (_: []),
   withPython3 ? true,
-  withRuby ? false,
+  withRuby ? true,
   ...
 }: let
   luaFile = writeText "init.lua" (import ./lua);

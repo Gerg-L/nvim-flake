@@ -1,6 +1,4 @@
 -- SECTION: lualine
--- hide bottom bar for lightling
---vim.g.noshowmode = true
 require'lualine'.setup {
   options = {
     icons_enabled = true,

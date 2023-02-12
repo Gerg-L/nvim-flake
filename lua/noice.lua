@@ -9,9 +9,6 @@ require("noice").setup({
     },
 
   },
-  messages = {
-    enabled = false, -- enables the Noice messages UI
-  },
 
   presets = {
     bottom_search = true, -- use a classic bottom cmdline for search

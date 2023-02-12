@@ -89,27 +89,55 @@ fetch.git = "https://github.com/lewis6991/gitsigns.nvim"
 [lightline-vim]
 src.git = "https://github.com/itchyny/lightline.vim"
 fetch.git = "https://github.com/itchyny/lightline.vim"
+
 [plenary-nvim]
 src.git = "https://github.com/nvim-lua/plenary.nvim"
 fetch.git = "https://github.com/nvim-lua/plenary.nvim"
+
 [crates-nvim]
 src.git = "https://github.com/saecki/crates.nvim"
 fetch.git = "https://github.com/saecki/crates.nvim"
+
 [rust-tools-nvim]
 src.git = "https://github.com/simrat39/rust-tools.nvim"
 fetch.git = "https://github.com/simrat39/rust-tools.nvim"
+
 [lualine-nvim]
 src.git = "https://github.com/nvim-lualine/lualine.nvim"
 fetch.git = "https://github.com/nvim-lualine/lualine.nvim"
+
 [noice-nvim]
 src.git = "https://github.com/folke/noice.nvim"
 fetch.git = "https://github.com/folke/noice.nvim"
+
 [nui-nvim]
 src.git = "https://github.com/MunifTanjim/nui.nvim"
 fetch.git = "https://github.com/MunifTanjim/nui.nvim"
+
 [nvim-treesitter-context]
 src.git = "https://github.com/nvim-treesitter/nvim-treesitter-context"
 fetch.git = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+
 [which-key]
 src.git = "https://github.com/folke/which-key.nvim"
 fetch.git = "https://github.com/folke/which-key.nvim"
+
+[codewindow]
+src.git = "https://github.com/gorbit99/codewindow.nvim"
+fetch.git = "https://github.com/gorbit99/codewindow.nvim"
+
+[cinnamon]
+src.git = "https://github.com/declancm/cinnamon.nvim"
+fetch.git = "https://github.com/declancm/cinnamon.nvim"
+
+[indent-blankline]
+src.git = "https://github.com/lukas-reineke/indent-blankline.nvim"
+fetch.git = "https://github.com/lukas-reineke/indent-blankline.nvim"
+
+[nvim-bufferline-lua]
+src.git = "https://github.com/akinsho/bufferline.nvim"
+fetch.git = "https://github.com/akinsho/bufferline.nvim"
+
+[bufdelete-nvim]
+src.git = "https://github.com/famiu/bufdelete.nvim"
+fetch.git = "https://github.com/famiu/bufdelete.nvim"
