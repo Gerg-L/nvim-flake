@@ -211,16 +211,16 @@
   };
   null-ls = {
     pname = "null-ls";
-    version = "ab4e9261843236d773f49a23fcfb3d2167a3c500";
+    version = "d4594231a06cecce73a78a256b0d7c7ab51f7dd5";
     src = fetchgit {
       url = "https://github.com/jose-elias-alvarez/null-ls.nvim";
-      rev = "ab4e9261843236d773f49a23fcfb3d2167a3c500";
+      rev = "d4594231a06cecce73a78a256b0d7c7ab51f7dd5";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-+2UxWL1oCV7s2sApacIIjYcu7mesSTV6tJYmB37swFE=";
+      sha256 = "sha256-hAUEa2zNsYXQ+TsHYHBzcW67lCxhiD7x+uPbdOZwY8o=";
     };
-    date = "2023-02-10";
+    date = "2023-02-12";
   };
   nvim-autopairs = {
     pname = "nvim-autopairs";
@@ -261,6 +261,19 @@
     };
     date = "2023-02-11";
   };
+  nvim-colorzier = {
+    pname = "nvim-colorzier";
+    version = "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6";
+    src = fetchgit {
+      url = "https://github.com/norcalli/nvim-colorizer.lua";
+      rev = "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-6YrnItxExL2C8pNIdLd+hXCjsB2MbZANwWkah6dreD8=";
+    };
+    date = "2020-06-11";
+  };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
     version = "1712672e4da3003a0dd9f771d30389600b360f42";
@@ -276,16 +289,16 @@
   };
   nvim-tree-lua = {
     pname = "nvim-tree-lua";
-    version = "36e29c3a95ae606449f6616a0d8ab7247af807dc";
+    version = "ba1778e061f25814bc5940be886a7f41d7d7736e";
     src = fetchgit {
       url = "https://github.com/nvim-tree/nvim-tree.lua";
-      rev = "36e29c3a95ae606449f6616a0d8ab7247af807dc";
+      rev = "ba1778e061f25814bc5940be886a7f41d7d7736e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-leOqlMIJEQRZVgJD88WTW2DPD6ANcH5W6TSxHdpJC6U=";
+      sha256 = "sha256-xoSekdZhWr59qTOM0/ihYiuKiwHiKYb42Ep5JHn65UM=";
     };
-    date = "2023-02-12";
+    date = "2023-02-13";
   };
   nvim-treesitter-context = {
     pname = "nvim-treesitter-context";
@@ -351,6 +364,19 @@
       sha256 = "sha256-L4Kw94CUy6N7zcyy9INuR/O0fxQ7sp0IvGd/u7fHxMA=";
     };
     date = "2023-01-31";
+  };
+  vim-vsnip = {
+    pname = "vim-vsnip";
+    version = "8dde8c0ef10bb1afdbb301e2bd7eb1c153dd558e";
+    src = fetchgit {
+      url = "https://github.com/hrsh7th/vim-vsnip";
+      rev = "8dde8c0ef10bb1afdbb301e2bd7eb1c153dd558e";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-vFYn5fAM7AAuvTI5behiYM08sV2qQyV7zZ++jgpZfSc=";
+    };
+    date = "2022-12-20";
   };
   which-key = {
     pname = "which-key";

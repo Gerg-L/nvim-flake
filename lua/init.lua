@@ -1,5 +1,44 @@
+-- SECTION: basic
+vim.o.encoding='utf-8'
+vim.o.mouse='a'
+vim.o.tabstop=2
+vim.o.shiftwidth=2
+vim.o.softtabstop=2
+vim.o.expandtab=true
+vim.o.cmdheight=1
+vim.o.updatetime=300
+vim.o.shortmess = vim.o.shortmess..'c'
+vim.o.tm=1000
+vim.o.hidden=true
+vim.o.splitbelow=true
+vim.o.splitright=true
+vim.o.signcolumn='yes:2'
+vim.o.ai=true
+vim.o.swapfile=false
+vim.o.backup=false
+vim.o.writebackup=false
+vim.o.visualbell=false
+vim.o.errorbells=false
+vim.o.relativenumber=true
+vim.o.clipboard = vim.o.clipboard..'unnamedplus'
+vim.o.wrap=false
+vim.o.hlsearch=false
+vim.o.incsearch=true
+vim.o.termguicolors=true
+vim.o.t_Co=256
+
+
+--vim herasy
+vim.cmd.aunmenu{'PopUp.How-to\\ disable\\ mouse'}
+vim.cmd.aunmenu{'PopUp.-1-' }
+
+-- map leader to <Space>
+vim.keymap.set('n', ' ', '<Nop>', { silent = true, remap = false })
+vim.g.mapleader = ' '
+
 -- stop hiding double quotes in json files
 vim.g.indentLine_setConceal = 0
+
 -- SECTION: theme
 vim.g.moonflyCursorColor = true
 vim.g.moonflyNormalFloat = true
@@ -8,75 +47,12 @@ vim.g.moonflyTransparent = true
 vim.g.moonflyUndercurls = true
 vim.g.moonflyUnderlineMatchParen = true
 vim.g.moonflyVirtualTextColor = true
-vim.cmd.colorscheme "moonfly"
--- SECTION: treesitter
-require("nvim-treesitter.configs").setup {
-  ensure_installed = {},
-  auto_install = false,
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false
-  },
-  rainbow = {
-    enable = true,
-    extended_mode = true,
-    max_file_lines = nil,
-  },
-  incremental_selection = {
-    enable = true,
-    keymaps = {
-      init_selection = "gnn",
-      node_incremental = "grn",
-      scope_incremental = "grc",
-      node_decremental = "grm",
-    },
-  },
-}
--- Treesitter Context config
-require'treesitter-context'.setup {
-  enable = true,
-  throttle = true,
-  max_lines = 0
-}
--- SECTION: show hex colors
--- require('colorizer').setup()
-
--- SECTION: whichkey
-require("which-key").setup {}
+vim.cmd.colorscheme 'moonfly'
 
 
--- SECTION: gitsigns
--- GitSigns setup
-require('gitsigns').setup {
-  keymaps = {
-    noremap = true,
-
-    ['n <leader>gn'] = { expr = true, "&diff ? \'\' : '<cmd>Gitsigns next_hunk<CR>'"},
-    ['n <leader>gp'] = { expr = true, "&diff ? \'\' : '<cmd>Gitsigns prev_hunk<CR>'"},
-
-    ['n <leader>gs'] = '<cmd>Gitsigns stage_hunk<CR>',
-    ['v <leader>gs'] = ':Gitsigns stage_hunk<CR>',
-    ['n <leader>gu'] = '<cmd>Gitsigns undo_stage_hunk<CR>',
-    ['n <leader>gr'] = '<cmd>Gitsigns reset_hunk<CR>',
-    ['v <leader>gr'] = ':Gitsigns reset_hunk<CR>',
-    ['n <leader>gR'] = '<cmd>Gitsigns reset_buffer<CR>',
-    ['n <leader>gp'] = '<cmd>Gitsigns preview_hunk<CR>',
-    ['n <leader>gb'] = '<cmd>lua require"gitsigns".blame_line{full=true}<CR>',
-    ['n <leader>gS'] = '<cmd>Gitsigns stage_buffer<CR>',
-    ['n <leader>gU'] = '<cmd>Gitsigns reset_buffer_index<CR>',
-    ['n <leader>gts'] = ':Gitsigns toggle_signs<CR>',
-    ['n <leader>gtn'] = ':Gitsigns toggle_numhl<CR>',
-    ['n <leader>gtl'] = ':Gitsigns toggle_linehl<CR>',
-    ['n <leader>gtw'] = ':Gitsigns toggle_word_diff<CR>',
-
-    -- Text objects
-    ['o ih'] = ':<C-U>Gitsigns select_hunk<CR>',
-    ['x ih'] = ':<C-U>Gitsigns select_hunk<CR>'
-  },
-}
 
 -- SECTION: autopairs
-require("nvim-autopairs").setup()
+require('nvim-autopairs').setup()
 
 -- SECTION: cinnamon
 require('cinnamon').setup()
@@ -85,13 +61,20 @@ local config = {
   name = 'slide',
 }
 -- SECTION: indent blankline
-require("indent_blankline").setup {
-  char = "│",
+require('indent_blankline').setup {
+  char = '│',
   show_current_context = true,
   show_end_of_line = true,
 }
 
 
 vim.g.cursorline_timeout = 0
+
+-- SECTION: colorizer
+require('colorizer').setup()
+vim.keymap.set('n', '<leader>ct', '<cmd> ColorizerToggle<CR>')
+
+-- SECTION: whichkey
+require('which-key').setup {}
 
 
