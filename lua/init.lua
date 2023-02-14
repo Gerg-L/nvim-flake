@@ -19,6 +19,7 @@ vim.o.backup=false
 vim.o.writebackup=false
 vim.o.visualbell=false
 vim.o.errorbells=false
+vim.o.number = true
 vim.o.relativenumber=true
 vim.o.clipboard = vim.o.clipboard..'unnamedplus'
 vim.o.wrap=false
