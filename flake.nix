@@ -23,6 +23,7 @@
     ...
   }:
     {
+      overlay = self.overlays.default; 
       overlays = {
         neovim = _: final: {
           neovim = self.packages.${final.system}.default;
