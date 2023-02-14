@@ -2,7 +2,7 @@
   description = "My forth version on turning my neovim configuration in to a flake";
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
+      url = "github:nixos/nixpkgs";
     };
     neovim-src = {
       url = "github:nix-community/neovim-nightly-overlay";
@@ -16,12 +16,21 @@
   };
 
   outputs = {
+    self,
     nixpkgs,
     flake-utils,
     neovim-src,
     ...
   }:
-    flake-utils.lib.eachDefaultSystem (system: let
+    {
+      overlays = {
+        neovim = _: final: {
+          neovim = self.packages.${final.system}.default;
+        };
+        default = self.overlays.neovim;
+      };
+    }
+    // flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {inherit system;};
       lib = pkgs.lib;
       getPlugins = import ./plugins/_sources/generated.nix {inherit (pkgs) fetchurl dockerTools fetchgit fetchFromGitHub;};
@@ -68,12 +77,6 @@
         default = pkgs.mkShell {
           packages = [packages.default pkgs.nvfetcher];
         };
-      };
-      overlays = {
-        neovim = _: _: {
-          neovim = packages.default;
-        };
-        default = overlays.neovim;
       };
     });
 }

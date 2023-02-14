@@ -16,6 +16,19 @@ local null_ls = require('null-ls')
 local null_helpers = require('null-ls.helpers')
 local null_methods = require('null-ls.methods')
 vim.g.formatsave = true;
+
+local formatting = null_ls.builtins.formatting
+local diagnostics = null_ls.builtins.diagnostics
+local code_actions = null_ls.builtins.code_actions
+local ls_sources = {
+  formatting.rustfmt,
+  formatting.alejandra,
+  code_actions.statix,
+  diagnostics.deadnix
+}
+
+
+
 -- Enable formatting
 format_callback = function(client, bufnr)
   vim.api.nvim_create_autocmd('BufWritePre', {
@@ -60,29 +73,27 @@ rust_on_attach = function(client, bufnr)
   vim.keymap.set('n', '<leader>rc', rt.open_cargo_toml.open_cargo_toml, opts)
   vim.keymap.set('n', '<leader>rg', function() rt.crate_graph.view_crate_graph('x11', nil) end, opts)
 end
-if vim.fn.executable('rust-analyzer') then
-  local rustopts = {
-    tools = {
-      autoSetHints = true,
-      hover_with_actions = false,
-      inlay_hints = {
-        only_current_line = false,
-      }
-    },
-    server = {
-      capabilities = capabilities,
-      on_attach = rust_on_attach,
-      cmd = {'rust-analyzer'},
-      settings = {
-        ['rust-analyzer'] = {
-          experimental = {
-            procAttrMacros = true,
-          }
+local rustopts = {
+  tools = {
+    autoSetHints = true,
+    hover_with_actions = false,
+    inlay_hints = {
+      only_current_line = false,
+    }
+  },
+  server = {
+    capabilities = capabilities,
+    on_attach = rust_on_attach,
+    cmd = {'rust-analyzer'},
+    settings = {
+      ['rust-analyzer'] = {
+        experimental = {
+          procAttrMacros = true,
         }
       }
     }
   }
-end
+}
 require('crates').setup {
   null_ls = {
     enabled = true,
@@ -92,27 +103,23 @@ require('crates').setup {
 rt.setup(rustopts)
 -- Nix (nil) config
 
-if vim.fn.executable('nil') == 1 then
-  lspconfig.nil_ls.setup{
-    capabilities = capabilities,
-    on_attach=default_on_attach,
-    cmd = {'nil'},
-    settings = {
-      ['nil'] = {
-        formatting = {
-          command = {'alejandra', '--quiet'},
-        }
+lspconfig.nil_ls.setup{
+  capabilities = capabilities,
+  on_attach=default_on_attach,
+  cmd = {'nil'},
+  settings = {
+    ['nil'] = {
+      formatting = {
+        command = {'alejandra', '--quiet'},
       }
     }
   }
-end
+}
 
 -- CCLS (clang) config
-if vim.fn.executable('ccls') == 1 then
 
-  lspconfig.ccls.setup{
-    capabilities = capabilities;
-    on_attach=default_on_attach;
-    cmd = {'ccls'};
-  }
-end
+lspconfig.ccls.setup{
+  capabilities = capabilities;
+  on_attach=default_on_attach;
+  cmd = {'ccls'};
+}
