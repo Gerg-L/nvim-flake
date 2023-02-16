@@ -78,4 +78,15 @@ vim.keymap.set('n', '<leader>ct', '<cmd> ColorizerToggle<CR>')
 -- SECTION: whichkey
 require('which-key').setup {}
 
-
+require('toggleterm').setup(
+{
+  open_mapping = [[<Leader>e]],
+  direction = 'float',
+  size = function(term)
+    if term.direction == 'horizontal' then
+      return 15
+    elseif term.direction == 'vertical' then
+      return vim.o.columns * 0.4
+    end
+  end,
+})
