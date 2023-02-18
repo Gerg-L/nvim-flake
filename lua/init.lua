@@ -82,6 +82,10 @@ require('toggleterm').setup(
 {
   open_mapping = [[<Leader>e]],
   direction = 'float',
+  autochdir = true,
+  insert_mappings = false,
+  terminal_mappings = true,
+  close_on_exit = true,
   size = function(term)
     if term.direction == 'horizontal' then
       return 15
