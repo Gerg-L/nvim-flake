@@ -2,7 +2,7 @@
   description = "My forth version on turning my neovim configuration in to a flake";
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs";
+      url = "github:nixos/nixpkgs/nixos-unstable";
     };
     neovim-src = {
       url = "github:nix-community/neovim-nightly-overlay";
@@ -23,7 +23,7 @@
     ...
   }:
     {
-      overlay = self.overlays.default; 
+      overlay = self.overlays.default;
       overlays = {
         neovim = _: final: {
           neovim = self.packages.${final.system}.default;
