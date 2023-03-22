@@ -5,8 +5,9 @@
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
     neovim-src = {
-      url = "github:nix-community/neovim-nightly-overlay";
+      url = "github:neovim/neovim?dir=contrib";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
     };
 
     flake-utils = {
@@ -57,7 +58,19 @@
               )
               getPlugins)
             ++ [pkgs.vimPlugins.nvim-treesitter.withAllGrammars];
-          unwrappedTarget = neovim-src.packages.${system}.default;
+          unwrappedTarget = neovim-src.packages.${system}.neovim.overrideAttrs (old: {
+            # TODO Remove once neovim 0.9.0 is released.
+            patches =
+              builtins.filter
+              (p:
+                (
+                  if builtins.typeOf p == "set"
+                  then baseNameOf p.name
+                  else baseNameOf
+                )
+                != "neovim-build-make-generated-source-files-reproducible.patch")
+              old.patches;
+          });
           extraPackages = with pkgs; [
             #rust
             rustfmt
