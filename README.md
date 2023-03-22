@@ -7,8 +7,10 @@ After much struggling I've figured out how to make a neovim flake which works ho
 nix run github:Gerg-L/nvim-flake
 ```
 
-# Install
+# To install
+
 ## Import this flake
+
 ### Flakes
 Add a this flake as an input
 ```nix
@@ -30,7 +32,7 @@ in
 ...
 ```
 ## Add to user environment
-Then add 
+Add 
 ```nix
 inputs.nvim-flake.packages.${pkgs.system}.default
 ```
