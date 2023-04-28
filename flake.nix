@@ -5,7 +5,7 @@
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
     neovim-src = {
-      url = "github:neovim/neovim?dir=contrib";
+      url = "github:neovim/neovim/d321deb4a9b05e9d81b79ac166274f4a6e7981bf?dir=contrib";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
@@ -58,7 +58,8 @@
               )
               getPlugins)
             ++ [pkgs.vimPlugins.nvim-treesitter.withAllGrammars];
-        unwrappedTarget = neovim-src.packages.${system}.neovim;
+          unwrappedTarget =
+            neovim-src.packages.${system}.neovim;
           extraPackages = with pkgs; [
             #rust
             rustfmt
