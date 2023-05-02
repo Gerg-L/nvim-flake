@@ -2,18 +2,20 @@
 After much struggling I've figured out how to make a neovim flake which works how I want it too
 
 # Test it out
-
+With flakes enabled
 ```console
 nix run github:Gerg-L/nvim-flake
 ```
-
+Legacy
+```console
+nix-shell -p 'with import <nixpkgs> {}; builtins.fetchTarball "https://github.com/Gerg-L/nvim-flake/archive/master.tar.gz" ' --run nvim
+```
 # To install
 
-## Import this flake
-
-### Flakes
-Add a this flake as an input
+## Flakes
+Add this flake as an input
 ```nix
+#flake.nix
 {
   inputs = {
     nvim-flake = {
@@ -23,20 +25,47 @@ Add a this flake as an input
 ...
 ```
 (Make sure you're passing inputs to your [modules](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake/))
-### Legacy
+### Add to user environment
 ```nix
+#anyModule.nix
+{inputs, pkgs, ...}:
+{
+
+# add system wide
+  environment.systemPackages = [
+    inputs.nvim-flake.packages.${pkgs.system}.default
+  ];
+# add per-user
+  users.users."<name>".packages = [
+    inputs.nvim-flake.packages.${pkgs.system}.default
+  ];
+}
+```
+
+## Legacy
+Use fetchTarball
+```nix
+#anyModule.nix
+{pkgs, ...}:
 let
-  nvim-flake = builtins.getFlake "github:Gerg-L/nvim-flake/<latest revision>";
+  nvim-flake = import (builtins.fetchTarball {
+  # Get the revision by choosing a version from https://github.com/nix-community/NUR/commits/master
+  url = "https://github.com/Gerg-L/nvim-flake/archive/<revision>.tar.gz";
+  # Get the hash by running `nix-prefetch-url --unpack <url>` on the above url
+  sha256 = "<hash>";
+});
 in
 {
-...
+# add system wide
+  environment.systemPackages = [
+    nvim-flake.packages.${pkgs.system}.default
+  ];
+# add per-user
+  users.users."<name>".packages = [
+    nvim-flake.packages.${pkgs.system}.default
+  ];
+}
 ```
-## Add to user environment
-Add 
-```nix
-inputs.nvim-flake.packages.${pkgs.system}.default
-```
-to ``environment.systemPackages`` and/or ``home.packages``
 
 # Forking usage guide
 Update the flake like any other ``nix flake update``

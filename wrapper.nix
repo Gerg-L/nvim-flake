@@ -3,52 +3,39 @@
   neovimUtils,
   lib,
   writeText,
-  plugins ? [],
-  extraPackages ? [],
+  vimPlugins,
+  vimUtils,
+  #neovim package
   neovim-unwrapped,
   unwrappedTarget ? neovim-unwrapped,
-  extraLuaPackages ? (_: []),
-  extraPython3Packages ? (_: []),
-  withPython3 ? true,
-  withRuby ? true,
-  ...
+  extraPackages ? [],
+  fetchgit,
 }: let
-  luaFile = writeText "init.lua" (import ./lua);
-
-  vimConfig = ''luafile ${luaFile}'';
-
-  binPath = lib.makeBinPath extraPackages;
-
   neovimConfig = neovimUtils.makeNeovimConfig {
-    inherit plugins extraPython3Packages withPython3 withRuby;
+    withPython3 = true;
+    extraPython3Packages = _: [];
+    withRuby = true;
+    plugins =
+      (lib.mapAttrsToList (
+          _: value: (
+            vimUtils.buildVimPluginFrom2Nix {
+              inherit (value) name version date;
+              src = fetchgit {
+                inherit (value.src) url rev sha256;
+              };
+            }
+          )
+        )
+        (lib.importJSON ./plugins/_sources/generated.json))
+      ++ [vimPlugins.nvim-treesitter.withAllGrammars];
     viAlias = false;
     vimAlias = false;
-    customRC = vimConfig;
+    customRC = "luafile ${writeText "init.lua" (import ./lua)}";
   };
-
-  # this bit is stolen from https://github.com/nix-community/home-manager/blob/master/modules/programs/neovim.nix
-  luaPackages = unwrappedTarget.lua.pkgs;
-  resolvedExtraLuaPackages = extraLuaPackages luaPackages;
-
-  makeWrapperArgsFromPackages = op:
-    lib.lists.foldr
-    (next: prev: prev ++ [";" (op next)]) []
-    resolvedExtraLuaPackages;
-
-  extraMakeWrapperLuaCArgs =
-    lib.optionals (resolvedExtraLuaPackages != [])
-    (["--suffix" "LUA_CPATH" ";"]
-      ++ (makeWrapperArgsFromPackages luaPackages.getLuaCPath));
-  extraMakeWrapperLuaArgs =
-    lib.optionals (resolvedExtraLuaPackages != [])
-    (["--suffix" "LUA_PATH" ";"]
-      ++ (makeWrapperArgsFromPackages luaPackages.getLuaPath));
 
   wrapperArgs =
     neovimConfig.wrapperArgs
-    ++ extraMakeWrapperLuaArgs
-    ++ extraMakeWrapperLuaCArgs
-    ++ ["--suffix" "PATH" ":" "${binPath}"];
+    ++ ["--suffix" "PATH" ":" "${lib.makeBinPath extraPackages}"];
 in
   wrapNeovimUnstable unwrappedTarget (neovimConfig
     // {inherit wrapperArgs;})

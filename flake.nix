@@ -24,63 +24,36 @@
   }:
     {
       overlay = self.overlays.default;
-      overlays = {
-        neovim = _: final: {
-          neovim = self.packages.${final.system}.default;
-        };
-        default = self.overlays.neovim;
+      overlays.default = _: final: {
+        neovim = self.packages.${final.system}.default;
       };
     }
     // flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {inherit system;};
-      lib = pkgs.lib;
-      getPlugins = import ./plugins/_sources/generated.nix {inherit (pkgs) fetchurl dockerTools fetchgit fetchFromGitHub;};
-    in rec {
+    in {
       formatter = pkgs.alejandra;
-      apps = rec {
-        neovim = {
-          type = "app";
-          program = "${packages.default}/bin/nvim";
-        };
-        default = neovim;
+
+      packages.default = pkgs.callPackage ./wrapper.nix {
+        unwrappedTarget = neovim-src.packages.${system}.default;
+        extraPackages = [
+          #rust
+          pkgs.rustfmt
+          #nix
+          pkgs.deadnix
+          pkgs.statix
+          pkgs.alejandra
+          pkgs.nil
+
+          #other
+          pkgs.ripgrep
+          pkgs.fd
+        ];
       };
-
-      packages = rec {
-        neovim = pkgs.callPackage ./wrapper.nix {
-          plugins =
-            (lib.attrsets.mapAttrsToList (
-                _: value:
-                  pkgs.vimUtils.buildVimPluginFrom2Nix {
-                    pname = value.pname;
-                    version = value.version;
-                    src = value.src;
-                  }
-              )
-              getPlugins)
-            ++ [pkgs.vimPlugins.nvim-treesitter.withAllGrammars];
-          unwrappedTarget =
-            neovim-src.packages.${system}.neovim;
-          extraPackages = with pkgs; [
-            #rust
-            rustfmt
-            #nix
-            deadnix
-            statix
-            alejandra
-            nil
-
-            #other
-            ripgrep
-            fd
-          ];
-        };
-        default = neovim;
-      };
-
-      devShells = {
-        default = pkgs.mkShell {
-          packages = [packages.default pkgs.nvfetcher];
-        };
+      devShells.default = pkgs.mkShell {
+        packages = [
+          self.packages.${system}.default
+          pkgs.nvfetcher
+        ];
       };
     });
 }
