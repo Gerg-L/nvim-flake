@@ -31,6 +31,7 @@ src.git = "https://github.com/f3fora/cmp-spell"
 fetch.git = "https://github.com/f3fora/cmp-spell"
 
 [cmp-treesitter]
+pinned = true
 src.git = "https://github.com/ray-x/cmp-treesitter"
 fetch.git = "https://github.com/ray-x/cmp-treesitter"
 
