@@ -5,7 +5,7 @@
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
     neovim-src = {
-      url = "github:neovim/neovim/d321deb4a9b05e9d81b79ac166274f4a6e7981bf?dir=contrib";
+      url = "github:neovim/neovim/?dir=contrib";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
