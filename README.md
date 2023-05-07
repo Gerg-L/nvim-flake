@@ -20,7 +20,7 @@ Add this flake as an input
   inputs = {
     nvim-flake = {
       url = "github:Gerg-L/nvim-flake";
-      inputs.nixpkgs.follows = "unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 ...
 ```
@@ -70,9 +70,9 @@ in
 # Forking usage guide
 Update the flake like any other ``nix flake update``
 
-Extra runtime dependancies can be added [here](https://github.com/Gerg-L/nvim-flake/blob/7e9667d7b3cc2fd5d8a4b5d17ac8af2519e9b3ea/flake.nix#L74)
+Extra runtime dependancies can be added [here](https://github.com/Gerg-L/nvim-flake/blob/367075ba580bc1af6b3acd8237ee56c3cef07840/flake.nix#L38)
 
-Add/remove plugins [here](https://github.com/Gerg-L/nvim-flake/blob/master/plugins/nvfetcher.toml)
+Add/remove plugins through /plugins/nvfetcher.toml
 
 Use ``nvfetcher`` to update the list.
 
