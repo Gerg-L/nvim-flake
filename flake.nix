@@ -7,29 +7,28 @@
     neovim-src = {
       url = "github:neovim/neovim/?dir=contrib";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
-    };
-
-    flake-utils = {
-      url = "github:numtide/flake-utils";
     };
   };
 
   outputs = {
     self,
     nixpkgs,
-    flake-utils,
     neovim-src,
     ...
-  }:
+  }: let
+    lib = nixpkgs.lib;
+    withSystem = f:
+      lib.foldAttrs lib.mergeAttrs {}
+      (map (s: lib.mapAttrs (_: v: {${s} = v;}) (f s))
+        ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
+  in
     {
-      overlay = self.overlays.default;
-      overlays.default = _: final: {
+      overlay = _: final: {
         neovim = self.packages.${final.system}.default;
       };
     }
-    // flake-utils.lib.eachDefaultSystem (system: let
-      pkgs = import nixpkgs {inherit system;};
+    // withSystem (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
     in {
       formatter = pkgs.alejandra;
 
@@ -49,6 +48,7 @@
           pkgs.fd
         ];
       };
+
       devShells.default = pkgs.mkShell {
         packages = [
           self.packages.${system}.default

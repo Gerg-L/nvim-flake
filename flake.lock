@@ -20,9 +20,7 @@
     },
     "neovim-src": {
       "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
+        "flake-utils": "flake-utils",
         "nixpkgs": [
           "nixpkgs"
         ]
@@ -61,7 +59,6 @@
     },
     "root": {
       "inputs": {
-        "flake-utils": "flake-utils",
         "neovim-src": "neovim-src",
         "nixpkgs": "nixpkgs"
       }
