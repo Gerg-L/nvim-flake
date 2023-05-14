@@ -49,7 +49,7 @@ Use fetchTarball
 {pkgs, ...}:
 let
   nvim-flake = import (builtins.fetchTarball {
-  # Get the revision by choosing a version from https://github.com/nix-community/NUR/commits/master
+  # Get the revision by choosing a version from https://github.com/Gerg-L/nvim-flake/commits/master
   url = "https://github.com/Gerg-L/nvim-flake/archive/<revision>.tar.gz";
   # Get the hash by running `nix-prefetch-url --unpack <url>` on the above url
   sha256 = "<hash>";
