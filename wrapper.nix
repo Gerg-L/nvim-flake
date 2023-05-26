@@ -7,7 +7,7 @@
   vimUtils,
   #neovim package
   neovim-unwrapped,
-  unwrappedTarget ? neovim-unwrapped,
+  neovim-src,
   extraPackages ? [],
   fetchgit,
 }: let
@@ -37,5 +37,8 @@
     neovimConfig.wrapperArgs
     ++ ["--suffix" "PATH" ":" "${lib.makeBinPath extraPackages}"];
 in
-  wrapNeovimUnstable unwrappedTarget (neovimConfig
+  wrapNeovimUnstable (neovim-unwrapped.overrideAttrs (_: {
+    src = neovim-src;
+    patches = [];
+  })) (neovimConfig
     // {inherit wrapperArgs;})

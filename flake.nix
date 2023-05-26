@@ -1,12 +1,10 @@
 {
   description = "My forth version on turning my neovim configuration in to a flake";
   inputs = {
-    nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
-    };
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     neovim-src = {
-      url = "github:neovim/neovim/?dir=contrib";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:neovim/neovim";
+      flake = false;
     };
   };
 
@@ -33,7 +31,7 @@
       formatter = pkgs.alejandra;
 
       packages.default = pkgs.callPackage ./wrapper.nix {
-        unwrappedTarget = neovim-src.packages.${system}.default;
+        inherit neovim-src;
         extraPackages = [
           #rust
           pkgs.rustfmt
