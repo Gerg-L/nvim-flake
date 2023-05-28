@@ -3,31 +3,17 @@
   neovimUtils,
   lib,
   writeText,
-  vimPlugins,
-  vimUtils,
   #neovim package
   neovim-unwrapped,
-  neovim-src,
+  package ? neovim-unwrapped,
   extraPackages ? [],
-  fetchgit,
+  plugins ? [],
 }: let
   neovimConfig = neovimUtils.makeNeovimConfig {
+    inherit plugins;
     withPython3 = true;
     extraPython3Packages = _: [];
     withRuby = true;
-    plugins =
-      (lib.mapAttrsToList (
-          _: value: (
-            vimUtils.buildVimPluginFrom2Nix {
-              inherit (value) name version date;
-              src = fetchgit {
-                inherit (value.src) url rev sha256;
-              };
-            }
-          )
-        )
-        (lib.importJSON ./plugins/_sources/generated.json))
-      ++ [vimPlugins.nvim-treesitter.withAllGrammars];
     viAlias = false;
     vimAlias = false;
     customRC = "luafile ${writeText "init.lua" (import ./lua)}";
@@ -37,8 +23,5 @@
     neovimConfig.wrapperArgs
     ++ ["--suffix" "PATH" ":" "${lib.makeBinPath extraPackages}"];
 in
-  wrapNeovimUnstable (neovim-unwrapped.overrideAttrs (_: {
-    src = neovim-src;
-    patches = [];
-  })) (neovimConfig
+  wrapNeovimUnstable package (neovimConfig
     // {inherit wrapperArgs;})

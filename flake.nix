@@ -29,7 +29,10 @@
       formatter = pkgs.alejandra;
 
       packages.neovim = pkgs.callPackage ./wrapper.nix {
-        inherit neovim-src;
+        package = pkgs.neovim-unwrapped.overrideAttrs (_: {
+          src = neovim-src;
+          patches = [];
+        });
         extraPackages = [
           #rust
           pkgs.rustfmt
@@ -43,6 +46,19 @@
           pkgs.ripgrep
           pkgs.fd
         ];
+        plugins =
+          (lib.mapAttrsToList (
+              _: value: (
+                pkgs.vimUtils.buildVimPluginFrom2Nix {
+                  inherit (value) name version date;
+                  src = pkgs.fetchgit {
+                    inherit (value.src) url rev sha256;
+                  };
+                }
+              )
+            )
+            (lib.importJSON ./plugins/_sources/generated.json))
+          ++ [pkgs.vimPlugins.nvim-treesitter.withAllGrammars];
       };
 
       devShells.default = pkgs.mkShell {
