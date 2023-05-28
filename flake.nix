@@ -21,16 +21,14 @@
         ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
   in
     {
-      overlay = _: final: {
-        neovim = self.packages.${final.system}.default;
-      };
+      overlay = _: final: self.packages.${final.system};
     }
     // withSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       formatter = pkgs.alejandra;
 
-      packages.default = pkgs.callPackage ./wrapper.nix {
+      packages.neovim = pkgs.callPackage ./wrapper.nix {
         inherit neovim-src;
         extraPackages = [
           #rust
@@ -49,7 +47,7 @@
 
       devShells.default = pkgs.mkShell {
         packages = [
-          self.packages.${system}.default
+          self.packages.${system}.neovim
           pkgs.nvfetcher
         ];
       };
