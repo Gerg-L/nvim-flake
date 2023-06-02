@@ -4,7 +4,7 @@ After much struggling I've figured out how to make a neovim flake which works ho
 # Test it out
 With flakes enabled
 ```console
-nix run github:Gerg-L/nvim-flake#neovim
+nix run github:Gerg-L/nvim-flake
 ```
 Legacy
 ```console
