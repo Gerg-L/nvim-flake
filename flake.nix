@@ -1,5 +1,4 @@
 {
-  description = "My forth version on turning my neovim configuration in to a flake";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     neovim-src = {
@@ -16,21 +15,17 @@
   }: let
     inherit (nixpkgs) lib;
     withSystem = f:
-      lib.foldAttrs lib.mergeAttrs {}
-      (map (s: lib.mapAttrs (_: v: {${s} = v;}) (f s))
-        ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
+      lib.fold lib.recursiveUpdate {}
+      (map (s: f s) ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
   in
-    {
-      overlay = final: _: {
-        inherit (self.packages.${final.system}) neovim;
-      };
-    }
-    // withSystem (system: let
+    withSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      formatter = pkgs.alejandra;
+      formatter.${system} = pkgs.alejandra;
 
-      packages = {
+      overlay = final: _: lib.filterAttrs (n: _: n == "default") self.packages.${final.system};
+
+      packages.${system} = {
         neovim = pkgs.callPackage ./wrapper.nix {
           package = pkgs.neovim-unwrapped.overrideAttrs (_: let
             version = neovim-src.shortRev or "dirty";
@@ -78,9 +73,9 @@
         default = self.packages.${system}.neovim;
       };
 
-      devShells.default = pkgs.mkShell {
+      devShells.${system}.default = pkgs.mkShell {
         packages = [
-          self.packages.${system}.neovim
+          self.packages.${system}.default
           pkgs.nvfetcher
         ];
       };
