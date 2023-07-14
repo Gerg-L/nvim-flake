@@ -5,6 +5,10 @@
       url = "github:neovim/neovim/d7bb19e0138c7363ed40c142972c07e4e1912785";
       flake = false;
     };
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+      flake = false;
+    };
   };
 
   outputs = {
