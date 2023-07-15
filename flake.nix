@@ -20,7 +20,7 @@
     inherit (nixpkgs) lib;
     withSystem = f:
       lib.fold lib.recursiveUpdate {}
-      (map (s: f s) ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
+      (map f ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
   in
     withSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
