@@ -1,11 +1,15 @@
-''
-  ${builtins.readFile ./init.lua}
-  ${builtins.readFile ./lsp.lua}
-  ${builtins.readFile ./completion.lua}
-  ${builtins.readFile ./treesitter.lua}
-  ${builtins.readFile ./lualine.lua}
-  ${builtins.readFile ./noice.lua}
-  ${builtins.readFile ./gitsigns.lua}
-  ${builtins.readFile ./bufferline.lua}
-  ${builtins.readFile ./findfile.lua}
-''
+(builtins.concatStringsSep "\n")
+(
+  map (x: builtins.readFile x)
+  [
+    ./init.lua
+    ./lsp.lua
+    ./completion.lua
+    ./treesitter.lua
+    ./lualine.lua
+    ./noice.lua
+    ./gitsigns.lua
+    ./bufferline.lua
+    ./findfile.lua
+  ]
+)

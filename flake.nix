@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     neovim-src = {
-      url = "github:neovim/neovim/d7bb19e0138c7363ed40c142972c07e4e1912785";
+      url = "github:neovim/neovim";
       flake = false;
     };
     flake-compat = {
@@ -29,60 +29,68 @@
 
       overlays.default = final: _: removeAttrs self.packages.${final.system} ["default"];
       overlay = self.overlays.default;
-
-      packages.${system} = {
-        neovim = pkgs.callPackage ./wrapper.nix {
-          package = pkgs.neovim-unwrapped.overrideAttrs (_: let
-            version = neovim-src.shortRev or "dirty";
-          in {
-            src = neovim-src;
-            inherit version;
-            patches = [];
-            preConfigure = ''
-              sed -i cmake.config/versiondef.h.in -e 's/@NVIM_VERSION_PRERELEASE@/-dev-${version}/'
-            '';
-          });
-          extraPackages = builtins.attrValues {
-            inherit
-              (pkgs)
-              #rust
-              
-              rustfmt
-              #nix
-              
-              deadnix
-              statix
-              alejandra
-              nil
-              #other
-              
-              ripgrep
-              fd
-              ;
-          };
-          plugins =
-            (lib.mapAttrsToList (
-                _: value: (
-                  pkgs.vimUtils.buildVimPluginFrom2Nix
-                  {
-                    inherit (value) name date version;
-                    src = pkgs.fetchgit {
-                      inherit (value.src) url rev sha256;
-                    };
-                  }
-                )
-              )
-              (lib.importJSON ./plugins/_sources/generated.json))
-            ++ [pkgs.vimPlugins.nvim-treesitter.withAllGrammars];
-        };
-        default = self.packages.${system}.neovim;
-      };
-
       devShells.${system}.default = pkgs.mkShell {
         packages = [
           self.packages.${system}.default
           pkgs.nvfetcher
         ];
+      };
+
+      packages.${system} = {
+        default = self.packages.${system}.neovim;
+
+        neovim = let
+          neovimConfig = pkgs.neovimUtils.makeNeovimConfig {
+            plugins =
+              [pkgs.vimPlugins.nvim-treesitter.withAllGrammars]
+              ++ lib.mapAttrsToList (
+                _: value: (pkgs.vimUtils.buildVimPluginFrom2Nix value)
+              )
+              (import ./plugins/_sources/generated.nix {inherit (pkgs) fetchgit fetchurl fetchFromGitHub dockerTools;});
+            withPython3 = true;
+            extraPython3Packages = _: [];
+            withRuby = true;
+            viAlias = false;
+            vimAlias = false;
+            customRC = "luafile ${pkgs.writeText "init.lua" (import ./lua)}";
+          };
+          wrapperArgs =
+            neovimConfig.wrapperArgs
+            ++ [
+              "--prefix"
+              "PATH"
+              ":"
+              (
+                lib.makeBinPath (
+                  builtins.attrValues
+                  {
+                    inherit
+                      (pkgs)
+                      #nix
+                      
+                      deadnix
+                      statix
+                      alejandra
+                      nil
+                      #other
+                      
+                      ripgrep
+                      fd
+                      ;
+                  }
+                )
+              )
+            ];
+        in
+          pkgs.wrapNeovimUnstable (pkgs.neovim-unwrapped.overrideAttrs {
+            src = neovim-src;
+            version = neovim-src.shortRev or "dirty";
+            patches = [];
+            preConfigure = ''
+              sed -i cmake.config/versiondef.h.in -e "s/@NVIM_VERSION_PRERELEASE@/-dev-$version/"
+            '';
+          })
+          (neovimConfig // {inherit wrapperArgs;});
       };
     });
 }
