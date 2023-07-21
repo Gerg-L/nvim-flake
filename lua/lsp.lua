@@ -15,7 +15,6 @@ end
 local null_ls = require('null-ls')
 local null_helpers = require('null-ls.helpers')
 local null_methods = require('null-ls.methods')
-vim.g.formatsave = true;
 
 local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
