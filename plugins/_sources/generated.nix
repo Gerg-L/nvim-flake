@@ -211,42 +211,42 @@
   };
   moonfly = {
     pname = "moonfly";
-    version = "b18fa11e40ddf11cca2acb93502214a652dc5813";
+    version = "2583b326640ff1d6335a4e78b095203653871c68";
     src = fetchgit {
       url = "https://github.com/bluz71/vim-moonfly-colors";
-      rev = "b18fa11e40ddf11cca2acb93502214a652dc5813";
+      rev = "2583b326640ff1d6335a4e78b095203653871c68";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-pcSOXx04ctVld/67mFNQpwQM8i7McGNyUUxeqVeGK7k=";
+      sha256 = "sha256-EWKKPzIzqmHzmDT6CLv+XK3gmxfAw6idrdu51swQK+Q=";
     };
-    date = "2023-07-16";
+    date = "2023-07-19";
   };
   noice = {
     pname = "noice";
-    version = "74f9155f2ff2f7172d5709c8df9357ba69b834db";
+    version = "679740982682018a0805a5c813b19e4c7540f7a9";
     src = fetchgit {
       url = "https://github.com/folke/noice.nvim";
-      rev = "74f9155f2ff2f7172d5709c8df9357ba69b834db";
+      rev = "679740982682018a0805a5c813b19e4c7540f7a9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-WK3sx9Q/ERH6GLIUH1+BG4IkedCh6QfNVk6o826imFo=";
+      sha256 = "sha256-+bXID0OS6sAGkOz3mX0u4E1yg2x0JvBjdm6qW3w5ZPI=";
     };
-    date = "2023-07-18";
+    date = "2023-07-20";
   };
   nui = {
     pname = "nui";
-    version = "d146966a423e60699b084eeb28489fe3b6427599";
+    version = "9e3916e784660f55f47daa6f26053ad044db5d6a";
     src = fetchgit {
       url = "https://github.com/MunifTanjim/nui.nvim";
-      rev = "d146966a423e60699b084eeb28489fe3b6427599";
+      rev = "9e3916e784660f55f47daa6f26053ad044db5d6a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-OFfkkFPkBJoVf9W6CL/AD5E4erPKYTMg069E1cI54DE=";
+      sha256 = "sha256-nSUs9zAX7hQ3PuFrH4zQblMfTY6ALDNggmqaQnkbR5E=";
     };
-    date = "2023-06-18";
+    date = "2023-07-20";
   };
   null-ls = {
     pname = "null-ls";
@@ -276,16 +276,16 @@
   };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
-    version = "447443a2404adc323ad2efc7c0a346a904ce694c";
+    version = "6c53bf7fb02a2de7e7c84be7a2bd7a502f66a802";
     src = fetchgit {
       url = "https://github.com/neovim/nvim-lspconfig";
-      rev = "447443a2404adc323ad2efc7c0a346a904ce694c";
+      rev = "6c53bf7fb02a2de7e7c84be7a2bd7a502f66a802";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-J+wmW1yNhYarbslcJiqJVzAIHYZcCMWPfcn1VXlI8NY=";
+      sha256 = "sha256-UV8nCF6jfwG0ra3zBYQT7aVf3UmxJv6uPlYsRFPbrkU=";
     };
-    date = "2023-07-18";
+    date = "2023-07-20";
   };
   plenary = {
     pname = "plenary";
