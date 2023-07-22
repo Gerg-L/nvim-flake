@@ -224,16 +224,16 @@
   };
   noice = {
     pname = "noice";
-    version = "679740982682018a0805a5c813b19e4c7540f7a9";
+    version = "06d05c667356b91e10c6714b9f540d10ad27194a";
     src = fetchgit {
       url = "https://github.com/folke/noice.nvim";
-      rev = "679740982682018a0805a5c813b19e4c7540f7a9";
+      rev = "06d05c667356b91e10c6714b9f540d10ad27194a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-+bXID0OS6sAGkOz3mX0u4E1yg2x0JvBjdm6qW3w5ZPI=";
+      sha256 = "sha256-1ypIWtUIXH7KfgnuV3+U2eychHm7Daa9JbeCYqrDIs8=";
     };
-    date = "2023-07-20";
+    date = "2023-07-21";
   };
   nui = {
     pname = "nui";
@@ -276,16 +276,16 @@
   };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
-    version = "6c53bf7fb02a2de7e7c84be7a2bd7a502f66a802";
+    version = "dd11ba7b3c8f82d51b6d4dd7d68fce2d78bf78a0";
     src = fetchgit {
       url = "https://github.com/neovim/nvim-lspconfig";
-      rev = "6c53bf7fb02a2de7e7c84be7a2bd7a502f66a802";
+      rev = "dd11ba7b3c8f82d51b6d4dd7d68fce2d78bf78a0";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-UV8nCF6jfwG0ra3zBYQT7aVf3UmxJv6uPlYsRFPbrkU=";
+      sha256 = "sha256-UaP7FHTooy2FGKMCMD5ukQIcg6oFkHhFkSdQ0/gqa2I=";
     };
-    date = "2023-07-20";
+    date = "2023-07-21";
   };
   plenary = {
     pname = "plenary";
@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "47c755d737702df7a39b640c8d9c473a728be1df";
+    version = "7bb2fcecdcfe7d7975c0e59c276033740cd45d38";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "47c755d737702df7a39b640c8d9c473a728be1df";
+      rev = "7bb2fcecdcfe7d7975c0e59c276033740cd45d38";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Hlp6WSZ2+/JphnjnYKJC9hNdkQuxqp67YpPk4cPAAU0=";
+      sha256 = "sha256-M++3fbcI9XpB0usMcexwlzpZndUHJpppKbwmw+GoEbA=";
     };
-    date = "2023-07-17";
+    date = "2023-07-21";
   };
   toggle-term = {
     pname = "toggle-term";
