@@ -224,16 +224,16 @@
   };
   noice = {
     pname = "noice";
-    version = "06d05c667356b91e10c6714b9f540d10ad27194a";
+    version = "c7969e3c25530087b3a52128030163280a7cf679";
     src = fetchgit {
       url = "https://github.com/folke/noice.nvim";
-      rev = "06d05c667356b91e10c6714b9f540d10ad27194a";
+      rev = "c7969e3c25530087b3a52128030163280a7cf679";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-1ypIWtUIXH7KfgnuV3+U2eychHm7Daa9JbeCYqrDIs8=";
+      sha256 = "sha256-n1u57c95pI3NXEaDjtFJPDiRSb3hSO9a4s4ZpeUp9kM=";
     };
-    date = "2023-07-21";
+    date = "2023-07-22";
   };
   nui = {
     pname = "nui";
@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "7bb2fcecdcfe7d7975c0e59c276033740cd45d38";
+    version = "1228f3b15ca3d9b95dcb92efda6a3448871030bd";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "7bb2fcecdcfe7d7975c0e59c276033740cd45d38";
+      rev = "1228f3b15ca3d9b95dcb92efda6a3448871030bd";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-M++3fbcI9XpB0usMcexwlzpZndUHJpppKbwmw+GoEbA=";
+      sha256 = "sha256-FWByJgEV1yr9tIFSo4gARXI9V2XRXOIkWrIZhNuAG2M=";
     };
-    date = "2023-07-21";
+    date = "2023-07-22";
   };
   toggle-term = {
     pname = "toggle-term";
