@@ -324,7 +324,7 @@
     },
     "noice": {
         "cargoLocks": null,
-        "date": "2023-07-21",
+        "date": "2023-07-22",
         "extract": null,
         "name": "noice",
         "passthru": null,
@@ -334,12 +334,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "06d05c667356b91e10c6714b9f540d10ad27194a",
-            "sha256": "sha256-1ypIWtUIXH7KfgnuV3+U2eychHm7Daa9JbeCYqrDIs8=",
+            "rev": "c7969e3c25530087b3a52128030163280a7cf679",
+            "sha256": "sha256-n1u57c95pI3NXEaDjtFJPDiRSb3hSO9a4s4ZpeUp9kM=",
             "type": "git",
             "url": "https://github.com/folke/noice.nvim"
         },
-        "version": "06d05c667356b91e10c6714b9f540d10ad27194a"
+        "version": "c7969e3c25530087b3a52128030163280a7cf679"
     },
     "nui": {
         "cargoLocks": null,
@@ -457,7 +457,7 @@
     },
     "telescope": {
         "cargoLocks": null,
-        "date": "2023-07-21",
+        "date": "2023-07-22",
         "extract": null,
         "name": "telescope",
         "passthru": null,
@@ -467,12 +467,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7bb2fcecdcfe7d7975c0e59c276033740cd45d38",
-            "sha256": "sha256-M++3fbcI9XpB0usMcexwlzpZndUHJpppKbwmw+GoEbA=",
+            "rev": "1228f3b15ca3d9b95dcb92efda6a3448871030bd",
+            "sha256": "sha256-FWByJgEV1yr9tIFSo4gARXI9V2XRXOIkWrIZhNuAG2M=",
             "type": "git",
             "url": "https://github.com/nvim-telescope/telescope.nvim"
         },
-        "version": "7bb2fcecdcfe7d7975c0e59c276033740cd45d38"
+        "version": "1228f3b15ca3d9b95dcb92efda6a3448871030bd"
     },
     "toggle-term": {
         "cargoLocks": null,
