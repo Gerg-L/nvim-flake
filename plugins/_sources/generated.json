@@ -495,7 +495,7 @@
     },
     "tree-lua": {
         "cargoLocks": null,
-        "date": "2023-07-16",
+        "date": "2023-07-23",
         "extract": null,
         "name": "tree-lua",
         "passthru": null,
@@ -505,12 +505,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "3b62c6bf2c3f2973036aed609d02fd0ca9c3af35",
-            "sha256": "sha256-L22nG31WbaigZNZcDCTDjetEc3DsqnxdgaZ2jNAClkw=",
+            "rev": "273c1700eb68c27dce4e518efafc8144fd7ce4ab",
+            "sha256": "sha256-aLw0ysDIJWOP2x1XppaHBmmRYfL4IzM5xQ+1WuW0QLM=",
             "type": "git",
             "url": "https://github.com/nvim-tree/nvim-tree.lua"
         },
-        "version": "3b62c6bf2c3f2973036aed609d02fd0ca9c3af35"
+        "version": "273c1700eb68c27dce4e518efafc8144fd7ce4ab"
     },
     "treesitter-context": {
         "cargoLocks": null,

@@ -341,16 +341,16 @@
   };
   tree-lua = {
     pname = "tree-lua";
-    version = "3b62c6bf2c3f2973036aed609d02fd0ca9c3af35";
+    version = "273c1700eb68c27dce4e518efafc8144fd7ce4ab";
     src = fetchgit {
       url = "https://github.com/nvim-tree/nvim-tree.lua";
-      rev = "3b62c6bf2c3f2973036aed609d02fd0ca9c3af35";
+      rev = "273c1700eb68c27dce4e518efafc8144fd7ce4ab";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-L22nG31WbaigZNZcDCTDjetEc3DsqnxdgaZ2jNAClkw=";
+      sha256 = "sha256-aLw0ysDIJWOP2x1XppaHBmmRYfL4IzM5xQ+1WuW0QLM=";
     };
-    date = "2023-07-16";
+    date = "2023-07-23";
   };
   treesitter-context = {
     pname = "treesitter-context";
