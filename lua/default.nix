@@ -1,6 +1,6 @@
 (builtins.concatStringsSep "\n")
 (
-  map builtins.readFile
+  map (x: "luafile ${x}")
   [
     ./init.lua
     ./lsp.lua

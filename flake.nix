@@ -52,7 +52,7 @@
             withRuby = true;
             viAlias = false;
             vimAlias = false;
-            customRC = "luafile ${pkgs.writeText "init.lua" (import ./lua)}";
+            customRC = import ./lua;
           };
           wrapperArgs =
             neovimConfig.wrapperArgs
