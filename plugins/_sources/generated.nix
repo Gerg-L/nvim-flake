@@ -29,16 +29,16 @@
   };
   bufferline-lua = {
     pname = "bufferline-lua";
-    version = "d24378edc14a675c820a303b4512af3bbc5761e9";
+    version = "99f0932365b34e22549ff58e1bea388465d15e99";
     src = fetchgit {
       url = "https://github.com/akinsho/bufferline.nvim";
-      rev = "d24378edc14a675c820a303b4512af3bbc5761e9";
+      rev = "99f0932365b34e22549ff58e1bea388465d15e99";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-0BJXUDGeUhPALEnPgO4ix+GgI/3P/Foiqi0tf2mgUXg=";
+      sha256 = "sha256-MiQsYeLgADCaUf1x88q/7gO17F992HMlt1pu9dYEmp0=";
     };
-    date = "2023-07-18";
+    date = "2023-07-24";
   };
   cinnamon = {
     pname = "cinnamon";

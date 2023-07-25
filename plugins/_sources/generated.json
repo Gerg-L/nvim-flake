@@ -39,7 +39,7 @@
     },
     "bufferline-lua": {
         "cargoLocks": null,
-        "date": "2023-07-18",
+        "date": "2023-07-24",
         "extract": null,
         "name": "bufferline-lua",
         "passthru": null,
@@ -49,12 +49,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "d24378edc14a675c820a303b4512af3bbc5761e9",
-            "sha256": "sha256-0BJXUDGeUhPALEnPgO4ix+GgI/3P/Foiqi0tf2mgUXg=",
+            "rev": "99f0932365b34e22549ff58e1bea388465d15e99",
+            "sha256": "sha256-MiQsYeLgADCaUf1x88q/7gO17F992HMlt1pu9dYEmp0=",
             "type": "git",
             "url": "https://github.com/akinsho/bufferline.nvim"
         },
-        "version": "d24378edc14a675c820a303b4512af3bbc5761e9"
+        "version": "99f0932365b34e22549ff58e1bea388465d15e99"
     },
     "cinnamon": {
         "cargoLocks": null,
