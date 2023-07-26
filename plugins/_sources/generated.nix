@@ -159,16 +159,16 @@
   };
   gitsigns = {
     pname = "gitsigns";
-    version = "adcf2c7f2f495f5df148683764bf7cba6a70f34c";
+    version = "11b80e7eea249affc8776483272bcfc627b5552a";
     src = fetchgit {
       url = "https://github.com/lewis6991/gitsigns.nvim";
-      rev = "adcf2c7f2f495f5df148683764bf7cba6a70f34c";
+      rev = "11b80e7eea249affc8776483272bcfc627b5552a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-+V7muSHLr60IRo9qxExzzWoIoOLk9LMXLDSULaL2DNI=";
+      sha256 = "sha256-mlJ9d/YuMpYVLKhkzNoOAFXCvdFHc0Z3/pnwYiLzlVc=";
     };
-    date = "2023-07-18";
+    date = "2023-07-25";
   };
   indent-blankline = {
     pname = "indent-blankline";
@@ -224,16 +224,16 @@
   };
   noice = {
     pname = "noice";
-    version = "c7969e3c25530087b3a52128030163280a7cf679";
+    version = "894db25ec726d32047799d4d0a982b701bec453b";
     src = fetchgit {
       url = "https://github.com/folke/noice.nvim";
-      rev = "c7969e3c25530087b3a52128030163280a7cf679";
+      rev = "894db25ec726d32047799d4d0a982b701bec453b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-n1u57c95pI3NXEaDjtFJPDiRSb3hSO9a4s4ZpeUp9kM=";
+      sha256 = "sha256-Zca6meJkfF4fl17Y+6s77GYrqnhkkzIYW73vAhKg7e4=";
     };
-    date = "2023-07-22";
+    date = "2023-07-25";
   };
   nui = {
     pname = "nui";
@@ -276,16 +276,16 @@
   };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
-    version = "dd11ba7b3c8f82d51b6d4dd7d68fce2d78bf78a0";
+    version = "6f426c34c8e21af2f934e56be9d1198a507ecc9f";
     src = fetchgit {
       url = "https://github.com/neovim/nvim-lspconfig";
-      rev = "dd11ba7b3c8f82d51b6d4dd7d68fce2d78bf78a0";
+      rev = "6f426c34c8e21af2f934e56be9d1198a507ecc9f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-UaP7FHTooy2FGKMCMD5ukQIcg6oFkHhFkSdQ0/gqa2I=";
+      sha256 = "sha256-0f10iAkR+RnF8GYHxsbQM3E1nANn0pldMlAPVVxL7Zg=";
     };
-    date = "2023-07-21";
+    date = "2023-07-25";
   };
   plenary = {
     pname = "plenary";
