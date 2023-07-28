@@ -159,16 +159,16 @@
   };
   gitsigns = {
     pname = "gitsigns";
-    version = "11b80e7eea249affc8776483272bcfc627b5552a";
+    version = "5d73da785a3c05fd63ac31769079db05169a6ec7";
     src = fetchgit {
       url = "https://github.com/lewis6991/gitsigns.nvim";
-      rev = "11b80e7eea249affc8776483272bcfc627b5552a";
+      rev = "5d73da785a3c05fd63ac31769079db05169a6ec7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-mlJ9d/YuMpYVLKhkzNoOAFXCvdFHc0Z3/pnwYiLzlVc=";
+      sha256 = "sha256-kraK0GP5aLGbh1eVZCm41D6BztjFxthSXGnE5CxhrZs=";
     };
-    date = "2023-07-25";
+    date = "2023-07-27";
   };
   indent-blankline = {
     pname = "indent-blankline";
@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "1228f3b15ca3d9b95dcb92efda6a3448871030bd";
+    version = "22735947d84d78f29436c203f0a4b8dc15dda204";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "1228f3b15ca3d9b95dcb92efda6a3448871030bd";
+      rev = "22735947d84d78f29436c203f0a4b8dc15dda204";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-FWByJgEV1yr9tIFSo4gARXI9V2XRXOIkWrIZhNuAG2M=";
+      sha256 = "sha256-vecmMzQpCBswU+wyZw4c92xqRPlpH9X3AGXajOs0fic=";
     };
-    date = "2023-07-22";
+    date = "2023-07-27";
   };
   toggle-term = {
     pname = "toggle-term";
