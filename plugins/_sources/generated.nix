@@ -393,15 +393,15 @@
   };
   which-key = {
     pname = "which-key";
-    version = "38b990f6eabf62014018b4aae70a97d7a6c2eb88";
+    version = "7ccf476ebe0445a741b64e36c78a682c1c6118b7";
     src = fetchgit {
       url = "https://github.com/folke/which-key.nvim";
-      rev = "38b990f6eabf62014018b4aae70a97d7a6c2eb88";
+      rev = "7ccf476ebe0445a741b64e36c78a682c1c6118b7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-13aa6QQ4hkWQaliQmICTng/nxutCqlzCWzAoOZhERSI=";
+      sha256 = "sha256-B1+EHd2eH/EbD5Kip9PfhdPyyGfIkD6rsx0Z3rXvb5w=";
     };
-    date = "2023-07-16";
+    date = "2023-07-28";
   };
 }
