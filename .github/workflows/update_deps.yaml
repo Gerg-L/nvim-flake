@@ -19,21 +19,52 @@ jobs:
           git checkout -b updates-${{ github.run_id }}
       - name: update
         run: |
+          COMMITS=0
+          MESSAGE=""
+
           cd plugins
           nix run nixpkgs#nvfetcher -- --commit-changes
           cd ..
+
+          if git -P log --pretty=format:"%s%n%b" -1 > message; then
+            COMMITS=$COMMITS+1
+            MESSAGE="$MESSAGE$(cat message)"
+            rm message
+            git reset --soft HEAD^
+          else
+            rm message
+          fi
+
+            
           nix flake update --no-warn-dirty --commit-lock-file
+
+          if git -P log --pretty=format:"%s%n%b" -1 > message; then
+            COMMITS=$COMMITS+1
+            MESSAGE="$MESSAGE$(cat message)"
+            rm message
+            git reset --soft HEAD^
+          else
+            rm message
+          fi
+
+            
+
       - name: merge 
         run: |
-          export MESSAGE="$(git -P log --pretty=format:"%s%n%b" -2)"
-          git reset --soft HEAD~2
+          if [[ -z "$MESSAGE" ]]; then
+            exit 0
+          fi
+
           git commit -am "$MESSAGE"
+
           git push -u origin updates-${{ github.run_id }}
+
           PR=$(gh pr create \
             --base master \
             --body "$MESSAGE" \
             --fill \
             --title "Auto update $(date -I)")
+
           gh pr merge $PR --squash --delete-branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
