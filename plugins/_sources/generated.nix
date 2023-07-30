@@ -211,16 +211,16 @@
   };
   moonfly = {
     pname = "moonfly";
-    version = "2583b326640ff1d6335a4e78b095203653871c68";
+    version = "626d72e2f34b90a337861188afbebe02a1dc08f8";
     src = fetchgit {
       url = "https://github.com/bluz71/vim-moonfly-colors";
-      rev = "2583b326640ff1d6335a4e78b095203653871c68";
+      rev = "626d72e2f34b90a337861188afbebe02a1dc08f8";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-EWKKPzIzqmHzmDT6CLv+XK3gmxfAw6idrdu51swQK+Q=";
+      sha256 = "sha256-dUxFq47CHLEHinpNXqKJ4k+zXj73lW6jPyGo/fzLK+M=";
     };
-    date = "2023-07-19";
+    date = "2023-07-29";
   };
   noice = {
     pname = "noice";
@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "22735947d84d78f29436c203f0a4b8dc15dda204";
+    version = "b6fccfb0f7589a87587875206786daccba62acc3";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "22735947d84d78f29436c203f0a4b8dc15dda204";
+      rev = "b6fccfb0f7589a87587875206786daccba62acc3";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-vecmMzQpCBswU+wyZw4c92xqRPlpH9X3AGXajOs0fic=";
+      sha256 = "sha256-okyOr5t0e+oV3mY7Yq1ad/7f6qEEDS/ZQrqJcjktYRI=";
     };
-    date = "2023-07-27";
+    date = "2023-07-29";
   };
   toggle-term = {
     pname = "toggle-term";
@@ -341,16 +341,16 @@
   };
   tree-lua = {
     pname = "tree-lua";
-    version = "273c1700eb68c27dce4e518efafc8144fd7ce4ab";
+    version = "4bd30f0137e44dcf3e74cc1164efb568f78f2b02";
     src = fetchgit {
       url = "https://github.com/nvim-tree/nvim-tree.lua";
-      rev = "273c1700eb68c27dce4e518efafc8144fd7ce4ab";
+      rev = "4bd30f0137e44dcf3e74cc1164efb568f78f2b02";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-aLw0ysDIJWOP2x1XppaHBmmRYfL4IzM5xQ+1WuW0QLM=";
+      sha256 = "sha256-kTbYvT21wLfiwEpQAgGZtep2GP4F9e7e6XGVpr4D1hY=";
     };
-    date = "2023-07-23";
+    date = "2023-07-29";
   };
   treesitter-context = {
     pname = "treesitter-context";
