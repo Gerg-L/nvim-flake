@@ -26,7 +26,7 @@ jobs:
           nix run nixpkgs#nvfetcher -- --commit-changes
           cd ..
 
-          if git rev-parse HEAD~2; then
+          if git rev-parse -q HEAD^; then
             MESSAGE="$MESSAGE$(git -P log --pretty=format:"%s%n%b" -1)"
             COMMITS=$COMMITS+1
             git reset --soft HEAD^
@@ -35,7 +35,7 @@ jobs:
             
           nix flake update --no-warn-dirty --commit-lock-file
 
-          if git rev-parse HEAD~2; then
+          if git rev-parse -q HEAD^; then
             MESSAGE="$MESSAGE$(git -P log --pretty=format:"%s%n%b" -1)"
             COMMITS=$COMMITS+1
             git reset --soft HEAD^
