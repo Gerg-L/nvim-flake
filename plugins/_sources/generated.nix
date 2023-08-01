@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "b6fccfb0f7589a87587875206786daccba62acc3";
+    version = "d2e17ba18a6840b7e7079764b282616c3188e0de";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "b6fccfb0f7589a87587875206786daccba62acc3";
+      rev = "d2e17ba18a6840b7e7079764b282616c3188e0de";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-okyOr5t0e+oV3mY7Yq1ad/7f6qEEDS/ZQrqJcjktYRI=";
+      sha256 = "sha256-RtnsN0lssWAAXYPnzxqdVuALGfnrsMCrqRs7cQyP6TU=";
     };
-    date = "2023-07-29";
+    date = "2023-08-01";
   };
   toggle-term = {
     pname = "toggle-term";
@@ -341,16 +341,16 @@
   };
   tree-lua = {
     pname = "tree-lua";
-    version = "4bd30f0137e44dcf3e74cc1164efb568f78f2b02";
+    version = "0a89dcb464b433d2d7b97a8f15d0b608c718dc13";
     src = fetchgit {
       url = "https://github.com/nvim-tree/nvim-tree.lua";
-      rev = "4bd30f0137e44dcf3e74cc1164efb568f78f2b02";
+      rev = "0a89dcb464b433d2d7b97a8f15d0b608c718dc13";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-kTbYvT21wLfiwEpQAgGZtep2GP4F9e7e6XGVpr4D1hY=";
+      sha256 = "sha256-CuRZXGVrLDGvmyrUViJcmAetxdKStYX8lI5cTdAIYek=";
     };
-    date = "2023-07-29";
+    date = "2023-08-01";
   };
   treesitter-context = {
     pname = "treesitter-context";
