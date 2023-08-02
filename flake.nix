@@ -54,32 +54,32 @@
             vimAlias = false;
             customRC = import ./lua;
           };
-          wrapperArgs =
+          wrapperArgs = let
+            path = lib.makeBinPath (
+              builtins.attrValues
+              {
+                inherit
+                  (pkgs)
+                  #nix
+                  
+                  deadnix
+                  statix
+                  alejandra
+                  nil
+                  #other
+                  
+                  ripgrep
+                  fd
+                  ;
+              }
+            );
+          in
             neovimConfig.wrapperArgs
             ++ [
               "--prefix"
               "PATH"
               ":"
-              (
-                lib.makeBinPath (
-                  builtins.attrValues
-                  {
-                    inherit
-                      (pkgs)
-                      #nix
-                      
-                      deadnix
-                      statix
-                      alejandra
-                      nil
-                      #other
-                      
-                      ripgrep
-                      fd
-                      ;
-                  }
-                )
-              )
+              path
             ];
         in
           pkgs.wrapNeovimUnstable (pkgs.neovim-unwrapped.overrideAttrs {
