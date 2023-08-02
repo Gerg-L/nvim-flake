@@ -211,16 +211,16 @@
   };
   moonfly = {
     pname = "moonfly";
-    version = "626d72e2f34b90a337861188afbebe02a1dc08f8";
+    version = "b978252d794ab2670a9fb8e43c8a1587fb72ce1a";
     src = fetchgit {
       url = "https://github.com/bluz71/vim-moonfly-colors";
-      rev = "626d72e2f34b90a337861188afbebe02a1dc08f8";
+      rev = "b978252d794ab2670a9fb8e43c8a1587fb72ce1a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-dUxFq47CHLEHinpNXqKJ4k+zXj73lW6jPyGo/fzLK+M=";
+      sha256 = "sha256-OCkSmBQRFJLDz/eg3h2imiyb95VnMz8C9AC7ZO+LB5I=";
     };
-    date = "2023-07-29";
+    date = "2023-08-01";
   };
   noice = {
     pname = "noice";
@@ -276,16 +276,16 @@
   };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
-    version = "b6091272422bb0fbd729f7f5d17a56d37499c54f";
+    version = "a59d74e12340242c0735666fb2e91afdbe6f2496";
     src = fetchgit {
       url = "https://github.com/neovim/nvim-lspconfig";
-      rev = "b6091272422bb0fbd729f7f5d17a56d37499c54f";
+      rev = "a59d74e12340242c0735666fb2e91afdbe6f2496";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Ama9nLC/T1wJWal6bKvgY0ywUUiJ5VLuIxoY1xbJKtY=";
+      sha256 = "sha256-X3LdOeCZoxNH5hHAYQntLJF9HCPs1yKO3qiHqVhE7DY=";
     };
-    date = "2023-07-26";
+    date = "2023-08-01";
   };
   plenary = {
     pname = "plenary";

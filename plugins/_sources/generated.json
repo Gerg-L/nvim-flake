@@ -305,7 +305,7 @@
     },
     "moonfly": {
         "cargoLocks": null,
-        "date": "2023-07-29",
+        "date": "2023-08-01",
         "extract": null,
         "name": "moonfly",
         "passthru": null,
@@ -315,12 +315,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "626d72e2f34b90a337861188afbebe02a1dc08f8",
-            "sha256": "sha256-dUxFq47CHLEHinpNXqKJ4k+zXj73lW6jPyGo/fzLK+M=",
+            "rev": "b978252d794ab2670a9fb8e43c8a1587fb72ce1a",
+            "sha256": "sha256-OCkSmBQRFJLDz/eg3h2imiyb95VnMz8C9AC7ZO+LB5I=",
             "type": "git",
             "url": "https://github.com/bluz71/vim-moonfly-colors"
         },
-        "version": "626d72e2f34b90a337861188afbebe02a1dc08f8"
+        "version": "b978252d794ab2670a9fb8e43c8a1587fb72ce1a"
     },
     "noice": {
         "cargoLocks": null,
@@ -400,7 +400,7 @@
     },
     "nvim-lspconfig": {
         "cargoLocks": null,
-        "date": "2023-07-26",
+        "date": "2023-08-01",
         "extract": null,
         "name": "nvim-lspconfig",
         "passthru": null,
@@ -410,12 +410,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "b6091272422bb0fbd729f7f5d17a56d37499c54f",
-            "sha256": "sha256-Ama9nLC/T1wJWal6bKvgY0ywUUiJ5VLuIxoY1xbJKtY=",
+            "rev": "a59d74e12340242c0735666fb2e91afdbe6f2496",
+            "sha256": "sha256-X3LdOeCZoxNH5hHAYQntLJF9HCPs1yKO3qiHqVhE7DY=",
             "type": "git",
             "url": "https://github.com/neovim/nvim-lspconfig"
         },
-        "version": "b6091272422bb0fbd729f7f5d17a56d37499c54f"
+        "version": "a59d74e12340242c0735666fb2e91afdbe6f2496"
     },
     "plenary": {
         "cargoLocks": null,
