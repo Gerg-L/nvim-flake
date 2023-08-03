@@ -328,16 +328,16 @@
   };
   toggle-term = {
     pname = "toggle-term";
-    version = "00c13dccc78c09fa5da4c5edda990a363e75035e";
+    version = "0e4e89aff78ad178e1f3cf5d565a6b4155fbb45b";
     src = fetchgit {
       url = "https://github.com/akinsho/toggleterm.nvim";
-      rev = "00c13dccc78c09fa5da4c5edda990a363e75035e";
+      rev = "0e4e89aff78ad178e1f3cf5d565a6b4155fbb45b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-/sUulN93nRHa3Je+tXr8/i1cgCrd/wtrvMPkjG5Ofzs=";
+      sha256 = "sha256-LrvFFJs9ZGrAZbRdon/CdOyjSSKdolo5NfnU8vSReF0=";
     };
-    date = "2023-07-17";
+    date = "2023-08-02";
   };
   tree-lua = {
     pname = "tree-lua";
