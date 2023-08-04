@@ -198,16 +198,16 @@
   };
   lualine = {
     pname = "lualine";
-    version = "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9";
+    version = "45e27ca739c7be6c49e5496d14fcf45a303c3a63";
     src = fetchgit {
       url = "https://github.com/nvim-lualine/lualine.nvim";
-      rev = "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9";
+      rev = "45e27ca739c7be6c49e5496d14fcf45a303c3a63";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-ltHE8UIquGo07BSlFGM1l3wmTNN43i8kx6QY7Fj2CNo=";
+      sha256 = "sha256-v8finXk+sLNaFMA7pSHhEu0WF5mhPYWHEKhl0IKBv8c=";
     };
-    date = "2023-05-04";
+    date = "2023-08-03";
   };
   moonfly = {
     pname = "moonfly";
@@ -328,16 +328,16 @@
   };
   toggle-term = {
     pname = "toggle-term";
-    version = "0e4e89aff78ad178e1f3cf5d565a6b4155fbb45b";
+    version = "12cba0a1967b4f3f31903484dec72a6100dcf515";
     src = fetchgit {
       url = "https://github.com/akinsho/toggleterm.nvim";
-      rev = "0e4e89aff78ad178e1f3cf5d565a6b4155fbb45b";
+      rev = "12cba0a1967b4f3f31903484dec72a6100dcf515";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-LrvFFJs9ZGrAZbRdon/CdOyjSSKdolo5NfnU8vSReF0=";
+      sha256 = "sha256-VFTnDLGy8U3x5ldMUW6okQjQ78qEFPb1n3pcbS2znNY=";
     };
-    date = "2023-08-02";
+    date = "2023-08-03";
   };
   tree-lua = {
     pname = "tree-lua";
@@ -354,16 +354,16 @@
   };
   treesitter-context = {
     pname = "treesitter-context";
-    version = "6f8f788738b968f24a108ee599c5be0031f94f06";
+    version = "3d4ab25056dcaf6dd11ebacf1da8525c8df6550f";
     src = fetchgit {
       url = "https://github.com/nvim-treesitter/nvim-treesitter-context";
-      rev = "6f8f788738b968f24a108ee599c5be0031f94f06";
+      rev = "3d4ab25056dcaf6dd11ebacf1da8525c8df6550f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-AJamiDezFK7l0bqb/VFm+pzBKugQNCmQ6JAWKmjH76g=";
+      sha256 = "sha256-gOf7ZwExcZePJp9o0z4fXaTsdBKfow/AAwT5X00nvgk=";
     };
-    date = "2023-07-13";
+    date = "2023-08-03";
   };
   vsnip = {
     pname = "vsnip";
