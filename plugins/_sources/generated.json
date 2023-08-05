@@ -400,7 +400,7 @@
     },
     "nvim-lspconfig": {
         "cargoLocks": null,
-        "date": "2023-08-01",
+        "date": "2023-08-04",
         "extract": null,
         "name": "nvim-lspconfig",
         "passthru": null,
@@ -410,12 +410,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a59d74e12340242c0735666fb2e91afdbe6f2496",
-            "sha256": "sha256-X3LdOeCZoxNH5hHAYQntLJF9HCPs1yKO3qiHqVhE7DY=",
+            "rev": "c0de180ddb3df36feef8ac3607670894d0e7497f",
+            "sha256": "sha256-jLpzJQcPGOhXBfLSzw2jOgmwI8L7gcIe8y2w0L2qPkg=",
             "type": "git",
             "url": "https://github.com/neovim/nvim-lspconfig"
         },
-        "version": "a59d74e12340242c0735666fb2e91afdbe6f2496"
+        "version": "c0de180ddb3df36feef8ac3607670894d0e7497f"
     },
     "plenary": {
         "cargoLocks": null,
