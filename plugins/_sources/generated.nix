@@ -276,16 +276,16 @@
   };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
-    version = "a59d74e12340242c0735666fb2e91afdbe6f2496";
+    version = "c0de180ddb3df36feef8ac3607670894d0e7497f";
     src = fetchgit {
       url = "https://github.com/neovim/nvim-lspconfig";
-      rev = "a59d74e12340242c0735666fb2e91afdbe6f2496";
+      rev = "c0de180ddb3df36feef8ac3607670894d0e7497f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-X3LdOeCZoxNH5hHAYQntLJF9HCPs1yKO3qiHqVhE7DY=";
+      sha256 = "sha256-jLpzJQcPGOhXBfLSzw2jOgmwI8L7gcIe8y2w0L2qPkg=";
     };
-    date = "2023-08-01";
+    date = "2023-08-04";
   };
   plenary = {
     pname = "plenary";
