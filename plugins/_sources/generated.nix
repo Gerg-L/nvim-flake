@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "d2e17ba18a6840b7e7079764b282616c3188e0de";
+    version = "31b05ad3c313210039fae6958fb00449d72c259e";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "d2e17ba18a6840b7e7079764b282616c3188e0de";
+      rev = "31b05ad3c313210039fae6958fb00449d72c259e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-RtnsN0lssWAAXYPnzxqdVuALGfnrsMCrqRs7cQyP6TU=";
+      sha256 = "sha256-anbuWiMjayZEZu1lgR5xneQ5u8jQYUbw3oxPWpH1gQ0=";
     };
-    date = "2023-08-01";
+    date = "2023-08-05";
   };
   toggle-term = {
     pname = "toggle-term";
@@ -341,16 +341,16 @@
   };
   tree-lua = {
     pname = "tree-lua";
-    version = "0a89dcb464b433d2d7b97a8f15d0b608c718dc13";
+    version = "904f95cd9db31d1800998fa428e78e418a50181d";
     src = fetchgit {
       url = "https://github.com/nvim-tree/nvim-tree.lua";
-      rev = "0a89dcb464b433d2d7b97a8f15d0b608c718dc13";
+      rev = "904f95cd9db31d1800998fa428e78e418a50181d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-CuRZXGVrLDGvmyrUViJcmAetxdKStYX8lI5cTdAIYek=";
+      sha256 = "sha256-YQRirmp8QerxwF9qdrSrUKJZiVrBb6ZWpUTfM8H7fl4=";
     };
-    date = "2023-08-01";
+    date = "2023-08-06";
   };
   treesitter-context = {
     pname = "treesitter-context";
@@ -380,16 +380,16 @@
   };
   web-devicons = {
     pname = "web-devicons";
-    version = "efbfed0567ef4bfac3ce630524a0f6c8451c5534";
+    version = "eb8f80f30fd5e9a6176dee5c46661ebd7437ac46";
     src = fetchgit {
       url = "https://github.com/nvim-tree/nvim-web-devicons";
-      rev = "efbfed0567ef4bfac3ce630524a0f6c8451c5534";
+      rev = "eb8f80f30fd5e9a6176dee5c46661ebd7437ac46";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-FtEJBhqvs+c/Rvy4qXf3iyoMTTKrDBvQw5g63n4KEYo=";
+      sha256 = "sha256-NZH2NyiMaLWOsJFgZPZq3OP+F5uzvfPo76czEYiZuII=";
     };
-    date = "2023-07-16";
+    date = "2023-08-06";
   };
   which-key = {
     pname = "which-key";
