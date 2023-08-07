@@ -159,16 +159,16 @@
   };
   gitsigns = {
     pname = "gitsigns";
-    version = "5d73da785a3c05fd63ac31769079db05169a6ec7";
+    version = "31178496552584e84fa9e74e087dec1f6c347f5d";
     src = fetchgit {
       url = "https://github.com/lewis6991/gitsigns.nvim";
-      rev = "5d73da785a3c05fd63ac31769079db05169a6ec7";
+      rev = "31178496552584e84fa9e74e087dec1f6c347f5d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-kraK0GP5aLGbh1eVZCm41D6BztjFxthSXGnE5CxhrZs=";
+      sha256 = "sha256-FjPmzsE87AZeOGcLjpYzfF2h5MfIVy7inecZ4dkE9kg=";
     };
-    date = "2023-07-27";
+    date = "2023-08-06";
   };
   indent-blankline = {
     pname = "indent-blankline";
@@ -211,16 +211,16 @@
   };
   moonfly = {
     pname = "moonfly";
-    version = "b978252d794ab2670a9fb8e43c8a1587fb72ce1a";
+    version = "0f071ec406925db98434b34ca7df7dedc6187b09";
     src = fetchgit {
       url = "https://github.com/bluz71/vim-moonfly-colors";
-      rev = "b978252d794ab2670a9fb8e43c8a1587fb72ce1a";
+      rev = "0f071ec406925db98434b34ca7df7dedc6187b09";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-OCkSmBQRFJLDz/eg3h2imiyb95VnMz8C9AC7ZO+LB5I=";
+      sha256 = "sha256-qwZwj4xJ27Db5Q+mM+f2ourbX+vIEaaDi2MrMSKrqTM=";
     };
-    date = "2023-08-01";
+    date = "2023-08-06";
   };
   noice = {
     pname = "noice";
@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "31b05ad3c313210039fae6958fb00449d72c259e";
+    version = "5a3fb8a012f9fcf777ba8deeae1c759362413efa";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "31b05ad3c313210039fae6958fb00449d72c259e";
+      rev = "5a3fb8a012f9fcf777ba8deeae1c759362413efa";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-anbuWiMjayZEZu1lgR5xneQ5u8jQYUbw3oxPWpH1gQ0=";
+      sha256 = "sha256-//rBQ9hNAun8XNToBOoNXi0vvWJFDv2O5JI2b2cvvCc=";
     };
-    date = "2023-08-05";
+    date = "2023-08-06";
   };
   toggle-term = {
     pname = "toggle-term";
