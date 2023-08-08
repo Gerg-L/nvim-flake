@@ -315,16 +315,16 @@
   };
   telescope = {
     pname = "telescope";
-    version = "5a3fb8a012f9fcf777ba8deeae1c759362413efa";
+    version = "dc192faceb2db64231ead71539761e055df66d73";
     src = fetchgit {
       url = "https://github.com/nvim-telescope/telescope.nvim";
-      rev = "5a3fb8a012f9fcf777ba8deeae1c759362413efa";
+      rev = "dc192faceb2db64231ead71539761e055df66d73";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-//rBQ9hNAun8XNToBOoNXi0vvWJFDv2O5JI2b2cvvCc=";
+      sha256 = "sha256-ChmY7nERtHLbH6GBU9YfYOX1//G5x8sn8OP3CD6ZpCE=";
     };
-    date = "2023-08-06";
+    date = "2023-08-07";
   };
   toggle-term = {
     pname = "toggle-term";
