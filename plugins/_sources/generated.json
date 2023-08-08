@@ -457,7 +457,7 @@
     },
     "telescope": {
         "cargoLocks": null,
-        "date": "2023-08-06",
+        "date": "2023-08-07",
         "extract": null,
         "name": "telescope",
         "passthru": null,
@@ -467,12 +467,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "5a3fb8a012f9fcf777ba8deeae1c759362413efa",
-            "sha256": "sha256-//rBQ9hNAun8XNToBOoNXi0vvWJFDv2O5JI2b2cvvCc=",
+            "rev": "dc192faceb2db64231ead71539761e055df66d73",
+            "sha256": "sha256-ChmY7nERtHLbH6GBU9YfYOX1//G5x8sn8OP3CD6ZpCE=",
             "type": "git",
             "url": "https://github.com/nvim-telescope/telescope.nvim"
         },
-        "version": "5a3fb8a012f9fcf777ba8deeae1c759362413efa"
+        "version": "dc192faceb2db64231ead71539761e055df66d73"
     },
     "toggle-term": {
         "cargoLocks": null,
