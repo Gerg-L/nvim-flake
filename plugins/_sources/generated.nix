@@ -146,29 +146,29 @@
   };
   crates = {
     pname = "crates";
-    version = "4ce7c51b881e58f1e2f8f437f30e4e583cbac319";
+    version = "d5caf28aba49e81ac4099426231f3cf3c151013a";
     src = fetchgit {
       url = "https://github.com/saecki/crates.nvim";
-      rev = "4ce7c51b881e58f1e2f8f437f30e4e583cbac319";
+      rev = "d5caf28aba49e81ac4099426231f3cf3c151013a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-ah+fTmzkZn+xuL3sG2RxlCtDiFsRv3SY1iJzYKMIaMg=";
+      sha256 = "sha256-09tqoU9zo32+zpP/ybo6bbDxmdzAcr3a0xU7ZKuN3pg=";
     };
-    date = "2023-07-02";
+    date = "2023-08-08";
   };
   gitsigns = {
     pname = "gitsigns";
-    version = "31178496552584e84fa9e74e087dec1f6c347f5d";
+    version = "287fffb410ce82d19da2d503a1f1570adf7b7874";
     src = fetchgit {
       url = "https://github.com/lewis6991/gitsigns.nvim";
-      rev = "31178496552584e84fa9e74e087dec1f6c347f5d";
+      rev = "287fffb410ce82d19da2d503a1f1570adf7b7874";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-FjPmzsE87AZeOGcLjpYzfF2h5MfIVy7inecZ4dkE9kg=";
+      sha256 = "sha256-YMzDPrC6KsAGAFAXX+s6qTiBKusbUrCqs6syrVohjwE=";
     };
-    date = "2023-08-06";
+    date = "2023-08-08";
   };
   indent-blankline = {
     pname = "indent-blankline";
@@ -276,16 +276,16 @@
   };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
-    version = "c0de180ddb3df36feef8ac3607670894d0e7497f";
+    version = "4b1a764c10c6c8679615fcb4f1e8b0f5513d900b";
     src = fetchgit {
       url = "https://github.com/neovim/nvim-lspconfig";
-      rev = "c0de180ddb3df36feef8ac3607670894d0e7497f";
+      rev = "4b1a764c10c6c8679615fcb4f1e8b0f5513d900b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-jLpzJQcPGOhXBfLSzw2jOgmwI8L7gcIe8y2w0L2qPkg=";
+      sha256 = "sha256-w+QRcahS1SQtA8ORV2gI20cpHGUBD2N4BkoQsg6IiGo=";
     };
-    date = "2023-08-04";
+    date = "2023-08-08";
   };
   plenary = {
     pname = "plenary";
