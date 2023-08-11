@@ -55,16 +55,16 @@
   };
   cmp = {
     pname = "cmp";
-    version = "c4e491a87eeacf0408902c32f031d802c7eafce8";
+    version = "3b9f28061a67b19cadc13946de981426a6425e4a";
     src = fetchgit {
       url = "https://github.com/hrsh7th/nvim-cmp";
-      rev = "c4e491a87eeacf0408902c32f031d802c7eafce8";
+      rev = "3b9f28061a67b19cadc13946de981426a6425e4a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-Hq6YUfMQo1rHoay3/NieGCne7U/f06GwUPhN2HO0PdQ=";
+      sha256 = "sha256-Ou3Rzkn5OuuwQhEiUpCjEpY6ymuSlWah6GO++X/MfYc=";
     };
-    date = "2023-07-10";
+    date = "2023-08-10";
   };
   cmp-buffer = {
     pname = "cmp-buffer";
