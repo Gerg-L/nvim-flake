@@ -39,7 +39,7 @@
     },
     "bufferline-lua": {
         "cargoLocks": null,
-        "date": "2023-07-24",
+        "date": "2023-08-11",
         "extract": null,
         "name": "bufferline-lua",
         "passthru": null,
@@ -49,12 +49,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "99f0932365b34e22549ff58e1bea388465d15e99",
-            "sha256": "sha256-MiQsYeLgADCaUf1x88q/7gO17F992HMlt1pu9dYEmp0=",
+            "rev": "417b303328118b6d836ae330142e88771c48a8a3",
+            "sha256": "sha256-jsjT56YWsFb9Qr/mjmwpOm9thYkScnSCOZ+MPzaz1DM=",
             "type": "git",
             "url": "https://github.com/akinsho/bufferline.nvim"
         },
-        "version": "99f0932365b34e22549ff58e1bea388465d15e99"
+        "version": "417b303328118b6d836ae330142e88771c48a8a3"
     },
     "cinnamon": {
         "cargoLocks": null,
@@ -77,7 +77,7 @@
     },
     "cmp": {
         "cargoLocks": null,
-        "date": "2023-08-10",
+        "date": "2023-08-12",
         "extract": null,
         "name": "cmp",
         "passthru": null,
@@ -87,12 +87,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "3b9f28061a67b19cadc13946de981426a6425e4a",
-            "sha256": "sha256-Ou3Rzkn5OuuwQhEiUpCjEpY6ymuSlWah6GO++X/MfYc=",
+            "rev": "51f1e11a89ec701221877532ee1a23557d291dd5",
+            "sha256": "sha256-sdsfd+JxEEZI/JpCPW7v6wO0JuPzwBdbkPq0ajYgaYc=",
             "type": "git",
             "url": "https://github.com/hrsh7th/nvim-cmp"
         },
-        "version": "3b9f28061a67b19cadc13946de981426a6425e4a"
+        "version": "51f1e11a89ec701221877532ee1a23557d291dd5"
     },
     "cmp-buffer": {
         "cargoLocks": null,
@@ -362,7 +362,7 @@
     },
     "null-ls": {
         "cargoLocks": null,
-        "date": "2023-07-06",
+        "date": "2023-08-11",
         "extract": null,
         "name": "null-ls",
         "passthru": null,
@@ -372,12 +372,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "db09b6c691def0038c456551e4e2772186449f35",
-            "sha256": "sha256-6KJtj9pbvBm6fOVpnyzO2fEVC+cVrw2XtZHOgq9ieIw=",
+            "rev": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7",
+            "sha256": "sha256-cWA0rzkOp/ekVKaFee7iea1lhnqKtWUIU+fW5M950wI=",
             "type": "git",
             "url": "https://github.com/jose-elias-alvarez/null-ls.nvim"
         },
-        "version": "db09b6c691def0038c456551e4e2772186449f35"
+        "version": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7"
     },
     "nvim-colorzier": {
         "cargoLocks": null,
@@ -400,7 +400,7 @@
     },
     "nvim-lspconfig": {
         "cargoLocks": null,
-        "date": "2023-08-09",
+        "date": "2023-08-11",
         "extract": null,
         "name": "nvim-lspconfig",
         "passthru": null,
@@ -410,12 +410,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7c73a4dc44c3d62ee79ab9f03ba313251c0388d4",
-            "sha256": "sha256-2K2BPzZSpky1jvOyO1R2CQnDMptj9h9LwffJ2pOn7Ew=",
+            "rev": "a981d4447b92c54a4d464eb1a76b799bc3f9a771",
+            "sha256": "sha256-krHh6YI3svFimxv+U0oJZNHv4HguR/ljLLu0kMvPji0=",
             "type": "git",
             "url": "https://github.com/neovim/nvim-lspconfig"
         },
-        "version": "7c73a4dc44c3d62ee79ab9f03ba313251c0388d4"
+        "version": "a981d4447b92c54a4d464eb1a76b799bc3f9a771"
     },
     "plenary": {
         "cargoLocks": null,
