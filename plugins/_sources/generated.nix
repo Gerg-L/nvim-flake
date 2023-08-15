@@ -211,14 +211,14 @@
   };
   moonfly = {
     pname = "moonfly";
-    version = "da4a96dea8821233925ae74b3363407a4c5665e2";
+    version = "cb713748374fc43bb2b0a8dfbb089faf2b4d647e";
     src = fetchgit {
       url = "https://github.com/bluz71/vim-moonfly-colors";
-      rev = "da4a96dea8821233925ae74b3363407a4c5665e2";
+      rev = "cb713748374fc43bb2b0a8dfbb089faf2b4d647e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-3yBgpQULZJU33eWr9sVFpXck7qSYG6kBeWxIpG7JXXY=";
+      sha256 = "sha256-43Ri35h79koWhXSUedEJOnK+IbEr5/UZf0raX4sSDpg=";
     };
     date = "2023-08-14";
   };
@@ -341,29 +341,29 @@
   };
   tree-lua = {
     pname = "tree-lua";
-    version = "ace64228ad5d89035fbe6f85e7f45a1f7b9e29c1";
+    version = "18c7a3119839adc4599d838726deae662859c8b2";
     src = fetchgit {
       url = "https://github.com/nvim-tree/nvim-tree.lua";
-      rev = "ace64228ad5d89035fbe6f85e7f45a1f7b9e29c1";
+      rev = "18c7a3119839adc4599d838726deae662859c8b2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-4ZxIC1ra8gg5uS+KhEmjoK9wSnbzeLo3nDqJhg7rtlU=";
+      sha256 = "sha256-w7JnGajbBQqmhrjeHZ9RMMYxhZQFOdsuaI0C8FEtTRM=";
     };
     date = "2023-08-14";
   };
   treesitter-context = {
     pname = "treesitter-context";
-    version = "3d4ab25056dcaf6dd11ebacf1da8525c8df6550f";
+    version = "d8fd71428e02190d8f75ff915b6cca9e3063992c";
     src = fetchgit {
       url = "https://github.com/nvim-treesitter/nvim-treesitter-context";
-      rev = "3d4ab25056dcaf6dd11ebacf1da8525c8df6550f";
+      rev = "d8fd71428e02190d8f75ff915b6cca9e3063992c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-gOf7ZwExcZePJp9o0z4fXaTsdBKfow/AAwT5X00nvgk=";
+      sha256 = "sha256-/gRsAUqONgMPKQzQrZz252AcKEFfALsFUrBHjdoz6OM=";
     };
-    date = "2023-08-03";
+    date = "2023-08-14";
   };
   vsnip = {
     pname = "vsnip";
