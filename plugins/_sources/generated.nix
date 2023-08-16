@@ -159,16 +159,16 @@
   };
   gitsigns = {
     pname = "gitsigns";
-    version = "bae45ef449d8811061cc940459e70e883a3aa83a";
+    version = "55f8fc7b13205d44359080ed00095674c353bd76";
     src = fetchgit {
       url = "https://github.com/lewis6991/gitsigns.nvim";
-      rev = "bae45ef449d8811061cc940459e70e883a3aa83a";
+      rev = "55f8fc7b13205d44359080ed00095674c353bd76";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-+pERMBPBpPjuMiLU3rXgGEZDdSOHmNGNtl26dDjERls=";
+      sha256 = "sha256-jziyWt2H+6y35LmqmeliHHwnDkSXVLLfWtQjYbDzq0U=";
     };
-    date = "2023-08-09";
+    date = "2023-08-15";
   };
   indent-blankline = {
     pname = "indent-blankline";
@@ -211,16 +211,16 @@
   };
   moonfly = {
     pname = "moonfly";
-    version = "cb713748374fc43bb2b0a8dfbb089faf2b4d647e";
+    version = "def02ab0c3e63d8d5c78858922afe4f47ce221f9";
     src = fetchgit {
       url = "https://github.com/bluz71/vim-moonfly-colors";
-      rev = "cb713748374fc43bb2b0a8dfbb089faf2b4d647e";
+      rev = "def02ab0c3e63d8d5c78858922afe4f47ce221f9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-43Ri35h79koWhXSUedEJOnK+IbEr5/UZf0raX4sSDpg=";
+      sha256 = "sha256-Xi8JOjnd88E0CfsSIXCufAoq/I+9qHUArphYHIywbAE=";
     };
-    date = "2023-08-14";
+    date = "2023-08-16";
   };
   noice = {
     pname = "noice";
@@ -276,16 +276,16 @@
   };
   nvim-lspconfig = {
     pname = "nvim-lspconfig";
-    version = "a981d4447b92c54a4d464eb1a76b799bc3f9a771";
+    version = "0d29cad8de3b2c654315203fc1fe12fde722a18a";
     src = fetchgit {
       url = "https://github.com/neovim/nvim-lspconfig";
-      rev = "a981d4447b92c54a4d464eb1a76b799bc3f9a771";
+      rev = "0d29cad8de3b2c654315203fc1fe12fde722a18a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-krHh6YI3svFimxv+U0oJZNHv4HguR/ljLLu0kMvPji0=";
+      sha256 = "sha256-AMqrHd75W1YK5P4fzDhOBxQQNfegGLS71W8v8Wi+5r4=";
     };
-    date = "2023-08-11";
+    date = "2023-08-15";
   };
   plenary = {
     pname = "plenary";
