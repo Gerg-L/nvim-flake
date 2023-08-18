@@ -159,16 +159,16 @@
   };
   gitsigns = {
     pname = "gitsigns";
-    version = "55f8fc7b13205d44359080ed00095674c353bd76";
+    version = "5a2b1205841bc06ffb15719b14d54987e17b22ae";
     src = fetchgit {
       url = "https://github.com/lewis6991/gitsigns.nvim";
-      rev = "55f8fc7b13205d44359080ed00095674c353bd76";
+      rev = "5a2b1205841bc06ffb15719b14d54987e17b22ae";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-jziyWt2H+6y35LmqmeliHHwnDkSXVLLfWtQjYbDzq0U=";
+      sha256 = "sha256-booKZ55xiQyzewKZygJG5rqXpmtFkl5mFPsqo/POoRM=";
     };
-    date = "2023-08-15";
+    date = "2023-08-17";
   };
   indent-blankline = {
     pname = "indent-blankline";
@@ -354,16 +354,16 @@
   };
   treesitter-context = {
     pname = "treesitter-context";
-    version = "d8fd71428e02190d8f75ff915b6cca9e3063992c";
+    version = "a17c31268b56d53624fdc9cb03a225d4a17cabdb";
     src = fetchgit {
       url = "https://github.com/nvim-treesitter/nvim-treesitter-context";
-      rev = "d8fd71428e02190d8f75ff915b6cca9e3063992c";
+      rev = "a17c31268b56d53624fdc9cb03a225d4a17cabdb";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-/gRsAUqONgMPKQzQrZz252AcKEFfALsFUrBHjdoz6OM=";
+      sha256 = "sha256-/vIirZKL+ZPGIjdSfUazQoCHooLQF5UUg/F5CXmAGFM=";
     };
-    date = "2023-08-14";
+    date = "2023-08-17";
   };
   vsnip = {
     pname = "vsnip";
