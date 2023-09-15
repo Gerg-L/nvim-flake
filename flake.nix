@@ -32,7 +32,7 @@
       devShells.${system}.default = pkgs.mkShell {
         packages = [
           self.packages.${system}.default
-          pkgs.nvfetcher
+ #         pkgs.nvfetcher
         ];
       };
 
