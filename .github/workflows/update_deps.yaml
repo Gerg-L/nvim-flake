@@ -24,17 +24,13 @@ jobs:
           nix flake update --no-warn-dirty --commit-lock-file
 
           if git rev-parse -q HEAD^; then
-            MESSAGE="$MESSAGE$(git -P log --pretty=format:"%s%n%b" -1)"
+            MESSAGE="$MESSAGE\n$(git -P log --pretty=format:"%s%n%b" -1)"
             git reset --soft HEAD^
           fi
 
-          cd plugins
-          nix run nixpkgs#nvfetcher -- --commit-changes
-          cd ..
-
-          if git rev-parse -q HEAD^; then
-            MESSAGE="$MESSAGE$(git -P log --pretty=format:"%s%n%b" -1)"
-            git reset --soft HEAD^
+          NPINS=$(npins update -f | grep -v '(no changes)' | grep 'url')
+          if [ -n "$NPINS" ]; then 
+            MESSAGE="$MESSAGE\n$NPINS" 
           fi
 
           if [ -z "$MESSAGE" ]; then
