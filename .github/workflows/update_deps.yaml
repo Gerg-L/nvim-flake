@@ -28,7 +28,7 @@ jobs:
             git reset --soft HEAD^
           fi
 
-          NPINS=$(npins update -f | grep -v '(no changes)' | grep 'url')
+          NPINS=$(nix run nixpkgs#npins -- update -f | grep -v '(no changes)' | grep 'url')
           if [ -n "$NPINS" ]; then 
             MESSAGE="$MESSAGE\n$NPINS" 
           fi
