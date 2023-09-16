@@ -32,7 +32,7 @@
       devShells.${system}.default = pkgs.mkShell {
         packages = [
           self.packages.${system}.default
-          pkgs.nvfetcher
+          pkgs.npins
         ];
       };
 
@@ -44,9 +44,16 @@
             plugins =
               [pkgs.vimPlugins.nvim-treesitter.withAllGrammars]
               ++ lib.mapAttrsToList (
-                _: value: (pkgs.vimUtils.buildVimPluginFrom2Nix value)
+                pname: v: (pkgs.vimUtils.buildVimPluginFrom2Nix {
+                  inherit pname;
+                  version = builtins.substring 0 8 v.revision;
+                  src = builtins.fetchTarball {
+                    inherit (v) url;
+                    sha256 = v.hash;
+                  };
+                })
               )
-              (import ./plugins/_sources/generated.nix {inherit (pkgs) fetchgit fetchurl fetchFromGitHub dockerTools;});
+              (import ./npins);
             withPython3 = true;
             extraPython3Packages = _: [];
             withRuby = true;
