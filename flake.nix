@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
     neovim-src = {
       url = "github:neovim/neovim";
       flake = false;
@@ -18,6 +18,9 @@
     ...
   }: let
     inherit (nixpkgs) lib;
+    #
+    # Funni helper function
+    #
     withSystem = f:
       lib.fold lib.recursiveUpdate {}
       (map f ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"]);
@@ -25,10 +28,22 @@
     withSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      formatter.${system} = pkgs.alejandra;
-
+      #
+      # Linter and formatter, run with "nix fmt"
+      # You can use nixfmt or nixpkgs-fmt instead of alejandra if you wish
+      #
+      formatter.${system} = pkgs.writeShellScriptBin "format" ''
+        ${lib.getExe pkgs.deadnix} -e
+        ${lib.getExe pkgs.statix} fix
+        ${lib.getExe pkgs.alejandra} .
+      '';
+      #
+      # Overlay which only provides neovim
+      #
       overlays.default = final: _: removeAttrs self.packages.${final.system} ["default"];
-      overlay = self.overlays.default;
+      #
+      # Dev shell which provides the final neovim package and npins
+      #
       devShells.${system}.default = pkgs.mkShell {
         packages = [
           self.packages.${system}.default
@@ -42,8 +57,16 @@
         neovim = let
           neovimConfig = pkgs.neovimUtils.makeNeovimConfig {
             plugins =
-              [pkgs.vimPlugins.nvim-treesitter.withAllGrammars]
+              [
+                #
+                # Add plugins from nixpkgs here
+                #
+                pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+              ]
               ++ lib.mapAttrsToList (
+                #
+                # This generates plugins from npins sources
+                #
                 pname: v: (pkgs.vimUtils.buildVimPluginFrom2Nix {
                   inherit pname;
                   version = builtins.substring 0 8 v.revision;
@@ -54,32 +77,31 @@
                 })
               )
               (import ./npins);
+            #
+            # These options are self explanatory
+            #
             withPython3 = true;
             extraPython3Packages = _: [];
             withRuby = true;
             viAlias = false;
             vimAlias = false;
+            #
+            # Use the string generated in ./lua/default.nix for init.vim
+            #
             customRC = import ./lua;
           };
           wrapperArgs = let
-            path = lib.makeBinPath (
-              builtins.attrValues
-              {
-                inherit
-                  (pkgs)
-                  #nix
-                  
-                  deadnix
-                  statix
-                  alejandra
-                  nil
-                  #other
-                  
-                  ripgrep
-                  fd
-                  ;
-              }
-            );
+            path = lib.makeBinPath [
+              #
+              # Runtime dependencies
+              #
+              pkgs.deadnix
+              pkgs.statix
+              pkgs.alejandra
+              pkgs.nil
+              pkgs.ripgrep
+              pkgs.fd
+            ];
           in
             neovimConfig.wrapperArgs
             ++ [
@@ -90,6 +112,9 @@
             ];
         in
           pkgs.wrapNeovimUnstable (pkgs.neovim-unwrapped.overrideAttrs {
+            #
+            # Use neovim nightly
+            #
             src = neovim-src;
             version = neovim-src.shortRev or "dirty";
             patches = [];

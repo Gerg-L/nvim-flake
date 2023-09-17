@@ -6,9 +6,9 @@ With flakes enabled
 ```console
 nix run github:Gerg-L/nvim-flake
 ```
-Legacy
+Legacy (may seem like it stalls)
 ```console
-nix-shell -p 'with import <nixpkgs> {}; builtins.fetchTarball "https://github.com/Gerg-L/nvim-flake/archive/master.tar.gz" ' --run nvim
+nix-shell -p '(import (builtins.fetchTarball "https://github.com/Gerg-L/nvim-flake/archive/master.tar.gz")).packages.${builtins.currentSystem}.default' --run nvim
 ```
 # To install
 
@@ -24,7 +24,7 @@ Add this flake as an input
     };
 ...
 ```
-(Make sure you're passing inputs to your [modules](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake/))
+(Make sure you're passing inputs to your [modules](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake))
 ### Add to user environment
 ```nix
 #anyModule.nix
@@ -33,11 +33,11 @@ Add this flake as an input
 
 # add system wide
   environment.systemPackages = [
-    inputs.nvim-flake.packages.${pkgs.system}.neovim
+    inputs.nvim-flake.packages.${pkgs.system.default
   ];
 # add per-user
   users.users."<name>".packages = [
-    inputs.nvim-flake.packages.${pkgs.system}.neovim
+    inputs.nvim-flake.packages.${pkgs.system.default
   ];
 }
 ```
@@ -58,27 +58,25 @@ in
 {
 # add system wide
   environment.systemPackages = [
-    nvim-flake.packages.${pkgs.system}.neovim
+    nvim-flake.packages.${pkgs.system.default
   ];
 # add per-user
   users.users."<name>".packages = [
-    nvim-flake.packages.${pkgs.system}.neovim
+    nvim-flake.packages.${pkgs.system.default
   ];
 }
 ```
 
 # Forking usage guide
-Update the flake like any other ``nix flake update``
 
-Extra runtime dependancies can be added [here](https://github.com/Gerg-L/nvim-flake/blob/367075ba580bc1af6b3acd8237ee56c3cef07840/flake.nix#L38)
+Update the flake like any other `nix flake update`
 
-Add/remove plugins through /plugins/nvfetcher.toml
-
-Use ``nvfetcher`` to update the list.
-
-All plugins added will be fetched and installed.
+Add/remove/update plugins via [npins](https://github.com/andir/npins) 
+Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-context -branch main`
+Example of updated all plugins: `npins update -f`
 
 All lua configuration is done in the /lua directory, and imported and ordered through /lua/default.nix.
+my lua config is not very good so I reccomend bringing your own
 
 ## Inspiration
 - [@the-argus's](https://github.com/the-argus) [nvim-config](https://github.com/the-argus/nvim-config)
