@@ -20,9 +20,9 @@
         "repo": "bufferline.nvim"
       },
       "branch": "main",
-      "revision": "9961d87bb3ec008213c46ba14b3f384a5f520eb5",
-      "url": "https://github.com/akinsho/bufferline.nvim/archive/9961d87bb3ec008213c46ba14b3f384a5f520eb5.tar.gz",
-      "hash": "0g521d6ngl7wajipqpksarxld0pwdk7878yjw64j7lc6p80si3js"
+      "revision": "81cd04fe7c914d020d331cea1e707da5f14c2665",
+      "url": "https://github.com/akinsho/bufferline.nvim/archive/81cd04fe7c914d020d331cea1e707da5f14c2665.tar.gz",
+      "hash": "0j3xnd57a4jsipvwfl5viqshrwba4i3r0l6q6s3w4bl2aj2lyzg4"
     },
     "cinnamon.nvim": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "b543aaa2c9cf8123ed2fe7dbb6c211a9cd415124",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/b543aaa2c9cf8123ed2fe7dbb6c211a9cd415124.tar.gz",
-      "hash": "0k0jymfkp9n65pb5iak7kf89pl41zr7iwg19ww31j3b814am4pjd"
+      "revision": "40c8d2fc2b729dd442eda093cf8c9496d6e23732",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/40c8d2fc2b729dd442eda093cf8c9496d6e23732.tar.gz",
+      "hash": "08nxnnglli2j07k70xxfjnd02iysr3zbac26xqjv0b1rdn24w9gx"
     },
     "toggleterm.nvim": {
       "type": "Git",
