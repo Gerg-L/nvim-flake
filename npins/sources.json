@@ -20,9 +20,9 @@
         "repo": "bufferline.nvim"
       },
       "branch": "main",
-      "revision": "81cd04fe7c914d020d331cea1e707da5f14c2665",
-      "url": "https://github.com/akinsho/bufferline.nvim/archive/81cd04fe7c914d020d331cea1e707da5f14c2665.tar.gz",
-      "hash": "0j3xnd57a4jsipvwfl5viqshrwba4i3r0l6q6s3w4bl2aj2lyzg4"
+      "revision": "6ecd37e0fa8b156099daedd2191130e083fb1490",
+      "url": "https://github.com/akinsho/bufferline.nvim/archive/6ecd37e0fa8b156099daedd2191130e083fb1490.tar.gz",
+      "hash": "1b70xycm9ggqdqbqhkl2ch6k3r3qsww9zvnl2cs9198lr1f2j0ri"
     },
     "cinnamon.nvim": {
       "type": "Git",
@@ -80,9 +80,9 @@
         "repo": "cmp-spell"
       },
       "branch": "master",
-      "revision": "60584cb75e5e8bba5a0c9e4c3ab0791e0698bffa",
-      "url": "https://github.com/f3fora/cmp-spell/archive/60584cb75e5e8bba5a0c9e4c3ab0791e0698bffa.tar.gz",
-      "hash": "1lzv8wbq1w45pbig7lcgyj46nmz4gkag7b37j72p04bixr7wgabv"
+      "revision": "32a0867efa59b43edbb2db67b0871cfad90c9b66",
+      "url": "https://github.com/f3fora/cmp-spell/archive/32a0867efa59b43edbb2db67b0871cfad90c9b66.tar.gz",
+      "hash": "1yr2cq1b6di4k93pjlshkkf4phhd3lzmkm0s679j35crzgwhxnbd"
     },
     "cmp-treesitter": {
       "type": "Git",
@@ -248,9 +248,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "f3195835c0447ee2c80152b893ab51ca162b04a9",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/f3195835c0447ee2c80152b893ab51ca162b04a9.tar.gz",
-      "hash": "0mm4s73qcswhjmhq8ija9jg0p1k2jk51g4h9ij36sww76330jnkg"
+      "revision": "4266f9bb36b4fb09edd19b67d95043cf7ff88ddf",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/4266f9bb36b4fb09edd19b67d95043cf7ff88ddf.tar.gz",
+      "hash": "1fj81152cpcmbbc9vkbv7cr94i0y9hz4gi0bzsar632wrdsni5q0"
     },
     "nvim-tree.lua": {
       "type": "Git",
