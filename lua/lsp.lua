@@ -110,12 +110,9 @@ lspconfig.nil_ls.setup{
 		['nil'] = {
 			nix = {
 				flake = {
-					autoEvalInputs = true,
-					autoArchive = true,
+					autoEvalInputs = false,
+					autoArchive = false,
 				},
-				formatting = {
-					command = {'alejandra', '--quiet'},
-				}
 			}
 		}
 	}
