@@ -101,6 +101,8 @@
               pkgs.nil
               pkgs.ripgrep
               pkgs.fd
+              pkgs.lua-language-server
+              pkgs.stylua
             ];
           in
             neovimConfig.wrapperArgs
