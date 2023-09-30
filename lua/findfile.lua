@@ -32,7 +32,6 @@ require("nvim-tree").setup({
 		width = 25,
 		side = "left",
 		adaptive_size = true,
-		hide_root_folder = false,
 	},
 	git = {
 		enable = false,

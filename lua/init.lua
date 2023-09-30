@@ -50,9 +50,6 @@ vim.g.moonflyUnderlineMatchParen = true
 vim.g.moonflyVirtualTextColor = true
 vim.cmd.colorscheme("moonfly")
 
--- SECTION: autopairs
-require("nvim-autopairs").setup()
-
 -- SECTION: cinnamon
 require("cinnamon").setup()
 local config = {
