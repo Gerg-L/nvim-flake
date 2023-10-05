@@ -52,10 +52,6 @@ vim.cmd.colorscheme("moonfly")
 
 -- SECTION: cinnamon
 require("cinnamon").setup()
-local config = {
-	fps = 50,
-	name = "slide",
-}
 -- SECTION: indent blankline
 require("ibl").setup({
 	char = "│",
