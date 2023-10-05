@@ -19,7 +19,6 @@ cmp.setup({
     ["<C-j>"] = cmp.mapping.select_next_item(),
     ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-1), { "i", "c" }),
     ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
-    ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
     ["<C-y>"] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
     ["<C-e>"] = cmp.mapping({
       i = cmp.mapping.abort(),
@@ -65,20 +64,20 @@ cmp.setup({
   },
   sources = {
     -- preference order of each completion source
-    { name = "luasnip" },
-    { name = "nvim_lsp" },
     { name = "buffer" },
+    { name = "crates" },
+    { name = "luasnip" },
+    { name = "nvim-cmp" },
+    { name = "nvim_lsp" },
+    { name = "nvim_lua" },
     { name = "path" },
-    { name = "neorg" },
+    { name = "spell" },
+    { name = "treesitter" },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
-  -- documentation = {
-  --   border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-  -- },
-  -- documentation = false,
   window = {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
@@ -87,32 +86,10 @@ cmp.setup({
     ghost_text = true,
     native_menu = false,
   },
-})
-
-cmp.setup.filetype("gitcommit", {
-  sources = cmp.config.sources({
-    { name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
-  }, {
-    { name = "buffer" },
-  }),
-})
-
--- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline("/", {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = "buffer" },
+  completion = {
+    completeopt = "menu,menuone,noinsert,noselect",
   },
-})
-
--- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline(":", {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources({
-    { name = "path" },
-  }, {
-    { name = "cmdline" },
-  }),
+  preselect = cmp.PreselectMode.None,
 })
 
 -- SECTION: autopairs
