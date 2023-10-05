@@ -1,69 +1,69 @@
 -- SECTION: nvim-tree
 local function open_nvim_tree(data)
-	-- buffer is a directory
-	local directory = vim.fn.isdirectory(data.file) == 1
+  -- buffer is a directory
+  local directory = vim.fn.isdirectory(data.file) == 1
 
-	if not directory then
-		return
-	end
+  if not directory then
+    return
+  end
 
-	-- change to the directory
-	vim.cmd.cd(data.file)
+  -- change to the directory
+  vim.cmd.cd(data.file)
 
-	-- open the tree
-	require("nvim-tree.api").tree.open()
+  -- open the tree
+  require("nvim-tree.api").tree.open()
 end
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup({
-	disable_netrw = true,
-	hijack_netrw = true,
-	hijack_cursor = true,
-	open_on_tab = false,
-	sync_root_with_cwd = true,
-	update_focused_file = {
-		enable = true,
-		update_cwd = true,
-	},
+  disable_netrw = true,
+  hijack_netrw = true,
+  hijack_cursor = true,
+  open_on_tab = false,
+  sync_root_with_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_cwd = true,
+  },
 
-	view = {
-		width = 25,
-		side = "left",
-		adaptive_size = true,
-	},
-	git = {
-		enable = false,
-		ignore = true,
-	},
+  view = {
+    width = 25,
+    side = "left",
+    adaptive_size = true,
+  },
+  git = {
+    enable = false,
+    ignore = true,
+  },
 
-	filesystem_watchers = {
-		enable = true,
-	},
+  filesystem_watchers = {
+    enable = true,
+  },
 
-	actions = {
-		open_file = {
-			quit_on_open = true,
-			resize_window = true,
-		},
-	},
+  actions = {
+    open_file = {
+      quit_on_open = true,
+      resize_window = true,
+    },
+  },
 
-	renderer = {
-		highlight_git = false,
-		highlight_opened_files = "none",
-		indent_markers = {
-			enable = false,
-		},
-		add_trailing = false,
-		group_empty = false,
-	},
-	diagnostics = {
-		enable = true,
-	},
-	filters = {
-		dotfiles = false,
-	},
+  renderer = {
+    highlight_git = false,
+    highlight_opened_files = "none",
+    indent_markers = {
+      enable = false,
+    },
+    add_trailing = false,
+    group_empty = false,
+  },
+  diagnostics = {
+    enable = true,
+  },
+  filters = {
+    dotfiles = false,
+  },
 })
 
 vim.keymap.set("n", "<leader>tt", "<cmd> NvimTreeToggle<CR>")
@@ -74,22 +74,22 @@ vim.keymap.set("n", "<leader>tr", "<cmd> NvimTreeRefresh<CR>")
 -- SECTION: telescope
 local telescope = require("telescope")
 telescope.setup({
-	defaults = {
-		vimgrep_arguments = {
-			"rg",
-			"--color=never",
-			"--no-heading",
-			"--with-filename",
-			"--line-number",
-			"--column",
-			"--smart-case",
-		},
-		pickers = {
-			find_command = {
-				"fd",
-			},
-		},
-	},
+  defaults = {
+    vimgrep_arguments = {
+      "rg",
+      "--color=never",
+      "--no-heading",
+      "--with-filename",
+      "--line-number",
+      "--column",
+      "--smart-case",
+    },
+    pickers = {
+      find_command = {
+        "fd",
+      },
+    },
+  },
 })
 
 telescope.load_extension("noice")

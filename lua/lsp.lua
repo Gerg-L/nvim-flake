@@ -1,24 +1,19 @@
 local attach_keymaps = function(_, _)
   local opts = { noremap = true, silent = true }
-  vim.keymap.set( "n", "<leader>lgD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-  vim.keymap.set( "n", "<leader>lgd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
-  vim.keymap.set( "n", "<leader>lgt", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
-  vim.keymap.set( "n", "<leader>lgn", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
-  vim.keymap.set( "n", "<leader>lgp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
-  vim.keymap.set( "n", "<leader>lwa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
-  vim.keymap.set( "n", "<leader>lwr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
-  vim.keymap.set(
-    "n",
-    "<leader>lwl",
-    "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>",
-    opts
-  )
-  vim.keymap.set( "n", "<leader>lh", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
-  vim.keymap.set( "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-  vim.keymap.set( "n", "<leader>ln", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
-  vim.keymap.set( "n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
-  vim.keymap.set('n', '<leader>lf', function()
-    vim.lsp.buf.format { async = true }
+  vim.keymap.set("n", "<leader>lgD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
+  vim.keymap.set("n", "<leader>lgd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+  vim.keymap.set("n", "<leader>lgt", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
+  vim.keymap.set("n", "<leader>lgn", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
+  vim.keymap.set("n", "<leader>lgp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
+  vim.keymap.set("n", "<leader>lwa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
+  vim.keymap.set("n", "<leader>lwr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
+  vim.keymap.set("n", "<leader>lwl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts)
+  vim.keymap.set("n", "<leader>lh", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
+  vim.keymap.set("n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+  vim.keymap.set("n", "<leader>ln", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
+  vim.keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
+  vim.keymap.set("n", "<leader>lf", function()
+    vim.lsp.buf.format({ async = true })
   end, opts)
 end
 local null_ls = require("null-ls")

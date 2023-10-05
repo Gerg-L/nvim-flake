@@ -54,9 +54,7 @@ vim.cmd.colorscheme("moonfly")
 require("cinnamon").setup()
 -- SECTION: indent blankline
 require("ibl").setup({
-	char = "│",
-	show_current_context = true,
-	show_end_of_line = true,
+  indent = { char = "┋" },
 })
 
 vim.g.cursorline_timeout = 0
@@ -69,17 +67,17 @@ vim.keymap.set("n", "<leader>ct", "<cmd> ColorizerToggle<CR>")
 require("which-key").setup({})
 
 require("toggleterm").setup({
-	open_mapping = [[<Leader>e]],
-	direction = "float",
-	autochdir = true,
-	insert_mappings = false,
-	terminal_mappings = true,
-	close_on_exit = true,
-	size = function(term)
-		if term.direction == "horizontal" then
-			return 15
-		elseif term.direction == "vertical" then
-			return vim.o.columns * 0.4
-		end
-	end,
+  open_mapping = [[<Leader>e]],
+  direction = "float",
+  autochdir = true,
+  insert_mappings = false,
+  terminal_mappings = true,
+  close_on_exit = true,
+  size = function(term)
+    if term.direction == "horizontal" then
+      return 15
+    elseif term.direction == "vertical" then
+      return vim.o.columns * 0.4
+    end
+  end,
 })
