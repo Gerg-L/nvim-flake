@@ -152,9 +152,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "0ac5dfe835ec0f201ef6af17d4737d43b4bfce0d",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/0ac5dfe835ec0f201ef6af17d4737d43b4bfce0d.tar.gz",
-      "hash": "1xhhqyrnvgh50phlhrs4blnhkf9yc1n8c81mc7riigcdd18qicri"
+      "revision": "d747910c022525def3ed6f2ecce477a5956f3992",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/d747910c022525def3ed6f2ecce477a5956f3992.tar.gz",
+      "hash": "0ix43dpx1805wgbnyw9jii8ar0a7g4ghzsx7xd58l5xddrcxkn09"
     },
     "lspkind.nvim": {
       "type": "Git",
@@ -284,9 +284,9 @@
         "repo": "nvim-tree.lua"
       },
       "branch": "master",
-      "revision": "aaee4cd896b74f85a81bed7eef2db7869960c4d0",
-      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/aaee4cd896b74f85a81bed7eef2db7869960c4d0.tar.gz",
-      "hash": "1amz93rp5dp30ph3f63b24ikj46fycssaava7y9379vcdjv92h48"
+      "revision": "40b9b887d090d5da89a84689b4ca0304a9649f62",
+      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/40b9b887d090d5da89a84689b4ca0304a9649f62.tar.gz",
+      "hash": "018fnw95vlhac7y5ai1wzpd69b3qjxji57yyrg7gw4ccvj97dvqj"
     },
     "nvim-treesitter-context": {
       "type": "Git",
