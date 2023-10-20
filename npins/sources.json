@@ -128,9 +128,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "58bf989736765cae41fa5d0971027efeca033301",
-      "url": "https://github.com/saecki/crates.nvim/archive/58bf989736765cae41fa5d0971027efeca033301.tar.gz",
-      "hash": "06yxlwmas7cz856y1ppbih261mipwda5sjvqzcci37igg6wgbkcq"
+      "revision": "aac57ef84cf4fecf7907114b22e875f84a6128ee",
+      "url": "https://github.com/saecki/crates.nvim/archive/aac57ef84cf4fecf7907114b22e875f84a6128ee.tar.gz",
+      "hash": "0xqpj6zhydx8n08s00i3zji2383dp13xy3smsvzgim8wmwfklk6s"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -176,9 +176,9 @@
         "repo": "lualine.nvim"
       },
       "branch": "master",
-      "revision": "7533b0ead663d80452210c0c089e5105089697e5",
-      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/7533b0ead663d80452210c0c089e5105089697e5.tar.gz",
-      "hash": "0pwl63sq0rvk3665s8a42lfmyf8k58c7r3i55srfw0zprr01rhq3"
+      "revision": "2248ef254d0a1488a72041cfb45ca9caada6d994",
+      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/2248ef254d0a1488a72041cfb45ca9caada6d994.tar.gz",
+      "hash": "1ccbbgn3a3304dcxfbl94ai8dgfshi5db8k73iifijhxbncvlpwd"
     },
     "luasnip": {
       "type": "Git",
@@ -200,9 +200,9 @@
         "repo": "noice.nvim"
       },
       "branch": "main",
-      "revision": "e50fc6de68333633fa9eaaa54cb4cdfe7de5f25a",
-      "url": "https://github.com/folke/noice.nvim/archive/e50fc6de68333633fa9eaaa54cb4cdfe7de5f25a.tar.gz",
-      "hash": "018cmk4ypx02z1574jp7w4ja4q1qvhbnv392yjgqlqfdkijr2man"
+      "revision": "8f1b53ab85f83e0687d0f267085ad781ec240432",
+      "url": "https://github.com/folke/noice.nvim/archive/8f1b53ab85f83e0687d0f267085ad781ec240432.tar.gz",
+      "hash": "1v4na1rdxgqsyy5ra7c7qjg2cmd7hxpf321ybc1zgbm6v56y2a38"
     },
     "nui.nvim": {
       "type": "Git",
