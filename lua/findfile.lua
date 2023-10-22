@@ -1,22 +1,31 @@
 -- SECTION: nvim-tree
 local function open_nvim_tree(data)
+  -- Check if opened by page
+  for _, v in ipairs(vim.v.argv) do
+    if v == "--listen" then
+      return
+    end
+  end
+
   -- buffer is a real file on the disk
   local real_file = vim.fn.filereadable(data.file) == 1
 
   -- buffer is a [No Name]
   local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
+
+  -- cd to directory if selected
   local directory = vim.fn.isdirectory(data.file) == 1
   if directory then
     vim.api.nvim_set_current_dir(data.file)
   elseif not real_file and not no_name then
     return
-
-    --    TODO check if in PAGER before running this
-    --  else
-    --    local dir = vim.fn.fnamemodify(data.file, ':p:h:t')
-    --    vim.api.nvim_set_current_dir(dir)
+  else
+    local dir = vim.fn.fnamemodify(data.file, ":p:h:t")
+    vim.api.nvim_set_current_dir(dir)
   end
+
   -- open the tree, find the file but don't focus it
+
   require("nvim-tree.api").tree.toggle({ focus = false, find_file = true })
 end
 vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
