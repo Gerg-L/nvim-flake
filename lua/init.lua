@@ -27,7 +27,6 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 vim.o.termguicolors = true
 vim.o.guifont = "OverpassMono Nerd Font:h10"
-vim.o.t_Co = 256
 vim.o.spell = true
 vim.o.spelllang = "en_us"
 
