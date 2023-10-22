@@ -17,8 +17,7 @@ let
         else if spec.type == "Channel" then
           mkChannelSource spec
         else
-          builtins.throw "Unknown source type ${spec.type}"
-      ;
+          builtins.throw "Unknown source type ${spec.type}";
     in
     spec // { outPath = path; };
 
@@ -44,8 +43,7 @@ let
         inherit (repository) url;
         rev = revision;
         # hash = hash;
-      }
-  ;
+      };
 
   mkPyPiSource =
     { url, hash, ... }:

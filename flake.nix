@@ -147,8 +147,7 @@
                   "PATH"
                   ":"
                   path
-                ]
-              ;
+                ];
             in
             pkgs.wrapNeovimUnstable
               (pkgs.neovim-unwrapped.overrideAttrs {
