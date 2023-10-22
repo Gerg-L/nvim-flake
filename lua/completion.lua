@@ -71,7 +71,6 @@ cmp.setup({
     { name = "nvim_lsp" },
     { name = "nvim_lua" },
     { name = "path" },
-    { name = "spell" },
     { name = "treesitter" },
   },
   confirm_opts = {

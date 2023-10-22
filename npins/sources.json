@@ -84,18 +84,6 @@
       "url": "https://github.com/hrsh7th/cmp-path/archive/91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz",
       "hash": "18ixx14ibc7qrv32nj0ylxrx8w4ggg49l5vhcqd35hkp4n56j6mn"
     },
-    "cmp-spell": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "f3fora",
-        "repo": "cmp-spell"
-      },
-      "branch": "master",
-      "revision": "32a0867efa59b43edbb2db67b0871cfad90c9b66",
-      "url": "https://github.com/f3fora/cmp-spell/archive/32a0867efa59b43edbb2db67b0871cfad90c9b66.tar.gz",
-      "hash": "1yr2cq1b6di4k93pjlshkkf4phhd3lzmkm0s679j35crzgwhxnbd"
-    },
     "cmp-treesitter": {
       "type": "Git",
       "repository": {
