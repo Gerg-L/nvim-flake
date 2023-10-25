@@ -140,9 +140,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "2546441840172cc41e70f67c52e205cc7aa3e6ed",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/2546441840172cc41e70f67c52e205cc7aa3e6ed.tar.gz",
-      "hash": "00p9dyqaa6h67pnkn5wh4iyvi8ydpnyqvbq5n6jk82c5c48h2s2s"
+      "revision": "046e2cf04e08ece927bacbfb87c5b35c0b636546",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/046e2cf04e08ece927bacbfb87c5b35c0b636546.tar.gz",
+      "hash": "18vvqpbjbl3xqgkglc24y3hff4y0m5wzsngp5fwkfqlkqskiw6kf"
     },
     "lspkind.nvim": {
       "type": "Git",
@@ -188,9 +188,9 @@
         "repo": "noice.nvim"
       },
       "branch": "main",
-      "revision": "8f1b53ab85f83e0687d0f267085ad781ec240432",
-      "url": "https://github.com/folke/noice.nvim/archive/8f1b53ab85f83e0687d0f267085ad781ec240432.tar.gz",
-      "hash": "1v4na1rdxgqsyy5ra7c7qjg2cmd7hxpf321ybc1zgbm6v56y2a38"
+      "revision": "50fc77bcd75cf32374521fb227e9f41f3fe1521a",
+      "url": "https://github.com/folke/noice.nvim/archive/50fc77bcd75cf32374521fb227e9f41f3fe1521a.tar.gz",
+      "hash": "04zjm43mvpkq8z51c0ymgb4qbiz3gvx6w2j223frn7w6k6vchbz4"
     },
     "nui.nvim": {
       "type": "Git",
@@ -236,9 +236,9 @@
         "repo": "nvim-cmp"
       },
       "branch": "main",
-      "revision": "d3a3056204e1a9dbb7c7fe36c114dc43b681768c",
-      "url": "https://github.com/hrsh7th/nvim-cmp/archive/d3a3056204e1a9dbb7c7fe36c114dc43b681768c.tar.gz",
-      "hash": "01y2grnq4kcj5d9v5r4klkzmi5yg8xl9p0s11lc1mpc7xink350x"
+      "revision": "51260c02a8ffded8e16162dcf41a23ec90cfba62",
+      "url": "https://github.com/hrsh7th/nvim-cmp/archive/51260c02a8ffded8e16162dcf41a23ec90cfba62.tar.gz",
+      "hash": "0h5n8ks34vxr2b17vddrv4vgjyr649bl7i839awpad21x146krkz"
     },
     "nvim-colorizer.lua": {
       "type": "Git",
@@ -296,9 +296,9 @@
         "repo": "nvim-web-devicons"
       },
       "branch": "master",
-      "revision": "f0267921c845c42685968401bc49aa65e18d3e09",
-      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/f0267921c845c42685968401bc49aa65e18d3e09.tar.gz",
-      "hash": "1qqcjaknnq7bm1rl73nzv9gfcfwx2jrxc8vh2l400m4hj0bgvp9k"
+      "revision": "5de460ca7595806044eced31e3c36c159a493857",
+      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/5de460ca7595806044eced31e3c36c159a493857.tar.gz",
+      "hash": "1ncwiha8ldxzx1g1hfisrgsvnqv05p7c19glbjp5bwbm5ihfsv04"
     },
     "plenary.nvim": {
       "type": "Git",
