@@ -101,15 +101,7 @@
                       #
                       # This generates plugins from npins sources
                       #
-                      pname: v:
-                      (pkgs.vimUtils.buildVimPlugin {
-                        inherit pname;
-                        version = builtins.substring 0 8 v.revision;
-                        src = builtins.fetchTarball {
-                          inherit (v) url;
-                          sha256 = v.hash;
-                        };
-                      })
+                      name: src: (pkgs.vimUtils.buildVimPlugin { inherit name src; })
                     )
                     (import ./npins);
                 #
