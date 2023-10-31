@@ -140,9 +140,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "6c107f6dc8a191e2045b9697d17e30b6bc67f1a0",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/6c107f6dc8a191e2045b9697d17e30b6bc67f1a0.tar.gz",
-      "hash": "1r0cm4lnvc0kv5akmcmn57p2ahalikrwk401307zigxhy3vzp6rv"
+      "revision": "29be0919b91fb59eca9e90690d76014233392bef",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/29be0919b91fb59eca9e90690d76014233392bef.tar.gz",
+      "hash": "0z8n9d6f4qiq8m4ai1r2xz90955cp6cikqprq74ivfch3icrzdi1"
     },
     "lspkind.nvim": {
       "type": "Git",
