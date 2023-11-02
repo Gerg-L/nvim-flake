@@ -20,9 +20,9 @@
         "repo": "bufferline.nvim"
       },
       "branch": "main",
-      "revision": "357cc8f8eeb64702e6fcf2995e3b9becee99a5d3",
-      "url": "https://github.com/akinsho/bufferline.nvim/archive/357cc8f8eeb64702e6fcf2995e3b9becee99a5d3.tar.gz",
-      "hash": "0n99bshmyhzq4kg35gx9x3wpfyfji1ddlg66f11vgwaprsibi22a"
+      "revision": "9e8d2f695dd50ab6821a6a53a840c32d2067a78a",
+      "url": "https://github.com/akinsho/bufferline.nvim/archive/9e8d2f695dd50ab6821a6a53a840c32d2067a78a.tar.gz",
+      "hash": "08k2b8i269c50gq3nl2s08izwl2p454xshl3yslcwwi3hsg25blm"
     },
     "cinnamon.nvim": {
       "type": "Git",
@@ -368,9 +368,9 @@
         "repo": "vim-moonfly-colors"
       },
       "branch": "master",
-      "revision": "5d7aff3545cd3f365215bf86a3f188b65ab9b90c",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/5d7aff3545cd3f365215bf86a3f188b65ab9b90c.tar.gz",
-      "hash": "1dahbwz2ia5s5bykmbdghh6cqb731qgsxg2gs1kp0ll6932n5xaa"
+      "revision": "5f121c0e8103181a16aa86e9f80e99204eef6c39",
+      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/5f121c0e8103181a16aa86e9f80e99204eef6c39.tar.gz",
+      "hash": "0g466h7zhsir7s1ypampf7k5qqjkwnafy8mwnzcb4cg33c1165qj"
     },
     "vim-vsnip": {
       "type": "Git",
