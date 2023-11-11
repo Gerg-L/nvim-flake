@@ -116,9 +116,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "aac57ef84cf4fecf7907114b22e875f84a6128ee",
-      "url": "https://github.com/saecki/crates.nvim/archive/aac57ef84cf4fecf7907114b22e875f84a6128ee.tar.gz",
-      "hash": "0xqpj6zhydx8n08s00i3zji2383dp13xy3smsvzgim8wmwfklk6s"
+      "revision": "f47c77d99f11362ddc2f4891f35407fb0b76d485",
+      "url": "https://github.com/saecki/crates.nvim/archive/f47c77d99f11362ddc2f4891f35407fb0b76d485.tar.gz",
+      "hash": "1sr71k5ngsjxzhldr06cb2bf79mn6096czn17ql22j99w92gydk5"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -176,9 +176,9 @@
         "repo": "LuaSnip"
       },
       "branch": "master",
-      "revision": "a4de64570b9620875c8ea04175cd07ed8e32ac99",
-      "url": "https://github.com/L3MON4D3/LuaSnip/archive/a4de64570b9620875c8ea04175cd07ed8e32ac99.tar.gz",
-      "hash": "11d2lzii8yw88d8wfnfnq64s9k7axr72988x55i4qbrrikdsr95q"
+      "revision": "46c91e814732c1630b8a8b50d04acbf54b8320fa",
+      "url": "https://github.com/L3MON4D3/LuaSnip/archive/46c91e814732c1630b8a8b50d04acbf54b8320fa.tar.gz",
+      "hash": "12xr9i58037zx6cnggn36490lpdl22fjk5awix040dv2v5idchj0"
     },
     "noice.nvim": {
       "type": "Git",
