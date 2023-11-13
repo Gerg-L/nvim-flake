@@ -272,9 +272,9 @@
         "repo": "nvim-tree.lua"
       },
       "branch": "master",
-      "revision": "874ae6e9445a5eb5ba430e5fd10212450a261ad7",
-      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/874ae6e9445a5eb5ba430e5fd10212450a261ad7.tar.gz",
-      "hash": "0dn56zpbjxggcsbm7z6f1b4kcwsspj09ynzjkl8bq0l45qf3v50i"
+      "revision": "80cfeadf179d5cba76f0f502c71dbcff1b515cd8",
+      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/80cfeadf179d5cba76f0f502c71dbcff1b515cd8.tar.gz",
+      "hash": "0fmmfhzl8igk3kpk34cs0wvw4lyhjvc83cdk225gs06awqr24i3m"
     },
     "nvim-treesitter-context": {
       "type": "Git",
@@ -284,9 +284,9 @@
         "repo": "nvim-treesitter-context"
       },
       "branch": "master",
-      "revision": "2aa86487c4ed9b00d0a62fd87ed644429e535dca",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/2aa86487c4ed9b00d0a62fd87ed644429e535dca.tar.gz",
-      "hash": "056lllwx295dn8v2838faiix1b2ssrngz9747ywcqd4dlkj11j4i"
+      "revision": "c03f8aab1e6649036d69ba7e3af4d09cb7e4d977",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/c03f8aab1e6649036d69ba7e3af4d09cb7e4d977.tar.gz",
+      "hash": "0jx97czy9rywvaqbdbx4sb60yhiq50lw80xhm80vgrb1587lkciv"
     },
     "nvim-web-devicons": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "a5e8fb4960f905a52031b28113cf43088cfeae22",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/a5e8fb4960f905a52031b28113cf43088cfeae22.tar.gz",
-      "hash": "0d3yfy7a7jc0g4y3x6fff2skbkhp3hjjk0p4q2a66s6rm626pg6z"
+      "revision": "9515abd92ae0e42044d47716537f3997991a037b",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/9515abd92ae0e42044d47716537f3997991a037b.tar.gz",
+      "hash": "1cg6v4fkps1gds2vgbwssjhqpw72jyq84i7hyl2prpiagdwss4gm"
     },
     "rust-tools.nvim": {
       "type": "Git",
@@ -380,9 +380,9 @@
         "repo": "vim-vsnip"
       },
       "branch": "master",
-      "revision": "be277461265f1e5c7db470aa479f30956597ea9e",
-      "url": "https://github.com/hrsh7th/vim-vsnip/archive/be277461265f1e5c7db470aa479f30956597ea9e.tar.gz",
-      "hash": "0fiqz7qrcsla2ms5lfw0w8f6ysa5wivnhjn9463i00vasg19mcqi"
+      "revision": "8eebdf6ab4a880d845893f210fd20516d2e2384f",
+      "url": "https://github.com/hrsh7th/vim-vsnip/archive/8eebdf6ab4a880d845893f210fd20516d2e2384f.tar.gz",
+      "hash": "10aadjkisfsx4avylblp7zb97ikaay249fzw3f43xgknlajg35dg"
     },
     "which-key.nvim": {
       "type": "Git",
