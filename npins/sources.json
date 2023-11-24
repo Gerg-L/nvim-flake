@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "0ccd5fb2316b3f8d8b2f775bc31cae7bc6a77a55",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/0ccd5fb2316b3f8d8b2f775bc31cae7bc6a77a55.tar.gz",
-      "hash": "0xgw0p6wb33wlb4lnnjj1adxsll6lnmq3niabqzricsz4phmvf4f"
+      "revision": "5fc573f2d2a49aec74dd6dc977e8b137429d1897",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/5fc573f2d2a49aec74dd6dc977e8b137429d1897.tar.gz",
+      "hash": "0ijwyxw9w4idd1qczd1d8bs8454i83s6vxny39r9vn4ykhxm9v10"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "7f3cfa07f243261a0428d782bef6496929e9dcd8",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/7f3cfa07f243261a0428d782bef6496929e9dcd8.tar.gz",
-      "hash": "18dmkf04315rna28pzxps8idph4a33w6nypdazwm0g2h0dvlhv2l"
+      "revision": "a2da59bdacb5e3a28873ac7039a16271ac16b224",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/a2da59bdacb5e3a28873ac7039a16271ac16b224.tar.gz",
+      "hash": "0s9pd19fbmcy13r9bji4cyzf60vcrc3x7gxj9ayav0pxxh161sj7"
     },
     "rust-tools.nvim": {
       "type": "Git",
