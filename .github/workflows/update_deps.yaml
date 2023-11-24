@@ -12,6 +12,8 @@ jobs:
         uses: actions/checkout@v4.1.1
       - name: install nix
         uses: DeterminateSystems/nix-installer-action@v8
+      - name: magic cache
+        uses: DeterminateSystems/magic-nix-cache-action@v2
       - name: setup git
         run: | 
           git config user.email Gerg-L@proton.me
