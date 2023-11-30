@@ -20,9 +20,9 @@
         "repo": "bufferline.nvim"
       },
       "branch": "main",
-      "revision": "9e8d2f695dd50ab6821a6a53a840c32d2067a78a",
-      "url": "https://github.com/akinsho/bufferline.nvim/archive/9e8d2f695dd50ab6821a6a53a840c32d2067a78a.tar.gz",
-      "hash": "08k2b8i269c50gq3nl2s08izwl2p454xshl3yslcwwi3hsg25blm"
+      "revision": "1a3397556d194bb1f2cc530b07124ccc512c5501",
+      "url": "https://github.com/akinsho/bufferline.nvim/archive/1a3397556d194bb1f2cc530b07124ccc512c5501.tar.gz",
+      "hash": "0da8kyg229n658dcybnxr2ckcaz8lmwphdmr83ajvqh3dj92rmx6"
     },
     "cinnamon.nvim": {
       "type": "Git",
@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "175e74f87d3d2e4d20952d390af5f2a794f5ed7e",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/175e74f87d3d2e4d20952d390af5f2a794f5ed7e.tar.gz",
-      "hash": "1s131xr3vvfr5a19nvf1f7330bjzn6yj615q7yi0z7wr1s6kndp4"
+      "revision": "6ef8c54fb526bf3a0bc4efb0b2fe8e6d9a7daed2",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/6ef8c54fb526bf3a0bc4efb0b2fe8e6d9a7daed2.tar.gz",
+      "hash": "086jmhzgpavwjvp7ssd8ga0wxgnz480zzjiv84h4ivva2nv3lnvi"
     },
     "indent-blankline.nvim": {
       "type": "Git",
