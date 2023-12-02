@@ -140,9 +140,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "29be0919b91fb59eca9e90690d76014233392bef",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/29be0919b91fb59eca9e90690d76014233392bef.tar.gz",
-      "hash": "0z8n9d6f4qiq8m4ai1r2xz90955cp6cikqprq74ivfch3icrzdi1"
+      "revision": "dbd90bb689ff10d21fee6792eb8928f0584b5860",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/dbd90bb689ff10d21fee6792eb8928f0584b5860.tar.gz",
+      "hash": "1fbx8l5m09qyis4d767gmmwa9rgify6vwjvj3b1jqfzhlz1fmd24"
     },
     "lspkind.nvim": {
       "type": "Git",
@@ -176,9 +176,9 @@
         "repo": "LuaSnip"
       },
       "branch": "master",
-      "revision": "1def35377854535bb3b0f4cc7a33c083cdb12571",
-      "url": "https://github.com/L3MON4D3/LuaSnip/archive/1def35377854535bb3b0f4cc7a33c083cdb12571.tar.gz",
-      "hash": "0avjl2418wn4y24xff73y6pfny2fhk3lb3swldqrqcy676q9hq83"
+      "revision": "118263867197a111717b5f13d954cd1ab8124387",
+      "url": "https://github.com/L3MON4D3/LuaSnip/archive/118263867197a111717b5f13d954cd1ab8124387.tar.gz",
+      "hash": "0mbpwf3sxfrmrza13d9w0hlcmzlrj551g332syp1qhs94abfnnrd"
     },
     "noice.nvim": {
       "type": "Git",
