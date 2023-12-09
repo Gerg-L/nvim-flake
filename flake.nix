@@ -125,7 +125,6 @@
                     #
                     pkgs.deadnix
                     pkgs.statix
-                    pkgs.alejandra
                     pkgs.nil
                     pkgs.ripgrep
                     pkgs.fd
@@ -143,7 +142,7 @@
             in
             pkgs.wrapNeovimUnstable
               (pkgs.neovim-unwrapped.overrideAttrs (
-                old: {
+                _: {
                   #
                   # Use neovim nightly
                   #
@@ -153,17 +152,6 @@
                   preConfigure = ''
                     sed -i cmake.config/versiondef.h.in -e "s/@NVIM_VERSION_PRERELEASE@/-dev-$version/"
                   '';
-                  buildInputs =
-                    lib.remove pkgs.libvterm-neovim old.buildInputs
-                    ++ lib.singleton (
-                      pkgs.libvterm-neovim.overrideAttrs {
-                        version = "0.3.3";
-                        src = pkgs.fetchurl {
-                          url = "https://github.com/neovim/libvterm/archive/v0.3.3.tar.gz";
-                          hash = "sha256-C6vjq0LDVJJdre3pDTUvBUqpxK5oQuqAOiDJdB4XLlY=";
-                        };
-                      }
-                    );
                 }
               ))
               (neovimConfig // { inherit wrapperArgs; });
