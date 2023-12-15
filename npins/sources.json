@@ -176,9 +176,9 @@
         "repo": "LuaSnip"
       },
       "branch": "master",
-      "revision": "954c81b53989097faaff0fabc11c29575288c3e1",
-      "url": "https://github.com/L3MON4D3/LuaSnip/archive/954c81b53989097faaff0fabc11c29575288c3e1.tar.gz",
-      "hash": "0kms7qiygyrqjmjg9nl83z9pi6pbjwlxclyidla1b15lh40pkcbn"
+      "revision": "6a001360cea89df50f7c5cc8c7a75e6a21f1ef5c",
+      "url": "https://github.com/L3MON4D3/LuaSnip/archive/6a001360cea89df50f7c5cc8c7a75e6a21f1ef5c.tar.gz",
+      "hash": "1gpdb6497x86g66ysa9yzlkrqqiwvl75mw06ndg532jxgr94vcyv"
     },
     "noice.nvim": {
       "type": "Git",
@@ -236,9 +236,9 @@
         "repo": "nvim-cmp"
       },
       "branch": "main",
-      "revision": "41d7633e4146dce1072de32cea31ee31b056a131",
-      "url": "https://github.com/hrsh7th/nvim-cmp/archive/41d7633e4146dce1072de32cea31ee31b056a131.tar.gz",
-      "hash": "0l72vrylmw8zv9hvl8rhiycn69s50fn5064h3ydhpf432b8b65sb"
+      "revision": "538e37ba87284942c1d76ed38dd497e54e65b891",
+      "url": "https://github.com/hrsh7th/nvim-cmp/archive/538e37ba87284942c1d76ed38dd497e54e65b891.tar.gz",
+      "hash": "1mxigpm4h8ad8hjd8zy6ajkk2c03vgcrigqarhybz6zsi52iil06"
     },
     "nvim-colorizer.lua": {
       "type": "Git",
@@ -260,9 +260,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "f451052bd6804e9e5ccd0ac874d7df8d3d4c55b9",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/f451052bd6804e9e5ccd0ac874d7df8d3d4c55b9.tar.gz",
-      "hash": "1cf0vzdk2jmj63x7cg9p5m2lhi5ch7p8mrsidclx9h4qpf4vl0ns"
+      "revision": "84f2dd42efffa20d505ac44c78568d778ca7e0a1",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/84f2dd42efffa20d505ac44c78568d778ca7e0a1.tar.gz",
+      "hash": "07ngajqlkgfaijj2ampyr0d4why1slq5bp6izyki22310yifdbhj"
     },
     "nvim-tree.lua": {
       "type": "Git",
