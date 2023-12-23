@@ -20,8 +20,8 @@ local function open_nvim_tree(data)
   elseif not real_file and not no_name then
     return
   else
-  --  local dir = vim.fn.fnamemodify(data.file, ":p:h:t")
-  --  vim.api.nvim_set_current_dir(dir)
+    --  local dir = vim.fn.fnamemodify(data.file, ":p:h:t")
+    --  vim.api.nvim_set_current_dir(dir)
   end
 
   -- open the tree, find the file but don't focus it
