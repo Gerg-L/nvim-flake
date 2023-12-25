@@ -8,9 +8,9 @@
         "repo": "bufdelete.nvim"
       },
       "branch": "master",
-      "revision": "20a11d6ebb8ac45f1b4c9109e9569bcb895a3e73",
-      "url": "https://github.com/famiu/bufdelete.nvim/archive/20a11d6ebb8ac45f1b4c9109e9569bcb895a3e73.tar.gz",
-      "hash": "03hf2incbnf2xgzddj8rksbkmvfdvk4hmg2afx0ra9blrgb7yk7l"
+      "revision": "0b9c0f182b09c51170bb9f252f15de7695e4d507",
+      "url": "https://github.com/famiu/bufdelete.nvim/archive/0b9c0f182b09c51170bb9f252f15de7695e4d507.tar.gz",
+      "hash": "07442wjgf5nx99qaqzi1gyhxlcp8pxlc15vg9jckf9wl3s3m2hiv"
     },
     "bufferline.nvim": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "35413f67fb918207a4acc4948ca9ccb75b6cf8d5",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/35413f67fb918207a4acc4948ca9ccb75b6cf8d5.tar.gz",
-      "hash": "18c5r5pzmnfkslr5y7zc7dfmmwk1w9zar75c8sl5snzwd5gyfvpp"
+      "revision": "a249476e451673f7811852d93109dff19311ee39",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/a249476e451673f7811852d93109dff19311ee39.tar.gz",
+      "hash": "13vf4yvqci8lxihva8gnv82533ykdm8l460iy2wbwbwv7h9gva66"
     },
     "rust-tools.nvim": {
       "type": "Git",
@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "f336f8cfab38a82f9f00df380d28f0c2a572f862",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/f336f8cfab38a82f9f00df380d28f0c2a572f862.tar.gz",
-      "hash": "14v1v45p5jpvn9lgbjcfgx8p4b60w0bqk3vv7sdb5nbikkjhy10z"
+      "revision": "9907deaed23e4db65eb7453bdb4b3c78acdc096e",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/9907deaed23e4db65eb7453bdb4b3c78acdc096e.tar.gz",
+      "hash": "131gvh9rshqwgxvxg7c1id1ljsafpa01mwbvs8jpjsfp419b0075"
     },
     "toggleterm.nvim": {
       "type": "Git",
