@@ -176,9 +176,9 @@
         "repo": "LuaSnip"
       },
       "branch": "master",
-      "revision": "2463d687fe704b76eb0aa3bb34e95f69a5bb0362",
-      "url": "https://github.com/L3MON4D3/LuaSnip/archive/2463d687fe704b76eb0aa3bb34e95f69a5bb0362.tar.gz",
-      "hash": "0sbbkmgyafl3y61jggwn6f4d80kx3m02nksrx8vv2agk0ca0y2zm"
+      "revision": "8ae1dedd988eb56441b7858bd1e8554dfadaa46d",
+      "url": "https://github.com/L3MON4D3/LuaSnip/archive/8ae1dedd988eb56441b7858bd1e8554dfadaa46d.tar.gz",
+      "hash": "05d5ks3g6a9dl3bmap8m60hnx3hc4acvcp2jzkw85r4anaawl45b"
     },
     "noice.nvim": {
       "type": "Git",
@@ -272,9 +272,9 @@
         "repo": "nvim-tree.lua"
       },
       "branch": "master",
-      "revision": "02ae52357ba4da77a4c120390791584a81d15340",
-      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/02ae52357ba4da77a4c120390791584a81d15340.tar.gz",
-      "hash": "1i9z24c0difwpi3dpg8lqkvfdxw0rmgmnzmh2yd0fr7b33k1n5yi"
+      "revision": "f1b3e6a7eb92da492bd693257367d9256839ed3d",
+      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/f1b3e6a7eb92da492bd693257367d9256839ed3d.tar.gz",
+      "hash": "183a5zrgw6sirryyqzphh06j3a42k2l0sx5ph2pxk3wi1cjh5v0g"
     },
     "nvim-treesitter-context": {
       "type": "Git",
