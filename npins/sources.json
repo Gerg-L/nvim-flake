@@ -140,9 +140,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "5da5546947f3125dfd6aa85ab21074dc83f776d5",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/5da5546947f3125dfd6aa85ab21074dc83f776d5.tar.gz",
-      "hash": "0sd4ddjdfcccxh5wmhxck8capf76dckr8wgcv7nv0cd5vbnq7arv"
+      "revision": "3c8a185da4b8ab7aef487219f5e001b11d4b6aaf",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/3c8a185da4b8ab7aef487219f5e001b11d4b6aaf.tar.gz",
+      "hash": "0bzn4441v37250hpiqd0fm95yf1k3ldkvly3bfrhyzxpcjl50c3b"
     },
     "lspkind.nvim": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "1ed4613437c585eacd5c8827b408e6db8234c3ee",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/1ed4613437c585eacd5c8827b408e6db8234c3ee.tar.gz",
-      "hash": "07zij1c73213h2232r8wf0jdmswl9xihi367x41434c0krjqrxg9"
+      "revision": "4a90ac83c7c8e0ba8a1b6af38bed6d5ee1b04e08",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/4a90ac83c7c8e0ba8a1b6af38bed6d5ee1b04e08.tar.gz",
+      "hash": "18b2v0wg8jlvi9afjy2f654yh81c9aw79p3l2wpp9pcgf7jpqh5i"
     },
     "rust-tools.nvim": {
       "type": "Git",
