@@ -50,11 +50,11 @@
     "neovim-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1704648325,
-        "narHash": "sha256-8DxfLibKTkbPc/ct9eApn+ET7dbY3Z2Du46U0KK0zL4=",
+        "lastModified": 1704749828,
+        "narHash": "sha256-cNeiEvwH0AGFwApOKKH7itDcII0sVBydg7hORjsyEo0=",
         "owner": "neovim",
         "repo": "neovim",
-        "rev": "367e52cc79a786bbee4456b30f9ec5db7e28d6a5",
+        "rev": "ee3d4f6b90d0902aa17936d1f0944755516569a1",
         "type": "github"
       },
       "original": {
@@ -73,11 +73,11 @@
         "nixpkgs-stable": "nixpkgs-stable"
       },
       "locked": {
-        "lastModified": 1704325397,
-        "narHash": "sha256-g6n0K5VsD0MitRXJ0mrspGP7R9VKJYNwJFZRmBop1Nw=",
+        "lastModified": 1704711807,
+        "narHash": "sha256-z9FgYQuP0IG0bPJdtwrBbpf58z33nsqi1SMe98EHEBI=",
         "owner": "piegamesde",
         "repo": "nixfmt",
-        "rev": "35da23233a1cfd799d2b59cee056ece6dff06ea1",
+        "rev": "a273e5ae71bf74c4a53d1818fc2e2e6cc703bab4",
         "type": "github"
       },
       "original": {
