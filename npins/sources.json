@@ -140,9 +140,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "3c8a185da4b8ab7aef487219f5e001b11d4b6aaf",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/3c8a185da4b8ab7aef487219f5e001b11d4b6aaf.tar.gz",
-      "hash": "0bzn4441v37250hpiqd0fm95yf1k3ldkvly3bfrhyzxpcjl50c3b"
+      "revision": "12e92044d313c54c438bd786d11684c88f6f78cd",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/12e92044d313c54c438bd786d11684c88f6f78cd.tar.gz",
+      "hash": "0mrlq0ymxg80nr9ph4gk4ldf6xmd4pxarpybb779xy7x417mnjsg"
     },
     "lspkind.nvim": {
       "type": "Git",
@@ -152,9 +152,9 @@
         "repo": "lspkind.nvim"
       },
       "branch": "master",
-      "revision": "7f26cf5e27e2bd910ce0ea00c514da2bf97423b8",
-      "url": "https://github.com/onsails/lspkind.nvim/archive/7f26cf5e27e2bd910ce0ea00c514da2bf97423b8.tar.gz",
-      "hash": "1hyglyp8w0xvypwzkdil27781a1gzg2gjnj2x59lkg0gz2n8gi1x"
+      "revision": "1735dd5a5054c1fb7feaf8e8658dbab925f4f0cf",
+      "url": "https://github.com/onsails/lspkind.nvim/archive/1735dd5a5054c1fb7feaf8e8658dbab925f4f0cf.tar.gz",
+      "hash": "0sjd244122q7hs3xaxzxhfcfpnzjz082rbnishq6khnr9w2xs0px"
     },
     "lualine.nvim": {
       "type": "Git",
@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "b3ff5f33201f474d58f5be96244869f189bbc091",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/b3ff5f33201f474d58f5be96244869f189bbc091.tar.gz",
-      "hash": "1gndv00xb40qgph0xgjyd0jcpp1nqmh64gvnq8x43df5vgdbiyjb"
+      "revision": "da8b3d485975a8727bea127518b65c980521ae22",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/da8b3d485975a8727bea127518b65c980521ae22.tar.gz",
+      "hash": "0m15mm9shyjnh9ggmlaw48gh1m519dpi6j90cd0jkdscycj0kfwj"
     },
     "toggleterm.nvim": {
       "type": "Git",
