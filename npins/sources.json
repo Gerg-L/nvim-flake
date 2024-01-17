@@ -116,9 +116,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "28562f6dff930899c1f9425a1355756d8919ae84",
-      "url": "https://github.com/saecki/crates.nvim/archive/28562f6dff930899c1f9425a1355756d8919ae84.tar.gz",
-      "hash": "1y3yfkw06cz2pp5silc0lpl3wj5zzqnrk58qqjsf99h3qb2dcagg"
+      "revision": "eeeb82f0afd2a155257c19abe1ff434a63897cab",
+      "url": "https://github.com/saecki/crates.nvim/archive/eeeb82f0afd2a155257c19abe1ff434a63897cab.tar.gz",
+      "hash": "0wqc0q6lzbdwxjwq6gw1jp0v8r8v6nymgakisg79yr339ddnxkxq"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "80ee86a2a81b5f029d5c8a85930cf549f9842635",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/80ee86a2a81b5f029d5c8a85930cf549f9842635.tar.gz",
-      "hash": "1gyfk4c698bwp1snzvix433950k2mcq2hrr7yjgky3ksq8xclgn5"
+      "revision": "f39a9cd41a352a4fccc32a52bd27b317184252b0",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/f39a9cd41a352a4fccc32a52bd27b317184252b0.tar.gz",
+      "hash": "1ddv857b2wycl9p65mjpdz1kn16g8l1rfa13l6bp7vnb5dy0k66g"
     },
     "rust-tools.nvim": {
       "type": "Git",
