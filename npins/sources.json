@@ -116,9 +116,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "eeeb82f0afd2a155257c19abe1ff434a63897cab",
-      "url": "https://github.com/saecki/crates.nvim/archive/eeeb82f0afd2a155257c19abe1ff434a63897cab.tar.gz",
-      "hash": "0wqc0q6lzbdwxjwq6gw1jp0v8r8v6nymgakisg79yr339ddnxkxq"
+      "revision": "b9d68ba054e184dd158cbfd375574d24269232a9",
+      "url": "https://github.com/saecki/crates.nvim/archive/b9d68ba054e184dd158cbfd375574d24269232a9.tar.gz",
+      "hash": "1kszbn7zd1pqmqysknb5kx19s6x1sp3bwpjqhf7218iy4x1m4wv8"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -176,9 +176,9 @@
         "repo": "LuaSnip"
       },
       "branch": "master",
-      "revision": "82108e7e31cc6fc223cc5df5cae6d89f70bb199f",
-      "url": "https://github.com/L3MON4D3/LuaSnip/archive/82108e7e31cc6fc223cc5df5cae6d89f70bb199f.tar.gz",
-      "hash": "0iskka0si7i48xq0x8xrxql94rhvdiy3p64hph36zkn30wfhi29f"
+      "revision": "2dbef19461198630b3d7c39f414d09fb07d1fdd2",
+      "url": "https://github.com/L3MON4D3/LuaSnip/archive/2dbef19461198630b3d7c39f414d09fb07d1fdd2.tar.gz",
+      "hash": "13xasp5ib9vjjis4gc239cffbb96d9dhkbpcr1wnp88i65lchp2f"
     },
     "noice.nvim": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "f39a9cd41a352a4fccc32a52bd27b317184252b0",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/f39a9cd41a352a4fccc32a52bd27b317184252b0.tar.gz",
-      "hash": "1ddv857b2wycl9p65mjpdz1kn16g8l1rfa13l6bp7vnb5dy0k66g"
+      "revision": "cf626cd2f94f6c230384c2e3249352b6404cd8d7",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/cf626cd2f94f6c230384c2e3249352b6404cd8d7.tar.gz",
+      "hash": "0py342z47c0zmagjdkdd2xs9idbld56ixfhlf451fk4kbhgxsfaa"
     },
     "rust-tools.nvim": {
       "type": "Git",
