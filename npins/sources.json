@@ -116,9 +116,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "387c10bb9bf59723f122a43b9f647a011b7d07a8",
-      "url": "https://github.com/saecki/crates.nvim/archive/387c10bb9bf59723f122a43b9f647a011b7d07a8.tar.gz",
-      "hash": "1px8dx4w6ggcd3xylji57nyds2hw8amwa6hzbc3gvnf9vbgbzi9m"
+      "revision": "f2a169840e97a8ed2048abb507d2742c3895c85b",
+      "url": "https://github.com/saecki/crates.nvim/archive/f2a169840e97a8ed2048abb507d2742c3895c85b.tar.gz",
+      "hash": "05j1f2cf9fgsl7kdz2kqq525xm7v6l4p10mh46nf897gllvvajmy"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -284,9 +284,9 @@
         "repo": "nvim-treesitter-context"
       },
       "branch": "master",
-      "revision": "85cf977181fb8e816e47ac05df7f756e9cb72caf",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/85cf977181fb8e816e47ac05df7f756e9cb72caf.tar.gz",
-      "hash": "0i6xm51y61r1x322q90yryqf0azzycg1smfwpcq83v8f4hz0h5gg"
+      "revision": "2972717355a18d5599e9162f48d6e3e584068bf9",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/2972717355a18d5599e9162f48d6e3e584068bf9.tar.gz",
+      "hash": "136yqfbgcjzy0k99h5zjrfdkcy5xpdqwdkvvc6x0ff4sw4mq0kgj"
     },
     "nvim-web-devicons": {
       "type": "Git",
@@ -296,9 +296,9 @@
         "repo": "nvim-web-devicons"
       },
       "branch": "master",
-      "revision": "140edfcf25093e8b321d13e154cbce89ee868ca0",
-      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/140edfcf25093e8b321d13e154cbce89ee868ca0.tar.gz",
-      "hash": "0vgd17jnknaayhshgn8ik40lwhb94f1wfzp0bww7s65kyxvciqf6"
+      "revision": "b427ac5f9dff494f839e81441fb3f04a58cbcfbc",
+      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/b427ac5f9dff494f839e81441fb3f04a58cbcfbc.tar.gz",
+      "hash": "13ywffn24wlqciy1fnisiqbgsg4h6nxf3wcd0v28kmk29wyzqkf3"
     },
     "plenary.nvim": {
       "type": "Git",
@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "301505da4bb72d11ffeee47ad45e0b677f70abe5",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/301505da4bb72d11ffeee47ad45e0b677f70abe5.tar.gz",
-      "hash": "0zflm2d5zmclxgg6gmxwq7if6zxzxr427ml089p5cpxd32p51p9s"
+      "revision": "1bfbb1fb5c56d2dbe33216fcb2ebe82e499aa06c",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/1bfbb1fb5c56d2dbe33216fcb2ebe82e499aa06c.tar.gz",
+      "hash": "08v642fh91c7mj92jjdjfzx86jmz2plvnlja8p8lwbvz0yvida5r"
     },
     "toggleterm.nvim": {
       "type": "Git",
@@ -368,9 +368,9 @@
         "repo": "vim-moonfly-colors"
       },
       "branch": "master",
-      "revision": "7a96c43dc7d45c89038aaf62e42ed397bb6a27b2",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/7a96c43dc7d45c89038aaf62e42ed397bb6a27b2.tar.gz",
-      "hash": "0i6fwlm0f85i6xjs83myvrgbxbhr49g8ibnymavhlp5l3bbascw4"
+      "revision": "426b5c0b21c31e07c805dc22956509ac75684560",
+      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/426b5c0b21c31e07c805dc22956509ac75684560.tar.gz",
+      "hash": "0nh3rj73y3q5k5z2jz646brdqzbsbyjcr3cajf8m74vhminxm3l5"
     },
     "vim-vsnip": {
       "type": "Git",
