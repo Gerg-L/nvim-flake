@@ -260,9 +260,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "021906284dcfb938bc236f8295af2650c60cb807",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/021906284dcfb938bc236f8295af2650c60cb807.tar.gz",
-      "hash": "0x6ib740crjxijmjh694zz1lmngpndj0hp5qca52h5xi0z2vlinr"
+      "revision": "d9e87768466f91c071375517b170da5fad7b41f5",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/d9e87768466f91c071375517b170da5fad7b41f5.tar.gz",
+      "hash": "0g9k5wd56n6dh673xjas777ykvy0377ffz11jywhfw0r6038qcis"
     },
     "nvim-tree.lua": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "c84eeb689e4cc86808e823c11eac4239c75292ce",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/c84eeb689e4cc86808e823c11eac4239c75292ce.tar.gz",
-      "hash": "0na91d0wd7c58gcijsgdl6r6vbf3l5z7gmhkzksmqmfwrjbz8hsy"
+      "revision": "6c7d918621e93a045671e8f85c6dcc01783b82d0",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/6c7d918621e93a045671e8f85c6dcc01783b82d0.tar.gz",
+      "hash": "15zcvkzygib6awqj2wqj56q20zrhk4y9f17kkc1zc75nkz39zv3y"
     },
     "rust-tools.nvim": {
       "type": "Git",
@@ -368,9 +368,9 @@
         "repo": "vim-moonfly-colors"
       },
       "branch": "master",
-      "revision": "1edce012ddc61bf14c492a6ebdd0983bff9d0cd2",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/1edce012ddc61bf14c492a6ebdd0983bff9d0cd2.tar.gz",
-      "hash": "1jvnvmj7l6xcsircbmynfh5z1h8sjsn15n6gwk14bgd9gm16xkan"
+      "revision": "a1a0dfc621f41ffb4e98a813e021ba41e8199adc",
+      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/a1a0dfc621f41ffb4e98a813e021ba41e8199adc.tar.gz",
+      "hash": "0wa46r8fygmz1r4v2nhc3mvhslwaaicc10zmhsj8kq64shhkmcf2"
     },
     "vim-vsnip": {
       "type": "Git",
