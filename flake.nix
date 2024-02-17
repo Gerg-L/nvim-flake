@@ -47,7 +47,7 @@
       {
         #
         # Linter and formatter, run with "nix fmt"
-        # You can use nixfmt or nixpkgs-fmt instead of alejandra if you wish
+        # You can use alejandra or nixpkgs-fmt instead of nixfmt if you wish
         #
         formatter.${system} = pkgs.writeShellApplication {
           name = "lint";
@@ -68,57 +68,51 @@
             fd '.*\.lua' . -X stylua --indent-type Spaces --indent-width 2 {} \;
           '';
         };
-        #
-        # Overlay which only provides neovim
-        #
-        overlays.default = final: _: removeAttrs self.packages.${final.system} [ "default" ];
-        #
-        # Dev shell which provides the final neovim package and npins
-        #
-        devShells.${system}.default = pkgs.mkShell {
-          packages = [
-            self.packages.${system}.default
-            pkgs.npins
-          ];
-        };
 
         packages.${system} = {
           default = self.packages.${system}.neovim;
 
           neovim =
-            let
-              neovimConfig = pkgs.neovimUtils.makeNeovimConfig {
-                plugins =
-                  [
-                    #
-                    # Add plugins from nixpkgs here
-                    #
-                    pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-                  ]
-                  ++ lib.mapAttrsToList
-                    (
+            (pkgs.wrapNeovimUnstable
+              (pkgs.neovim-unwrapped.overrideAttrs {
+                #
+                # Use neovim nightly
+                #
+                src = neovim-src;
+                version = neovim-src.shortRev or "dirty";
+                patches = [ ];
+                preConfigure = ''
+                  sed -i cmake.config/versiondef.h.in -e "s/@NVIM_VERSION_PRERELEASE@/-dev-$version/"
+                '';
+              })
+              (
+                pkgs.neovimUtils.makeNeovimConfig {
+                  plugins =
+                    [
+                      #
+                      # Add plugins from nixpkgs here
+                      #
+                      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+                    ]
+                    ++ lib.mapAttrsToList (
                       #
                       # This generates plugins from npins sources
                       #
                       name: src: (pkgs.vimUtils.buildVimPlugin { inherit name src; })
-                    )
-                    (import ./npins);
-                #
-                # These options are self explanatory
-                #
-                withPython3 = true;
-                extraPython3Packages = _: [ ];
-                withRuby = true;
-                viAlias = false;
-                vimAlias = false;
-                #
-                # Use the string generated in ./lua/default.nix for init.vim
-                #
-                customRC = import ./lua;
-              };
-              wrapperArgs =
-                let
-                  path = lib.makeBinPath [
+                    ) (import ./npins);
+                  #
+                  # Use the string generated in ./lua/default.nix for init.vim
+                  #
+                  customRC = import ./lua { inherit lib self;};
+                }
+              )
+            ).overrideAttrs
+              (old: {
+                generatedWrapperArgs = old.generatedWrapperArgs or [ ] ++ [
+                  "--prefix"
+                  "PATH"
+                  ":"
+                  (lib.makeBinPath [
                     #
                     # Runtime dependencies
                     #
@@ -129,31 +123,9 @@
                     pkgs.fd
                     pkgs.lua-language-server
                     pkgs.stylua
-                  ];
-                in
-                neovimConfig.wrapperArgs
-                ++ [
-                  "--prefix"
-                  "PATH"
-                  ":"
-                  path
+                  ])
                 ];
-            in
-            pkgs.wrapNeovimUnstable
-              (pkgs.neovim-unwrapped.overrideAttrs (
-                _: {
-                  #
-                  # Use neovim nightly
-                  #
-                  src = neovim-src;
-                  version = neovim-src.shortRev or "dirty";
-                  patches = [ ];
-                  preConfigure = ''
-                    sed -i cmake.config/versiondef.h.in -e "s/@NVIM_VERSION_PRERELEASE@/-dev-$version/"
-                  '';
-                }
-              ))
-              (neovimConfig // { inherit wrapperArgs; });
+              });
         };
       }
     );

@@ -1,23 +1,24 @@
+{ lib, self }:
 ''
   " Prepended viml config
 
 ''
-+ ((builtins.concatStringsSep "\n") (
-  map (x: "luafile ${x}") [
++ lib.concatLines (
+  map (x: "luafile ${self}/lua/${x}.lua") [
     #
     # All files listed here end up getting called with "luafile <file>"
     #
-    ./init.lua
-    ./lsp.lua
-    ./completion.lua
-    ./treesitter.lua
-    ./lualine.lua
-    ./noice.lua
-    ./gitsigns.lua
-    ./bufferline.lua
-    ./findfile.lua
+    "init"
+    "lsp"
+    "completion"
+    "treesitter"
+    "lualine"
+    "noice"
+    "gitsigns"
+    "bufferline"
+    "findfile"
   ]
-))
+)
 + ''
 
   " Appended viml config

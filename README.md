@@ -76,7 +76,7 @@ Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-co
 Example of updated all plugins: `npins update -f`
 
 All lua configuration is done in the /lua directory, and imported and ordered through /lua/default.nix.
-my lua config is not very good so I reccomend bringing your own
+My lua config is not very good so I recommend bringing your own
 
 ## Inspiration
 - [@the-argus's](https://github.com/the-argus) [nvim-config](https://github.com/the-argus/nvim-config)
