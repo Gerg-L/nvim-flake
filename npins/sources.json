@@ -224,9 +224,9 @@
         "repo": "nvim-autopairs"
       },
       "branch": "master",
-      "revision": "096d0baecc34f6c5d8a6dd25851e9d5ad338209b",
-      "url": "https://github.com/windwp/nvim-autopairs/archive/096d0baecc34f6c5d8a6dd25851e9d5ad338209b.tar.gz",
-      "hash": "167a5d8rycg703f1x9q7g9bavchfv8cj3qxvq721cf9sz1jniip2"
+      "revision": "2e8a10c5fc0dcaf8296a5f1a7077efcd37065cc8",
+      "url": "https://github.com/windwp/nvim-autopairs/archive/2e8a10c5fc0dcaf8296a5f1a7077efcd37065cc8.tar.gz",
+      "hash": "1d02klx0fhacg1ighmz84176rrm0a28dv19fnryhd0086b8ykrr9"
     },
     "nvim-cmp": {
       "type": "Git",
@@ -296,9 +296,9 @@
         "repo": "nvim-web-devicons"
       },
       "branch": "master",
-      "revision": "7f30f2da3c3641841ceb0e2c150281f624445e8f",
-      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/7f30f2da3c3641841ceb0e2c150281f624445e8f.tar.gz",
-      "hash": "1srssx18fgipznnl6b3lk17jkv0acsx6cw86m6x788nawl6qhsv7"
+      "revision": "14ac5887110b06b89a96881d534230dac3ed134d",
+      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/14ac5887110b06b89a96881d534230dac3ed134d.tar.gz",
+      "hash": "1l02wpzxac4ykghficsdhgn7ix2896qhaisxm4f7xbl72jl77h44"
     },
     "plenary.nvim": {
       "type": "Git",
@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "586f44d21ef687a4d41b5b24c1566d686ae84250",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/586f44d21ef687a4d41b5b24c1566d686ae84250.tar.gz",
-      "hash": "07gbl9b3p1xkrgh3a5ia9rgxvjz8vn0j9nyhhk1lwq4m9rbxknch"
+      "revision": "df0a57a449ded462b13513ff163461a2a5709fa8",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/df0a57a449ded462b13513ff163461a2a5709fa8.tar.gz",
+      "hash": "1r6kah83ym3paqmfrxpm5q3fq1pbf9j2wxpad72r5zy63wg7dd6i"
     },
     "rust-tools.nvim": {
       "type": "Git",
