@@ -224,9 +224,9 @@
         "repo": "nvim-autopairs"
       },
       "branch": "master",
-      "revision": "2e8a10c5fc0dcaf8296a5f1a7077efcd37065cc8",
-      "url": "https://github.com/windwp/nvim-autopairs/archive/2e8a10c5fc0dcaf8296a5f1a7077efcd37065cc8.tar.gz",
-      "hash": "1d02klx0fhacg1ighmz84176rrm0a28dv19fnryhd0086b8ykrr9"
+      "revision": "90f824d37c0cb079d2764927e73af77faa9ba0ef",
+      "url": "https://github.com/windwp/nvim-autopairs/archive/90f824d37c0cb079d2764927e73af77faa9ba0ef.tar.gz",
+      "hash": "0w6il5c7fii7afg4p736mjxmwzqpkcigjnacr2sjr4l42l01xhw6"
     },
     "nvim-cmp": {
       "type": "Git",
@@ -272,9 +272,9 @@
         "repo": "nvim-tree.lua"
       },
       "branch": "master",
-      "revision": "d35a8d5ec6358ada4b058431b367b32360737466",
-      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/d35a8d5ec6358ada4b058431b367b32360737466.tar.gz",
-      "hash": "099s38w11r9i38338l03ash294a48kq9p9cyjijs6w02drzmnbb2"
+      "revision": "030defdb6522f5f716d8201d20ca1a2baa57ca66",
+      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/030defdb6522f5f716d8201d20ca1a2baa57ca66.tar.gz",
+      "hash": "1sfd15hmcm17avmwi42h8mgaqnawiik97gvc48lhna9pb7ascskr"
     },
     "nvim-treesitter-context": {
       "type": "Git",
@@ -284,9 +284,9 @@
         "repo": "nvim-treesitter-context"
       },
       "branch": "master",
-      "revision": "23b699ac40091d8c729f024b3f1400bc7e26e0c5",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/23b699ac40091d8c729f024b3f1400bc7e26e0c5.tar.gz",
-      "hash": "0mrc0ilamj956wmymr2cc6zjjfxcrzp32iwhy1gmj9hxwacllvw4"
+      "revision": "fbeff2a60d073f73fef23a2c707e4f12c9c53359",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/fbeff2a60d073f73fef23a2c707e4f12c9c53359.tar.gz",
+      "hash": "1c4zwa6sap0cfhmminb42d5q53yj9sk5yqmggvh6m8bh054z5k6f"
     },
     "nvim-web-devicons": {
       "type": "Git",
