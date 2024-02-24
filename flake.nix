@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
     neovim-src = {
-      url = "github:neovim/neovim/b5653984e5de514410b5654d2a9b92bdcb9eedf3";
+      url = "github:neovim/neovim";
       flake = false;
     };
     nixfmt = {
