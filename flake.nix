@@ -103,12 +103,13 @@
                   #
                   # Use the string generated in ./lua/default.nix for init.vim
                   #
-                  customRC = import ./lua { inherit lib self;};
+                  customRC = import ./lua { inherit lib self; };
                 }
               )
-            ).overrideAttrs
-              (old: {
-                generatedWrapperArgs = old.generatedWrapperArgs or [ ] ++ [
+            ).override
+
+              {
+                wrapperArgs = [
                   "--prefix"
                   "PATH"
                   ":"
@@ -125,7 +126,7 @@
                     pkgs.stylua
                   ])
                 ];
-              });
+              };
         };
       }
     );
