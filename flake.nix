@@ -106,10 +106,9 @@
                   customRC = import ./lua { inherit lib self; };
                 }
               )
-            ).override
-
-              {
-                wrapperArgs = [
+            ).overrideAttrs
+              (old: {
+                generatedWrapperArgs = old.generatedWrapperArgs or [ ] ++ [
                   "--prefix"
                   "PATH"
                   ":"
@@ -126,7 +125,7 @@
                     pkgs.stylua
                   ])
                 ];
-              };
+              });
         };
       }
     );
