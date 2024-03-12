@@ -164,9 +164,9 @@
         "repo": "lualine.nvim"
       },
       "branch": "master",
-      "revision": "8b56462bfb746760465264de41b4907310f113ec",
-      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/8b56462bfb746760465264de41b4907310f113ec.tar.gz",
-      "hash": "1jgq8a230skc3k2nrgnxa7ja2wy7sv5kfl0yyaxfggmvsjcyk28v"
+      "revision": "3c55675a7bc170d21d7ea70874ae66fbf5cfb0dc",
+      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/3c55675a7bc170d21d7ea70874ae66fbf5cfb0dc.tar.gz",
+      "hash": "0s9cslhrb96wgl1x4cz41i9igkms2n98asm9v19wa9vb54y8x686"
     },
     "luasnip": {
       "type": "Git",
@@ -260,9 +260,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "99330586c6e1912c890fc39d19d97571fde660cd",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/99330586c6e1912c890fc39d19d97571fde660cd.tar.gz",
-      "hash": "1g9lwvjsaikqlc2k4s20069b5mgbaxqg38v6k6q19anm118q72v9"
+      "revision": "1917b562a02f20885900b1da0f0ea25028ccedab",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/1917b562a02f20885900b1da0f0ea25028ccedab.tar.gz",
+      "hash": "039wdlf7996hfy6z2v0bsr9a7kw5zjc7x14sbg5pm7yzsn2wrgcn"
     },
     "nvim-tree.lua": {
       "type": "Git",
