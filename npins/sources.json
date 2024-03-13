@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "2c2463dbd82eddd7dbab881c3a62cfbfbe3c67ae",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/2c2463dbd82eddd7dbab881c3a62cfbfbe3c67ae.tar.gz",
-      "hash": "0j9q39pks1lvp9zd97lc1frb2fq0irjizza34kp381gg6smxmc28"
+      "revision": "41dc075ef67b556b0752ad3967649371bd95cb95",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/41dc075ef67b556b0752ad3967649371bd95cb95.tar.gz",
+      "hash": "15y0fllw72lhhchai5qxxm11klz93f7k1qlpr28yims7vps9swb0"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -200,9 +200,9 @@
         "repo": "nui.nvim"
       },
       "branch": "main",
-      "revision": "756c59f46057cd2d43619cd3a6d4e01b2aa60295",
-      "url": "https://github.com/MunifTanjim/nui.nvim/archive/756c59f46057cd2d43619cd3a6d4e01b2aa60295.tar.gz",
-      "hash": "0kfmzbccpkbbimlhs3q046kkx4823dzcsrr6sp4ac71dfx0v6cd7"
+      "revision": "3dc46d725f7b94bee5117c0a699b57b1902b5d65",
+      "url": "https://github.com/MunifTanjim/nui.nvim/archive/3dc46d725f7b94bee5117c0a699b57b1902b5d65.tar.gz",
+      "hash": "1wqf7p8hvspnnr6w3vd3kn4z0wmsg3ishmim68na0h0x8hvx5h2h"
     },
     "null-ls.nvim": {
       "type": "Git",
@@ -260,9 +260,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "1917b562a02f20885900b1da0f0ea25028ccedab",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/1917b562a02f20885900b1da0f0ea25028ccedab.tar.gz",
-      "hash": "039wdlf7996hfy6z2v0bsr9a7kw5zjc7x14sbg5pm7yzsn2wrgcn"
+      "revision": "4bdd3800b4148f670c6cf55ef65f490148eeb550",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/4bdd3800b4148f670c6cf55ef65f490148eeb550.tar.gz",
+      "hash": "1fi36nih34d8shsmvcskh8ckxj7xlzrq30l4s4sadpwz6a31bq3g"
     },
     "nvim-tree.lua": {
       "type": "Git",
