@@ -116,9 +116,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "535773ed3b321d68ddd6ef8cd5a1e07b345026a6",
-      "url": "https://github.com/saecki/crates.nvim/archive/535773ed3b321d68ddd6ef8cd5a1e07b345026a6.tar.gz",
-      "hash": "167pcx0d8ycrfzh0x52fs0k9jkwbmri52y8axgn85n67bnvqxp8g"
+      "revision": "b4f4987ccdb1cc3899ee541ef4375c73c48c4570",
+      "url": "https://github.com/saecki/crates.nvim/archive/b4f4987ccdb1cc3899ee541ef4375c73c48c4570.tar.gz",
+      "hash": "0r9l018sfymmbg7lc31bp4q2aqdljaqini5s14mg3r7lwcg15z61"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "41dc075ef67b556b0752ad3967649371bd95cb95",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/41dc075ef67b556b0752ad3967649371bd95cb95.tar.gz",
-      "hash": "15y0fllw72lhhchai5qxxm11klz93f7k1qlpr28yims7vps9swb0"
+      "revision": "4e348641b8206c3b8d23080999e3ddbe4ca90efc",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/4e348641b8206c3b8d23080999e3ddbe4ca90efc.tar.gz",
+      "hash": "0apzslpij9sq7h0rpilvgrn5naqiwrz69x5g5n7m82pj9pz0d2m5"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -140,9 +140,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "821a7acd88587d966f7e464b0b3031dfe7f5680c",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/821a7acd88587d966f7e464b0b3031dfe7f5680c.tar.gz",
-      "hash": "0pc9irbfqvy55ymdyd60a69y3vvi1nqvs4j9akg624pvnda10fv7"
+      "revision": "3d08501caef2329aba5121b753e903904088f7e6",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/3d08501caef2329aba5121b753e903904088f7e6.tar.gz",
+      "hash": "09p7y9d08sb1fqpy84yga39cf9misir6wx3rby67v2pl3i01k7sy"
     },
     "lspkind.nvim": {
       "type": "Git",
@@ -164,9 +164,9 @@
         "repo": "lualine.nvim"
       },
       "branch": "master",
-      "revision": "3c55675a7bc170d21d7ea70874ae66fbf5cfb0dc",
-      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/3c55675a7bc170d21d7ea70874ae66fbf5cfb0dc.tar.gz",
-      "hash": "0s9cslhrb96wgl1x4cz41i9igkms2n98asm9v19wa9vb54y8x686"
+      "revision": "26dac2fcadb6e622790ab08e36d0dba3d3765398",
+      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/26dac2fcadb6e622790ab08e36d0dba3d3765398.tar.gz",
+      "hash": "0vlxrklir30ncll16p73kn8h2rqkhi1bqjil4k4ms19hils0i32s"
     },
     "luasnip": {
       "type": "Git",
@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "7472420f8734c710bd7009081cef9b97f08a3821",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/7472420f8734c710bd7009081cef9b97f08a3821.tar.gz",
-      "hash": "1jm2ycznj0nc3vrql7vqhh927hzlaybijmpfn72hjc9wrh84dslb"
+      "revision": "b323abeb4baf9e4851c3af1961e770ce76c657c7",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/b323abeb4baf9e4851c3af1961e770ce76c657c7.tar.gz",
+      "hash": "1k83g0jcpq5whzhf1qbfy97r4n22nh29s1ixihw91n98rk8pdshm"
     },
     "toggleterm.nvim": {
       "type": "Git",
