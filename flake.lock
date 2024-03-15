@@ -799,11 +799,11 @@
         "serokell-nix": "serokell-nix"
       },
       "locked": {
-        "lastModified": 1710374038,
-        "narHash": "sha256-/BZRfQcKyAHPfaCmgAGNtwcnF8YT8kJ6JcERtIxzMbY=",
+        "lastModified": 1710440186,
+        "narHash": "sha256-HtXvzmfN4wk45qiKZ7V+/5WBV7jnTHfd7iBwF4XGl64=",
         "owner": "piegamesde",
         "repo": "nixfmt",
-        "rev": "8411ce4e2830f628c838d96d9b948e9131626688",
+        "rev": "8d13b593fa8d8d6e5075f541f3231222a08e84df",
         "type": "github"
       },
       "original": {
