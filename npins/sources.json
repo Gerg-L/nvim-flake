@@ -32,9 +32,9 @@
         "repo": "cinnamon.nvim"
       },
       "branch": "master",
-      "revision": "c406ffda3a0302f32c23b24ab756ea20467d6578",
-      "url": "https://github.com/declancm/cinnamon.nvim/archive/c406ffda3a0302f32c23b24ab756ea20467d6578.tar.gz",
-      "hash": "1lna4jj4blk2dijywkhhz8r8l6a3jm7vzbkw8dndz00g3915f296"
+      "revision": "559fe02fae00ffd78377e9c242b2faa25a428592",
+      "url": "https://github.com/declancm/cinnamon.nvim/archive/559fe02fae00ffd78377e9c242b2faa25a428592.tar.gz",
+      "hash": "0g727i2skzblla7k89zpzjkva57dawdlxz11gwn9a1jxd68a9n1c"
     },
     "cmp-buffer": {
       "type": "Git",
@@ -164,9 +164,9 @@
         "repo": "lualine.nvim"
       },
       "branch": "master",
-      "revision": "af4c3cf17206810880d2a93562e0a4c0d901c684",
-      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/af4c3cf17206810880d2a93562e0a4c0d901c684.tar.gz",
-      "hash": "0nxz4gw4lycajmi22mnrhpzrrcrszgmy9xi9a4n9k6ps716icq25"
+      "revision": "b5e8bb642138f787a2c1c5aedc2a78cb2cebbd67",
+      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/b5e8bb642138f787a2c1c5aedc2a78cb2cebbd67.tar.gz",
+      "hash": "0c2ncxj66p90r3wmc0y96ywqbmvll9gr5zpfs3gfv558q7ky4rzv"
     },
     "luasnip": {
       "type": "Git",
@@ -236,9 +236,9 @@
         "repo": "nvim-cmp"
       },
       "branch": "main",
-      "revision": "04e0ca376d6abdbfc8b52180f8ea236cbfddf782",
-      "url": "https://github.com/hrsh7th/nvim-cmp/archive/04e0ca376d6abdbfc8b52180f8ea236cbfddf782.tar.gz",
-      "hash": "0zzlkla5vgrfa55a3sjb885q0574s67ji5ps2rq53q82hlfwwphl"
+      "revision": "43b460a2bd02fd898e67f5f1f65dfd1cce26203a",
+      "url": "https://github.com/hrsh7th/nvim-cmp/archive/43b460a2bd02fd898e67f5f1f65dfd1cce26203a.tar.gz",
+      "hash": "1xk3zapp34sjhi90sm8yf803pj0w3bvgyjfi1xszbi9mb9wc0173"
     },
     "nvim-colorizer.lua": {
       "type": "Git",
