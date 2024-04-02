@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "70584ff9aae8078b64430c574079d79620b8f06d",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/70584ff9aae8078b64430c574079d79620b8f06d.tar.gz",
-      "hash": "0yijh9zqaw5lma7ncbr1cqawmd4xvd3954jdz8225i3y06q7abk8"
+      "revision": "070875f9e4eb81eb20cb60996cd1d9086d94b05e",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/070875f9e4eb81eb20cb60996cd1d9086d94b05e.tar.gz",
+      "hash": "03hr98kcy9vh6qbibhbc54laf5ph0p3rrdyx5j434z2hxsjh4sad"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -176,9 +176,9 @@
         "repo": "LuaSnip"
       },
       "branch": "master",
-      "revision": "a7a4b4682c4b3e2ba82b82a4e6e5f5a0e79dec32",
-      "url": "https://github.com/L3MON4D3/LuaSnip/archive/a7a4b4682c4b3e2ba82b82a4e6e5f5a0e79dec32.tar.gz",
-      "hash": "0ybc2mmxh135j2z39xdryn0wmq1gr9rvcblh9gylz4jb629348x3"
+      "revision": "79cc25c39878401d4e8b6ec42fcf14639426bafc",
+      "url": "https://github.com/L3MON4D3/LuaSnip/archive/79cc25c39878401d4e8b6ec42fcf14639426bafc.tar.gz",
+      "hash": "0ni5mwcblbdhfppw5s8ikl3mm834kf0agl3psrj061bk08y9kp37"
     },
     "noice.nvim": {
       "type": "Git",
