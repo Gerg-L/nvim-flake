@@ -5,10 +5,6 @@
       url = "github:neovim/neovim/a7788c2e251089b4844aac0e6633998bdb017da1";
       flake = false;
     };
-    nixfmt = {
-      url = "github:piegamesde/nixfmt?ref=rfc101-style";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     flake-compat = {
       url = "github:edolstra/flake-compat";
       flake = false;
@@ -20,7 +16,6 @@
       self,
       nixpkgs,
       neovim-src,
-      nixfmt,
       ...
     }:
     let
@@ -52,11 +47,7 @@
         formatter.${system} = pkgs.writeShellApplication {
           name = "lint";
           runtimeInputs = [
-            (pkgs.nixfmt.overrideAttrs {
-              version = "0.6.0-${nixfmt.shortRev}";
-
-              src = nixfmt;
-            })
+            pkgs.nixfmt-rfc-style
             pkgs.deadnix
             pkgs.statix
             pkgs.fd
