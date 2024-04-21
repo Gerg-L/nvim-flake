@@ -1,12 +1,22 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
+    nixpkgs = {
+      type = "github";
+      owner = "NixOS";
+      repo = "nixpkgs";
+      ref = "nixos-unstable";
+    };
     neovim-src = {
-      url = "github:neovim/neovim/a7788c2e251089b4844aac0e6633998bdb017da1";
+      type = "github";
+      owner = "neovim";
+      repo = "neovim";
+      ref = "f694d020c576fb037eb92bae3bbf03a69d8686b6";
       flake = false;
     };
     flake-compat = {
-      url = "github:edolstra/flake-compat";
+      type = "github";
+      owner = "edolstra";
+      repo = "flake-compat";
       flake = false;
     };
   };
