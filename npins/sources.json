@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "7e38f07cab0e5387f9f41e92474db174a63a4725",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/7e38f07cab0e5387f9f41e92474db174a63a4725.tar.gz",
-      "hash": "0iwyzz7m23cdm5wira27jimnmadyx1v4c1cvcg172p0584dfrk66"
+      "revision": "035da036e68e509ed158414416c827d022d914bd",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/035da036e68e509ed158414416c827d022d914bd.tar.gz",
+      "hash": "1k5qd4k7izirgvc8yvg1hjgfx00f9fml7k0ayzk45lnhzb5c7bah"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -272,9 +272,9 @@
         "repo": "nvim-tree.lua"
       },
       "branch": "master",
-      "revision": "81eb8d519233c105f30dc0a278607e62b20502fd",
-      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/81eb8d519233c105f30dc0a278607e62b20502fd.tar.gz",
-      "hash": "16xcfbw23dca8l27r1jjww0r7ysi6a2z9vc84in8pyjz95xcx5pa"
+      "revision": "ae8e46e8fabb32fa3ae5319383ea2c8763f14caa",
+      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/ae8e46e8fabb32fa3ae5319383ea2c8763f14caa.tar.gz",
+      "hash": "0cb4p6bndid12h2bjdj5ybksqjmwv1876jx5a2wlj6h0q50wfjs0"
     },
     "nvim-treesitter-context": {
       "type": "Git",
@@ -296,9 +296,9 @@
         "repo": "nvim-web-devicons"
       },
       "branch": "master",
-      "revision": "b3468391470034353f0e5110c70babb5c62967d3",
-      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/b3468391470034353f0e5110c70babb5c62967d3.tar.gz",
-      "hash": "1rs6yirsmazfhnbjklbj61pi4bg66ig9vhnpmrdblxbyrfx4144w"
+      "revision": "31ba3c489e56a7f20881cee013cea1269b6b2f2d",
+      "url": "https://github.com/nvim-tree/nvim-web-devicons/archive/31ba3c489e56a7f20881cee013cea1269b6b2f2d.tar.gz",
+      "hash": "1i3gj7s8r9rw7cihk1jcldb7g4kx2fx71vbd3wi2687l4c20l6yb"
     },
     "plenary.nvim": {
       "type": "Git",
@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "10d57f38f538cd6c22330a2a4b74efe132ff35b5",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/10d57f38f538cd6c22330a2a4b74efe132ff35b5.tar.gz",
-      "hash": "08m9dx0ay2jslfsxw7ig6dnccn33v1zi7as4j301zs4shnblix8f"
+      "revision": "7d1698f3d88b448e0639974248cc17f49b7b8acf",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/7d1698f3d88b448e0639974248cc17f49b7b8acf.tar.gz",
+      "hash": "1k3fhgpakr1b8x9fk7sq699h3479k8x9yc3jbq7xq2jk7p0n4m62"
     },
     "toggleterm.nvim": {
       "type": "Git",
