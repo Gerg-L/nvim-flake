@@ -20,9 +20,9 @@
         "repo": "bufferline.nvim"
       },
       "branch": "main",
-      "revision": "f6f00d9ac1a51483ac78418f9e63126119a70709",
-      "url": "https://github.com/akinsho/bufferline.nvim/archive/f6f00d9ac1a51483ac78418f9e63126119a70709.tar.gz",
-      "hash": "1681xqpvxb7zhfig69d0qf287qzxfwcwb6vipnhykiisd8vn9inv"
+      "revision": "73540cb95f8d95aa1af3ed57713c6720c78af915",
+      "url": "https://github.com/akinsho/bufferline.nvim/archive/73540cb95f8d95aa1af3ed57713c6720c78af915.tar.gz",
+      "hash": "0z3fg5zff1gng6wzsbj56sbbvmq9f30y6bzzkd9kjrfzsml6cybc"
     },
     "cinnamon.nvim": {
       "type": "Git",
@@ -236,9 +236,9 @@
         "repo": "nvim-cmp"
       },
       "branch": "main",
-      "revision": "ce16de5665c766f39c271705b17fff06f7bcb84f",
-      "url": "https://github.com/hrsh7th/nvim-cmp/archive/ce16de5665c766f39c271705b17fff06f7bcb84f.tar.gz",
-      "hash": "10i720fidv41421as9i2xp4d4kr69zfyvkxjhgv6h41fdi75070c"
+      "revision": "8f3c541407e691af6163e2447f3af1bd6e17f9a3",
+      "url": "https://github.com/hrsh7th/nvim-cmp/archive/8f3c541407e691af6163e2447f3af1bd6e17f9a3.tar.gz",
+      "hash": "00axjaxgnv6s7rk89sk2wnq5nsqhmv0dm9sn6l1l3cg1vwqqjgxg"
     },
     "nvim-colorizer.lua": {
       "type": "Git",
@@ -308,9 +308,9 @@
         "repo": "plenary.nvim"
       },
       "branch": "master",
-      "revision": "8aad4396840be7fc42896e3011751b7609ca4119",
-      "url": "https://github.com/nvim-lua/plenary.nvim/archive/8aad4396840be7fc42896e3011751b7609ca4119.tar.gz",
-      "hash": "06ahw1mxjp5g1kbsdza29hyawr4blqzw3vb9d4rg2d5qmnwcbky0"
+      "revision": "5129a3693c482fcbc5ab99a7706ffc4360b995a0",
+      "url": "https://github.com/nvim-lua/plenary.nvim/archive/5129a3693c482fcbc5ab99a7706ffc4360b995a0.tar.gz",
+      "hash": "0z8frdjcnc547bx3h9dv0b51ghddb2mpa6j664xqj628gbbarcd2"
     },
     "rainbow-delimiters": {
       "type": "Git",
@@ -356,9 +356,9 @@
         "repo": "toggleterm.nvim"
       },
       "branch": "main",
-      "revision": "dca1c80fb8ec41c97e7c3ef308719d8143fbbb05",
-      "url": "https://github.com/akinsho/toggleterm.nvim/archive/dca1c80fb8ec41c97e7c3ef308719d8143fbbb05.tar.gz",
-      "hash": "11rmk7hpmf75n0lgchj7hvsw9915m493hlgqsmjkkyhs9w0bwb4n"
+      "revision": "066cccf48a43553a80a210eb3be89a15d789d6e6",
+      "url": "https://github.com/akinsho/toggleterm.nvim/archive/066cccf48a43553a80a210eb3be89a15d789d6e6.tar.gz",
+      "hash": "1z058jxwcynwyw6fnkjsqdpnmbl9pa956fnm1x4w96hy00d5pklq"
     },
     "vim-moonfly-colors": {
       "type": "Git",
