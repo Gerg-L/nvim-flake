@@ -28,9 +28,6 @@ Add this flake as an input
 ### Add to user environment
 ```nix
 #anyModule.nix
-{inputs, pkgs, ...}:
-{
-
 # add system wide
   environment.systemPackages = [
     inputs.nvim-flake.packages.${pkgs.system}.neovim
@@ -39,14 +36,11 @@ Add this flake as an input
   users.users."<name>".packages = [
     inputs.nvim-flake.packages.${pkgs.system}.neovim
   ];
-}
 ```
 
 ## Legacy
 Use fetchTarball
 ```nix
-#anyModule.nix
-{pkgs, ...}:
 let
   nvim-flake = import (builtins.fetchTarball {
   # Get the revision by choosing a version from https://github.com/Gerg-L/nvim-flake/commits/master
@@ -64,7 +58,6 @@ in
   users.users."<name>".packages = [
     nvim-flake.packages.${pkgs.system}.neovim
   ];
-}
 ```
 
 # Forking usage guide
