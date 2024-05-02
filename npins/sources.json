@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "790355f00af1fc2c330ea1b2b7f68d65f19b57c9",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/790355f00af1fc2c330ea1b2b7f68d65f19b57c9.tar.gz",
-      "hash": "0gqrh128djsg4a46nrnxbbx85as3y838h5y0i7sglcqr2xf2v1sc"
+      "revision": "9cafac31a091267838e1e90fd6e083d37611f516",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/9cafac31a091267838e1e90fd6e083d37611f516.tar.gz",
+      "hash": "1c69nbrjmhls1ww9wbcq0rbjfyzcgmf69zxpyhnyzs9kmz4jk5i2"
     },
     "indent-blankline.nvim": {
       "type": "Git",
