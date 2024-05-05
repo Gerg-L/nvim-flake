@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "9cafac31a091267838e1e90fd6e083d37611f516",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/9cafac31a091267838e1e90fd6e083d37611f516.tar.gz",
-      "hash": "1c69nbrjmhls1ww9wbcq0rbjfyzcgmf69zxpyhnyzs9kmz4jk5i2"
+      "revision": "bc933d24a669608968ff4791b14d2d9554813a65",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/bc933d24a669608968ff4791b14d2d9554813a65.tar.gz",
+      "hash": "1c8vkgfpmagnczzjdnxg9md3wiw7irlv02v7v0yv2q0piii9s6av"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -200,9 +200,9 @@
         "repo": "nui.nvim"
       },
       "branch": "main",
-      "revision": "cbd2668414331c10039278f558630ed19b93e69b",
-      "url": "https://github.com/MunifTanjim/nui.nvim/archive/cbd2668414331c10039278f558630ed19b93e69b.tar.gz",
-      "hash": "1429x2c6j6nap3nzsmsnxflgbs7wbj0g3mi5d2kww8413qvl5gk6"
+      "revision": "274fa89a9b4bed746647c2917091902f882509ec",
+      "url": "https://github.com/MunifTanjim/nui.nvim/archive/274fa89a9b4bed746647c2917091902f882509ec.tar.gz",
+      "hash": "1ii7hs97jci5lwa91x12j1sqdqyrbwybkqr9m7r4r9rzwnrzyz9m"
     },
     "null-ls.nvim": {
       "type": "Git",
