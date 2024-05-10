@@ -188,9 +188,9 @@
         "repo": "noice.nvim"
       },
       "branch": "main",
-      "revision": "f4decbc7a80229ccc9f86026b74bdcf0c39e38a7",
-      "url": "https://github.com/folke/noice.nvim/archive/f4decbc7a80229ccc9f86026b74bdcf0c39e38a7.tar.gz",
-      "hash": "01yhrmqqrw5779q1lbx6vwpyqvwhh9mai5x17vby0qr1l1gns7wd"
+      "revision": "09102ca2e9a3e9302119fdaf7a059a034e4a626d",
+      "url": "https://github.com/folke/noice.nvim/archive/09102ca2e9a3e9302119fdaf7a059a034e4a626d.tar.gz",
+      "hash": "1gzdwgizbl60fqiiiwrzfqbbds182qqlr3gyyzvgxbxijs3ajsk1"
     },
     "nui.nvim": {
       "type": "Git",
@@ -248,9 +248,9 @@
         "repo": "nvim-colorizer.lua"
       },
       "branch": "master",
-      "revision": "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6",
-      "url": "https://github.com/norcalli/nvim-colorizer.lua/archive/36c610a9717cc9ec426a07c8e6bf3b3abcb139d6.tar.gz",
-      "hash": "0gvqdfkqf6k9q46r0vcc3nqa6w45gsvp8j4kya1bvi24vhifg2p9"
+      "revision": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
+      "url": "https://github.com/norcalli/nvim-colorizer.lua/archive/a065833f35a3a7cc3ef137ac88b5381da2ba302e.tar.gz",
+      "hash": "0v1h9lj68kmx6052zg78v366iibxq78367h7avm97pvp5ksvqcw2"
     },
     "nvim-lspconfig": {
       "type": "Git",
