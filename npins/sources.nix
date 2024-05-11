@@ -1,4 +1,8 @@
-pkgs:
+{
+  fetchzip,
+  fetchgit,
+  fetchurl,
+}:
 let
 
   data = builtins.fromJSON (builtins.readFile ./sources.json);
@@ -33,28 +37,28 @@ let
     # At the moment, either it is a plain git repository (which has an url), or it is a GitHub/GitLab repository
     # In the latter case, there we will always be an url to the tarball
     if url != null then
-      (pkgs.fetchzip {
+      (fetchzip {
         inherit url;
         sha256 = hash;
         extension = "tar";
       })
     else
       assert repository.type == "Git";
-      pkgs.fetchgit {
+      fetchgit {
         inherit (repository) url;
         rev = revision;
       };
 
   mkPyPiSource =
     { url, hash, ... }:
-    pkgs.fetchurl {
+    fetchurl {
       inherit url;
       sha256 = hash;
     };
 
   mkChannelSource =
     { url, hash, ... }:
-    pkgs.fetchzip {
+    fetchzip {
       inherit url;
       sha256 = hash;
       extension = "tar";

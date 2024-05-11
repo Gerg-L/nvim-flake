@@ -100,7 +100,7 @@
                       # This generates plugins from npins sources
                       #
                       name: src: (pkgs.vimUtils.buildVimPlugin { inherit name src; })
-                    ) (import ./npins/sources.nix pkgs);
+                    ) (pkgs.callPackages ./npins/sources.nix { });
                   #
                   # Use the string generated in ./lua/default.nix for init.vim
                   #
