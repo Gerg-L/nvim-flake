@@ -65,7 +65,7 @@ in
 Update the flake like any other `nix flake update`
 
 Add/remove/update plugins via [npins](https://github.com/andir/npins) 
-Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-context -branch main`
+Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-context --branch main`
 Example of updated all plugins: `npins update -f`
 
 All lua configuration is done in the /lua directory, and imported and ordered through /lua/default.nix.
