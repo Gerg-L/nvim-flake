@@ -33,36 +33,51 @@
       #
       # Funni helper function
       #
-      withSystem =
-        f:
-        lib.fold lib.recursiveUpdate { } (
-          map f [
-            "x86_64-linux"
-            "x86_64-darwin"
-            "aarch64-linux"
-            "aarch64-darwin"
-          ]
+      gerg-utils =
+        x:
+        lib.foldAttrs lib.mergeAttrs { } (
+          map
+            (
+              s:
+              builtins.mapAttrs (
+                _: v:
+                if lib.isFunction v then
+                  {
+                    ${s} = v {
+                      pkgs = nixpkgs.legacyPackages.${s};
+                      system = s;
+                    };
+                  }
+                else
+                  v
+              ) x
+            )
+            [
+              "x86_64-linux"
+              "x86_64-darwin"
+              "aarch64-linux"
+              "aarch64-darwin"
+            ]
         );
     in
-    withSystem (
-      system:
-      let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in
-      {
-        #
-        # Linter and formatter, run with "nix fmt"
-        # You can use alejandra or nixpkgs-fmt instead of nixfmt if you wish
-        #
-        formatter.${system} = pkgs.writeShellApplication {
+    gerg-utils {
+      #
+      # Linter and formatter, run with "nix fmt"
+      # You can use alejandra or nixpkgs-fmt instead of nixfmt if you wish
+      #
+      formatter =
+        { pkgs, ... }:
+        pkgs.writeShellApplication {
           name = "lint";
-          runtimeInputs = [
-            pkgs.nixfmt-rfc-style
-            pkgs.deadnix
-            pkgs.statix
-            pkgs.fd
-            pkgs.stylua
-          ];
+          runtimeInputs = builtins.attrValues {
+            inherit (pkgs)
+              nixfmt-rfc-style
+              deadnix
+              statix
+              fd
+              stylua
+              ;
+          };
           text = ''
             fd '.*\.nix' . -x statix fix -- {} \;
             fd '.*\.nix' . -X deadnix -e -- {} \; -X nixfmt {} \;
@@ -70,7 +85,9 @@
           '';
         };
 
-        packages.${system} = {
+      packages =
+        { pkgs, system }:
+        {
           default = self.packages.${system}.neovim;
 
           neovim =
@@ -113,21 +130,25 @@
                   "--prefix"
                   "PATH"
                   ":"
-                  (lib.makeBinPath [
-                    #
-                    # Runtime dependencies
-                    #
-                    pkgs.deadnix
-                    pkgs.statix
-                    pkgs.nil
-                    pkgs.ripgrep
-                    pkgs.fd
-                    pkgs.lua-language-server
-                    pkgs.stylua
-                  ])
+                  (lib.makeBinPath (
+                    builtins.attrValues {
+
+                      #
+                      # Runtime dependencies
+                      #
+                      inherit (pkgs)
+                        deadnix
+                        statix
+                        nil
+                        ripgrep
+                        fd
+                        lua-language-server
+                        stylua
+                        ;
+                    }
+                  ))
                 ];
               });
         };
-      }
-    );
+    };
 }
