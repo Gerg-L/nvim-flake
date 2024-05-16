@@ -108,6 +108,16 @@
                   plugins =
                     [
                       #
+                      # Package your lua config as a plugin
+                      #
+                      (pkgs.vimUtils.buildVimPlugin {
+                        pname = "gerg";
+                        version = "#";
+
+                        src = "${self}/gerg";
+                      })
+
+                      #
                       # Add plugins from nixpkgs here
                       #
                       pkgs.vimPlugins.nvim-treesitter.withAllGrammars
@@ -117,11 +127,7 @@
                       # This generates plugins from npins sources
                       #
                       name: src: (pkgs.vimUtils.buildVimPlugin { inherit name src; })
-                    ) (pkgs.callPackages ./npins/sources.nix { });
-                  #
-                  # Use the string generated in ./lua/default.nix for init.vim
-                  #
-                  customRC = import ./lua { inherit lib self; };
+                    ) (pkgs.callPackages "${self}/npins/sources.nix" { inherit self; });
                 }
               )
             ).overrideAttrs
