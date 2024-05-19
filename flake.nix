@@ -10,7 +10,7 @@
       type = "github";
       owner = "neovim";
       repo = "neovim";
-      ref = "f694d020c576fb037eb92bae3bbf03a69d8686b6";
+      ref = "9ca81b025990911c2a0dbda92af39ba84983bac3";
       flake = false;
     };
     flake-compat = {
