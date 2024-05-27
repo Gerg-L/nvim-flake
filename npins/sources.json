@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "c2ce039188e22288449e43b77710036e69a45a70",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/c2ce039188e22288449e43b77710036e69a45a70.tar.gz",
-      "hash": "0cxd6zai11li2aqlp34yf899z2xplbsldxwc0pxfwkv926169p8q"
+      "revision": "4c96370cf93e2ba287548da12d673442d0ffecc3",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/4c96370cf93e2ba287548da12d673442d0ffecc3.tar.gz",
+      "hash": "1q4sfk9wk4qhsviinqqvw3w8h4nminnjbv4i1d0dgx5x61khw830"
     },
     "toggleterm.nvim": {
       "type": "Git",
