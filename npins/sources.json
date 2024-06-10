@@ -320,9 +320,9 @@
         "repo": "rainbow-delimiters.nvim"
       },
       "branch": "master",
-      "revision": "0f314613125fdd7c85faaee3c87051611d883253",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/0f314613125fdd7c85faaee3c87051611d883253.tar.gz",
-      "hash": "09dmm69cw8gdwd03yk7vk35v1a17fzsvbpny1g2479ds8sagbbdn"
+      "revision": "073e45546acaff6b4248e3faea8e67b399d3e864",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/073e45546acaff6b4248e3faea8e67b399d3e864.tar.gz",
+      "hash": "0lxqarvkxp878i78vxm7mmz1xqz9yam3mpmcsrhbvn1zbmz8aksj"
     },
     "rust-tools.nvim": {
       "type": "Git",
@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "3a743491e5c6be0ed0aa8c31c6905df8f66179ba",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/3a743491e5c6be0ed0aa8c31c6905df8f66179ba.tar.gz",
-      "hash": "13vsv6c1p9rw6swj8jgsclw8frdwcm2giihcqn1rs01r1f3ghgmj"
+      "revision": "f12b15e1b3a33524eb06a1ae7bc852fb1fd92197",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/f12b15e1b3a33524eb06a1ae7bc852fb1fd92197.tar.gz",
+      "hash": "12r9sqrwxsmpc9gvckp7n4j55127hkwg9788chjgjrszj90sj8n2"
     },
     "toggleterm.nvim": {
       "type": "Git",
@@ -368,9 +368,9 @@
         "repo": "vim-moonfly-colors"
       },
       "branch": "master",
-      "revision": "522514d6325373c779ec38649059279693d5af9a",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/522514d6325373c779ec38649059279693d5af9a.tar.gz",
-      "hash": "1wbhfgz2mla9s3386npqmr9j30l2q7hbphcfji0r4da4xxmnpjqg"
+      "revision": "73b1e869a1cd3ce9eda7b14ac0af62abe1b53d98",
+      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/73b1e869a1cd3ce9eda7b14ac0af62abe1b53d98.tar.gz",
+      "hash": "1xigssx2hvzrh37f17di0i83n348fifaivjicsmig76hkscdrsnx"
     },
     "vim-vsnip": {
       "type": "Git",
