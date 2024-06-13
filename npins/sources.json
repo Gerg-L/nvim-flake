@@ -116,9 +116,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "0c8436cb10e9ac62354baa5874a4a3413f2432c1",
-      "url": "https://github.com/saecki/crates.nvim/archive/0c8436cb10e9ac62354baa5874a4a3413f2432c1.tar.gz",
-      "hash": "13ipmpmrmiz4jnaf2a6h459ib22yjli8yy4rqz0sc8gvs9mbxvpx"
+      "revision": "3ab99ade2c9a9d4291a8424c03db9a3be9862a72",
+      "url": "https://github.com/saecki/crates.nvim/archive/3ab99ade2c9a9d4291a8424c03db9a3be9862a72.tar.gz",
+      "hash": "1924c5k3hz0942drdm37wcp5k0lmfyk3cvahxa5gf4plgn6n3pn7"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -128,9 +128,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "4a143f13e122ab91abdc88f89eefbe70a4858a56",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/4a143f13e122ab91abdc88f89eefbe70a4858a56.tar.gz",
-      "hash": "09rqxrw8wcybcd806zgqcgich9x88sdsqvm8638y08bb18bj6rqm"
+      "revision": "de18f6b749f6129eb9042a2038590872df4c94a9",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/de18f6b749f6129eb9042a2038590872df4c94a9.tar.gz",
+      "hash": "1inhpk3qk62axzdazhf3ab2qmk1cccdkjspjzlf9cb2sd79s02nh"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -188,9 +188,9 @@
         "repo": "noice.nvim"
       },
       "branch": "main",
-      "revision": "e5cb20c6e14305d24025ecb77d7d4dd9d61f1a64",
-      "url": "https://github.com/folke/noice.nvim/archive/e5cb20c6e14305d24025ecb77d7d4dd9d61f1a64.tar.gz",
-      "hash": "18r6prl1qba6b21j66zwipn2vz6lc7kc47x72xgf9hln2c93vrpn"
+      "revision": "a9fa1a2ace124fcb752e356b3c52e962c3dcb8b8",
+      "url": "https://github.com/folke/noice.nvim/archive/a9fa1a2ace124fcb752e356b3c52e962c3dcb8b8.tar.gz",
+      "hash": "0wda6rkgl2b3hbhc2r9r4mj5hgbnc89f9byxwvzrlccn178inv46"
     },
     "nui.nvim": {
       "type": "Git",
