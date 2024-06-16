@@ -188,9 +188,9 @@
         "repo": "noice.nvim"
       },
       "branch": "main",
-      "revision": "f65b6b7ab87796f93ea8f8a92d5a64dc53d912d1",
-      "url": "https://github.com/folke/noice.nvim/archive/f65b6b7ab87796f93ea8f8a92d5a64dc53d912d1.tar.gz",
-      "hash": "00d0ga8rhzr1snqqbsmvd3c60fas2dbik9hp4v3xmimb3v03fzzl"
+      "revision": "d3d83292c15cb8a72e1e421ddf5a0aac7812cb9c",
+      "url": "https://github.com/folke/noice.nvim/archive/d3d83292c15cb8a72e1e421ddf5a0aac7812cb9c.tar.gz",
+      "hash": "1yn33870hcn2538gcqi96drq42jd0vh0jmm5jhsnd78alc8xzglc"
     },
     "nui.nvim": {
       "type": "Git",
@@ -344,9 +344,9 @@
         "repo": "telescope.nvim"
       },
       "branch": "master",
-      "revision": "f12b15e1b3a33524eb06a1ae7bc852fb1fd92197",
-      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/f12b15e1b3a33524eb06a1ae7bc852fb1fd92197.tar.gz",
-      "hash": "12r9sqrwxsmpc9gvckp7n4j55127hkwg9788chjgjrszj90sj8n2"
+      "revision": "c392f1b78eaaf870ca584bd698e78076ed301b26",
+      "url": "https://github.com/nvim-telescope/telescope.nvim/archive/c392f1b78eaaf870ca584bd698e78076ed301b26.tar.gz",
+      "hash": "14k0z9k0d8krs50filg8d38fkcpxv4gy9lilgfj2wrvssd6c9vqy"
     },
     "toggleterm.nvim": {
       "type": "Git",
