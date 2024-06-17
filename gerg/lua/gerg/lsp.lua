@@ -21,10 +21,14 @@ local null_ls = require("null-ls")
 local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 local code_actions = null_ls.builtins.code_actions
+local completion = null_ls.builtins.completion
 local ls_sources = {
   formatting.stylua,
   formatting.rustfmt,
-  --formatting.alejandra,
+  formatting.nixfmt,
+  code_actions.gitsigns,
+  completion.luasnip,
+  diagnostics.statix,
   code_actions.statix,
   diagnostics.deadnix,
 }
@@ -133,21 +137,18 @@ require("lspconfig").lua_ls.setup({
     if not vim.loop.fs_stat(path .. "/.luarc.json") and not vim.loop.fs_stat(path .. "/.luarc.jsonc") then
       client.config.settings = vim.tbl_deep_extend("force", client.config.settings, {
         Lua = {
+          format = {
+            enable = true,
+          },
           runtime = {
-            -- Tell the language server which version of Lua you're using
-            -- (most likely LuaJIT in the case of Neovim)
             version = "LuaJIT",
           },
-          -- Make the server aware of Neovim runtime files
+          telemetry = { enable = false },
           workspace = {
             checkThirdParty = false,
-            library = {
-              vim.env.VIMRUNTIME,
-              -- "${3rd}/luv/library"
-              -- "${3rd}/busted/library",
-            },
-            -- or pull in all of 'runtimepath'. NOTE: this is a lot slower
-            -- library = vim.api.nvim_get_runtime_file("", true)
+          },
+          completion = {
+            callSnippet = "Replace",
           },
         },
       })

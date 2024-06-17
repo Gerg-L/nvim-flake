@@ -105,6 +105,7 @@
               })
               (
                 pkgs.neovimUtils.makeNeovimConfig {
+                  extraLuaPackages = p: [ p.jsregexp ];
                   plugins =
                     [
                       #
@@ -146,13 +147,21 @@
                         deadnix
                         statix
                         nil
-                        ripgrep
-                        fd
+
                         lua-language-server
                         stylua
+
+                        #rustfmt
+
+                        ripgrep
+                        fd
+                        chafa
                         ;
                     }
                   ))
+                  "--set-default"
+                  "FZF_DEFAULT_OPTS"
+                  "--layout=reverse --inline-info"
                 ];
               });
         };
