@@ -128,9 +128,9 @@
         "repo": "fzf-lua"
       },
       "branch": "main",
-      "revision": "f32e91c2d4f645e746d8bef97346e24f6841a849",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/f32e91c2d4f645e746d8bef97346e24f6841a849.tar.gz",
-      "hash": "01lcv1g38n8w3lapdqx0bwv0386b3w0l55gz4s4zdj1njbfphay1"
+      "revision": "1ec6eeda11c3a3dcd544e1c61ad4b8c9b49903c4",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/1ec6eeda11c3a3dcd544e1c61ad4b8c9b49903c4.tar.gz",
+      "hash": "0iw3khl164qvypm7v591gyncjfpmwx6wy45a80zz922iiifgjfgd"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -236,9 +236,9 @@
         "repo": "nui.nvim"
       },
       "branch": "main",
-      "revision": "322978c734866996274467de084a95e4f9b5e0b1",
-      "url": "https://github.com/MunifTanjim/nui.nvim/archive/322978c734866996274467de084a95e4f9b5e0b1.tar.gz",
-      "hash": "1l1gzpza26pybg6fcjif5ypqmxl490wv82my13bwkc1v83a5x4xm"
+      "revision": "a2bc1e9d0359caa5d11ad967cd1e30e8d4676226",
+      "url": "https://github.com/MunifTanjim/nui.nvim/archive/a2bc1e9d0359caa5d11ad967cd1e30e8d4676226.tar.gz",
+      "hash": "19m6j6rld0mlbzfr5libdmm85z8nb3q3y4nzcwnp88a15zva7x0a"
     },
     "nvim-autopairs": {
       "type": "Git",
@@ -284,9 +284,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "f43135c38a37c588053ad5e209c7460f43f6340c",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/f43135c38a37c588053ad5e209c7460f43f6340c.tar.gz",
-      "hash": "1jpv0fndldbr3sgx8vv31sqfpkiffim5qrnah7bh336p9yv7aqkb"
+      "revision": "0630abde4d99740773b6f7da70937268c20854a4",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/0630abde4d99740773b6f7da70937268c20854a4.tar.gz",
+      "hash": "0a3z6ja0lzr3mfnic8bmj21yaq8mfcyqwd0334lpq80pz66wr2ix"
     },
     "nvim-tree.lua": {
       "type": "Git",
@@ -296,9 +296,9 @@
         "repo": "nvim-tree.lua"
       },
       "branch": "master",
-      "revision": "2086e564c4d23fea714e8a6d63b881e551af2f41",
-      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/2086e564c4d23fea714e8a6d63b881e551af2f41.tar.gz",
-      "hash": "0scmn05y9ya1lwz7ad7519bq1n3ha8hs7i28kgw83r5syp0bg8zc"
+      "revision": "8b2c5c678be4b49dff6a2df794877000113fd77b",
+      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/8b2c5c678be4b49dff6a2df794877000113fd77b.tar.gz",
+      "hash": "160sk29hg0xqg02q26gi27h9si9ara4ljazqrd280igvh32xpyj5"
     },
     "nvim-treesitter-context": {
       "type": "Git",
