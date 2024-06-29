@@ -97,7 +97,7 @@
                 # Use neovim nightly
                 #
                 src = neovim-src;
-                version = neovim-src.shortRev or "dirty";
+                version = neovim-src.shortRev or neovim-src.dirtyShortRev or "dirty";
                 patches = [ ];
                 preConfigure = ''
                   sed -i cmake.config/versiondef.h.in -e "s/@NVIM_VERSION_PRERELEASE@/-dev-$version/"
@@ -113,8 +113,7 @@
                       #
                       (pkgs.vimUtils.buildVimPlugin {
                         pname = "gerg";
-                        version = "#";
-
+                        version = self.shortRev or self.dirtyShortRev or "dirty";
                         src = "${self}/gerg";
                       })
 
@@ -127,8 +126,13 @@
                       #
                       # This generates plugins from npins sources
                       #
-                      name: src: (pkgs.vimUtils.buildVimPlugin { inherit name src; })
-                    ) (pkgs.callPackages "${self}/npins/sources.nix" { inherit self; });
+                      pname: pin:
+                      (pkgs.vimUtils.buildVimPlugin {
+                        inherit pname;
+                        src = pkgs.npins.mkSource pin;
+                        version = builtins.substring 0 8 pin.revision;
+                      })
+                    ) (lib.importJSON "${self}/sources.json").pins;
                 }
               )
             ).overrideAttrs
