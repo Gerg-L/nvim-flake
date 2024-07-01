@@ -32,9 +32,9 @@
         "repo": "cinnamon.nvim"
       },
       "branch": "master",
-      "revision": "3096e3961e24d5ae4bb17f05049036c302a8db3e",
-      "url": "https://github.com/declancm/cinnamon.nvim/archive/3096e3961e24d5ae4bb17f05049036c302a8db3e.tar.gz",
-      "hash": "01ai2bzf4abma64y7q63jp7iyr0ms0zszk9z9nmzgpzlml1aq5wg"
+      "revision": "628ce5129743d0e205036d59951e2cef9ffcaca3",
+      "url": "https://github.com/declancm/cinnamon.nvim/archive/628ce5129743d0e205036d59951e2cef9ffcaca3.tar.gz",
+      "hash": "1szpnx091p7qdgd7mny32fg93hr9py3dz507q260i1jlzqr9gn28"
     },
     "cmp-buffer": {
       "type": "Git",
@@ -116,9 +116,9 @@
         "repo": "crates.nvim"
       },
       "branch": "main",
-      "revision": "df9937e1d2352704b0b58087d41da199261f7fc3",
-      "url": "https://github.com/saecki/crates.nvim/archive/df9937e1d2352704b0b58087d41da199261f7fc3.tar.gz",
-      "hash": "1q8c579rkpv0k8y7j4zwrbs69q8ayirhj16vrm0acwhwc34gm8vb"
+      "revision": "dcc451c3355816bf69a734a2aeaed8ef259c6299",
+      "url": "https://github.com/saecki/crates.nvim/archive/dcc451c3355816bf69a734a2aeaed8ef259c6299.tar.gz",
+      "hash": "18qvh86iadc8wzv0gfg3pd2vjh0drmbfqxblpl0i904b73flmasw"
     },
     "fzf-lua": {
       "type": "Git",
@@ -308,9 +308,9 @@
         "repo": "nvim-treesitter-context"
       },
       "branch": "master",
-      "revision": "f2cbd231e296a282aa9aedb2a411539801557307",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/f2cbd231e296a282aa9aedb2a411539801557307.tar.gz",
-      "hash": "0mpvjg1szy1p41fkfnmdn3lbnagi23b77479f4km80iihkafhq29"
+      "revision": "1b9c756c0cad415f0a2661c858448189dd120c15",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/1b9c756c0cad415f0a2661c858448189dd120c15.tar.gz",
+      "hash": "00nczjmmziyr91za9rq9fshg169z2f0rg2wr8l66dg9m724m7pa0"
     },
     "nvim-web-devicons": {
       "type": "Git",
