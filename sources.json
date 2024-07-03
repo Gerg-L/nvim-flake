@@ -32,9 +32,9 @@
         "repo": "cinnamon.nvim"
       },
       "branch": "master",
-      "revision": "1b13b9e21e0be5164170a660f41d02b3f3ecf51e",
-      "url": "https://github.com/declancm/cinnamon.nvim/archive/1b13b9e21e0be5164170a660f41d02b3f3ecf51e.tar.gz",
-      "hash": "12zn76hyd8kixh3cic7hkix9bbah2jml2a0qfri9cpmy9vahfnil"
+      "revision": "13b600857513a84aef12c7202b5bcbc2463a0b77",
+      "url": "https://github.com/declancm/cinnamon.nvim/archive/13b600857513a84aef12c7202b5bcbc2463a0b77.tar.gz",
+      "hash": "0jb7b849faad9bbf7ajnbixp8wm1babkkyjrafn4scvp9ixbgpwl"
     },
     "cmp-buffer": {
       "type": "Git",
@@ -128,9 +128,9 @@
         "repo": "fzf-lua"
       },
       "branch": "main",
-      "revision": "0cdc3dfcd50402fce87b8bb947504e8dd25fbd7e",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/0cdc3dfcd50402fce87b8bb947504e8dd25fbd7e.tar.gz",
-      "hash": "0szb3fzv2v0wgj2yf66w5wzzsmcmgsv5d4v2f4bwphznfbilyxwz"
+      "revision": "3b91c1a471160bd8620bdca8f18743d954994daa",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/3b91c1a471160bd8620bdca8f18743d954994daa.tar.gz",
+      "hash": "1qapr7nhp8kz9dzkzkkqzlsv51qdkdv5zr457pgnf7rpk3bnf4yj"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -308,9 +308,9 @@
         "repo": "nvim-treesitter-context"
       },
       "branch": "master",
-      "revision": "1b9c756c0cad415f0a2661c858448189dd120c15",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/1b9c756c0cad415f0a2661c858448189dd120c15.tar.gz",
-      "hash": "00nczjmmziyr91za9rq9fshg169z2f0rg2wr8l66dg9m724m7pa0"
+      "revision": "cc908326c93473041d44398d5ebfa2bb4169d649",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/cc908326c93473041d44398d5ebfa2bb4169d649.tar.gz",
+      "hash": "0gy1d7wmqvij8g5xrh5w1w5mr74sz0f4x704526wf8a40b7hpqz8"
     },
     "nvim-web-devicons": {
       "type": "Git",
@@ -332,9 +332,9 @@
         "repo": "oil.nvim"
       },
       "branch": "master",
-      "revision": "ace46a41a1ea56d544a3775adf30490f2abd9235",
-      "url": "https://github.com/stevearc/oil.nvim/archive/ace46a41a1ea56d544a3775adf30490f2abd9235.tar.gz",
-      "hash": "0pafwy4mv5r7l8mnv6gl4494dfz2w9f6h9l7i2rvix82vc2bm31f"
+      "revision": "b15e4c1e647b9ddbb75a31caeb720b3b3ce4db54",
+      "url": "https://github.com/stevearc/oil.nvim/archive/b15e4c1e647b9ddbb75a31caeb720b3b3ce4db54.tar.gz",
+      "hash": "1aw3ddn2cg9h0z5cxmvpyjs29crhr4sb1yfs0481m0sprfqi6ywj"
     },
     "plenary.nvim": {
       "type": "Git",
