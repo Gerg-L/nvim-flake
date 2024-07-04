@@ -32,9 +32,9 @@
         "repo": "cinnamon.nvim"
       },
       "branch": "master",
-      "revision": "13b600857513a84aef12c7202b5bcbc2463a0b77",
-      "url": "https://github.com/declancm/cinnamon.nvim/archive/13b600857513a84aef12c7202b5bcbc2463a0b77.tar.gz",
-      "hash": "0jb7b849faad9bbf7ajnbixp8wm1babkkyjrafn4scvp9ixbgpwl"
+      "revision": "5881602512de628f015403655a4941ac7cd67633",
+      "url": "https://github.com/declancm/cinnamon.nvim/archive/5881602512de628f015403655a4941ac7cd67633.tar.gz",
+      "hash": "0xrglj71j671phc12bqdy29l1gy6lniwykj2k3nl5xydghqm9fds"
     },
     "cmp-buffer": {
       "type": "Git",
@@ -140,9 +140,9 @@
         "repo": "gitsigns.nvim"
       },
       "branch": "main",
-      "revision": "6b1a14eabcebbcca1b9e9163a26b2f8371364cb7",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/6b1a14eabcebbcca1b9e9163a26b2f8371364cb7.tar.gz",
-      "hash": "1xaxi3v67wdrgyclcrimcpfd1ggfb0wxxy2iz9xmqlkvc3g3aws1"
+      "revision": "39b5b6f48bde0595ce68007ffce408c5d7ac1f79",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/39b5b6f48bde0595ce68007ffce408c5d7ac1f79.tar.gz",
+      "hash": "0a9ch3ivk6py8r2dr829xczr0d2bn2vzji9lk45lb7dizyhs86z8"
     },
     "indent-blankline.nvim": {
       "type": "Git",
@@ -284,9 +284,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "53a3c6444ec5006b567071614c83edc8ad651f6d",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/53a3c6444ec5006b567071614c83edc8ad651f6d.tar.gz",
-      "hash": "0wpfadzzxy6p3fn0l4191ikrcg4akgivpiiv6ynkpyxc5vhff17w"
+      "revision": "cf97d2485fc3f6d4df1b79a3ea183e24c272215e",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/cf97d2485fc3f6d4df1b79a3ea183e24c272215e.tar.gz",
+      "hash": "1vs6cwa07a18p1c8q4z8gfqp7iki4qwdk10ahyv4sfgk0s1wdk9j"
     },
     "nvim-tree.lua": {
       "type": "Git",
@@ -308,9 +308,9 @@
         "repo": "nvim-treesitter-context"
       },
       "branch": "master",
-      "revision": "cc908326c93473041d44398d5ebfa2bb4169d649",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/cc908326c93473041d44398d5ebfa2bb4169d649.tar.gz",
-      "hash": "0gy1d7wmqvij8g5xrh5w1w5mr74sz0f4x704526wf8a40b7hpqz8"
+      "revision": "a45e576526f92766a05726ea3da809e9998c9694",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/a45e576526f92766a05726ea3da809e9998c9694.tar.gz",
+      "hash": "0j5y0ckdv8yzxx3mc6h18mpwjiim753kgf6lcl2r41d7zzw6rfl1"
     },
     "nvim-web-devicons": {
       "type": "Git",
@@ -332,9 +332,9 @@
         "repo": "oil.nvim"
       },
       "branch": "master",
-      "revision": "b15e4c1e647b9ddbb75a31caeb720b3b3ce4db54",
-      "url": "https://github.com/stevearc/oil.nvim/archive/b15e4c1e647b9ddbb75a31caeb720b3b3ce4db54.tar.gz",
-      "hash": "1aw3ddn2cg9h0z5cxmvpyjs29crhr4sb1yfs0481m0sprfqi6ywj"
+      "revision": "b5a1abfde00eead6814cae3321e4c90ff98cfff1",
+      "url": "https://github.com/stevearc/oil.nvim/archive/b5a1abfde00eead6814cae3321e4c90ff98cfff1.tar.gz",
+      "hash": "1yqzqvcmvfgyy3wg5cm6v0js7ma1j5pk20wzdzhmkyc9adba6nw6"
     },
     "plenary.nvim": {
       "type": "Git",
