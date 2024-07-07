@@ -149,6 +149,11 @@
                         ;
                     }
                   ))
+                  "--set"
+                  "NVIM_APPNAME"
+                  "gerg"
+                  "--add-flags"
+                  "-u NORC"
                   "--set-default"
                   "FZF_DEFAULT_OPTS"
                   "--layout=reverse --inline-info"
