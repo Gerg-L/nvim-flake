@@ -6,12 +6,10 @@
       repo = "nixpkgs";
       ref = "nixos-unstable";
     };
-    neovim-src = {
+    neovim-nightly = {
       type = "github";
-      owner = "neovim";
-      repo = "neovim";
-      ref = "9ca81b025990911c2a0dbda92af39ba84983bac3";
-      flake = false;
+      owner = "nix-community";
+      repo = "neovim-nightly-overlay";
     };
     flake-compat = {
       type = "github";
@@ -25,7 +23,7 @@
     {
       self,
       nixpkgs,
-      neovim-src,
+      neovim-nightly,
       ...
     }:
     let
@@ -91,51 +89,39 @@
           default = self.packages.${system}.neovim;
 
           neovim =
-            (pkgs.wrapNeovimUnstable
-              (pkgs.neovim-unwrapped.overrideAttrs {
-                #
-                # Use neovim nightly
-                #
-                src = neovim-src;
-                version = neovim-src.shortRev or neovim-src.dirtyShortRev or "dirty";
-                patches = [ ];
-                preConfigure = ''
-                  sed -i cmake.config/versiondef.h.in -e "s/@NVIM_VERSION_PRERELEASE@/-dev-$version/"
-                '';
-              })
-              (
-                pkgs.neovimUtils.makeNeovimConfig {
-                  extraLuaPackages = p: [ p.jsregexp ];
-                  plugins =
-                    [
-                      #
-                      # Package your lua config as a plugin
-                      #
-                      (pkgs.vimUtils.buildVimPlugin {
-                        pname = "gerg";
-                        version = self.shortRev or self.dirtyShortRev or "dirty";
-                        src = "${self}/gerg";
-                      })
+            (pkgs.wrapNeovimUnstable neovim-nightly.packages.${system}.neovim (
+              pkgs.neovimUtils.makeNeovimConfig {
+                wrapRc = false;
+                extraLuaPackages = p: [ p.jsregexp ];
+                plugins =
+                  [
+                    #
+                    # Package your lua config as a plugin
+                    #
+                    (pkgs.vimUtils.buildVimPlugin {
+                      pname = "gerg";
+                      version = self.shortRev or self.dirtyShortRev or "dirty";
+                      src = "${self}/gerg";
+                    })
 
-                      #
-                      # Add plugins from nixpkgs here
-                      #
-                      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-                    ]
-                    ++ lib.mapAttrsToList (
-                      #
-                      # This generates plugins from npins sources
-                      #
-                      pname: pin:
-                      (pkgs.vimUtils.buildVimPlugin {
-                        inherit pname;
-                        src = pkgs.npins.mkSource pin;
-                        version = builtins.substring 0 8 pin.revision;
-                      })
-                    ) (lib.importJSON "${self}/sources.json").pins;
-                }
-              )
-            ).overrideAttrs
+                    #
+                    # Add plugins from nixpkgs here
+                    #
+                    pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+                  ]
+                  ++ lib.mapAttrsToList (
+                    #
+                    # This generates plugins from npins sources
+                    #
+                    pname: pin:
+                    (pkgs.vimUtils.buildVimPlugin {
+                      inherit pname;
+                      src = pkgs.npins.mkSource pin;
+                      version = builtins.substring 0 8 pin.revision;
+                    })
+                  ) (lib.importJSON "${self}/sources.json").pins;
+              }
+            )).overrideAttrs
               (old: {
                 generatedWrapperArgs = old.generatedWrapperArgs or [ ] ++ [
                   "--prefix"
