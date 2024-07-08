@@ -17,6 +17,11 @@
       repo = "flake-compat";
       flake = false;
     };
+    neovim-wrapper = {
+      type = "github";
+      owner = "gerg-l";
+      repo = "neovim-wrapper";
+    };
   };
 
   outputs =
@@ -24,6 +29,7 @@
       self,
       nixpkgs,
       neovim-nightly,
+      neovim-wrapper,
       ...
     }:
     let
@@ -88,77 +94,87 @@
         {
           default = self.packages.${system}.neovim;
 
-          neovim =
-            (pkgs.wrapNeovimUnstable neovim-nightly.packages.${system}.neovim (
-              pkgs.neovimUtils.makeNeovimConfig {
-                wrapRc = false;
-                extraLuaPackages = p: [ p.jsregexp ];
-                plugins =
-                  [
-                    #
-                    # Package your lua config as a plugin
-                    #
-                    (pkgs.vimUtils.buildVimPlugin {
-                      pname = "gerg";
-                      version = self.shortRev or self.dirtyShortRev or "dirty";
-                      src = "${self}/gerg";
-                    })
+          neovim = neovim-wrapper.legacyPackages.${system}.neovimWrapper {
+            inherit (neovim-nightly.packages.${system}) neovim;
 
-                    #
-                    # Add plugins from nixpkgs here
-                    #
-                    pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-                  ]
-                  ++ lib.mapAttrsToList (
-                    #
-                    # This generates plugins from npins sources
-                    #
-                    pname: pin:
-                    (pkgs.vimUtils.buildVimPlugin {
-                      inherit pname;
-                      src = pkgs.npins.mkSource pin;
-                      version = builtins.substring 0 8 pin.revision;
-                    })
-                  ) (lib.importJSON "${self}/sources.json").pins;
-              }
-            )).overrideAttrs
-              (old: {
-                generatedWrapperArgs = old.generatedWrapperArgs or [ ] ++ [
-                  "--prefix"
-                  "PATH"
-                  ":"
-                  (lib.makeBinPath (
-                    builtins.attrValues {
+            wrapperArgs = [
+              "--set-default"
+              "FZF_DEFAULT_OPTS"
+              "--layout=reverse --inline-info"
+            ];
 
-                      #
-                      # Runtime dependencies
-                      #
-                      inherit (pkgs)
-                        deadnix
-                        statix
-                        nil
+            appName = "gerg";
 
-                        lua-language-server
-                        stylua
+            luaFiles = [
+              (builtins.toFile "init.lua" ''
+                print('loaded lua file')
+              '')
+            ];
+            initLua = "print('loaded lua text')";
 
-                        #rustfmt
+            vimlFiles = [
+              (builtins.toFile "init.vim" ''
+                echomsg 'loaded vim file'
+              '')
+            ];
+            initViml = "echomsg 'loaded vim text'";
 
-                        ripgrep
-                        fd
-                        chafa
-                        ;
-                    }
-                  ))
-                  "--set"
-                  "NVIM_APPNAME"
-                  "gerg"
-                  "--add-flags"
-                  "-u NORC"
-                  "--set-default"
-                  "FZF_DEFAULT_OPTS"
-                  "--layout=reverse --inline-info"
-                ];
-              });
+            extraLuaPackages = p: [ p.jsregexp ];
+
+            withNodeJs = true;
+            withPerl = true;
+            loadDefaultRC = false;
+
+            plugins =
+              [
+                #
+                # Package your lua config as a plugin
+                #
+                {
+                  pname = "gerg";
+                  version = self.shortRev or self.dirtyShortRev or "dirty";
+                  outPath = "${self}/gerg";
+                }
+                #
+                # Add plugins from nixpkgs here
+                #
+                pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+              ]
+              ++ lib.mapAttrsToList (
+                #
+                # This generates plugins from npins sources
+                #
+                pname: pin:
+                (
+                  (pkgs.npins.mkSource pin)
+                  // {
+                    inherit pname;
+                    version = builtins.substring 0 8 pin.revision;
+                  }
+                )
+              ) (lib.importJSON "${self}/sources.json").pins;
+
+            extraBinPath = builtins.attrValues {
+
+              #
+              # Runtime dependencies
+              #
+              inherit (pkgs)
+                deadnix
+                statix
+                nil
+
+                lua-language-server
+                stylua
+
+                #rustfmt
+
+                ripgrep
+                fd
+                chafa
+                ;
+            };
+          };
         };
     };
 }
