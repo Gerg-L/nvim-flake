@@ -163,11 +163,11 @@
     },
     "mnw": {
       "locked": {
-        "lastModified": 1720927281,
-        "narHash": "sha256-4Z2FtCuL0lT+sM2gb1JMcXOUkeYrWeYZjjs1HuVTlOs=",
+        "lastModified": 1720930487,
+        "narHash": "sha256-7zP2c4X39FzYJ8iWZPW5S6qIN85sFX+YYlCpgByg8xc=",
         "owner": "gerg-l",
         "repo": "mnw",
-        "rev": "302b18ddb8498aa9a7e0c01f7026e49d545e6898",
+        "rev": "a82a9236e0fb6986c06801523d5e1961df793b47",
         "type": "github"
       },
       "original": {
