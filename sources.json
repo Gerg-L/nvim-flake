@@ -32,9 +32,9 @@
         "repo": "cinnamon.nvim"
       },
       "branch": "master",
-      "revision": "e792d8bc940d4ceb3ba8b5e566aab3a30dc561f2",
-      "url": "https://github.com/declancm/cinnamon.nvim/archive/e792d8bc940d4ceb3ba8b5e566aab3a30dc561f2.tar.gz",
-      "hash": "0l9lxjyp5ka62fyh8a34h4h4l92czjldv2kaxwj0qm0b3z3a8w9x"
+      "revision": "6ac53b8c303235b8cfe00eef139505f6553caaca",
+      "url": "https://github.com/declancm/cinnamon.nvim/archive/6ac53b8c303235b8cfe00eef139505f6553caaca.tar.gz",
+      "hash": "1kj8zdh2rag61lzkxff8srl7iwldqib18bkbibkarrvf0hh0msgn"
     },
     "cmp-buffer": {
       "type": "Git",
