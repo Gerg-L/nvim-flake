@@ -17,10 +17,10 @@
       repo = "flake-compat";
       flake = false;
     };
-    neovim-wrapper = {
+    mnw = {
       type = "github";
       owner = "gerg-l";
-      repo = "neovim-wrapper";
+      repo = "mnw";
     };
   };
 
@@ -29,7 +29,7 @@
       self,
       nixpkgs,
       neovim-nightly,
-      neovim-wrapper,
+      mnw,
       ...
     }:
     let
@@ -94,7 +94,7 @@
         {
           default = self.packages.${system}.neovim;
 
-          neovim = neovim-wrapper.legacyPackages.${system}.neovimWrapper {
+          neovim = mnw.lib.wrap pkgs {
             inherit (neovim-nightly.packages.${system}) neovim;
 
             wrapperArgs = [
