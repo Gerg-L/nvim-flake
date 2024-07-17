@@ -105,25 +105,10 @@
 
             appName = "gerg";
 
-            luaFiles = [
-              (builtins.toFile "init.lua" ''
-                print('loaded lua file')
-              '')
-            ];
-            initLua = "print('loaded lua text')";
-
-            vimlFiles = [
-              (builtins.toFile "init.vim" ''
-                echomsg 'loaded vim file'
-              '')
-            ];
-            initViml = "echomsg 'loaded vim text'";
-
             extraLuaPackages = p: [ p.jsregexp ];
 
             withNodeJs = true;
             withPerl = true;
-            loadDefaultRC = false;
 
             plugins =
               [
