@@ -1,5 +1,5 @@
-# Finally
-After much struggling I've figured out how to make a neovim flake which works how I want it too
+# NeoVim Flake
+Using my own [Minimal NeoVim Wrapper](https://github.com/Gerg-L/mnw)
 
 # Test it out
 With flakes enabled
@@ -11,6 +11,11 @@ Legacy (may seem like it stalls)
 nix-shell -p '(import (builtins.fetchTarball "https://github.com/Gerg-L/nvim-flake/archive/master.tar.gz")).packages.${builtins.currentSystem}.default' --run nvim
 ```
 # To install
+
+I'd recommend [forking](#forking-usage-guide) and modifiying to your use-case rather than using this as-is in your own config...
+
+But if you want do use it anyways or install your fork here's how
+
 
 ## Flakes
 Add this flake as an input
@@ -66,15 +71,16 @@ Update the flake like any other `nix flake update`
 
 Add/remove/update plugins via [npins](https://github.com/andir/npins) 
 Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-context --branch main`
-Example of updated all plugins: `npins update -f`
+Example of updated all plugins: `npins --directory . update --full`
 
-All lua configuration is done in the /lua directory, and imported and ordered through /lua/default.nix.
-My lua config is not very good so I recommend bringing your own
+All lua configuration is done in the /gerg directory and added as a plugin
+My lua config is not very good so I recommend writing your own
 
 ## Inspiration
 - [@the-argus's](https://github.com/the-argus) [nvim-config](https://github.com/the-argus/nvim-config)
 - [@fufexan's](https://github.com/fufexan) [dotfiles](https://github.com/fufexan/dotfiles/tree/main/home/editors/neovim)
-- [@NotAShelf's](https://github.com/NotAShelf) [neovim-flake](https://github.com/NotAShelf/neovim-flake)
+- [@NotAShelf's](https://github.com/NotAShelf) [neovim-flake](https://github.com/NotAShelf/nvf)
 - [@wiltaylor's](https://github.com/wiltaylor) [neovim-flake](https://github.com/wiltaylor/neovim-flake)
 - [@jordanisaacs's](https://github.com/jordanisaacs) [neovim-flake](https://github.com/jordanisaacs/neovim-flake)
 - [@gvolpe's](https://github.com/gvolpe) [neovim-flake](https://github.com/gvolpe/neovim-flake)
+
