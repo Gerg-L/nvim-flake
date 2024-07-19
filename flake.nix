@@ -113,13 +113,9 @@
             plugins =
               [
                 #
-                # Package your lua config as a plugin
+                # Add your lua config as a "plugin"
                 #
-                {
-                  pname = "gerg";
-                  version = self.shortRev or self.dirtyShortRev or "dirty";
-                  outPath = "${self}/gerg";
-                }
+                ./gerg
                 #
                 # Add plugins from nixpkgs here
                 #

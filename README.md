@@ -73,7 +73,8 @@ Add/remove/update plugins via [npins](https://github.com/andir/npins)
 Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-context --branch main`
 Example of updated all plugins: `npins --directory . update --full`
 
-All lua configuration is done in the /gerg directory and added as a plugin
+All lua configuration is done in the /gerg directory and added to plugins
+
 My lua config is not very good so I recommend writing your own
 
 ## Inspiration
