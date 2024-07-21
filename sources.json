@@ -128,9 +128,9 @@
         "repo": "fzf-lua"
       },
       "branch": "main",
-      "revision": "fb058bd718aabe9a5abb3e9df3d5c1023d06cdae",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/fb058bd718aabe9a5abb3e9df3d5c1023d06cdae.tar.gz",
-      "hash": "0r2pck7dsd84mw3wwplb0vdgcil1hv0aw11k4sp9mgr04jy93pjw"
+      "revision": "cfb213134534dbeee2657a57242bca2cf42fa1a8",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/cfb213134534dbeee2657a57242bca2cf42fa1a8.tar.gz",
+      "hash": "1l4i1qynpj3f55g6skq642gddinn5ig02ykf553j42ad91vpqhfj"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -284,9 +284,9 @@
         "repo": "nvim-lspconfig"
       },
       "branch": "master",
-      "revision": "e26da408cf955afa8e9ddbadd510e84ea8976cd7",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/e26da408cf955afa8e9ddbadd510e84ea8976cd7.tar.gz",
-      "hash": "13nkbjk5bagc2ip65ndpb1wp0bn5p4s2r1mihci6aq2j3nyk5iqs"
+      "revision": "1ea7c6126a1aa0121098e4f16c04d5dde1a4ba22",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/1ea7c6126a1aa0121098e4f16c04d5dde1a4ba22.tar.gz",
+      "hash": "0wmf15qzhbnq9q30g3f4krklsi7zjg3grjdm700bkx1ynisr4s8z"
     },
     "nvim-tree.lua": {
       "type": "Git",
@@ -416,9 +416,9 @@
         "repo": "which-key.nvim"
       },
       "branch": "main",
-      "revision": "6e61b0904e9c038b6c511c43591ae2d811b4975e",
-      "url": "https://github.com/folke/which-key.nvim/archive/6e61b0904e9c038b6c511c43591ae2d811b4975e.tar.gz",
-      "hash": "1xgs9iwarxcjncsl5n9kyjqqja4c7ryr3amcwnsyfhpv6k7wx3bh"
+      "revision": "c4689ab39c1f51cac447893b05bb0266a7af1ed7",
+      "url": "https://github.com/folke/which-key.nvim/archive/c4689ab39c1f51cac447893b05bb0266a7af1ed7.tar.gz",
+      "hash": "0v50xd73kwbkbx7q7bl352aanyn2s9g7s2kdfm31q3kw7xk9w3ih"
     }
   },
   "version": 3
