@@ -372,6 +372,18 @@
       "url": "https://github.com/nvim-lua/plenary.nvim/archive/a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683.tar.gz",
       "hash": "0n2p8krzwiw682f0yb6n8faamffpp336rjy50pbqf3jmc6czd5z4"
     },
+    "pulse.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "linguini1",
+        "repo": "pulse.nvim"
+      },
+      "branch": "main",
+      "revision": "0b5ab163c183c5e334e5dadd9db95807d3f5b04a",
+      "url": "https://github.com/linguini1/pulse.nvim/archive/0b5ab163c183c5e334e5dadd9db95807d3f5b04a.tar.gz",
+      "hash": "1r9cqxr63n5xr1rx32cm59kbxj30z2q6ipz6vwmszbmx4ybapilp"
+    },
     "rainbow-delimiters": {
       "type": "Git",
       "repository": {
