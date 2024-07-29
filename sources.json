@@ -204,6 +204,18 @@
       "url": "https://github.com/L3MON4D3/LuaSnip/archive/ce0a05ab4e2839e1c48d072c5236cce846a387bc.tar.gz",
       "hash": "0s25ihd08p7d55hss2m76hq4als5s2cfzi0wn0c1qar2ydn9ydyf"
     },
+    "markdown-preview.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "iamcco",
+        "repo": "markdown-preview.nvim"
+      },
+      "branch": "master",
+      "revision": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
+      "url": "https://github.com/iamcco/markdown-preview.nvim/archive/a923f5fc5ba36a3b17e289dc35dc17f66d0548ee.tar.gz",
+      "hash": "06187wxcj2ramhimkrgwq1q8fnndzdywljc606n3pr11y8dxs5ac"
+    },
     "noice.nvim": {
       "type": "Git",
       "repository": {
