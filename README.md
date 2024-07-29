@@ -71,7 +71,7 @@ Update the flake like any other `nix flake update`
 
 Add/remove/update plugins via [npins](https://github.com/andir/npins) 
 Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-context --branch main`
-Example of updated all plugins: `npins --directory . update --full`
+Example of updated all plugins: `npins update --full`
 
 All lua configuration is done in the /gerg directory and added to plugins
 

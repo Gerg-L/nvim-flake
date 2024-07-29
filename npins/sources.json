@@ -108,18 +108,6 @@
       "url": "https://github.com/hrsh7th/cmp-vsnip/archive/989a8a73c44e926199bfd05fa7a516d51f2d2752.tar.gz",
       "hash": "1hs1gv7q0vfn82pwdwpy46nsi4n5z6yljnzl0rpvwfp8g79hssfs"
     },
-    "crates.nvim": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "saecki",
-        "repo": "crates.nvim"
-      },
-      "branch": "main",
-      "revision": "d1be10c1fcf4adb1eed2f2f510176db035efc68d",
-      "url": "https://github.com/saecki/crates.nvim/archive/d1be10c1fcf4adb1eed2f2f510176db035efc68d.tar.gz",
-      "hash": "08iq181vmm712vw6pxw7kljdgk3j2d7w0lvyq732mj7xdsik0yk4"
-    },
     "fzf-lua": {
       "type": "Git",
       "repository": {

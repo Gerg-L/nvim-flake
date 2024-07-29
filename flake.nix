@@ -127,13 +127,14 @@
                 #
                 pname: pin:
                 (
-                  (pkgs.npins.mkSource pin)
+                  pin
                   // {
                     inherit pname;
                     version = builtins.substring 0 8 pin.revision;
                   }
+
                 )
-              ) (lib.importJSON "${self}/sources.json").pins;
+              ) (pkgs.callPackages ./npins/sources.nix { });
 
             extraBinPath = builtins.attrValues {
 
