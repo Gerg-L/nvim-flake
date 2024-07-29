@@ -1,1 +1,0 @@
-require('markdown-preview').setup({})

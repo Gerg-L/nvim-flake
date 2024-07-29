@@ -1,4 +1,4 @@
-require("ascii-preview").setup({
+require("asciidoc-preview").setup({
   server = {
     -- Determines how the AsciiDoc file is converted to HTML for the preview.
     -- `js`  - asciidoctor.js (no local installation needed)
