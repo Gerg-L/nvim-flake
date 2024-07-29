@@ -240,6 +240,18 @@
       "url": "https://github.com/MunifTanjim/nui.nvim/archive/61574ce6e60c815b0a0c4b5655b8486ba58089a1.tar.gz",
       "hash": "1vllq6lkk7karc3n8h9wj2ax6sc99h26r96h18lbvi0nsy98ss53"
     },
+    "nvim-asciidoc-preview": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "tigion",
+        "repo": "nvim-asciidoc-preview"
+      },
+      "branch": "main",
+      "revision": "7f8847767757478a9fe768a941c77b599fbc6cc9",
+      "url": "https://github.com/tigion/nvim-asciidoc-preview/archive/7f8847767757478a9fe768a941c77b599fbc6cc9.tar.gz",
+      "hash": "0109rrwn64d0blwynjmd96zmipf6vws50xi6g69gd63limavf1p9"
+    },
     "nvim-autopairs": {
       "type": "Git",
       "repository": {
