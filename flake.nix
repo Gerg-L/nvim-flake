@@ -89,6 +89,18 @@
           '';
         };
 
+      devShells =
+        { pkgs, system }:
+        {
+          default = pkgs.mkShell {
+            packages = [
+              self.packages.${system}.default
+              self.formatter.${system}
+              pkgs.npins
+            ];
+          };
+        };
+
       packages =
         { pkgs, system }:
         {

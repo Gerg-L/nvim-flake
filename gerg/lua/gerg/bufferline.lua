@@ -1,4 +1,3 @@
--- SECTION: nvimBufferline
 require("nvim-web-devicons")
 require("bufferline").setup({
   options = {
@@ -44,20 +43,24 @@ require("bufferline").setup({
     end,
   },
 })
-vim.diagnostic.config({ update_in_insert = true })
-vim.keymap.set("n", "<leader>b1", "<Cmd>BufferLineGoToBuffer 1<CR>")
-vim.keymap.set("n", "<leader>b2", "<Cmd>BufferLineGoToBuffer 2<CR>")
-vim.keymap.set("n", "<leader>b3", "<Cmd>BufferLineGoToBuffer 3<CR>")
-vim.keymap.set("n", "<leader>b4", "<Cmd>BufferLineGoToBuffer 4<CR>")
-vim.keymap.set("n", "<leader>b5", "<Cmd>BufferLineGoToBuffer 5<CR>")
-vim.keymap.set("n", "<leader>b6", "<Cmd>BufferLineGoToBuffer 6<CR>")
-vim.keymap.set("n", "<leader>b7", "<Cmd>BufferLineGoToBuffer 7<CR>")
-vim.keymap.set("n", "<leader>b8", "<Cmd>BufferLineGoToBuffer 8<CR>")
-vim.keymap.set("n", "<leader>b9", "<Cmd>BufferLineGoToBuffer 9<CR>")
-vim.keymap.set("n", "<leader>bc", ":BufferLinePick<CR>")
-vim.keymap.set("n", "<leader>bmn", ":BufferLineMoveNext<CR>")
-vim.keymap.set("n", "<leader>bmp", ":BufferLineMovePrev<CR>")
-vim.keymap.set("n", "<leader>bn", ":BufferLineCycleNext<CR>")
-vim.keymap.set("n", "<leader>bp", ":BufferLineCyclePrev<CR>")
-vim.keymap.set("n", "<leader>bsd", ":BufferLineSortByDirectory<CR>")
-vim.keymap.set("n", "<leader>bse", ":BufferLineSortByExtension<CR>")
+
+WK.add({
+  { "<leader>b", desc = "Buffers" },
+  { "<leader>b1", "<Cmd>BufferLineGoToBuffer 1<CR>", desc = "Buffer 1" },
+  { "<leader>b2", "<Cmd>BufferLineGoToBuffer 2<CR>", desc = "Buffer 2" },
+  { "<leader>b3", "<Cmd>BufferLineGoToBuffer 3<CR>", desc = "Buffer 3" },
+  { "<leader>b4", "<Cmd>BufferLineGoToBuffer 4<CR>", desc = "Buffer 4" },
+  { "<leader>b5", "<Cmd>BufferLineGoToBuffer 5<CR>", desc = "Buffer 5" },
+  { "<leader>b6", "<Cmd>BufferLineGoToBuffer 6<CR>", desc = "Buffer 6" },
+  { "<leader>b7", "<Cmd>BufferLineGoToBuffer 7<CR>", desc = "Buffer 7" },
+  { "<leader>b8", "<Cmd>BufferLineGoToBuffer 8<CR>", desc = "Buffer 8" },
+  { "<leader>b9", "<Cmd>BufferLineGoToBuffer 9<CR>", desc = "Buffer 9" },
+  { "<leader>bc", ":BufferLinePick<CR>", desc = "Select buffer" },
+  { "<leader>bm", desc = "Buffer move" },
+  { "<leader>bmn", ":BufferLineMoveNext<CR>", desc = "Move forward" },
+  { "<leader>bmp", ":BufferLineMovePrev<CR>", desc = "Move back" },
+  { "<leader>bn", ":BufferLineCycleNext<CR>", desc = "Next" },
+  { "<leader>bp", ":BufferLineCyclePrev<CR>", desc = "Prev" },
+  { "<leader>bsd", ":BufferLineSortByDirectory<CR>", desc = "Sort by dir" },
+  { "<leader>bse", ":BufferLineSortByExtension<CR>", desc = "Sort by extension" },
+})
