@@ -38,7 +38,8 @@ vim.opt.spell = true
 vim.opt.spelllang = "en_us"
 
 vim.opt.scrolloff = 10
-vim.opt.guicursor="i:block"
+vim.opt.guicursor = "i:block"
+vim.g.cursorline_timeout = 0
 
 vim.opt.shortmess:append({ I = true, c = true })
 
@@ -62,13 +63,6 @@ vim.cmd.colorscheme("moonfly")
 -- stop hiding double quotes in json files
 vim.g.indentLine_setConceal = 0
 
---Indent blankline
-require("ibl").setup({
-  indent = { char = "┋" },
-})
-
-vim.g.cursorline_timeout = 0
-
 WK.setup()
 
 -- SECTION: colorizer
@@ -79,6 +73,7 @@ WK.add({
   },
 })
 
+-- keymaps
 WK.add({
   {
     mode = { "v" },
@@ -88,9 +83,9 @@ WK.add({
   {
     { "C-d>", "<C-d>zz" },
     { "C-u>", "<C-u>zz" },
-    { "n", "nzzzv" },
-    { "N", "Nzzzv" },
-    { "Q", "<nop>" },
+    { "n",    "nzzzv" },
+    { "N",    "Nzzzv" },
+    { "Q",    "<nop>" },
   },
   {
     mode = { "x" },

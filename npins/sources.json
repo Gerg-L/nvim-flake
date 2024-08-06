@@ -140,9 +140,9 @@
         "repo": "indent-blankline.nvim"
       },
       "branch": "master",
-      "revision": "65e20ab94a26d0e14acac5049b8641336819dfc7",
-      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/65e20ab94a26d0e14acac5049b8641336819dfc7.tar.gz",
-      "hash": "14v9mglm2zykylga0lzh9w1vcmxixya7xg2k4z4m6f4a3l21farx"
+      "revision": "3fe94b8034dd5241cb882bb73847303b58857ecf",
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim/archive/3fe94b8034dd5241cb882bb73847303b58857ecf.tar.gz",
+      "hash": "0vy8ysdd5d1n4v7bsnpf88wfvdxw8b5csqipfyddw5apfmyyjqzz"
     },
     "lazydev.nvim": {
       "type": "Git",
@@ -311,18 +311,6 @@
       "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/48d0e82f9434691cc50d970898142a8c084a49d6.tar.gz",
       "hash": "1j59d696dn87bqllawn2l0n0092f20ih99a69sgjaqw31fz4cq3h"
     },
-    "nvim-treesitter-context": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "nvim-treesitter",
-        "repo": "nvim-treesitter-context"
-      },
-      "branch": "master",
-      "revision": "2aba92ceb1479485953007f4d5adf34d0b66917e",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/2aba92ceb1479485953007f4d5adf34d0b66917e.tar.gz",
-      "hash": "06lrkpsqdy56i4m82q4jlz5nlbrcn77pm8fcbvks3vyzykpwid58"
-    },
     "nvim-web-devicons": {
       "type": "Git",
       "repository": {
@@ -359,7 +347,7 @@
       "url": "https://github.com/nvim-lua/plenary.nvim/archive/a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683.tar.gz",
       "hash": "0n2p8krzwiw682f0yb6n8faamffpp336rjy50pbqf3jmc6czd5z4"
     },
-    "rainbow-delimiters": {
+    "rainbow-delimiters.nvim": {
       "type": "Git",
       "repository": {
         "type": "GitHub",
