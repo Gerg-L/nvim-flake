@@ -1,28 +1,82 @@
-local attach_keymaps = function(_, _)
-  local opts = { noremap = true, silent = true }
-  WK.add({
-    { "<leader>lgD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts },
-    { "<leader>lgd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts },
-    { "<leader>lgt", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts },
-    { "<leader>lgn", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts },
-    { "<leader>lgp", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts },
-    { "<leader>lwa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts },
-    { "<leader>lwr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts },
-    { "<leader>lwl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts },
-    { "<leader>lh", "<cmd>lua vim.lsp.buf.hover()<CR>", opts },
-    { "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts },
-    { "<leader>ln", "<cmd>lua vim.lsp.buf.rename()<CR>", opts },
-    { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts },
-    {
-      "<leader>lf",
-      function()
-        vim.lsp.buf.format({ async = true })
-      end,
-      opts,
-    },
-  })
-end
+local opts = { noremap = true, silent = true }
+
 WK.add({
+  { "<leader>lg", desc = "Decs/Defs" },
+
+  {
+    "<leader>lgD",
+    "<cmd>lua vim.lsp.buf.declaration()<CR>",
+    desc = "Decleration",
+    opts,
+  },
+  {
+    "<leader>lgd",
+    "<cmd>lua vim.lsp.buf.definition()<CR>",
+    desc = "Definition",
+    opts,
+  },
+  {
+    "<leader>lgt",
+    "<cmd>lua vim.lsp.buf.type_definition()<CR>",
+    desc = "Type definition",
+    opts,
+  },
+  {
+    "<leader>lgn",
+    "<cmd>lua vim.diagnostic.goto_next()<CR>",
+    desc = "Next diagnostic",
+    opts,
+  },
+  {
+    "<leader>lgp",
+    "<cmd>lua vim.diagnostic.goto_prev()<CR>",
+    desc = "Prev diagnostic",
+    opts,
+  },
+  { "<leader>lw", desc = "Workspace" },
+  {
+    "<leader>lwa",
+    "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>",
+    desc = "Add workspace folder",
+    opts,
+  },
+  {
+    "<leader>lwr",
+    "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>",
+    desc = "Remove workspace folder",
+    opts,
+  },
+  {
+    "<leader>lwl",
+    "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>",
+    desc = "List workspace folders",
+    opts,
+  },
+  {
+    "<leader>lh",
+    "<cmd>lua vim.lsp.buf.hover()<CR>",
+    desc = "Hover info",
+    opts,
+  },
+  {
+    "<leader>ls",
+    "<cmd>lua vim.lsp.buf.signature_help()<CR>",
+    desc = "Signature info",
+    opts,
+  },
+  {
+    "<leader>ln",
+    "<cmd>lua vim.lsp.buf.rename()<CR>",
+    desc = "Rename variable",
+    opts,
+  },
+  {
+    "<leader>lf",
+    function()
+      vim.lsp.buf.format({ async = true })
+    end,
+    desc = "Format buffer",
+  },
   { "<leader>l", desc = "LSP" },
   {
     "<leader>lt",
@@ -55,7 +109,6 @@ local format_callback = function(client, bufnr)
   })
 end
 local default_on_attach = function(client, bufnr)
-  attach_keymaps(client, bufnr)
   format_callback(client, bufnr)
 end
 --colors
@@ -219,14 +272,45 @@ vim.g.rustaceanvim = {
   },
   on_attach = function(client, bufnr)
     default_on_attach(client, bufnr)
-    local opts = { noremap = true, silent = true, buffer = bufnr }
+    local rust_opts = { noremap = true, silent = true, buffer = bufnr }
     WK.add({
-      { "<leader>rr", ":RustLsp runnables<CR>", opts },
-      { "<leader>rp", ":RustLsp parentModule<CR>", opts },
-      { "<leader>rm", ":RustLsp expandMacro<CR>", opts },
-      { "<leader>rc", ":RustLsp openCargo", opts },
-      { "<leader>rg", ":RustLsp crateGraph x11", opts },
-      { "<leader>rd", ":RustLsp debuggables<cr>", opts },
+      { "<leader>r", desc = "Rust" },
+      {
+        "<leader>rr",
+        ":RustLsp runnables<CR>",
+        desc = "Runnables",
+        rust_opts,
+      },
+      {
+        "<leader>rp",
+        ":RustLsp parentModule<CR>",
+        desc = "Parent module",
+        rust_opts,
+      },
+      {
+        "<leader>rm",
+        ":RustLsp expandMacro<CR>",
+        desc = "Expand macro",
+        rust_opts,
+      },
+      {
+        "<leader>rc",
+        ":RustLsp openCargo",
+        desc = "Open crate",
+        rust_opts,
+      },
+      {
+        "<leader>rg",
+        ":RustLsp crateGraph x11",
+        desc = "Crate graph",
+        rust_opts,
+      },
+      {
+        "<leader>rd",
+        ":RustLsp debuggables<cr>",
+        desc = "Debuggables",
+        rust_opts,
+      },
     })
   end,
 }

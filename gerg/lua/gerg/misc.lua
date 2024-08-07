@@ -83,9 +83,9 @@ WK.add({
   {
     { "C-d>", "<C-d>zz" },
     { "C-u>", "<C-u>zz" },
-    { "n",    "nzzzv" },
-    { "N",    "Nzzzv" },
-    { "Q",    "<nop>" },
+    { "n", "nzzzv" },
+    { "N", "Nzzzv" },
+    { "Q", "<nop>" },
   },
   {
     mode = { "x" },
