@@ -110,8 +110,29 @@
             withNodeJs = true;
             withPerl = true;
 
-            plugins =
-              [
+            plugins = [
+              pkgs.buildNpmPackage {
+                name = "nvim-asciidoc";
+                src = pkgs.fetchFromGitHub {
+                owner = "tigion";
+                repo = "nvim-asciidoc-preview";
+                rev = "06b13166ec0aaa5ae59531bc5c38017171323947";
+                hash = "sha256-6v5DsgCDbpAOHFaNk1i/j5KzO0NFCkIwDpT0Dezceao=";
+              };
+              postPatch = ''
+                pushd server
+              '';
+              npmDepsHash = "sha256-HGEuBpMkupoLMkqrNo1tw989dVzrIiZf5OJCMo4FOgU=";
+              dontNpmBuild = true;
+              installPhase = ''
+                runHook preInstall
+
+                popd
+                cp -r . $out/
+
+                runHook postInstall
+              '';
+              }
                 #
                 # Add your lua config as a "plugin"
                 #
