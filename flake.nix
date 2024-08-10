@@ -111,7 +111,7 @@
             withPerl = true;
 
             plugins = [
-              pkgs.buildNpmPackage {
+              (pkgs.buildNpmPackage {
                 name = "nvim-asciidoc";
                 src = pkgs.fetchFromGitHub {
                 owner = "tigion";
@@ -132,7 +132,7 @@
 
                 runHook postInstall
               '';
-              }
+              })
                 #
                 # Add your lua config as a "plugin"
                 #
