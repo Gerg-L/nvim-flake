@@ -92,7 +92,7 @@
       devShells =
         { pkgs, system }:
         {
-          default = pkgs.mkShell {
+          default = pkgs.mkShellNoCC {
             packages = [
               self.packages.${system}.default
               self.formatter.${system}
