@@ -109,8 +109,8 @@
           neovim = mnw.lib.wrap pkgs {
             inherit (neovim-nightly.packages.${system}) neovim;
 
-            bwrapArgs = [
-              "--setenv"
+            wrapperArgs = [
+              "--set"
               "FZF_DEFAULT_OPTS"
               "--layout=reverse --inline-info"
             ];
@@ -122,11 +122,17 @@
             withNodeJs = true;
             withPerl = true;
 
-            # Add your lua config
-            configDir = ./gerg;
+            # Source lua config
+            initLua = ''
+              require('gerg')
+            '';
 
             plugins =
+
               [
+
+                # Add lua config
+                ./gerg
                 #
                 # Add plugins from nixpkgs here
                 #
