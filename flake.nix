@@ -94,7 +94,7 @@
         {
           default = pkgs.mkShellNoCC {
             packages = [
-              self.packages.${system}.default
+              self.packages.${system}.default.devMode
               self.formatter.${system}
               pkgs.npins
             ];
@@ -127,12 +127,17 @@
               require('gerg')
             '';
 
+            # Add lua config
+            devExcludedPlugins = [
+              ./gerg
+            ];
+            # Impure path to lua config for devShell
+            devPluginPaths = [
+              "/home/gerg/Projects/nvim-flake/gerg"
+            ];
+
             plugins =
-
               [
-
-                # Add lua config
-                ./gerg
                 #
                 # Add plugins from nixpkgs here
                 #
