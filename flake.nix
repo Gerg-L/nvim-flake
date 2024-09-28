@@ -136,6 +136,8 @@
               "/home/gerg/Projects/nvim-flake/gerg"
             ];
 
+            desktopEntry = false;
+
             plugins =
               [
                 #
