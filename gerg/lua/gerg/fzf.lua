@@ -1,3 +1,4 @@
+vim.env.FZF_DEFAULT_OPTS = "--layout=reverse --inline-info"
 require("fzf-lua").setup({ "telescope" })
 WK.add({
   { "<leader>f", desc = "Fuzzy find" },

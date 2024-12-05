@@ -109,12 +109,6 @@
           neovim = mnw.lib.wrap pkgs {
             inherit (neovim-nightly.packages.${system}) neovim;
 
-            wrapperArgs = [
-              "--set"
-              "FZF_DEFAULT_OPTS"
-              "--layout=reverse --inline-info"
-            ];
-
             appName = "gerg";
 
             extraLuaPackages = p: [ p.jsregexp ];
