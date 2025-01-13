@@ -321,3 +321,8 @@ lspconfig.ccls.setup({
   on_attach = default_on_attach,
   cmd = { "ccls" },
 })
+
+lspconfig.jsonls.setup({
+  capabilities = capabilities,
+  on_attach = default_on_attach,
+})

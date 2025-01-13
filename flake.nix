@@ -172,6 +172,7 @@
                 ripgrep
                 fd
                 chafa
+                vscode-langservers-extracted
                 ;
             };
           };
