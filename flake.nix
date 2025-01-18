@@ -23,6 +23,11 @@
       owner = "gerg-l";
       repo = "mnw";
     };
+    systems = {
+      type = "github";
+      owner = "nix-systems";
+      repo = "default";
+    };
   };
 
   outputs =
@@ -31,47 +36,23 @@
       nixpkgs,
       neovim-nightly,
       mnw,
+      systems,
       ...
     }:
     let
+      eachSystem = nixpkgs.lib.genAttrs (import systems);
       inherit (nixpkgs) lib;
-      #
-      # Funni helper function
-      #
-      gerg-utils =
-        x:
-        lib.foldAttrs lib.mergeAttrs { } (
-          map
-            (
-              s:
-              builtins.mapAttrs (
-                _: v:
-                if lib.isFunction v then
-                  {
-                    ${s} = v {
-                      pkgs = nixpkgs.legacyPackages.${s};
-                      system = s;
-                    };
-                  }
-                else
-                  v
-              ) x
-            )
-            [
-              "x86_64-linux"
-              "x86_64-darwin"
-              "aarch64-linux"
-              "aarch64-darwin"
-            ]
-        );
     in
-    gerg-utils {
+    {
       #
       # Linter and formatter, run with "nix fmt"
       # You can use alejandra or nixpkgs-fmt instead of nixfmt if you wish
       #
-      formatter =
-        { pkgs, ... }:
+      formatter = eachSystem (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
         pkgs.writeShellApplication {
           name = "lint";
           runtimeInputs = builtins.attrValues {
@@ -88,10 +69,14 @@
             fd '.*\.nix' . -X deadnix -e -- {} \; -X nixfmt {} \;
             fd '.*\.lua' . -X stylua --indent-type Spaces --indent-width 2 {} \;
           '';
-        };
+        }
+      );
 
-      devShells =
-        { pkgs, system }:
+      devShells = eachSystem (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
         {
           default = pkgs.mkShellNoCC {
             packages = [
@@ -100,10 +85,14 @@
               pkgs.npins
             ];
           };
-        };
+        }
+      );
 
-      packages =
-        { pkgs, system }:
+      packages = eachSystem (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
         {
           default = self.packages.${system}.neovim;
 
@@ -178,6 +167,7 @@
                 ;
             };
           };
-        };
+        }
+      );
     };
 }

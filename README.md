@@ -35,11 +35,11 @@ Add this flake as an input
 #anyModule.nix
 # add system wide
   environment.systemPackages = [
-    inputs.nvim-flake.packages.${pkgs.system}.neovim
+    inputs.nvim-flake.packages.${pkgs.stdenv.system}.neovim
   ];
 # add per-user
   users.users."<name>".packages = [
-    inputs.nvim-flake.packages.${pkgs.system}.neovim
+    inputs.nvim-flake.packages.${pkgs.stdenv.system}.neovim
   ];
 ```
 
@@ -57,11 +57,11 @@ in
 {
 # add system wide
   environment.systemPackages = [
-    nvim-flake.packages.${pkgs.system}.neovim
+    nvim-flake.packages.${pkgs.stdenv.system}.neovim
   ];
 # add per-user
   users.users."<name>".packages = [
-    nvim-flake.packages.${pkgs.system}.neovim
+    nvim-flake.packages.${pkgs.stdenv.system}.neovim
   ];
 ```
 
