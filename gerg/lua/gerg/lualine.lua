@@ -1,11 +1,10 @@
--- SECTION: lualine
 require("lualine").setup({
   options = {
     icons_enabled = true,
     theme = "moonfly",
     component_separators = { "", "" },
     section_separators = { "", "" },
-    disabled_filetypes = { "packer", "NvimTree", "alpha" },
+    disabled_filetypes = {},
   },
   sections = {
     lualine_a = { "mode" },
@@ -63,5 +62,5 @@ require("lualine").setup({
     lualine_z = {},
   },
   tabline = {},
-  extensions = { "nvim-tree" },
+  extensions = { "fzf", "oil" },
 })

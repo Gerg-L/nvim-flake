@@ -1,10 +1,13 @@
--- SECTION: noice-nvim
+---@diagnostic disable: missing-fields
+require("notify").setup({
+  background_colour = "#000000",
+})
+
 require("noice").setup({
   lsp = {
     override = {
       ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
       ["vim.lsp.util.stylize_markdown"] = true,
-      ["cmp.entry.get_documentation"] = true,
     },
   },
 
@@ -24,17 +27,5 @@ require("noice").setup({
     lua = { pattern = "^:%s*lua%s+", icon = "", lang = "lua" },
     help = { pattern = "^:%s*he?l?p?%s+", icon = "" },
     input = {},
-  },
-
-  -- Hide written messages
-  routes = {
-    {
-      filter = {
-        event = "msg_show",
-        kind = "",
-        find = "written",
-      },
-      opts = { skip = true },
-    },
   },
 })

@@ -1,5 +1,5 @@
 require("gerg.misc")
-require("gerg.completion")
+require("gerg.blink")
 require("gerg.lsp")
 require("gerg.treesitter")
 require("gerg.lualine")

@@ -10,7 +10,7 @@
       type = "github";
       owner = "nix-community";
       repo = "neovim-nightly-overlay";
-      flake = false;
+      rev = "1329ddcc318e77e4629eb629d39f7f7c9b2632f6";
     };
     flake-compat = {
       type = "github";
@@ -108,19 +108,7 @@
           default = self.packages.${system}.neovim;
 
           neovim = mnw.lib.wrap pkgs {
-            neovim = import "${neovim-nightly}/flake/packages/neovim.nix" {
-              inherit lib pkgs;
-              neovim-src =
-                let
-                  lock = lib.importJSON "${neovim-nightly}/flake.lock";
-                  nodeName = lock.nodes.root.inputs.neovim-src;
-                  input = lock.nodes.${nodeName}.locked;
-                in
-                pkgs.fetchFromGitHub {
-                  inherit (input) owner repo rev;
-                  hash = input.narHash;
-                };
-            };
+            inherit (neovim-nightly.packages.${system}) neovim;
 
             appName = "gerg";
 
@@ -151,6 +139,7 @@
                 # Add plugins from nixpkgs here
                 #
                 pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+                pkgs.vimPlugins.blink-cmp
               ]
               ++ lib.mapAttrsToList (
                 #

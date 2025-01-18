@@ -24,78 +24,6 @@
       "url": "https://github.com/akinsho/bufferline.nvim/archive/0b2fd861eee7595015b6561dade52fb060be10c4.tar.gz",
       "hash": "068gg98w88q0j3c1wrlggsp0986yppa8vlbnzy7wy4g7kn0aqfsn"
     },
-    "cmp-buffer": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-buffer"
-      },
-      "branch": "main",
-      "revision": "3022dbc9166796b644a841a02de8dd1cc1d311fa",
-      "url": "https://github.com/hrsh7th/cmp-buffer/archive/3022dbc9166796b644a841a02de8dd1cc1d311fa.tar.gz",
-      "hash": "1cwx8ky74633y0bmqmvq1lqzmphadnhzmhzkddl3hpb7rgn18vkl"
-    },
-    "cmp-nvim-lsp": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-nvim-lsp"
-      },
-      "branch": "main",
-      "revision": "39e2eda76828d88b773cc27a3f61d2ad782c922d",
-      "url": "https://github.com/hrsh7th/cmp-nvim-lsp/archive/39e2eda76828d88b773cc27a3f61d2ad782c922d.tar.gz",
-      "hash": "13zcw6c7zppvbsjlr8yj3vml6ayalvhjbbqszljmn1f9hmkpwg89"
-    },
-    "cmp-nvim-lua": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-nvim-lua"
-      },
-      "branch": "main",
-      "revision": "f12408bdb54c39c23e67cab726264c10db33ada8",
-      "url": "https://github.com/hrsh7th/cmp-nvim-lua/archive/f12408bdb54c39c23e67cab726264c10db33ada8.tar.gz",
-      "hash": "18qqcqjyxrmzvpj7m7wyjx1313h66vg8992n6y9lwawmb4mwxrg9"
-    },
-    "cmp-path": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-path"
-      },
-      "branch": "main",
-      "revision": "91ff86cd9c29299a64f968ebb45846c485725f23",
-      "url": "https://github.com/hrsh7th/cmp-path/archive/91ff86cd9c29299a64f968ebb45846c485725f23.tar.gz",
-      "hash": "18ixx14ibc7qrv32nj0ylxrx8w4ggg49l5vhcqd35hkp4n56j6mn"
-    },
-    "cmp-treesitter": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "ray-x",
-        "repo": "cmp-treesitter"
-      },
-      "branch": "master",
-      "revision": "958fcfa0d8ce46d215e19cc3992c542f576c4123",
-      "url": "https://github.com/ray-x/cmp-treesitter/archive/958fcfa0d8ce46d215e19cc3992c542f576c4123.tar.gz",
-      "hash": "05as01c2f7i20zkzpqbq9n8ji9bcwd678ixmxnrz9vmz5zsj8q7i"
-    },
-    "cmp-vsnip": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "cmp-vsnip"
-      },
-      "branch": "main",
-      "revision": "989a8a73c44e926199bfd05fa7a516d51f2d2752",
-      "url": "https://github.com/hrsh7th/cmp-vsnip/archive/989a8a73c44e926199bfd05fa7a516d51f2d2752.tar.gz",
-      "hash": "1hs1gv7q0vfn82pwdwpy46nsi4n5z6yljnzl0rpvwfp8g79hssfs"
-    },
     "crates.nvim": {
       "type": "Git",
       "repository": {
@@ -251,30 +179,6 @@
       "url": "https://github.com/MunifTanjim/nui.nvim/archive/61574ce6e60c815b0a0c4b5655b8486ba58089a1.tar.gz",
       "hash": "1vllq6lkk7karc3n8h9wj2ax6sc99h26r96h18lbvi0nsy98ss53"
     },
-    "nvim-autopairs": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "windwp",
-        "repo": "nvim-autopairs"
-      },
-      "branch": "master",
-      "revision": "e38c5d837e755ce186ae51d2c48e1b387c4425c6",
-      "url": "https://github.com/windwp/nvim-autopairs/archive/e38c5d837e755ce186ae51d2c48e1b387c4425c6.tar.gz",
-      "hash": "16wm535ihr8gxngx6a5xj4phz6qjshxi4nrcx2ks4bmd815gdsnv"
-    },
-    "nvim-cmp": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "hrsh7th",
-        "repo": "nvim-cmp"
-      },
-      "branch": "main",
-      "revision": "d818fd0624205b34e14888358037fb6f5dc51234",
-      "url": "https://github.com/hrsh7th/nvim-cmp/archive/d818fd0624205b34e14888358037fb6f5dc51234.tar.gz",
-      "hash": "18yjwihrr4ykq2h8yv67550358bmxi6maqvrhhbvxf402r01zkld"
-    },
     "nvim-colorizer.lua": {
       "type": "Git",
       "repository": {
@@ -298,6 +202,18 @@
       "revision": "f95d371c1a274f60392edfd8ea5121b42dca736e",
       "url": "https://github.com/neovim/nvim-lspconfig/archive/f95d371c1a274f60392edfd8ea5121b42dca736e.tar.gz",
       "hash": "0h93s14vqrwg7gkqji1pc3p3h72niy1hdjd387mz5j62h7k6h74h"
+    },
+    "nvim-notify": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rcarriga",
+        "repo": "nvim-notify"
+      },
+      "branch": "master",
+      "revision": "a3020c2cf4dfc4c4f390c4a21e84e35e46cf5d17",
+      "url": "https://github.com/rcarriga/nvim-notify/archive/a3020c2cf4dfc4c4f390c4a21e84e35e46cf5d17.tar.gz",
+      "hash": "0841kdr25cmi3n0binxpgsa9z1spknn2diijl0b3qv4q4h8y7q8b"
     },
     "nvim-tree.lua": {
       "type": "Git",
