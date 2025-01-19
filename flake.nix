@@ -96,6 +96,8 @@
         {
           default = self.packages.${system}.neovim;
 
+          blink-cmp = pkgs.callPackage ./packages/blink-cmp/package.nix {};
+
           neovim = mnw.lib.wrap pkgs {
             inherit (neovim-nightly.packages.${system}) neovim;
 
@@ -128,7 +130,7 @@
                 # Add plugins from nixpkgs here
                 #
                 pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-                pkgs.vimPlugins.blink-cmp
+                self.packages.${system}.blink-cmp
               ]
               ++ lib.mapAttrsToList (
                 #

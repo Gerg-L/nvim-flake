@@ -29,6 +29,15 @@ jobs:
             git reset --soft HEAD^
           fi
 
+          nix run nixpkgs#nix-update -F blink-cmp --version=branch --commit
+
+          if git rev-parse -q HEAD^; then
+
+            MESSAGE="$(git -P log --pretty=format:"%s%n%b" -1)"
+
+            git reset --soft HEAD^
+          fi
+
           if NPINS=$(nix run nixpkgs#npins -- -d . update -f | grep -E '[^\(no changes\)]*url.*'); then
             MESSAGE="$MESSAGE
 
