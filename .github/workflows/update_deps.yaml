@@ -33,7 +33,8 @@ jobs:
 
           if git rev-parse -q HEAD^; then
 
-            MESSAGE="$(git -P log --pretty=format:"%s%n%b" -1)"
+            MESSAGE="$MESSAGE
+            $(git -P log --pretty=format:"%s%n%b" -1)"
 
             git reset --soft HEAD^
           fi
