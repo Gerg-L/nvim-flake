@@ -15,8 +15,8 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "8f27db520029b793adb5e784f57ca309deb77ca8";
-    hash = "sha256-QQuzy0SsRZ5OF+i8sTzIoydenx+cogHE2ufVNPdFk7w=";
+    rev = "ef9f85c6ff87747655e8ef37c997ab808a2957c0";
+    hash = "sha256-sLwY33sbw86kQ9TBNElROS+jKXInicpWm/P/lNUzdrk=";
   };
 
   patches = [
