@@ -10,7 +10,6 @@
       type = "github";
       owner = "nix-community";
       repo = "neovim-nightly-overlay";
-      rev = "1329ddcc318e77e4629eb629d39f7f7c9b2632f6";
     };
     flake-compat = {
       type = "github";
@@ -96,7 +95,7 @@
         {
           default = self.packages.${system}.neovim;
 
-          blink-cmp = pkgs.callPackage ./packages/blink-cmp/package.nix {};
+          blink-cmp = pkgs.callPackage ./packages/blink-cmp/package.nix { };
 
           neovim = mnw.lib.wrap pkgs {
             inherit (neovim-nightly.packages.${system}) neovim;

@@ -38,7 +38,7 @@ jobs:
             git reset --soft HEAD^
           fi
 
-          if NPINS=$(nix run nixpkgs#npins -- -d . update -f | grep -E '[^\(no changes\)]*url.*'); then
+          if NPINS=$(nix run nixpkgs#npins -- update | grep -E '[^\(no changes\)]*url.*'); then
             MESSAGE="$MESSAGE
 
           npins url updates:
