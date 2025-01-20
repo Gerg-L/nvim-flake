@@ -29,7 +29,7 @@ jobs:
             git reset --soft HEAD^
           fi
 
-          nix run nixpkgs#nix-update -F blink-cmp --version=branch --commit
+          nix run nixpkgs#nix-update -- -F blink-cmp --version=branch --commit
 
           if git rev-parse -q HEAD^; then
 
