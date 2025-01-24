@@ -6,7 +6,7 @@
   writeShellScriptBin,
 }:
 let
-  version = "0.10.0-unstable-2025-01-22";
+  version = "0.10.0-unstable-2025-01-23";
 in
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
@@ -15,8 +15,8 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "4c7ab7a1a7d342f5c9599d06105db176f9da2ce9";
-    hash = "sha256-TD7BDmMThd/y6HWOnkppu04aq3aT1rAfmgKxaIun+y4=";
+    rev = "c4eafc1f87380da04eb8b9c5b52395c48edd102e";
+    hash = "sha256-HJ3/Qovyj1lcnlrYz6lueGVxNSx/EsPh8ORgoVvpJ4Y=";
   };
 
   patches = [
