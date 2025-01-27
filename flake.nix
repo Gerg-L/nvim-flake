@@ -53,7 +53,7 @@
           pkgs = nixpkgs.legacyPackages.${system};
         in
         pkgs.writeShellApplication {
-          name = "lint";
+          name = "format";
           runtimeInputs = builtins.attrValues {
             inherit (pkgs)
               nixfmt-rfc-style
@@ -64,9 +64,9 @@
               ;
           };
           text = ''
-            fd '.*\.nix' . -x statix fix -- {} \;
-            fd '.*\.nix' . -X deadnix -e -- {} \; -X nixfmt {} \;
-            fd '.*\.lua' . -X stylua --indent-type Spaces --indent-width 2 {} \;
+            fd "$@" -t f -e nix -x statix fix -- '{}'
+            fd "$@" -t f -e nix -X deadnix -e -- '{}' \; -X nixfmt '{}'
+            fd "$@" -t f -e lua -X stylua --indent-type Spaces --indent-width 2 '{}'
           '';
         }
       );
