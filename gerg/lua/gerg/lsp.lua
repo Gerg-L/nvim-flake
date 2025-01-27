@@ -162,8 +162,7 @@ null_ls.setup({
 local lspconfig = require("lspconfig")
 local capabilities = require("blink.cmp").get_lsp_capabilities()
 
--- lsp_lines
-require("lsp_lines").setup()
+-- lsp_lines is now in neovim
 vim.diagnostic.config({
   virtual_text = false,
   virtual_lines = true,

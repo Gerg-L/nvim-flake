@@ -84,17 +84,6 @@
       "url": "https://github.com/folke/lazydev.nvim/archive/a1b78b2ac6f978c72e76ea90ae92a94edf380cfc.tar.gz",
       "hash": "1ch75kwgyzpplvlp04h6aa4yymkjcwsfkwgzwicnqpsxylsw6z9r"
     },
-    "lsp_lines.nvim": {
-      "type": "Git",
-      "repository": {
-        "type": "Git",
-        "url": "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
-      },
-      "branch": "main",
-      "revision": "a92c755f182b89ea91bd8a6a2227208026f27b4d",
-      "url": null,
-      "hash": "14ym4d8vgvw2vhsaxik8612wyvszd895q69n9h100yd7x5jqhy4c"
-    },
     "lspkind.nvim": {
       "type": "Git",
       "repository": {
