@@ -3,7 +3,7 @@ name: update_deps
 on:
   workflow_dispatch: #allow manual triggering
   schedule:
-      - cron: "0 4 * * *"
+      - cron: "0 0 * * 0"
 jobs:
   update_deps:
     runs-on: ubuntu-latest
@@ -34,6 +34,7 @@ jobs:
           if git rev-parse -q HEAD^; then
 
             MESSAGE="$MESSAGE
+
             $(git -P log --pretty=format:"%s%n%b" -1)"
 
             git reset --soft HEAD^
