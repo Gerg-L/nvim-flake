@@ -79,49 +79,31 @@ WK.add({
   },
   { "<leader>l", desc = "LSP" },
   {
-    "<leader>lt",
+    "<leader>lT",
     (function()
-      local diag_status = 1 -- 1 is show; 0 is hide
       return function()
-        if diag_status == 1 then
-          diag_status = 0
-          vim.diagnostic.hide()
-        else
-          diag_status = 1
-          vim.diagnostic.show()
-        end
+        vim.diagnostic.hide()
+        vim.diagnostic.enable(not vim.diagnostic.is_enabled())
       end
     end)(),
     desc = "Toggle diagnostics",
   },
-})
-
--- Enable formatting
-local format_callback = function(client, bufnr)
-  vim.api.nvim_create_autocmd("BufWritePre", {
-    buffer = bufnr,
-    callback = function()
-      if vim.g.formatsave then
-        local params = require("vim.lsp.util").make_formatting_params()
-        client.request("textDocument/formatting", params, nil, bufnr)
+  {
+    "<leader>lt",
+    (function()
+      return function()
+        local enable = not vim.diagnostic.config().virtual_lines.current_line
+        vim.diagnostic.config({
+          underline = enable,
+          virtual_lines = {
+            current_line = enable,
+          },
+        })
       end
-    end,
-  })
-end
-local default_on_attach = function(client, bufnr)
-  format_callback(client, bufnr)
-end
---colors
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-  border = "single",
+    end)(),
+    desc = "Toggle virtual_lines",
+  },
 })
-vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signatureHelp, {
-  border = "single",
-})
-vim.diagnostic.config({ float = { border = "single" } })
---
-
-vim.diagnostic.config({ update_in_insert = true })
 
 local null_ls = require("null-ls")
 
@@ -144,7 +126,6 @@ local ls_sources = {
   formatting.stylua,
   -- formatting.nixfmt,
   -- code_actions.gitsigns,
-  completion.luasnip,
   diagnostics.statix,
   code_actions.statix,
   diagnostics.deadnix,
@@ -156,23 +137,37 @@ null_ls.setup({
   debounce = 250,
   default_timeout = 5000,
   sources = ls_sources,
-  on_attach = default_on_attach,
 })
 -- Enable lspconfig
 local lspconfig = require("lspconfig")
 local capabilities = require("blink.cmp").get_lsp_capabilities()
 
--- lsp_lines is now in neovim
 vim.diagnostic.config({
+  float = { border = "single" },
+  update_in_insert = true,
   virtual_text = false,
-  virtual_lines = true,
+  virtual_lines = { enable = true, current_line = true },
+  underline = true,
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = "",
+      [vim.diagnostic.severity.WARN] = "",
+      [vim.diagnostic.severity.INFO] = "",
+      [vim.diagnostic.severity.HINT] = "",
+    },
+    linehl = {
+      [vim.diagnostic.severity.ERROR] = "ErrorMsg",
+    },
+    numhl = {
+      [vim.diagnostic.severity.WARN] = "WarningMsg",
+    },
+  },
 })
 
 -- Nix (nil) config
 
 lspconfig.nil_ls.setup({
   capabilities = capabilities,
-  on_attach = default_on_attach,
   cmd = { "nil" },
   settings = {
     ["nil"] = {
@@ -194,37 +189,40 @@ lspconfig.nil_ls.setup({
 -- Lua
 lspconfig.lua_ls.setup({
   capabilities = capabilities,
-  on_attach = default_on_attach,
   on_init = function(client)
-    local path = client.workspace_folders[1].name
-    if not vim.loop.fs_stat(path .. "/.luarc.json") and not vim.loop.fs_stat(path .. "/.luarc.jsonc") then
-      client.config.settings = vim.tbl_deep_extend("force", client.config.settings, {
-        Lua = {
-          format = {
-            enable = true,
-          },
-          runtime = {
-            version = "LuaJIT",
-          },
-          telemetry = { enable = false },
-          workspace = {
-            checkThirdParty = false,
-          },
-          completion = {
-            callSnippet = "Replace",
-          },
-        },
-      })
-
-      client.notify("workspace/didChangeConfiguration", { settings = client.config.settings })
+    if client.workspace_folders then
+      local path = client.workspace_folders[1].name
+      if vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc") then
+        return
+      end
     end
-    return true
+
+    client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+      format = {
+        enable = true,
+      },
+      runtime = {
+        version = "LuaJIT",
+      },
+      telemetry = { enable = false },
+      workspace = {
+        checkThirdParty = false,
+      },
+      completion = {
+        callSnippet = "Replace",
+      },
+      diagnostics = {
+        disable = { "missing-fields" },
+      },
+    })
   end,
+  settings = {
+    Lua = {},
+  },
 })
 
 lspconfig.ccls.setup({
   capabilities = capabilities,
-  on_attach = default_on_attach,
   cmd = { "ccls" },
 })
 
@@ -232,7 +230,6 @@ lspconfig.ccls.setup({
 require("crates").setup({
   lsp = {
     enabled = true,
-    on_attach = default_on_attach,
     actions = true,
     completion = true,
     hover = true,
@@ -269,8 +266,7 @@ vim.g.rustaceanvim = {
       },
     },
   },
-  on_attach = function(client, bufnr)
-    default_on_attach(client, bufnr)
+  on_attach = function(_, bufnr)
     local rust_opts = { noremap = true, silent = true, buffer = bufnr }
     WK.add({
       { "<leader>r", desc = "Rust" },
@@ -317,11 +313,9 @@ vim.g.rustaceanvim = {
 
 lspconfig.ccls.setup({
   capabilities = capabilities,
-  on_attach = default_on_attach,
   cmd = { "ccls" },
 })
 
 lspconfig.jsonls.setup({
   capabilities = capabilities,
-  on_attach = default_on_attach,
 })

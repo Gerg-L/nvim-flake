@@ -108,18 +108,6 @@
       "url": "https://github.com/nvim-lualine/lualine.nvim/archive/2a5bae925481f999263d6f5ed8361baef8df4f83.tar.gz",
       "hash": "0hp8gycbwm6ibq4rpa18j3g9xacgghklz4c8jlr4gif6g37r1pi0"
     },
-    "luasnip": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "L3MON4D3",
-        "repo": "LuaSnip"
-      },
-      "branch": "master",
-      "revision": "c9b9a22904c97d0eb69ccb9bab76037838326817",
-      "url": "https://github.com/L3MON4D3/LuaSnip/archive/c9b9a22904c97d0eb69ccb9bab76037838326817.tar.gz",
-      "hash": "03anxdspqz7ylq4239jyr9y51mw5qw1lkccyvfhj6wfk43jjdryx"
-    },
     "neogit": {
       "type": "Git",
       "repository": {
@@ -172,13 +160,13 @@
       "type": "Git",
       "repository": {
         "type": "GitHub",
-        "owner": "norcalli",
+        "owner": "catgoose",
         "repo": "nvim-colorizer.lua"
       },
       "branch": "master",
-      "revision": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
-      "url": "https://github.com/norcalli/nvim-colorizer.lua/archive/a065833f35a3a7cc3ef137ac88b5381da2ba302e.tar.gz",
-      "hash": "0v1h9lj68kmx6052zg78v366iibxq78367h7avm97pvp5ksvqcw2"
+      "revision": "39142aa1390d6ccdca57cb6dc5b2c7bfed460ffe",
+      "url": "https://github.com/catgoose/nvim-colorizer.lua/archive/39142aa1390d6ccdca57cb6dc5b2c7bfed460ffe.tar.gz",
+      "hash": "16sjfq765hab8ns4kgr39hyj0gd5yizh2vk8sk177gvajhjr7pxs"
     },
     "nvim-lspconfig": {
       "type": "Git",
