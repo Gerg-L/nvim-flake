@@ -1,5 +1,3 @@
-local opts = { noremap = true, silent = true }
-
 WK.add({
   { "<leader>lg", desc = "Decs/Defs" },
 
@@ -7,68 +5,57 @@ WK.add({
     "<leader>lgD",
     "<cmd>lua vim.lsp.buf.declaration()<CR>",
     desc = "Decleration",
-    opts,
   },
   {
     "<leader>lgd",
     "<cmd>lua vim.lsp.buf.definition()<CR>",
     desc = "Definition",
-    opts,
   },
   {
     "<leader>lgt",
     "<cmd>lua vim.lsp.buf.type_definition()<CR>",
     desc = "Type definition",
-    opts,
   },
   {
     "<leader>lgn",
     "<cmd>lua vim.diagnostic.goto_next()<CR>",
     desc = "Next diagnostic",
-    opts,
   },
   {
     "<leader>lgp",
     "<cmd>lua vim.diagnostic.goto_prev()<CR>",
     desc = "Prev diagnostic",
-    opts,
   },
   { "<leader>lw", desc = "Workspace" },
   {
     "<leader>lwa",
     "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>",
     desc = "Add workspace folder",
-    opts,
   },
   {
     "<leader>lwr",
     "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>",
     desc = "Remove workspace folder",
-    opts,
   },
   {
     "<leader>lwl",
     "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>",
     desc = "List workspace folders",
-    opts,
   },
   {
     "<leader>lh",
     "<cmd>lua vim.lsp.buf.hover()<CR>",
     desc = "Hover info",
-    opts,
   },
   {
     "<leader>ls",
     "<cmd>lua vim.lsp.buf.signature_help()<CR>",
     desc = "Signature info",
-    opts,
   },
   {
     "<leader>ln",
     "<cmd>lua vim.lsp.buf.rename()<CR>",
     desc = "Rename variable",
-    opts,
   },
   {
     "<leader>lf",
@@ -103,7 +90,7 @@ WK.add({
     end)(),
     desc = "Toggle virtual_lines",
   },
-})
+}, { noremap = true, silent = true })
 
 local null_ls = require("null-ls")
 
@@ -267,46 +254,39 @@ vim.g.rustaceanvim = {
     },
   },
   on_attach = function(_, bufnr)
-    local rust_opts = { noremap = true, silent = true, buffer = bufnr }
     WK.add({
       { "<leader>r", desc = "Rust" },
       {
         "<leader>rr",
         ":RustLsp runnables<CR>",
         desc = "Runnables",
-        rust_opts,
       },
       {
         "<leader>rp",
         ":RustLsp parentModule<CR>",
         desc = "Parent module",
-        rust_opts,
       },
       {
         "<leader>rm",
         ":RustLsp expandMacro<CR>",
         desc = "Expand macro",
-        rust_opts,
       },
       {
         "<leader>rc",
         ":RustLsp openCargo",
         desc = "Open crate",
-        rust_opts,
       },
       {
         "<leader>rg",
         ":RustLsp crateGraph x11",
         desc = "Crate graph",
-        rust_opts,
       },
       {
         "<leader>rd",
         ":RustLsp debuggables<cr>",
         desc = "Debuggables",
-        rust_opts,
       },
-    })
+    }, { noremap = true, silent = true, buffer = bufnr })
   end,
 }
 -- CCLS (clang) config
