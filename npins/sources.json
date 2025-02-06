@@ -108,6 +108,18 @@
       "url": "https://github.com/nvim-lualine/lualine.nvim/archive/2a5bae925481f999263d6f5ed8361baef8df4f83.tar.gz",
       "hash": "0hp8gycbwm6ibq4rpa18j3g9xacgghklz4c8jlr4gif6g37r1pi0"
     },
+    "markview.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "OXY2DEV",
+        "repo": "markview.nvim"
+      },
+      "branch": "main",
+      "revision": "e94d34c1a7d11bdcf7ffcdcc2097f88961033447",
+      "url": "https://github.com/OXY2DEV/markview.nvim/archive/e94d34c1a7d11bdcf7ffcdcc2097f88961033447.tar.gz",
+      "hash": "1lywaajz81ccsr9y5pabs3sxvz3xvq5dccy09ji4xfd9fyj997ml"
+    },
     "neogit": {
       "type": "Git",
       "repository": {
