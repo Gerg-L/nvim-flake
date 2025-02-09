@@ -6,7 +6,7 @@
   writeShellScriptBin,
 }:
 let
-  version = "0.11.0-unstable-2025-02-01";
+  version = "0.11.0-unstable-2025-02-08";
 in
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
@@ -15,8 +15,8 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "cc34be8ff1145264811e59b017f59676ad81000e";
-    hash = "sha256-6NgB253rpCaNlNabbZRYIC/x1ZOlm41ZMvQOSNhgef8=";
+    rev = "d6169f0551bb1c8d18cc118e5c970a7b01a2726d";
+    hash = "sha256-6rdG6X6Lt/gh+NU7+7vAPe9FmroSU0p1RlwPJWy96hc=";
   };
 
   patches = [
@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage {
     mv "$out/lib" "$out/target/release"
   '';
 
-  cargoHash = "sha256-YO84pBB+AwZTHQ7EaZn3bz4Is14fmjTh7mU/ZAjh/iA=";
+  cargoHash = "sha256-W7CdF70BMXKMCcooR6adw2wwHJ3WznZ+o8KRyHWMeeI=";
   useFetchCargoVendor = true;
 
   nativeBuildInputs = [
