@@ -1,12 +1,10 @@
 {
-  lib,
   rustPlatform,
   fetchFromGitHub,
-  replaceVars,
   writeShellScriptBin,
 }:
 let
-  version = "0.13.1-unstable-2025-03-01";
+  version = "0.13.1-unstable-2025-03-02";
 in
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
@@ -15,20 +13,15 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "f29498e5f0f9a78bddb9d1c03c67e213896291d3";
-    hash = "sha256-phTefZ1QY/FuWg+bDFAKK3QybriXP0QgWtnhmXarZAA=";
+    rev = "12298b4836d11b536aefb76f4937c0a8769773cc";
+    hash = "sha256-aq2fXEIMz9j3tCeHaRM3eBAYyeQO84rf/G6SJybMFqw=";
   };
-
-  patches = [
-    (replaceVars ./force-version.patch {
-      tag = "v${builtins.concatStringsSep "." (lib.take 3 (builtins.splitVersion version))}";
-    })
-  ];
 
   postInstall = ''
     cp -r {lua,plugin} "$out"
-    mkdir -p "$out/target"
-    mv "$out/lib" "$out/target/release"
+    mkdir -p "$out/target/release"
+    mv "$out/lib/"* "$out/target/release/"
+    echo -n "nix" > "$out/target/release/version"
   '';
 
   cargoHash = "sha256-F1wh/TjYoiIbDY3J/prVF367MKk3vwM7LqOpRobOs7I=";
