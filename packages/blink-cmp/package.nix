@@ -19,9 +19,8 @@ rustPlatform.buildRustPackage {
 
   postInstall = ''
     cp -r {lua,plugin} "$out"
-    mkdir -p "$out/target/release"
-    mv "$out/lib/"* "$out/target/release/"
-    echo -n "nix" > "$out/target/release/version"
+    mkdir -p "$out/target"
+    mv "$out/lib" "$out/target/release"
   '';
 
   cargoHash = "sha256-F1wh/TjYoiIbDY3J/prVF367MKk3vwM7LqOpRobOs7I=";
