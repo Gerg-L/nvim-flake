@@ -104,8 +104,10 @@
 
             extraLuaPackages = p: [ p.jsregexp ];
 
-            withNodeJs = true;
-            withPerl = true;
+            providers = {
+              nodeJs.enable = true;
+              perl.enable = true;
+            };
 
             # Source lua config
             initLua = ''
