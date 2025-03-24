@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "494af9d85ecab388334f9f03163463b3db11f997",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/494af9d85ecab388334f9f03163463b3db11f997.tar.gz",
-      "hash": "01c0bimbsbjrma3kq4ay8kl0nr8gkdlaramsh62ky3iwqzlmpg94"
+      "revision": "ac6a34ea39831ec71c14f72075facf377ea9a00d",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/ac6a34ea39831ec71c14f72075facf377ea9a00d.tar.gz",
+      "hash": "0abygsdgvbmaabb93yk66zcg5650qy8zjvhjdqliavq0iipg3hqd"
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -126,9 +126,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "7a7d3ed0d276b32e121d791f73d850aae6d61b42",
-      "url": "https://github.com/OXY2DEV/markview.nvim/archive/7a7d3ed0d276b32e121d791f73d850aae6d61b42.tar.gz",
-      "hash": "13wdjd24kxqr6dn5w7glxhibjl8baiyi9q0v5nydw08p8km1bzwp"
+      "revision": "556cac8bb8eeb461013ebe0d015e2c48d3527c36",
+      "url": "https://github.com/OXY2DEV/markview.nvim/archive/556cac8bb8eeb461013ebe0d015e2c48d3527c36.tar.gz",
+      "hash": "0wfw76cgpf5ljs12qv7dxy0d4cws4v48as6frpwi4azydp3lma00"
     },
     "neogit": {
       "type": "Git",
@@ -282,9 +282,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "3d0ef8b41dbd181ece7a90d3c4c10fdd14955b35",
-      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/3d0ef8b41dbd181ece7a90d3c4c10fdd14955b35.tar.gz",
-      "hash": "0ad49qfvr25hxassd0zid7h5g9j25z01r967b4xgzq072irwfblc"
+      "revision": "de39919a57e1a40a4c7dc5bae0de276f9c616ef3",
+      "url": "https://github.com/HiPhish/rainbow-delimiters.nvim/archive/de39919a57e1a40a4c7dc5bae0de276f9c616ef3.tar.gz",
+      "hash": "04a3y7kyszgjgi1nmjb41vwwpz4svkxh61zkbxrn4ajvxz1ia05i"
     },
     "rust-tools.nvim": {
       "type": "Git",
