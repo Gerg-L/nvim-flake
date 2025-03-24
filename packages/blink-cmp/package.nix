@@ -3,12 +3,9 @@
   fetchFromGitHub,
   writeShellScriptBin,
 }:
-let
-  version = "0.14.1-unstable-2025-03-22";
-in
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
-  inherit version;
+  version = "0.14.1-unstable-2025-03-22";
 
   src = fetchFromGitHub {
     owner = "Saghen";

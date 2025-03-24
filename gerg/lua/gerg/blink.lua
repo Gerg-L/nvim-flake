@@ -45,7 +45,7 @@ require("blink.cmp").setup({
     ["<C-f>"] = { "scroll_documentation_down", "fallback" },
   },
   sources = {
-    default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+    default = { "lazydev", "lsp", "buffer", "snippets", "path", "omni" },
     providers = {
       lazydev = {
         name = "LazyDev",
