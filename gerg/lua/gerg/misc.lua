@@ -104,3 +104,14 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
   end,
 })
+
+vim.opt.exrc = true
+if vim.opt.exrc:get() then
+  local path = vim.fn.getcwd() .. "/.nvim.lua"
+  if vim.uv.fs_stat(path) then
+    local read = vim.secure.read(path)
+    if read ~= nil then
+      load(read)()
+    end
+  end
+end
