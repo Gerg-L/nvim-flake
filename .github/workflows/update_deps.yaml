@@ -10,12 +10,15 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4.2.2
-      - name: install nix
-        uses: DeterminateSystems/nix-installer-action@v16
+      - uses: cachix/install-nix-action@v31
       - name: setup git
         run: | 
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+      - uses: cachix/cachix-action@v14
+        with:
+          name: nvim-flake
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
       - name: update
         run: |
           MESSAGE=""
@@ -29,22 +32,26 @@ jobs:
             git reset --soft HEAD^
           fi
 
+          NPINS=$(nix run nixpkgs#npins -- update -f | grep -E '[^\(no changes\)]*url.*')
+
+          if [ -n "$(git status --porcelain=v1 2>/dev/null)" ]; then
+            MESSAGE="$MESSAGE
+
+          npins url updates:
+          $NPINS"
+          fi
+
           nix run nixpkgs#nix-update -- -F blink-cmp --version=branch --commit
 
           if git rev-parse -q HEAD^; then
+
+            nix build .#blink-cmp
 
             MESSAGE="$MESSAGE
 
             $(git -P log --pretty=format:"%s%n%b" -1)"
 
             git reset --soft HEAD^
-          fi
-
-          if NPINS=$(nix run nixpkgs#npins -- update | grep -E '[^\(no changes\)]*url.*'); then
-            MESSAGE="$MESSAGE
-
-          npins url updates:
-          $NPINS"
           fi
 
           if [ -z "$MESSAGE" ]; then
