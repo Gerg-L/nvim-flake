@@ -33,14 +33,12 @@
     {
       self,
       nixpkgs,
-      neovim-nightly,
       mnw,
       systems,
       ...
-    }:
+    }@inputs:
     let
       eachSystem = nixpkgs.lib.genAttrs (import systems);
-      inherit (nixpkgs) lib;
     in
     {
       #
@@ -97,79 +95,7 @@
 
           blink-cmp = pkgs.callPackage ./packages/blink-cmp/package.nix { };
 
-          neovim = mnw.lib.wrap pkgs {
-            inherit (neovim-nightly.packages.${system}) neovim;
-
-            appName = "gerg";
-
-            extraLuaPackages = p: [ p.jsregexp ];
-
-            providers = {
-              nodeJs.enable = true;
-              perl.enable = true;
-            };
-
-            # Source lua config
-            initLua = ''
-              require('gerg')
-            '';
-
-            # Add lua config
-            devExcludedPlugins = [
-              ./gerg
-            ];
-            # Impure path to lua config for devShell
-            devPluginPaths = [
-              "/home/gerg/Projects/nvim-flake/gerg"
-            ];
-
-            desktopEntry = false;
-
-            plugins =
-              [
-                #
-                # Add plugins from nixpkgs here
-                #
-                pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-                self.packages.${system}.blink-cmp
-              ]
-              ++ lib.mapAttrsToList (
-                #
-                # This generates plugins from npins sources
-                #
-                pname: pin:
-                (
-                  pin
-                  // {
-                    inherit pname;
-                    version = builtins.substring 0 8 pin.revision;
-                  }
-
-                )
-              ) (pkgs.callPackages ./npins/sources.nix { });
-
-            extraBinPath = builtins.attrValues {
-
-              #
-              # Runtime dependencies
-              #
-              inherit (pkgs)
-                deadnix
-                statix
-                nil
-
-                lua-language-server
-                stylua
-
-                #rustfmt
-
-                ripgrep
-                fd
-                chafa
-                vscode-langservers-extracted
-                ;
-            };
-          };
+          neovim = mnw.lib.wrap { inherit pkgs inputs; } ./config.nix;
         }
       );
     };
