@@ -5,13 +5,13 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
-  version = "1.1.1-unstable-2025-04-26";
+  version = "1.2.0-unstable-2025-05-02";
 
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "f2e4f6aae833c5c2866d203666910005363779d7";
-    hash = "sha256-Y5dcnlVl4nvCDEQQD5O2BdjuB3oNZc1fmQj7fE7azV8=";
+    rev = "4f38ce99a472932d5776337f08f7a8180f1f571a";
+    hash = "sha256-bKe8SSg1HPWE7b4iRQJwiOVCrvvgttuHCOIa4U/38AY=";
   };
 
   postInstall = ''
@@ -20,7 +20,7 @@ rustPlatform.buildRustPackage {
     mv "$out/lib" "$out/target/release"
   '';
 
-  cargoHash = "sha256-MWElqh7ENJ6CbLOnvz0DsP5YYu+e+y12GSUOfW1IKGU=";
+  cargoHash = "sha256-IDoDugtNWQovfSstbVMkKHLBXKa06lxRWmywu4zyS3M=";
   useFetchCargoVendor = true;
 
   nativeBuildInputs = [
