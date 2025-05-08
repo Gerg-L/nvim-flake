@@ -24,11 +24,8 @@
   desktopEntry = false;
 
   plugins = {
-    dev.foo = {
-      pure = {
-        name = "gerg";
-        src = ./gerg;
-      };
+    dev.gerg = {
+      pure = ./gerg;
       impure = "/home/gerg/Projects/nvim-flake/gerg";
     };
 
