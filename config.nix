@@ -26,7 +26,7 @@
   plugins = {
     dev.gerg = {
       pure = ./gerg;
-      impure = "/home/gerg/Projects/nvim-flake/gerg";
+      impure = "~/Projects/nvim-flake/gerg";
     };
 
     start =
