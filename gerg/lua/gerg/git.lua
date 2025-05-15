@@ -6,11 +6,10 @@ WK.add({
 })
 
 require("gitsigns").setup({
-  on_attach = function()
+  on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
     -- Navigation
     WK.add({
-
       {
         "]c",
         function()
@@ -77,7 +76,7 @@ require("gitsigns").setup({
         mode = { "o", "x" },
         { "gh", ":<C-U>Gitsigns select_hunk<CR>" },
       },
-    })
+    }, { buffer = bufnr })
   end,
   signs = {
     add = { text = "│" },
