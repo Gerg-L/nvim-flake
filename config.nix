@@ -12,6 +12,8 @@
   extraLuaPackages = p: [ p.jsregexp ];
 
   providers = {
+    ruby.enable = true;
+    python3.enable = true;
     nodeJs.enable = true;
     perl.enable = true;
   };
