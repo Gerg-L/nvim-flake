@@ -43,7 +43,7 @@ jobs:
         run: |
           MESSAGE="
           npins updates:
-            $(nix run nixpkgs#npins -- update -f 2>&1 | { grep '.*Changes:$\|.*url:.*' || true; })"
+            $(nix run nixpkgs#npins -- --lock-file ./sources.json update -f 2>&1 | { grep '.*Changes:$\|.*url:.*' || true; })"
 
           if [ -n "$(git diff-files 2>&1)" ]; then
             git add -A

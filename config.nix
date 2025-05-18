@@ -1,5 +1,4 @@
 {
-  lib,
   inputs,
   pkgs,
   ...
@@ -31,27 +30,13 @@
       impure = "~/Projects/nvim-flake/gerg";
     };
 
-    start =
-      [
-        #
-        # Add plugins from nixpkgs here
-        #
-        inputs.self.packages.${pkgs.stdenv.system}.blink-cmp
-        pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-      ]
-      ++ lib.mapAttrsToList (
-        #
-        # This generates plugins from npins sources
-        #
-        pname: pin:
-        (
-          pin
-          // {
-            inherit pname;
-            version = builtins.substring 0 8 pin.revision;
-          }
-        )
-      ) (pkgs.callPackages ./npins/sources.nix { });
+    start = [
+      #
+      # Add plugins from nixpkgs here
+      #
+      inputs.self.packages.${pkgs.stdenv.system}.blink-cmp
+      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
+    ] ++ inputs.mnw.lib.npinsToPlugins pkgs ./sources.json;
   };
 
   extraBinPath = builtins.attrValues {
