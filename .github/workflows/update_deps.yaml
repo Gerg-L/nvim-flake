@@ -19,50 +19,69 @@ jobs:
         with:
           name: nvim-flake
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-      - name: update
+
+      - id: flake
+        name: flake
         run: |
-          MESSAGE=""
+          MESSAGE="
+          flake input updates:
+          $(nix flake update --no-warn-dirty 2>&1 | { grep -v 'unpacking.*' || true; } | sed '1d')"
 
-          nix flake update --no-warn-dirty --commit-lock-file
-
-          if git rev-parse -q HEAD^; then
-
-            MESSAGE="$(git -P log --pretty=format:"%s%n%b" -1)"
-
-            git reset --soft HEAD^
+          if [ -n "$(git diff-files 2>&1)" ]; then
+            git add -A
+            {
+              echo "message<<EOF"
+              echo "$MESSAGE"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
           fi
 
-          NPINS=$(nix run nixpkgs#npins -- update -f | grep -E '[^\(no changes\)]*url.*')
+      - id: npins
+        name: npins
+        run: |
+          MESSAGE="
+          npins updates:
+            $(nix run nixpkgs#npins -- update -f 2>&1 | { grep '.*Changes:$\|.*url:.*' || true; })"
 
-          if [ -n "$(git status --porcelain=v1 2>/dev/null)" ]; then
-            MESSAGE="$MESSAGE
-
-          npins url updates:
-          $NPINS"
+          if [ -n "$(git diff-files 2>&1)" ]; then
+            git add -A
+            {
+              echo "message<<EOF"
+              echo "$MESSAGE"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
           fi
 
-          nix run nixpkgs#nix-update -- -F blink-cmp --version=branch --commit
+      - id: nix-update
+        name: nix-update
+        run: |
+          FILE="$(mktemp)"
+          nix run nixpkgs#nix-update -- --write-commit-message "$FILE" -F blink-cmp --version=branch
+          MESSAGE="
+          nix-update updates:
+          $(cat "$FILE" | sed '1!d')"
 
-          if git rev-parse -q HEAD^; then
-
-            nix build .#blink-cmp
-
-            MESSAGE="$MESSAGE
-
-            $(git -P log --pretty=format:"%s%n%b" -1)"
-
-            git reset --soft HEAD^
+          if [ -n "$(git diff-files 2>&1)" ]; then
+            git add -A
+            {
+              echo "message<<EOF"
+              echo "$MESSAGE"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
           fi
 
-          if [ -z "$MESSAGE" ]; then
+      - name: Commit and push
+        run: |
+          MESSAGE="
+          ${{ steps.flake.outputs.message }}
+          ${{ steps.npins.outputs.message }}
+          ${{ steps.nix-update.outputs.message }}
+          "
+          if [[ "$MESSAGE" =~ ^[[:space:]]*$ ]]; then
             exit 0
           fi
-          
-          git add -A
 
           git commit -m "CI update $(date -I)" -m "$MESSAGE"
-
-          git push origin HEAD:${{ github.ref_name }}
-
+          git push origin 'HEAD:${{ github.ref_name }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
