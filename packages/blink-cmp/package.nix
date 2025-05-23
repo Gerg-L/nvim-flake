@@ -1,7 +1,6 @@
 {
   rustPlatform,
   fetchFromGitHub,
-  writeShellScriptBin,
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
@@ -14,10 +13,12 @@ rustPlatform.buildRustPackage {
     hash = "sha256-ZMq7zXXP3QL73zNfgDNi7xipmrbNwBoFPzK4K0dr6Zs=";
   };
 
-  forceShare = [
-    "man"
-    "info"
-  ];
+  cargoHash = "sha256-IDoDugtNWQovfSstbVMkKHLBXKa06lxRWmywu4zyS3M";
+
+  # Tries to call git
+  preBuild = ''
+    rm build.rs
+  '';
 
   postInstall = ''
     cp -r {lua,plugin} "$out"
@@ -27,12 +28,8 @@ rustPlatform.buildRustPackage {
     mv "$out/lib" "$out/target/release"
   '';
 
-  cargoHash = "sha256-IDoDugtNWQovfSstbVMkKHLBXKa06lxRWmywu4zyS3M=";
-  useFetchCargoVendor = true;
-
-  nativeBuildInputs = [
-    (writeShellScriptBin "git" "exit 1")
-  ];
-
+  # Uses rust nightly
   env.RUSTC_BOOTSTRAP = true;
+  # Don't move /doc to $out/share
+  forceShare = [ ];
 }
