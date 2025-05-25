@@ -1,5 +1,6 @@
 {
   inputs,
+  lib,
   pkgs,
   ...
 }:
@@ -19,24 +20,32 @@
 
   # Source lua config
   initLua = ''
-    require('gerg')
+    require("gerg")
+    LZN = require("lz.n")
+    LZN.register_handler(require("handlers.which-key"))
+    LZN.load("lazy")
   '';
 
   desktopEntry = false;
-
   plugins = {
     dev.gerg = {
-      pure = ./gerg;
+      pure =
+        let
+          fs = lib.fileset;
+        in
+        fs.toSource {
+          root = ./.;
+          fileset = fs.unions [ ./lua ];
+        };
       impure = "~/Projects/nvim-flake/gerg";
     };
 
-    start = [
-      #
-      # Add plugins from nixpkgs here
-      #
-      inputs.self.packages.${pkgs.stdenv.system}.blink-cmp
+    start = inputs.mnw.lib.npinsToPlugins pkgs ./start.json;
+
+    opt = [
       pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-    ] ++ inputs.mnw.lib.npinsToPlugins pkgs ./sources.json;
+      inputs.self.packages.${pkgs.stdenv.system}.blink-cmp
+    ] ++ inputs.mnw.lib.npinsToPlugins pkgs ./opt.json;
   };
 
   extraBinPath = builtins.attrValues {
