@@ -4,7 +4,7 @@ return {
   },
   {
     "nvim-lspconfig",
-    event = "DeferredUIEnter",
+    lazy = false,
     before = function()
       LZN.trigger_load("none-ls.nvim")
       LZN.trigger_load("blink.cmp")
@@ -136,7 +136,7 @@ return {
       })
     end,
     wk = {
-      { "<leader>l", desc = "LSP" },
+      { "<leader>l",  desc = "LSP" },
       { "<leader>lg", desc = "Decs/Defs" },
       { "<leader>lw", desc = "Workspace" },
     },
