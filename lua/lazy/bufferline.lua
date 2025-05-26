@@ -6,8 +6,8 @@ return {
     "bufferline.nvim",
     event = "DeferredUIEnter",
     before = function()
-     LZN.trigger_load("nvim-web-devicons")
-     LZN.trigger_load("bufdelete.nvim")
+      LZN.trigger_load("nvim-web-devicons")
+      LZN.trigger_load("bufdelete.nvim")
     end,
     after = function()
       require("bufferline").setup({
@@ -56,26 +56,26 @@ return {
       })
     end,
     wk = {
-      { "<leader>b",   desc = "Buffers" },
-      { "<leader>bm",  desc = "Buffer move" },
+      { "<leader>b", desc = "Buffers" },
+      { "<leader>bm", desc = "Buffer move" },
     },
     keys = {
-      { "<leader>b1",  "<Cmd>BufferLineGoToBuffer 1<CR>", desc = "Buffer 1" },
-      { "<leader>b2",  "<Cmd>BufferLineGoToBuffer 2<CR>", desc = "Buffer 2" },
-      { "<leader>b3",  "<Cmd>BufferLineGoToBuffer 3<CR>", desc = "Buffer 3" },
-      { "<leader>b4",  "<Cmd>BufferLineGoToBuffer 4<CR>", desc = "Buffer 4" },
-      { "<leader>b5",  "<Cmd>BufferLineGoToBuffer 5<CR>", desc = "Buffer 5" },
-      { "<leader>b6",  "<Cmd>BufferLineGoToBuffer 6<CR>", desc = "Buffer 6" },
-      { "<leader>b7",  "<Cmd>BufferLineGoToBuffer 7<CR>", desc = "Buffer 7" },
-      { "<leader>b8",  "<Cmd>BufferLineGoToBuffer 8<CR>", desc = "Buffer 8" },
-      { "<leader>b9",  "<Cmd>BufferLineGoToBuffer 9<CR>", desc = "Buffer 9" },
-      { "<leader>bc",  ":BufferLinePick<CR>",             desc = "Select buffer" },
-      { "<leader>bmn", ":BufferLineMoveNext<CR>",         desc = "Move forward" },
-      { "<leader>bmp", ":BufferLineMovePrev<CR>",         desc = "Move back" },
-      { "<leader>bn",  ":BufferLineCycleNext<CR>",        desc = "Next" },
-      { "<leader>bp",  ":BufferLineCyclePrev<CR>",        desc = "Prev" },
-      { "<leader>bsd", ":BufferLineSortByDirectory<CR>",  desc = "Sort by dir" },
-      { "<leader>bse", ":BufferLineSortByExtension<CR>",  desc = "Sort by extension" },
+      { "<leader>b1", "<Cmd>BufferLineGoToBuffer 1<CR>", desc = "Buffer 1" },
+      { "<leader>b2", "<Cmd>BufferLineGoToBuffer 2<CR>", desc = "Buffer 2" },
+      { "<leader>b3", "<Cmd>BufferLineGoToBuffer 3<CR>", desc = "Buffer 3" },
+      { "<leader>b4", "<Cmd>BufferLineGoToBuffer 4<CR>", desc = "Buffer 4" },
+      { "<leader>b5", "<Cmd>BufferLineGoToBuffer 5<CR>", desc = "Buffer 5" },
+      { "<leader>b6", "<Cmd>BufferLineGoToBuffer 6<CR>", desc = "Buffer 6" },
+      { "<leader>b7", "<Cmd>BufferLineGoToBuffer 7<CR>", desc = "Buffer 7" },
+      { "<leader>b8", "<Cmd>BufferLineGoToBuffer 8<CR>", desc = "Buffer 8" },
+      { "<leader>b9", "<Cmd>BufferLineGoToBuffer 9<CR>", desc = "Buffer 9" },
+      { "<leader>bc", ":BufferLinePick<CR>", desc = "Select buffer" },
+      { "<leader>bmn", ":BufferLineMoveNext<CR>", desc = "Move forward" },
+      { "<leader>bmp", ":BufferLineMovePrev<CR>", desc = "Move back" },
+      { "<leader>bn", ":BufferLineCycleNext<CR>", desc = "Next" },
+      { "<leader>bp", ":BufferLineCyclePrev<CR>", desc = "Prev" },
+      { "<leader>bsd", ":BufferLineSortByDirectory<CR>", desc = "Sort by dir" },
+      { "<leader>bse", ":BufferLineSortByExtension<CR>", desc = "Sort by extension" },
     },
   },
 }

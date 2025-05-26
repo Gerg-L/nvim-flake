@@ -66,35 +66,35 @@ vim.cmd.colorscheme("moonfly")
 vim.g.indentLine_setConceal = 0
 
 WK.add({
-	{ "Q", "<Nop>", { noremap = false } },
+  { "Q", "<Nop>", { noremap = false } },
 })
 -- keymaps
 WK.add({
-	{
-		mode = { "v" },
-		{ "J", ":m '>+1<CR>gv=gv" },
-		{ "K", ":m '<-2<CR>gv=gv" },
-	},
-	{
-		{ "C-d>", "<C-d>zz" },
-		{ "C-u>", "<C-u>zz" },
-		{ "n", "nzzzv" },
-		{ "N", "Nzzzv" },
-	},
-	{
-		mode = { "x" },
-		{ "<leader>p", '"_dP' },
-	},
+  {
+    mode = { "v" },
+    { "J", ":m '>+1<CR>gv=gv" },
+    { "K", ":m '<-2<CR>gv=gv" },
+  },
+  {
+    { "C-d>", "<C-d>zz" },
+    { "C-u>", "<C-u>zz" },
+    { "n", "nzzzv" },
+    { "N", "Nzzzv" },
+  },
+  {
+    mode = { "x" },
+    { "<leader>p", '"_dP' },
+  },
 })
 
 -- automatically create directories on save if they don't exist
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-	group = vim.api.nvim_create_augroup("auto_create_dir", { clear = true }),
-	callback = function(event)
-		if event.match:match("^%w%w+:[\\/][\\/]") then
-			return
-		end
-		local file = vim.uv.fs_realpath(event.match) or event.match
-		vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
-	end,
+  group = vim.api.nvim_create_augroup("auto_create_dir", { clear = true }),
+  callback = function(event)
+    if event.match:match("^%w%w+:[\\/][\\/]") then
+      return
+    end
+    local file = vim.uv.fs_realpath(event.match) or event.match
+    vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
+  end,
 })

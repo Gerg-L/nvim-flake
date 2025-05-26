@@ -1,7 +1,6 @@
 return {
   {
     "none-ls.nvim",
-    event = "DeferredUIEnter",
   },
   {
     "nvim-lspconfig",

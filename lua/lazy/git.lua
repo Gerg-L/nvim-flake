@@ -44,13 +44,13 @@ return {
             },
 
             -- Actions
-            { "<leader>gs", gs.stage_hunk,          desc = "Stage hunk" },
-            { "<leader>gr", gs.reset_hunk,          desc = "Reset hunk" },
+            { "<leader>gs", gs.stage_hunk, desc = "Stage hunk" },
+            { "<leader>gr", gs.reset_hunk, desc = "Reset hunk" },
 
-            { "<leader>gS", gs.stage_buffer,        desc = "Stage buf" },
-            { "<leader>gR", gs.reset_buffer,        desc = "Reset buf" },
+            { "<leader>gS", gs.stage_buffer, desc = "Stage buf" },
+            { "<leader>gR", gs.reset_buffer, desc = "Reset buf" },
 
-            { "<leader>gp", gs.preview_hunk,        desc = "Preview hunk" },
+            { "<leader>gp", gs.preview_hunk, desc = "Preview hunk" },
             { "<leader>gi", gs.preview_hunk_inline, desc = "Preview hunk inline" },
 
             {
@@ -64,7 +64,7 @@ return {
             { "<leader>gtb", gs.toggle_current_line_blame },
             { "<leader>gtw", gs.toggle_word_diff },
 
-            { "<leader>gd",  gs.diffthis },
+            { "<leader>gd", gs.diffthis },
             {
               "<leader>gD",
               function()

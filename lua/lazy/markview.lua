@@ -4,16 +4,18 @@ return {
   after = function()
     require("markview").setup({})
   end,
-  wk = { {
+  wk = {
     {
-      "<leader>m",
-      desc = "Markdown",
+      {
+        "<leader>m",
+        desc = "Markdown",
+      },
+      {
+        "<leader>mt",
+        "<cmd>Markview Toggle<CR>",
+        desc = "Toggle",
+      },
     },
-    {
-      "<leader>mt",
-      "<cmd>Markview Toggle<CR>",
-      desc = "Toggle",
-    },
-
-  }, { noremap = true, silent = true } },
+    { noremap = true, silent = true },
+  },
 }
