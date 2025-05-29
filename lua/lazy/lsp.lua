@@ -136,7 +136,7 @@ return {
       })
     end,
     wk = {
-      { "<leader>l",  desc = "LSP" },
+      { "<leader>l", desc = "LSP" },
       { "<leader>lg", desc = "Decs/Defs" },
       { "<leader>lw", desc = "Workspace" },
     },
