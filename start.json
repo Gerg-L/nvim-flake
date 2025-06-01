@@ -35,9 +35,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "e356d55cedb24a6c4251d83ce28e0e2010e99d2f",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/e356d55cedb24a6c4251d83ce28e0e2010e99d2f.tar.gz",
-      "hash": "0l9ip9yr8yvjffrw4qdl2b13gzqzs0llgndhh7242ism1fryjvvm"
+      "revision": "ff822100c5d268e0db79e8e725cbd3ade3470de3",
+      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/ff822100c5d268e0db79e8e725cbd3ade3470de3.tar.gz",
+      "hash": "14ffclg7yjkyw05bdqwc7rmzf195vjswfpmcfi7sd85rr4d3midz"
     },
     "which-key.nvim": {
       "type": "Git",
