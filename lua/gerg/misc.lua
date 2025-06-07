@@ -27,6 +27,7 @@ vim.opt.errorbells = false
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.g.clipboard = "osc52"
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.wrap = false
