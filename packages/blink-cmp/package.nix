@@ -4,16 +4,16 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
-  version = "1.5.1-unstable-2025-07-19";
+  version = "1.6.0-unstable-2025-07-25";
 
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "af22c527a451d162e5229a1eff9283ee840b4bca";
-    hash = "sha256-WnXCVNU5if/2pODUNpyMtEssRXgpmGqEhwUAbL9AN1Q=";
+    rev = "cdceeef5b89fd0cc8f9c0ead99c52d4bec64dbbe";
+    hash = "sha256-7vJPQRsn8tR6KMqPSW/637qpZKFy1y3c+wFFSR+QZH8=";
   };
 
-  cargoHash = "sha256-pWBOPMUy/gXeujaowlp2I6kqD+Q95h+f9mXl231DN88=";
+  cargoHash = "sha256-QsVCugYWRri4qu64wHnbJQZBhy4tQrr+gCYbXtRBlqE=";
 
   # Tries to call git
   preBuild = ''
