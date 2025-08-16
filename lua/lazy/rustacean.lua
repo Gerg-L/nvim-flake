@@ -25,7 +25,8 @@ return {
               enable = true,
             },
             lens = { enable = true },
-            checkOnSave = {
+            checkOnSave = true,
+            check = {
               command = "clippy",
               allFeatures = true,
             },
