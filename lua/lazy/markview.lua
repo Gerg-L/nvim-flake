@@ -2,7 +2,11 @@ return {
   "markview.nvim",
   lazy = false,
   after = function()
-    require("markview").setup({})
+    require("markview").setup({
+      experimental = {
+        check_rtp = false,
+      },
+    })
   end,
   wk = {
     {
