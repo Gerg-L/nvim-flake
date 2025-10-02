@@ -37,7 +37,7 @@
           root = ./.;
           fileset = fs.unions [ ./lua ];
         };
-      impure = "~/Projects/nvim-flake/gerg";
+      impure = "~/Projects/nvim-flake";
     };
 
     start = inputs.mnw.lib.npinsToPlugins pkgs ./start.json;
@@ -45,7 +45,8 @@
     opt = [
       pkgs.vimPlugins.nvim-treesitter.withAllGrammars
       inputs.self.packages.${pkgs.stdenv.system}.blink-cmp
-    ] ++ inputs.mnw.lib.npinsToPlugins pkgs ./opt.json;
+    ]
+    ++ inputs.mnw.lib.npinsToPlugins pkgs ./opt.json;
   };
 
   extraBinPath = builtins.attrValues {

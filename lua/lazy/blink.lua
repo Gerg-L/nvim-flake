@@ -11,14 +11,13 @@ return {
       local winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel"
 
       require("blink.cmp").setup({
-        signature = { enabled = true, window = { border = "single" } },
+        signature = { enabled = true },
         completion = {
           menu = {
             auto_show = function(ctx)
               return ctx.mode ~= "cmdline"
             end,
             winhighlight = winhighlight,
-            border = "single",
             draw = {
               components = {
                 kind_icon = {
@@ -66,7 +65,6 @@ return {
           documentation = {
             auto_show = true,
             window = {
-              border = "single",
               winhighlight = winhighlight,
             },
             auto_show_delay_ms = 500,

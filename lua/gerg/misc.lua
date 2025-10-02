@@ -52,6 +52,8 @@ vim.g.mapleader = " "
 
 --theming
 vim.opt.termguicolors = true
+-- use single border for windows
+vim.opt.winborder = "single"
 
 vim.g.moonflyCursorColor = true
 vim.g.moonflyNormalFloat = true

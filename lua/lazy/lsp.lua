@@ -44,11 +44,9 @@ return {
         sources = ls_sources,
       })
       -- Enable lspconfig
-      local lspconfig = require("lspconfig")
       local capabilities = require("blink.cmp").get_lsp_capabilities()
 
       vim.diagnostic.config({
-        float = { border = "single" },
         update_in_insert = true,
         virtual_text = false,
         virtual_lines = { enable = true, current_line = true },
@@ -71,7 +69,7 @@ return {
 
       -- Nix (nil) config
 
-      lspconfig.nil_ls.setup({
+      vim.lsp.config("nil_ls", {
         capabilities = capabilities,
         cmd = { "nil" },
         settings = {
@@ -91,8 +89,10 @@ return {
           },
         },
       })
+      vim.lsp.enable("nil_ls")
+
       -- Lua
-      lspconfig.lua_ls.setup({
+      vim.lsp.config("lua_ls", {
         capabilities = capabilities,
         on_init = function(client)
           if client.workspace_folders then
@@ -126,14 +126,19 @@ return {
         },
       })
 
-      lspconfig.ccls.setup({
+      vim.lsp.enable("lua_ls")
+
+      vim.lsp.config("ccls", {
         capabilities = capabilities,
         cmd = { "ccls" },
       })
 
-      lspconfig.jsonls.setup({
+      vim.lsp.enable("ccls")
+
+      vim.lsp.config("jsonls", {
         capabilities = capabilities,
       })
+      vim.lsp.enable("jsonls")
     end,
     wk = {
       { "<leader>l", desc = "LSP" },
