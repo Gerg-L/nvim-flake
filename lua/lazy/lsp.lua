@@ -1,12 +1,14 @@
 return {
   {
-    "none-ls.nvim",
-  },
-  {
     "nvim-lspconfig",
     lazy = false,
+  },
+  {
+
+    "none-ls.nvim",
+    lazy = false,
     before = function()
-      LZN.trigger_load("none-ls.nvim")
+      LZN.trigger_load("nvim-lspconfig")
       LZN.trigger_load("blink.cmp")
     end,
     after = function()
@@ -239,9 +241,6 @@ return {
   {
     "crates.nvim",
     event = "BufEnter Cargo.toml",
-    before = function()
-      LZN.trigger_load("nvim-lspconfig")
-    end,
     after = function()
       require("crates").setup({
         lsp = {
