@@ -46,7 +46,11 @@ vim.opt.shortmess:append({ I = true, c = true })
 vim.opt.exrc = true
 
 WK = require("which-key")
-WK.setup()
+WK.setup({
+  win = {
+    border = "single",
+  },
+})
 WK.add({ " ", "<Nop>", { silent = true, remap = false } })
 vim.g.mapleader = " "
 

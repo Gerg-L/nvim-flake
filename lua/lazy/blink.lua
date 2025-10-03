@@ -8,8 +8,6 @@ return {
       LZN.trigger_load("lspkind.nvim")
     end,
     after = function()
-      local winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel"
-
       require("blink.cmp").setup({
         signature = { enabled = true },
         completion = {
@@ -17,7 +15,6 @@ return {
             auto_show = function(ctx)
               return ctx.mode ~= "cmdline"
             end,
-            winhighlight = winhighlight,
             draw = {
               components = {
                 kind_icon = {
@@ -64,9 +61,6 @@ return {
           },
           documentation = {
             auto_show = true,
-            window = {
-              winhighlight = winhighlight,
-            },
             auto_show_delay_ms = 500,
           },
         },
