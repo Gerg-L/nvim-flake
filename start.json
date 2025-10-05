@@ -9,9 +9,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "d0240c78216203fc6e6ce1eebdf9f79638408ef0",
-      "url": "https://github.com/nvim-neorocks/lz.n/archive/d0240c78216203fc6e6ce1eebdf9f79638408ef0.tar.gz",
-      "hash": "03y5zrw9xgbg390xjjhlm0dx06msbh0yf9scpay4qw5i74vmy9y2"
+      "revision": "9fc3d8234a0fb7ec6238a677a8b38bf24c1d9cc7",
+      "url": "https://github.com/nvim-neorocks/lz.n/archive/9fc3d8234a0fb7ec6238a677a8b38bf24c1d9cc7.tar.gz",
+      "hash": "0fsbw95k6qy1qbl2k7838ap9m31m5w8fqpmv61m2dgzg112hnlw8"
     },
     "plenary.nvim": {
       "type": "Git",
@@ -35,9 +35,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "2a3cade7d47a3f0b13bfe50926e645b8c2a2432f",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/2a3cade7d47a3f0b13bfe50926e645b8c2a2432f.tar.gz",
-      "hash": "0sw0ckrgxag8yzx0j2ds9nm6vyysnnz0pz01zfqvr003z9ckqbhy"
+      "revision": "c1add33aec2bd36621f865ab11552129ca01d353",
+      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/c1add33aec2bd36621f865ab11552129ca01d353.tar.gz",
+      "hash": "1grxdk9h40d2hqvkij79q2vwp97p8rn2lxc147dxgkllbhw8xgxm"
     },
     "which-key.nvim": {
       "type": "Git",
