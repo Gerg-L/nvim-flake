@@ -33,7 +33,7 @@ return {
         formatting.stylua,
         -- formatting.nixfmt,
         -- code_actions.gitsigns,
-        diagnostics.statix,
+        -- diagnostics.statix,
         code_actions.statix,
         diagnostics.deadnix,
       }
