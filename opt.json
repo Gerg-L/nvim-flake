@@ -298,32 +298,6 @@
       "revision": "d0760a840ca2fe4958353dee567a90c2994e70a7",
       "url": "https://github.com/cappyzawa/trim.nvim/archive/d0760a840ca2fe4958353dee567a90c2994e70a7.tar.gz",
       "hash": "0xy21z4yxpdi1g9yl744582fkmz8q1pap9czknzp8w4ws5mhi709"
-    },
-    "vim-moonfly-colors": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "bluz71",
-        "repo": "vim-moonfly-colors"
-      },
-      "branch": "master",
-      "submodules": false,
-      "revision": "ef85b89739bee184e204c89bc06280d62bd84039",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/ef85b89739bee184e204c89bc06280d62bd84039.tar.gz",
-      "hash": "1jgyn9pg0ikvf92nva8irybnnxgca1bsqvqczgbhicc2b251wvjm"
-    },
-    "which-key.nvim": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "folke",
-        "repo": "which-key.nvim"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "3aab2147e74890957785941f0c1ad87d0a44c15a",
-      "url": "https://github.com/folke/which-key.nvim/archive/3aab2147e74890957785941f0c1ad87d0a44c15a.tar.gz",
-      "hash": "1dwri7gxqgb58pfy829s0ns709m0nrcj1cgz2wj1k09qfffri9mc"
     }
   },
   "version": 5
