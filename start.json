@@ -9,9 +9,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "01d92029e8c8eba41ef6a5259e39e6434e939230",
-      "url": "https://github.com/nvim-neorocks/lz.n/archive/01d92029e8c8eba41ef6a5259e39e6434e939230.tar.gz",
-      "hash": "016k6f4yywl4i6dz2w045nh61w3f4y4kfdj2msz0s4a50jaqa4qq"
+      "revision": "fd9ff1cb20623c3b7e5e1e51cce95bd4f1f799fc",
+      "url": "https://github.com/nvim-neorocks/lz.n/archive/fd9ff1cb20623c3b7e5e1e51cce95bd4f1f799fc.tar.gz",
+      "hash": "0s5158r965c3pnn7hggl80siw4g0mzcxxs15vahcaw2rrdfw134y"
     },
     "plenary.nvim": {
       "type": "Git",
@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "b4177e3eaf15fe5eb8357ebac2286d488be1ed00",
-      "url": "https://github.com/folke/which-key.nvim/archive/b4177e3eaf15fe5eb8357ebac2286d488be1ed00.tar.gz",
-      "hash": "05g22fvbi7yhjnq16cszryc1aqs68v9mcrwgaa9xz0glj9bpwz9p"
+      "revision": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "url": "https://github.com/folke/which-key.nvim/archive/3aab2147e74890957785941f0c1ad87d0a44c15a.tar.gz",
+      "hash": "1dwri7gxqgb58pfy829s0ns709m0nrcj1cgz2wj1k09qfffri9mc"
     }
   },
   "version": 5
