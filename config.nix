@@ -35,7 +35,10 @@
         in
         fs.toSource {
           root = ./.;
-          fileset = fs.unions [ ./lua ];
+          fileset = fs.unions [
+            ./lua
+            ./after
+          ];
         };
       impure = "~/Projects/nvim-flake";
     };
