@@ -4,6 +4,10 @@
   pkgs,
   ...
 }:
+let
+  npinsToPlugins =
+    input: builtins.mapAttrs (_: v: v { inherit pkgs; }) (import ./npins.nix { inherit input; });
+in
 {
   inherit (inputs.neovim-nightly.packages.${pkgs.stdenv.system}) neovim;
 
@@ -43,13 +47,16 @@
       impure = "~/Projects/nvim-flake";
     };
 
-    start = inputs.mnw.lib.npinsToPlugins pkgs ./start.json;
+    startAttrs = npinsToPlugins ./start.json;
 
     opt = [
       pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-      inputs.self.packages.${pkgs.stdenv.system}.blink-cmp
-    ]
-    ++ inputs.mnw.lib.npinsToPlugins pkgs ./opt.json;
+    ];
+    optAttrs = {
+      "blink.cmp" = inputs.self.packages.${pkgs.stdenv.system}.blink-cmp;
+    }
+    // npinsToPlugins ./opt.json;
+
   };
 
   extraBinPath = builtins.attrValues {

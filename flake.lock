@@ -39,11 +39,11 @@
     },
     "mnw": {
       "locked": {
-        "lastModified": 1758834834,
-        "narHash": "sha256-Y7IvY4F8vajZyp3WGf+KaiIVwondEkMFkt92Cr9NZmg=",
+        "lastModified": 1762397075,
+        "narHash": "sha256-OkkHf2tUm7RDkq55haCvtAJWS7nnfr02FnHp7zWlea4=",
         "owner": "gerg-l",
         "repo": "mnw",
-        "rev": "cfbc7d1cc832e318d0863a5fc91d940a96034001",
+        "rev": "362b2a7ca74a26caf4de50b8626b376158e70a1d",
         "type": "github"
       },
       "original": {
@@ -120,12 +120,29 @@
         "type": "github"
       }
     },
+    "npins": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760261697,
+        "narHash": "sha256-8lkiistkBemkRN4aTqGW3SvI1CqibOnvFvNJS9OOdnU=",
+        "owner": "andir",
+        "repo": "npins",
+        "rev": "f4e3698681704e74196fa0f905c7dfdd43cf5c86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "andir",
+        "repo": "npins",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-compat": "flake-compat",
         "mnw": "mnw",
         "neovim-nightly": "neovim-nightly",
         "nixpkgs": "nixpkgs_2",
+        "npins": "npins",
         "systems": "systems"
       }
     },
