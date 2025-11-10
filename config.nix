@@ -49,9 +49,8 @@ in
 
     startAttrs = npinsToPlugins ./start.json;
 
-    opt = [
-      pkgs.vimPlugins.nvim-treesitter.withAllGrammars
-    ];
+    start = pkgs.vimPlugins.nvim-treesitter.withAllGrammars.dependencies;
+
     optAttrs = {
       "blink.cmp" = inputs.self.packages.${pkgs.stdenv.system}.blink-cmp;
     }
