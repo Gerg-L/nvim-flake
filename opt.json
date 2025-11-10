@@ -221,19 +221,6 @@
       "url": "https://github.com/rcarriga/nvim-notify/archive/8701bece920b38ea289b457f902e2ad184131a5d.tar.gz",
       "hash": "sha256-h7STMjY+CBTqBkIDJXgtJz4WhNeQ02ES2Jesi3jZXeM="
     },
-    "nvim-tree.lua": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "nvim-tree",
-        "repo": "nvim-tree.lua"
-      },
-      "branch": "master",
-      "submodules": false,
-      "revision": "64e2192f5250796aa4a7f33c6ad888515af50640",
-      "url": "https://github.com/nvim-tree/nvim-tree.lua/archive/64e2192f5250796aa4a7f33c6ad888515af50640.tar.gz",
-      "hash": "sha256-QCUp/6qX/FS8LrZ6K+pvC/mHkYW8xfzQZEB2y0VOStQ="
-    },
     "nvim-web-devicons": {
       "type": "Git",
       "repository": {
