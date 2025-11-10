@@ -1,12 +1,12 @@
 return {
   {
     "nvim-lspconfig",
-    lazy = false,
+    event = "DeferredUIEnter",
   },
   {
 
     "none-ls.nvim",
-    lazy = false,
+    event = "DeferredUIEnter",
     before = function()
       LZN.trigger_load("nvim-lspconfig")
       LZN.trigger_load("blink.cmp")
@@ -27,7 +27,7 @@ return {
       -- local hover = null_ls.builtins.hover
 
       -- completion sources
-      local completion = null_ls.builtins.completion
+      --  local completion = null_ls.builtins.completion
 
       local ls_sources = {
         formatting.stylua,
@@ -46,7 +46,9 @@ return {
         sources = ls_sources,
       })
       -- Enable lspconfig
-      local capabilities = require("blink.cmp").get_lsp_capabilities()
+      vim.lsp.config("*", {
+        capabilities = require("blink.cmp").get_lsp_capabilities(),
+      })
 
       vim.diagnostic.config({
         update_in_insert = true,
@@ -69,78 +71,7 @@ return {
         },
       })
 
-      -- Nix (nil) config
-
-      vim.lsp.config("nil_ls", {
-        capabilities = capabilities,
-        cmd = { "nil" },
-        settings = {
-          ["nil"] = {
-            nix = {
-              binary = "nix",
-              maxMemoryMB = nil,
-              flake = {
-                autoEvalInputs = false,
-                autoArchive = false,
-                nixpkgsInputName = nil,
-              },
-            },
-            formatting = {
-              command = { "nixfmt", "--quiet" },
-            },
-          },
-        },
-      })
-      vim.lsp.enable("nil_ls")
-
-      -- Lua
-      vim.lsp.config("lua_ls", {
-        capabilities = capabilities,
-        on_init = function(client)
-          if client.workspace_folders then
-            local path = client.workspace_folders[1].name
-            if vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc") then
-              return
-            end
-          end
-
-          client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
-            format = {
-              enable = true,
-            },
-            runtime = {
-              version = "LuaJIT",
-            },
-            telemetry = { enable = false },
-            workspace = {
-              checkThirdParty = false,
-            },
-            completion = {
-              callSnippet = "Replace",
-            },
-            diagnostics = {
-              disable = { "missing-fields" },
-            },
-          })
-        end,
-        settings = {
-          Lua = {},
-        },
-      })
-
-      vim.lsp.enable("lua_ls")
-
-      vim.lsp.config("ccls", {
-        capabilities = capabilities,
-        cmd = { "ccls" },
-      })
-
-      vim.lsp.enable("ccls")
-
-      vim.lsp.config("jsonls", {
-        capabilities = capabilities,
-      })
-      vim.lsp.enable("jsonls")
+      vim.lsp.enable({ "nil_ls", "lua_ls", "ccls", "jsonls" })
     end,
     wk = {
       { "<leader>l", desc = "LSP" },
