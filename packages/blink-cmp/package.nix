@@ -4,13 +4,13 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
-  version = "1.8.0-unstable-2025-11-25";
+  version = "1.8.0-unstable-2025-12-04";
 
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "f13226770b4947eb7e66befbeb53c3db39f13e25";
-    hash = "sha256-kGteNhGINhOvbj9XvDhxfyqC39YXbKr3TcfVMxi9ccU=";
+    rev = "57d900e6982f63c7cde689aa06d8af76c8da083e";
+    hash = "sha256-JKUigAKdEJzWD6FL31p0i2rnu/MRpcRMSuSlES+810I=";
   };
 
   cargoHash = "sha256-Qdt8O7IGj2HySb1jxsv3m33ZxJg96Ckw26oTEEyQjfs=";
