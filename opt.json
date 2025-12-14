@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "0284d640fd88c56f100a43f41103c5b564699e15",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/0284d640fd88c56f100a43f41103c5b564699e15.tar.gz",
-      "hash": "sha256-iHP06BvxqX91pA75o4zS9x0V5NQ63YsbEfkx1QSaHdg="
+      "revision": "98c0e001d35395424fddc3514ecbb70792857cb6",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/98c0e001d35395424fddc3514ecbb70792857cb6.tar.gz",
+      "hash": "sha256-Tc6Rksvn16H6MqQgStENq4I6z+dR+IywM7sPclNUp4I="
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -139,9 +139,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "300949af63fa48cb6bc8d93822b78cb9dbb4fd75",
-      "url": "https://github.com/NeogitOrg/neogit/archive/300949af63fa48cb6bc8d93822b78cb9dbb4fd75.tar.gz",
-      "hash": "sha256-kqd9d/+EQkPmDS76cgMcV6bzwr79mApXozBlYtONbdg="
+      "revision": "d8bf9102692250193b855acd9025a826f1af2729",
+      "url": "https://github.com/NeogitOrg/neogit/archive/d8bf9102692250193b855acd9025a826f1af2729.tar.gz",
+      "hash": "sha256-BBre2HyecQp1TlhJEWbkUpeu5Y4urZVgVf4dqU7RQT0="
     },
     "noice.nvim": {
       "type": "Git",
@@ -204,9 +204,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "9c923997123ff9071198ea3b594d4c1931fab169",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/9c923997123ff9071198ea3b594d4c1931fab169.tar.gz",
-      "hash": "sha256-TJbPpcT74/OzoQ77PRtRkSRPxKfua2qM/LVKHUHaF38="
+      "revision": "0044d0987ef7e624d04141d0f90d0481fd3c3663",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/0044d0987ef7e624d04141d0f90d0481fd3c3663.tar.gz",
+      "hash": "sha256-xJqW4kCX6rJzSP0eW8O5/5JM3bFx5j2TcQbQA7wQf2Y="
     },
     "nvim-notify": {
       "type": "Git",
@@ -282,9 +282,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "0e8f01d55888f499a48af0752dae7de92ef12269",
-      "url": "https://github.com/mrcjkb/rustaceanvim/archive/0e8f01d55888f499a48af0752dae7de92ef12269.tar.gz",
-      "hash": "sha256-Q/G8pkqAtBqKkk0KJgEnd1JzitUF9RN6vgDG/KKbDmc="
+      "revision": "823d2adfed6e8ba13e6e0dfd5d2e278868557017",
+      "url": "https://github.com/mrcjkb/rustaceanvim/archive/823d2adfed6e8ba13e6e0dfd5d2e278868557017.tar.gz",
+      "hash": "sha256-baYd3mET3pI9olmx8D5O68rhz5jtIgAaH1jxqnbCs+o="
     },
     "trim.nvim": {
       "type": "Git",
