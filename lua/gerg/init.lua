@@ -8,3 +8,4 @@ AddKeyOpts = function(keys, opts)
 end
 
 require("gerg.misc")
+require("gerg.treesitter")

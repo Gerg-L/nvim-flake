@@ -13,6 +13,19 @@
       "url": "https://github.com/nvim-neorocks/lz.n/archive/12caa04078333fda3d3b612cf92d7f043de7e96d.tar.gz",
       "hash": "sha256-HcQDX65hdYP4CsCAO5/GlHXox5iYRqHjttJfWrVzdO0="
     },
+    "nvim-treesitter": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-treesitter",
+        "repo": "nvim-treesitter"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "275b9fe801d56d5fea6d34f5bfea8bb24887b805",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/275b9fe801d56d5fea6d34f5bfea8bb24887b805.tar.gz",
+      "hash": "sha256-UFNpcdQZ3jlbjviSzUo2uz3ATOgg6Ca6AIoadwiVXyQ="
+    },
     "plenary.nvim": {
       "type": "Git",
       "repository": {
