@@ -11,12 +11,6 @@
       owner = "nix-community";
       repo = "neovim-nightly-overlay";
     };
-    flake-compat = {
-      type = "github";
-      owner = "edolstra";
-      repo = "flake-compat";
-      flake = false;
-    };
     mnw = {
       type = "github";
       owner = "gerg-l";
