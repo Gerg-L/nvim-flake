@@ -2,14 +2,10 @@
 Using my own [Minimal NeoVim Wrapper](https://github.com/Gerg-L/mnw)
 
 # Test it out
-With flakes enabled
 ```console
 nix run github:Gerg-L/nvim-flake
 ```
-Legacy (may seem like it stalls)
-```console
-nix-shell -p '(import (builtins.fetchTarball "https://github.com/Gerg-L/nvim-flake/archive/master.tar.gz")).packages.${builtins.currentSystem}.default' --run nvim
-```
+
 # To install
 
 I'd recommend [forking](#forking-usage-guide) and modifiying to your use-case rather than using this as-is in your own config...
@@ -29,7 +25,7 @@ Add this flake as an input
     };
 ...
 ```
-(Make sure you're passing inputs to your [modules](https://blog.nobbz.dev/posts/2022-12-12-getting-inputs-to-modules-in-a-flake))
+(Make sure you're passing inputs to your [modules](https://blog.nobbz.dev/blog/2022-12-12-getting-inputs-to-modules-in-a-flake/))
 ### Add to user environment
 ```nix
 #anyModule.nix
@@ -43,35 +39,13 @@ Add this flake as an input
   ];
 ```
 
-## Legacy
-Use fetchTarball
-```nix
-let
-  nvim-flake = import (builtins.fetchTarball {
-  # Get the revision by choosing a version from https://github.com/Gerg-L/nvim-flake/commits/master
-  url = "https://github.com/Gerg-L/nvim-flake/archive/<revision>.tar.gz";
-  # Get the hash by running `nix-prefetch-url --unpack <url>` on the above url
-  sha256 = "<hash>";
-});
-in
-{
-# add system wide
-  environment.systemPackages = [
-    nvim-flake.packages.${pkgs.stdenv.system}.neovim
-  ];
-# add per-user
-  users.users."<name>".packages = [
-    nvim-flake.packages.${pkgs.stdenv.system}.neovim
-  ];
-```
-
 # Forking usage guide
 
 Update the flake like any other `nix flake update`
 
-Add/remove/update plugins via [npins](https://github.com/andir/npins) 
-Example of adding a plugin: `npins add github nvim-treesitter nvim-treesitter-context --branch main`
-Example of updated all plugins: `npins update --full`
+Add/remove/update plugins via [npins](https://github.com/andir/npins) ( aliased to `start` and `opt` if you're in the devShell)
+Example of adding a plugin: `start add github nvim-treesitter nvim-treesitter-context --branch main`
+Example of updated all plugins: `start update --full && opt update --full`
 
 All lua configuration is done in the /gerg directory and added to plugins
 
