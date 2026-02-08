@@ -1,6 +1,9 @@
 {
   rustPlatform,
   fetchFromGitHub,
+  lib,
+  stdenv,
+  rust-jemalloc-sys,
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
@@ -12,8 +15,13 @@ rustPlatform.buildRustPackage {
     rev = "f85eb6252f4c0212be15c6c4213e9af587574cbe";
     hash = "sha256-DbKgP2jjTux0O/TvqkMnPrEOQ4jcxDNo9WXJBmfNxiU=";
   };
+  buildInputs = lib.optional stdenv.hostPlatform.isAarch64 rust-jemalloc-sys;
 
-  cargoHash = "sha256-GNZb/PBOO51BSARATcu4IZhBxBrB7MKxUIRBJXuxkp8=";
+  cargoPatches = [
+    ./0001-pin-frizbee-0.6.0.patch
+  ];
+
+  cargoHash = "sha256-Qdt8O7IGj2HySb1jxsv3m33ZxJg96Ckw26oTEEyQjfs=";
 
   # Tries to call git
   preBuild = ''
@@ -29,7 +37,11 @@ rustPlatform.buildRustPackage {
   '';
 
   # Uses rust nightly
-  env.RUSTC_BOOTSTRAP = true;
+  env = {
+    RUSTC_BOOTSTRAP = true;
+    RUSTFLAGS = lib.optionalString stdenv.hostPlatform.isDarwin "-C link-arg=-undefined -C link-arg=dynamic_lookup";
+  };
+
   # Don't move /doc to $out/share
   forceShare = [ ];
 }
