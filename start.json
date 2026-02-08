@@ -9,9 +9,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "f13ffc487fc83769228f88affd2cb36da99d3bc6",
-      "url": "https://github.com/nvim-neorocks/lz.n/archive/f13ffc487fc83769228f88affd2cb36da99d3bc6.tar.gz",
-      "hash": "sha256-U2sSTnF/PY/9JJ/HeE9j8pih43mCGt3VXE/iYO/P38g="
+      "revision": "24b3d6e0b10d4f3d5d805b730ba03646b437b6d7",
+      "url": "https://github.com/nvim-neorocks/lz.n/archive/24b3d6e0b10d4f3d5d805b730ba03646b437b6d7.tar.gz",
+      "hash": "sha256-yFmjQPtJofm+pOClPgS2jEw8hj9A+8ZeIi5v85dGx/Q="
     },
     "nvim-treesitter": {
       "type": "Git",
@@ -22,9 +22,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "4967fa48b0fe7a7f92cee546c76bb4bb61bb14d5",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/4967fa48b0fe7a7f92cee546c76bb4bb61bb14d5.tar.gz",
-      "hash": "sha256-pwI9KqCjymvqK6btX/+5ZiGP46JsQVYj7W+9YtlRXsc="
+      "revision": "45a07f869b0cffba342276f2c77ba7c116d35db8",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/45a07f869b0cffba342276f2c77ba7c116d35db8.tar.gz",
+      "hash": "sha256-c8twdp6ASjV/wiwSzau3xrk8d9fIwQwM6lsL4mo5TQ4="
     },
     "plenary.nvim": {
       "type": "Git",
