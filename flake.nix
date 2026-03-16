@@ -5,6 +5,7 @@
       type = "github";
       owner = "nix-community";
       repo = "neovim-nightly-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     mnw = {
       type = "github";

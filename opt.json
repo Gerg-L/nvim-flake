@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "e791360b37daa2f064ab41f3ab177390136acba2",
-      "url": "https://github.com/ibhagwan/fzf-lua/archive/e791360b37daa2f064ab41f3ab177390136acba2.tar.gz",
-      "hash": "sha256-7H0ATUO31wrW8fJ4uPgKrBlRKOmSU567weLN3RV706Y="
+      "revision": "bf59dcee2a8d894724b060401d2abf3d71d4bd47",
+      "url": "https://github.com/ibhagwan/fzf-lua/archive/bf59dcee2a8d894724b060401d2abf3d71d4bd47.tar.gz",
+      "hash": "sha256-EjCjBTqpZz74oOJ2+8+hEbTUfTRFiSfVMs1owaryeSY="
     },
     "gitsigns.nvim": {
       "type": "Git",
@@ -204,9 +204,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "4d0724be90b633ddce51b328a631060e6acd7d66",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/4d0724be90b633ddce51b328a631060e6acd7d66.tar.gz",
-      "hash": "sha256-zFnbpVAfhEv3J5KjKg/QYfEJhRv4KKha//GAoJ9ioBQ="
+      "revision": "dd261ad5266ab5bbec249d21efeceda98ff3e1a6",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/dd261ad5266ab5bbec249d21efeceda98ff3e1a6.tar.gz",
+      "hash": "sha256-Z1Ji496pxXnNmL7ysoehXswwZLLNHSVZVlFIwUrpqyc="
     },
     "nvim-notify": {
       "type": "Git",

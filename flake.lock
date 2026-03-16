@@ -40,14 +40,16 @@
       "inputs": {
         "flake-parts": "flake-parts",
         "neovim-src": "neovim-src",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1773446705,
-        "narHash": "sha256-IBAHAaYfiR9fhR+y6ZUdM697dht26tvrWeIrTLwBs3E=",
+        "lastModified": 1773619513,
+        "narHash": "sha256-2xCVm8ajE9pNngv489dPKOUa5P0tlmJRwgVPjhy7c8w=",
         "owner": "nix-community",
         "repo": "neovim-nightly-overlay",
-        "rev": "49ff0692b00466bee56c3c72e91e4d0b8342a93b",
+        "rev": "07227cc79efb9c1744ec99d51f98c7a3584a62d2",
         "type": "github"
       },
       "original": {
@@ -59,11 +61,11 @@
     "neovim-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1773431856,
-        "narHash": "sha256-Oj4HMwF261bJCS/zqgmqdxoCBSeEjwghxW+1MA9Ktik=",
+        "lastModified": 1773615769,
+        "narHash": "sha256-qU71k2BTckpJDHpjxaU4aQwl14+iApnAycq+IJDTmO0=",
         "owner": "neovim",
         "repo": "neovim",
-        "rev": "fd1e019e90e76bb3f6236210ac6287f3b8d4d47f",
+        "rev": "16f7440cc7b59b7e5c79f593fedc117d2d16d7dd",
         "type": "github"
       },
       "original": {
@@ -73,22 +75,6 @@
       }
     },
     "nixpkgs": {
-      "locked": {
-        "lastModified": 1773231277,
-        "narHash": "sha256-Xy3WEpUAbpsz8ydgvVAQAGGB/WB+8cNA5cshiL0McTI=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "75690239f08f885ca9b0267580101f60d10fbe62",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
       "locked": {
         "lastModified": 1773389992,
         "narHash": "sha256-wLdaFm1T0uzQya3eG/5+LPbmyB92jE/AnMtVY6re818=",
@@ -105,7 +91,7 @@
       "inputs": {
         "mnw": "mnw",
         "neovim-nightly": "neovim-nightly",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "systems": "systems"
       }
     },
