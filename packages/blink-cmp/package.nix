@@ -32,11 +32,7 @@ rustPlatform.buildRustPackage {
     mv "$out/lib" "$out/target/release"
   '';
 
-  # Uses rust nightly
-  env = {
-    RUSTC_BOOTSTRAP = true;
-    RUSTFLAGS = lib.optionalString stdenv.hostPlatform.isDarwin "-C link-arg=-undefined -C link-arg=dynamic_lookup";
-  };
+  env.RUSTFLAGS = lib.optionalString stdenv.hostPlatform.isDarwin "-C link-arg=-undefined -C link-arg=dynamic_lookup";
 
   # Don't move /doc to $out/share
   forceShare = [ ];
