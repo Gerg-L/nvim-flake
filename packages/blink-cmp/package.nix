@@ -7,17 +7,17 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
-  version = "1.10.1-unstable-2026-03-27";
+  version = "1.10.2-unstable-2026-04-04";
 
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "7c9777bae52009a198a2e6d56bc9185dbf3d151f";
-    hash = "sha256-TN2JZ17v83sR3KTFL/3NSL4QXx4LCdZSWtuxUNQmIZU=";
+    rev = "b4b7cbb52bab6c716b317433fa9348a070cccee5";
+    hash = "sha256-HqpJawxncYUzCayV5wPxZ141n7vLh9HyAlDwpNNHynE=";
   };
   buildInputs = lib.optional stdenv.hostPlatform.isAarch64 rust-jemalloc-sys;
 
-  cargoHash = "sha256-3o2n4xwNF9Fc3VlPKf3lnvmN7FVus5jQB8gcXXwz50c=";
+  cargoHash = "sha256-z8koRYVM9mkgKB6rdZAKIfjZfinVUUpYAW0IvPgmjZ4=";
 
   # Tries to call git
   preBuild = ''
