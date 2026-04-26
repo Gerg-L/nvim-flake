@@ -28,8 +28,6 @@ rustPlatform.buildRustPackage {
     cp -r {lua,plugin} "$out"
     mkdir -p "$out/doc"
     cp 'doc/'*'.txt' "$out/doc/"
-    mkdir -p "$out/target"
-    mv "$out/lib" "$out/target/release"
   '';
 
   env.RUSTFLAGS = lib.optionalString stdenv.hostPlatform.isDarwin "-C link-arg=-undefined -C link-arg=dynamic_lookup";

@@ -1,5 +1,18 @@
 {
   "pins": {
+    "blink.lib": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "saghen",
+        "repo": "blink.lib"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "dda2666685a5ac3598166577d2e34f1fff6b1637",
+      "url": "https://github.com/saghen/blink.lib/archive/dda2666685a5ac3598166577d2e34f1fff6b1637.tar.gz",
+      "hash": "sha256-Wr7r7445c2bjuG8tjrHR6kCBh7xsk/0hQ4HW2yW3YeA="
+    },
     "lz.n": {
       "type": "Git",
       "repository": {
