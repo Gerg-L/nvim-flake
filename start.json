@@ -9,9 +9,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "f29d8bac6549bc1e7d699c83f680823d7def98bd",
-      "url": "https://github.com/saghen/blink.lib/archive/f29d8bac6549bc1e7d699c83f680823d7def98bd.tar.gz",
-      "hash": "sha256-3XsqX4CGj8VI5tGLWJoUiyo+u7AyNp2IO9hEwQsF1I8="
+      "revision": "2cb62890cee636fe46722d03b7b2331e54fb3755",
+      "url": "https://github.com/saghen/blink.lib/archive/2cb62890cee636fe46722d03b7b2331e54fb3755.tar.gz",
+      "hash": "sha256-+cV+LgHcPqdwr2/QWFJ5xyCNhxiLb9Zxqqc/4TRYYng="
     },
     "lz.n": {
       "type": "Git",
@@ -22,9 +22,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "d74ca4e7fd8a59a6f1e6fd30f6a8c9d4c9cee5f5",
-      "url": "https://github.com/lumen-oss/lz.n/archive/d74ca4e7fd8a59a6f1e6fd30f6a8c9d4c9cee5f5.tar.gz",
-      "hash": "sha256-6K2C5MTrZVGrybumxlg2O9C8/7U1f9qywLG5FTo686U="
+      "revision": "c9891469e10c06f3d883dec33bb52568e8372d0a",
+      "url": "https://github.com/lumen-oss/lz.n/archive/c9891469e10c06f3d883dec33bb52568e8372d0a.tar.gz",
+      "hash": "sha256-pVBfvwxlWQRlxAYuC98hKT8m2P08NqqLbltzIgzuXeo="
     },
     "nvim-treesitter": {
       "type": "Git",
@@ -61,9 +61,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "ca1ff62d90fab4bec9e9aee5414d135819aca833",
-      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/ca1ff62d90fab4bec9e9aee5414d135819aca833.tar.gz",
-      "hash": "sha256-04sX/pl3fx6sH6IF3RO4TQ3XsmcHQ6ce+wgjUymFU6Q="
+      "revision": "261664f92ed51cf0c077555b2d4b2530307eac17",
+      "url": "https://github.com/bluz71/vim-moonfly-colors/archive/261664f92ed51cf0c077555b2d4b2530307eac17.tar.gz",
+      "hash": "sha256-g7Tjm3a1aAbEQocSK1iDRamXivq1AwWlD6Q0X6vphNU="
     },
     "which-key.nvim": {
       "type": "Git",
