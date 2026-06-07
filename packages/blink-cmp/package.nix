@@ -7,13 +7,13 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
-  version = "1.10.2-unstable-2026-05-30";
+  version = "1.10.2-unstable-2026-06-05";
 
   src = fetchFromGitHub {
     owner = "Saghen";
     repo = "blink.cmp";
-    rev = "5ee69ea52492fa038b3a1cd8de55edffe205c77d";
-    hash = "sha256-sE9dQZ5Du3vDC9WYgvP9Pt6A6gXO/6EqljmX4jRcz0I=";
+    rev = "3db7326f54b73df4789e0fd6274bedda33975fea";
+    hash = "sha256-xIPTQD/08t8v8gxF3+WMWmQ3mOUs+B3kr1I+QSO9K7k=";
   };
   buildInputs = lib.optional stdenv.hostPlatform.isAarch64 rust-jemalloc-sys;
 

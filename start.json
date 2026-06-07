@@ -9,9 +9,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "2cb62890cee636fe46722d03b7b2331e54fb3755",
-      "url": "https://github.com/saghen/blink.lib/archive/2cb62890cee636fe46722d03b7b2331e54fb3755.tar.gz",
-      "hash": "sha256-+cV+LgHcPqdwr2/QWFJ5xyCNhxiLb9Zxqqc/4TRYYng="
+      "revision": "b127d48bf8e9ac9cf41f6e0fbead317503f76558",
+      "url": "https://github.com/saghen/blink.lib/archive/b127d48bf8e9ac9cf41f6e0fbead317503f76558.tar.gz",
+      "hash": "sha256-YlvnmeKny7pGL5+tAqtZK84WxJ/vKwCMG5CP9xJEnUg="
     },
     "lz.n": {
       "type": "Git",
@@ -22,9 +22,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "c9891469e10c06f3d883dec33bb52568e8372d0a",
-      "url": "https://github.com/lumen-oss/lz.n/archive/c9891469e10c06f3d883dec33bb52568e8372d0a.tar.gz",
-      "hash": "sha256-pVBfvwxlWQRlxAYuC98hKT8m2P08NqqLbltzIgzuXeo="
+      "revision": "2921662169716ea8f7a3747ffc05a8f80deb4ec6",
+      "url": "https://github.com/lumen-oss/lz.n/archive/2921662169716ea8f7a3747ffc05a8f80deb4ec6.tar.gz",
+      "hash": "sha256-EOkHlRYSXOgZYK2QaPiTsOevgPesGuNZCCT5MA8rJ3M="
     },
     "nvim-treesitter": {
       "type": "Git",
@@ -79,5 +79,5 @@
       "hash": "sha256-rKaYnXM4gRkkF/+xIFm2oCZwtAU6CeTdRWU93N+Jmbc="
     }
   },
-  "version": 7
+  "version": 8
 }
