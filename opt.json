@@ -126,9 +126,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "a55e91f25994617a477d4a0e0b326f9dfa648f80",
-      "url": "https://github.com/OXY2DEV/markview.nvim/archive/a55e91f25994617a477d4a0e0b326f9dfa648f80.tar.gz",
-      "hash": "sha256-jVBJ5g7aPsQjdqAKWFVpTU0nYKuXPqfiUST/LQx/KxA="
+      "revision": "576e50fa99091ff47a9920e1b6ef94b2a7c2f036",
+      "url": "https://github.com/OXY2DEV/markview.nvim/archive/576e50fa99091ff47a9920e1b6ef94b2a7c2f036.tar.gz",
+      "hash": "sha256-jHkRmZf8KwU/RDSVw/mO0PvloJTUgXTbWNNkdWke7AI="
     },
     "neogit": {
       "type": "Git",
@@ -204,9 +204,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "229b79051b380377664edc4cbd534930154921a1",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/229b79051b380377664edc4cbd534930154921a1.tar.gz",
-      "hash": "sha256-RDhwY+C2ZHZPPRe1yvgJqonLcez77dVYvTIttVnFPis="
+      "revision": "a683e0ddf0cf64c6cd689e18ffb480ade3c162b7",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/a683e0ddf0cf64c6cd689e18ffb480ade3c162b7.tar.gz",
+      "hash": "sha256-uFG6LfYGuu5X9gLzCLbIpQd6af+RUoF8aED4Tp7cOcw="
     },
     "nvim-notify": {
       "type": "Git",
@@ -269,9 +269,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "47d56f1d375dc8522085a18ca04a4dab71129cdc",
-      "url": "https://github.com/mrcjkb/rustaceanvim/archive/47d56f1d375dc8522085a18ca04a4dab71129cdc.tar.gz",
-      "hash": "sha256-fyRam12IxboY9lILrtNspbLtXcpcOIcfZrG/p3SABV0="
+      "revision": "4cb26f7f33a0096d9e61756db0d773150466fdf3",
+      "url": "https://github.com/mrcjkb/rustaceanvim/archive/4cb26f7f33a0096d9e61756db0d773150466fdf3.tar.gz",
+      "hash": "sha256-kh3vIaw73tmT+o/PCEH1ALQ4R22vI4OU6x4LJLv3FPA="
     },
     "trim.nvim": {
       "type": "Git",
