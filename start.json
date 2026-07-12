@@ -22,9 +22,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "91e02f0fef81525558982e1e7440a2e20aeaacc5",
-      "url": "https://github.com/lumen-oss/lz.n/archive/91e02f0fef81525558982e1e7440a2e20aeaacc5.tar.gz",
-      "hash": "sha256-s3KJ/OBpxYK/+yk2fugjq1FYbAu5NRqc25noU85onrU="
+      "revision": "bfd420e5b0ab95245094c8b3032c140941604223",
+      "url": "https://github.com/lumen-oss/lz.n/archive/bfd420e5b0ab95245094c8b3032c140941604223.tar.gz",
+      "hash": "sha256-7vX8K6M7OvrCbLj4LRbsm00Xb8nn/OdcBX+TnP3XTMc="
     },
     "nvim-treesitter": {
       "type": "Git",
