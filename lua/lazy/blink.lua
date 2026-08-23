@@ -79,7 +79,14 @@ return {
           ["<C-f>"] = { "scroll_documentation_down", "fallback" },
         },
         sources = {
-          default = { "lazydev", "lsp", "buffer", "snippets", "path", "omni" },
+          default = {
+            "lazydev",
+            "lsp",
+            "buffer",
+            "snippets",
+            "path",
+            --"omni"
+          },
           providers = {
             lazydev = {
               name = "LazyDev",
