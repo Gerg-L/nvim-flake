@@ -22,9 +22,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "5144815893aab0bae3dc3ed25c24bc6ccf888f87",
-      "url": "https://github.com/lumen-oss/lz.n/archive/5144815893aab0bae3dc3ed25c24bc6ccf888f87.tar.gz",
-      "hash": "sha256-+fnsIDC2Lzff0xzqtcEz+nMeL0DUSZ3pGgkw2JuUiHU="
+      "revision": "d236f17a6c6afa762e7ebfdb31ead8d224395b1f",
+      "url": "https://github.com/lumen-oss/lz.n/archive/d236f17a6c6afa762e7ebfdb31ead8d224395b1f.tar.gz",
+      "hash": "sha256-xf7VfwP3yAKnuR/IyAixrWycY/Y3IGD9SUVWLUF53wA="
     },
     "nvim-treesitter": {
       "type": "Git",
@@ -35,9 +35,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "e82ef6ae2c3eeb96c6916b29917f96bf630b2cdb",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/e82ef6ae2c3eeb96c6916b29917f96bf630b2cdb.tar.gz",
-      "hash": "sha256-2y3s4b/cMOjetUjOK8odguPij8Yk6WT1pf+M0XejYeI="
+      "revision": "857651fce37eba032ebe28f3a206283cdc65c45a",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/857651fce37eba032ebe28f3a206283cdc65c45a.tar.gz",
+      "hash": "sha256-j9lkQPHw1tv4yZgmmGey+7tUpsWw1FBUzpfMfjCARco="
     },
     "plenary.nvim": {
       "type": "Git",
