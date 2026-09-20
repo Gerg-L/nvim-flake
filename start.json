@@ -35,9 +35,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "9a168f6357ed21c3a636e1727bc7d382abc451b8",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/9a168f6357ed21c3a636e1727bc7d382abc451b8.tar.gz",
-      "hash": "sha256-NXt2xP6m2TMG1GHggG9S8sGnd8tl1Utv9kjjqJVEH9U="
+      "revision": "f603a2f4da48728f80257fb5fbb90145fd1dc173",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter/archive/f603a2f4da48728f80257fb5fbb90145fd1dc173.tar.gz",
+      "hash": "sha256-fXBJhWvjzBGivIiAys9oy2JB9h99CNIk+AdGkGgHgPg="
     },
     "plenary.nvim": {
       "type": "Git",
