@@ -4,6 +4,8 @@
   lib,
   stdenv,
   rust-jemalloc-sys,
+  aws-lc,
+  pkg-config,
 }:
 rustPlatform.buildRustPackage {
   pname = "blink.cmp";
@@ -15,7 +17,14 @@ rustPlatform.buildRustPackage {
     rev = "7b31e1b6497be70f620bbad83a789929248697ac";
     hash = "sha256-8m/YJF19Ws2WQAcYX8qc/nEKPMVhRyR/tU9WRwPHOtE=";
   };
-  buildInputs = lib.optional stdenv.hostPlatform.isAarch64 rust-jemalloc-sys;
+  buildInputs = [
+    aws-lc
+  ]
+  ++ lib.optional stdenv.hostPlatform.isAarch64 rust-jemalloc-sys;
+
+  nativeBuildInputs = [
+    pkg-config
+  ];
 
   cargoHash = "sha256-W1itx0EY4nuPqKyKOlvdGwQH9bm5uh4Vui/gxWEBEDM=";
 
